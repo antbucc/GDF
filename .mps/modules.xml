@@ -4,6 +4,8 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/GML/GML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GML/sandbox/GML.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GaML/GaML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GaML/sandbox/GaML.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
