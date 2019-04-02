@@ -13,7 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Badge;
   private ConceptPresentation props_BadgeCollection;
   private ConceptPresentation props_Challenge;
-  private ConceptPresentation props_Game;
   private ConceptPresentation props_GameConcept;
   private ConceptPresentation props_Level;
   private ConceptPresentation props_Period;
@@ -21,6 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Point;
   private ConceptPresentation props_Rule;
   private ConceptPresentation props_Team;
+  private ConceptPresentation props_challengeVariable;
 
   @Override
   @Nullable
@@ -55,13 +55,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Challenge = cpb.create();
         }
         return props_Challenge;
-      case LanguageConceptSwitch.Game:
-        if (props_Game == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Game = cpb.create();
-        }
-        return props_Game;
       case LanguageConceptSwitch.GameConcept:
         if (props_GameConcept == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -111,6 +104,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Team = cpb.create();
         }
         return props_Team;
+      case LanguageConceptSwitch.challengeVariable:
+        if (props_challengeVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_challengeVariable = cpb.create();
+        }
+        return props_challengeVariable;
     }
     return null;
   }

@@ -13,14 +13,14 @@ public final class LanguageConceptSwitch {
   public static final int Badge = 1;
   public static final int BadgeCollection = 2;
   public static final int Challenge = 3;
-  public static final int Game = 4;
-  public static final int GameConcept = 5;
-  public static final int Level = 6;
-  public static final int Period = 7;
-  public static final int Player = 8;
-  public static final int Point = 9;
-  public static final int Rule = 10;
-  public static final int Team = 11;
+  public static final int GameConcept = 4;
+  public static final int Level = 5;
+  public static final int Period = 6;
+  public static final int Player = 7;
+  public static final int Point = 8;
+  public static final int Rule = 9;
+  public static final int Team = 10;
+  public static final int challengeVariable = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L);
@@ -28,7 +28,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x3eecc86bd037a6e2L, Badge);
     builder.put(0x3eecc86bd037a6e9L, BadgeCollection);
     builder.put(0x3eecc86bd037b7b3L, Challenge);
-    builder.put(0x3eecc86bd0381316L, Game);
     builder.put(0x3eecc86bd037a6deL, GameConcept);
     builder.put(0x3eecc86bd0381350L, Level);
     builder.put(0x3eecc86bd037a6bcL, Period);
@@ -36,6 +35,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x3eecc86bd037a6b1L, Point);
     builder.put(0x3eecc86bd037a723L, Rule);
     builder.put(0x3eecc86bd037a735L, Team);
+    builder.put(0x34b4aa9221659370L, challengeVariable);
     myIndex = builder.seal();
   }
 

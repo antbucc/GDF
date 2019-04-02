@@ -4,9 +4,14 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="/Users/amministratore/Desktop/gamification-java-client-2.0.0.jar!/" type="java_source_stubs">
+      <sourceRoot location="it" />
+      <sourceRoot location="it/smartcommunitylab" />
+    </modelRoot>
   </models>
   <sourcePath />
   <languageVersions>
+    <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
     <language slang="l:1472546d-a964-48a0-a11e-4271b165a42c:GaML" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>

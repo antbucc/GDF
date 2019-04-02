@@ -134,6 +134,7 @@
     <property role="EcuMT" value="4534219290235610857" />
     <property role="TrG5h" value="BadgeCollection" />
     <property role="34LRSv" value="badgeCollection" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="3VGM6JgdUru" resolve="GameConcept" />
     <node concept="PrWs8" id="3VGM6JgdUrE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -213,57 +214,12 @@
       <property role="TrG5h" value="completed" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="3VGM6Jge1cm">
-    <property role="EcuMT" value="4534219290235638550" />
-    <property role="TrG5h" value="Game" />
-    <property role="34LRSv" value="game" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3VGM6Jge1cn" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235638551" />
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3VGM6Jge1ct" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235638557" />
-      <property role="TrG5h" value="owner" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3VGM6Jge1cy" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235638562" />
-      <property role="TrG5h" value="domain" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="3VGM6Jge1cq" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge1cS" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235638584" />
+    <node concept="1TJgyj" id="3iOED8xppdO" role="1TKVEi">
+      <property role="IQ2ns" value="3797847930382422900" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actions" />
+      <property role="20kJfa" value="variables" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdTNN" resolve="Action" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge1cV" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235638587" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="rules" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUsz" resolve="Rule" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge1d0" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235638592" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="concepts" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUru" resolve="GameConcept" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge1dw" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235638624" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="levels" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6Jge1dg" resolve="Level" />
+      <ref role="20lvS9" node="3iOED8xppdK" resolve="challengeVariable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3VGM6Jge1dg">
@@ -280,6 +236,15 @@
       <property role="20kJfa" value="pointConcept" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3VGM6JgdUqL" resolve="Point" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iOED8xppdK">
+    <property role="EcuMT" value="3797847930382422896" />
+    <property role="TrG5h" value="challengeVariable" />
+    <property role="34LRSv" value="challengevariable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3iOED8xppdL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
