@@ -14,8 +14,11 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptClasses = createDescriptorForClasses();
+  /*package*/ final ConceptDescriptor myConceptCount = createDescriptorForCount();
+  /*package*/ final ConceptDescriptor myConceptDistance = createDescriptorForDistance();
   /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
-  /*package*/ final ConceptDescriptor myConceptscuolaSenzAuto = createDescriptorForscuolaSenzAuto();
+  /*package*/ final ConceptDescriptor myConceptTrips = createDescriptorForTrips();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -24,17 +27,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptGame, myConceptscuolaSenzAuto);
+    return Arrays.asList(myConceptClasses, myConceptCount, myConceptDistance, myConceptGame, myConceptTrips);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Classes:
+        return myConceptClasses;
+      case LanguageConceptSwitch.Count:
+        return myConceptCount;
+      case LanguageConceptSwitch.Distance:
+        return myConceptDistance;
       case LanguageConceptSwitch.Game:
         return myConceptGame;
-      case LanguageConceptSwitch.scuolaSenzAuto:
-        return myConceptscuolaSenzAuto;
+      case LanguageConceptSwitch.Trips:
+        return myConceptTrips;
       default:
         return null;
     }
@@ -49,6 +58,36 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForClasses() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classes", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad21L);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560545");
+    b.version(2);
+    b.alias("classes");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCount() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Count", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad19L);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560537");
+    b.version(2);
+    b.alias("count");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDistance() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Distance", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad1dL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560541");
+    b.version(2);
+    b.alias("distance");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForGame() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Game", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3eecc86bd03861a4L);
     b.class_(false, false, true);
@@ -65,12 +104,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("game");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForscuolaSenzAuto() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "scuolaSenzAuto", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa9221659316L);
+  private static ConceptDescriptor createDescriptorForTrips() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Trips", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad14L);
     b.class_(false, false, false);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382422806");
+    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560532");
     b.version(2);
-    b.alias("scuolaSenzAuto");
     return b.create();
   }
 }

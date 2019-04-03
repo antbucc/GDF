@@ -190,7 +190,7 @@
     <property role="EcuMT" value="4534219290235615155" />
     <property role="TrG5h" value="Challenge" />
     <property role="34LRSv" value="challenge" />
-    <ref role="1TJDcQ" node="3VGM6JgdUru" resolve="GameConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3VGM6JgdVuO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

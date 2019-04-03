@@ -97,11 +97,40 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3iOED8xppcm">
-    <property role="EcuMT" value="3797847930382422806" />
-    <property role="TrG5h" value="scuolaSenzAuto" />
-    <property role="34LRSv" value="scuolaSenzAuto" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  <node concept="1TIwiD" id="3iOED8xpUOk">
+    <property role="EcuMT" value="3797847930382560532" />
+    <property role="TrG5h" value="Trips" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdUqL" resolve="Point" />
+    <node concept="PrWs8" id="3iOED8xpUOl" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iOED8xpUOp">
+    <property role="EcuMT" value="3797847930382560537" />
+    <property role="TrG5h" value="Count" />
+    <property role="34LRSv" value="count" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdUqL" resolve="Point" />
+    <node concept="PrWs8" id="3iOED8xpUOq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iOED8xpUOt">
+    <property role="EcuMT" value="3797847930382560541" />
+    <property role="TrG5h" value="Distance" />
+    <property role="34LRSv" value="distance" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdUqL" resolve="Point" />
+    <node concept="PrWs8" id="3iOED8xpUOu" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3iOED8xpUOx">
+    <property role="EcuMT" value="3797847930382560545" />
+    <property role="TrG5h" value="Classes" />
+    <property role="34LRSv" value="classes" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdUqL" resolve="Point" />
+    <node concept="PrWs8" id="3iOED8xpUOy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

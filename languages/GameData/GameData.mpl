@@ -1,32 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="GaML" uuid="1472546d-a964-48a0-a11e-4271b165a42c" languageVersion="0" moduleVersion="0">
+<language namespace="GameData" uuid="dc26d825-2883-4e88-933c-f0e9f65c69c4" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/amministratore/Desktop/gamification-java-client-2.0.0.jar!/" type="java_source_stubs">
-      <sourceRoot location="it/smartcommunitylab" />
-      <sourceRoot location="it" />
-    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="GaML#01" uuid="8c85542c-661e-4f7c-9ff6-b812a78ad2b3">
+    <generator alias="main" namespace="GameData#01" uuid="7255e8e9-3726-44e3-9821-378aedc7a528">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
         </modelRoot>
-        <modelRoot contentPath="/Users/amministratore/Desktop/gamification-java-client-2.0.0.jar!/" type="java_source_stubs">
-          <sourceRoot location="." />
-          <sourceRoot location="it/smartcommunitylab" />
-          <sourceRoot location="it/smartcommunitylab/ApiCallback.class" />
-          <sourceRoot location="it" />
-        </modelRoot>
       </models>
       <external-templates />
-      <dependencies>
-        <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -47,9 +34,8 @@
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
-        <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
-        <module reference="8c85542c-661e-4f7c-9ff6-b812a78ad2b3(GaML#01)" version="0" />
+        <module reference="dc26d825-2883-4e88-933c-f0e9f65c69c4(GameData)" version="0" />
+        <module reference="7255e8e9-3726-44e3-9821-378aedc7a528(GameData#01)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
@@ -59,11 +45,7 @@
     </generator>
   </generators>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="true">bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)</dependency>
-  </dependencies>
   <languageVersions>
-    <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -89,16 +71,13 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-    <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
-    <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
+    <module reference="dc26d825-2883-4e88-933c-f0e9f65c69c4(GameData)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
-  <extendedLanguages>
-    <extendedLanguage>bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)</extendedLanguage>
-  </extendedLanguages>
+  <extendedLanguages />
 </language>
 

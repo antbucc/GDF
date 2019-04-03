@@ -9,14 +9,38 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Classes;
+  private ConceptPresentation props_Count;
+  private ConceptPresentation props_Distance;
   private ConceptPresentation props_Game;
-  private ConceptPresentation props_scuolaSenzAuto;
+  private ConceptPresentation props_Trips;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Classes:
+        if (props_Classes == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Classes = cpb.create();
+        }
+        return props_Classes;
+      case LanguageConceptSwitch.Count:
+        if (props_Count == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Count = cpb.create();
+        }
+        return props_Count;
+      case LanguageConceptSwitch.Distance:
+        if (props_Distance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Distance = cpb.create();
+        }
+        return props_Distance;
       case LanguageConceptSwitch.Game:
         if (props_Game == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -24,13 +48,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Game = cpb.create();
         }
         return props_Game;
-      case LanguageConceptSwitch.scuolaSenzAuto:
-        if (props_scuolaSenzAuto == null) {
+      case LanguageConceptSwitch.Trips:
+        if (props_Trips == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("scuolaSenzAuto");
-          props_scuolaSenzAuto = cpb.create();
+          cpb.presentationByName();
+          props_Trips = cpb.create();
         }
-        return props_scuolaSenzAuto;
+        return props_Trips;
     }
     return null;
   }
