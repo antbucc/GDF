@@ -10,6 +10,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
+    <import index="2kc8" ref="r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -139,6 +140,12 @@
     <property role="34LRSv" value="tripAction" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdTNN" resolve="Action" />
+    <node concept="1TJgyj" id="2fEMsICRKB$" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812426504676" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actionData" />
+      <ref role="20lvS9" to="2kc8:2fEMsICRFaA" resolve="metersDistance" />
+    </node>
   </node>
 </model>
 

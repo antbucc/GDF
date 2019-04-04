@@ -122,6 +122,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("GML.structure.Action", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6728922577946572484");
     b.version(2);
+    b.aggregate("actionData", 0x23eac9cba8df09e4L).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8deb2a6L).optional(true).ordered(true).multiple(false).origin("2588102812426504676").done();
     b.alias("tripAction");
     return b.create();
   }

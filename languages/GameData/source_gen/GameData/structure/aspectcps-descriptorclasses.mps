@@ -7050,7 +7050,9 @@
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.class_(boolean,boolean,boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="class_" />
               <node concept="3clFbT" id="CT" role="37wK5m" />
               <node concept="3clFbT" id="CU" role="37wK5m" />
-              <node concept="3clFbT" id="CV" role="37wK5m" />
+              <node concept="3clFbT" id="CV" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
             </node>
           </node>
         </node>

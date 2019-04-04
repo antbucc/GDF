@@ -168,7 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorFormetersDistance() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "metersDistance", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8deb2a6L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/2588102812426482342");
     b.version(2);
     b.property("value", 0x23eac9cba8deb2a7L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8deb2a9L)).origin("2588102812426482343").done();
