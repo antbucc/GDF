@@ -9,10 +9,13 @@
   <imports />
   <registry>
     <language id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData">
+      <concept id="2588102812427889821" name="GameData.structure.GameDataType" flags="ng" index="2b7Ilm" />
+      <concept id="2588102812426482342" name="GameData.structure.metersDistance" flags="ng" index="2bd7HH" />
       <concept id="6728922577946461559" name="GameData.structure.metersWalked" flags="ng" index="2QYMCp" />
       <concept id="6728922577946461512" name="GameData.structure.GameData" flags="ng" index="2QYMCA">
         <child id="2588102812427889822" name="dataType" index="2b7Ill" />
       </concept>
+      <concept id="6728922577946461530" name="GameData.structure.Meteo" flags="ng" index="2QYMCO" />
     </language>
     <language id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML">
       <concept id="6728922577946572484" name="GaML.structure.tripAction" flags="ng" index="2QZpAE">
@@ -35,6 +38,15 @@
     <property role="3IQPlD" value="idPediBusKidTrip" />
     <node concept="2QYMCA" id="2fEMsICYRPz" role="2b6hDn">
       <node concept="2QYMCp" id="2fEMsICYRPN" role="2b7Ill" />
+    </node>
+    <node concept="2QYMCA" id="2fEMsICZ3dZ" role="2b6hDn">
+      <node concept="2QYMCO" id="2fEMsICZ3el" role="2b7Ill" />
+    </node>
+    <node concept="2QYMCA" id="2fEMsICZ3ep" role="2b6hDn">
+      <node concept="2bd7HH" id="2fEMsICZ3eF" role="2b7Ill" />
+    </node>
+    <node concept="2QYMCA" id="2fEMsICZcx0" role="2b6hDn">
+      <node concept="2b7Ilm" id="2fEMsICZcx1" role="2b7Ill" />
     </node>
   </node>
 </model>
