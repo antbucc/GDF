@@ -8,6 +8,7 @@
   <imports>
     <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -242,6 +243,54 @@
       <node concept="3F0ifn" id="3VGM6Jgea06" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="3VGM6Jgea07" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2fEMsICRlf8">
+    <ref role="1XX52x" to="2qee:5PxVQVFB7r4" resolve="tripAction" />
+    <node concept="3EZMnI" id="2fEMsICRFbs" role="2wV5jI">
+      <node concept="l2Vlx" id="2fEMsICRFbt" role="2iSdaV" />
+      <node concept="3F0ifn" id="2fEMsICRFbu" role="3EZMnx">
+        <property role="3F0ifm" value="trip action" />
+      </node>
+      <node concept="3F0A7n" id="2fEMsICRFbv" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2fEMsICRFbw" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="3mYdg7" id="2fEMsICRFbx" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="2fEMsICRFby" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2fEMsICRFbz" role="3EZMnx">
+        <node concept="l2Vlx" id="2fEMsICRFb$" role="2iSdaV" />
+        <node concept="lj46D" id="2fEMsICRFb_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="2fEMsICRFbA" role="3EZMnx">
+          <property role="3F0ifm" value="id" />
+        </node>
+        <node concept="3F0ifn" id="2fEMsICRFbB" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="11L4FC" id="2fEMsICRFbC" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="2fEMsICRFbD" role="3EZMnx">
+          <ref role="1NtTu8" to="mupf:3VGM6JgdTO2" resolve="id" />
+          <node concept="ljvvj" id="2fEMsICRFbE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2fEMsICRFbF" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="3mYdg7" id="2fEMsICRFbG" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
       </node>

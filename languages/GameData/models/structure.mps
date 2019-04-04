@@ -263,5 +263,20 @@
       <ref role="AX2Wp" node="5PxVQVFAGnT" resolve="_TimeStamp" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2fEMsICRFaA">
+    <property role="EcuMT" value="2588102812426482342" />
+    <property role="TrG5h" value="metersDistance" />
+    <property role="34LRSv" value="meters_distance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2fEMsICRFaB" role="1TKVEl">
+      <property role="IQ2nx" value="2588102812426482343" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="2fEMsICRFaD" resolve="_metersDistance" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="2fEMsICRFaD">
+    <property role="TrG5h" value="_metersDistance" />
+    <property role="FLfZY" value="[0-9]+[d]{1}" />
+  </node>
 </model>
 

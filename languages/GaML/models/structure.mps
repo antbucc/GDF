@@ -4,6 +4,7 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <use id="bc08d5ab-032d-46dc-9964-46504a89c9c8" name="GML" version="0" />
+    <use id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -131,6 +132,13 @@
     <node concept="PrWs8" id="3iOED8xpUOy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5PxVQVFB7r4">
+    <property role="EcuMT" value="6728922577946572484" />
+    <property role="TrG5h" value="tripAction" />
+    <property role="34LRSv" value="tripAction" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdTNN" resolve="Action" />
   </node>
 </model>
 

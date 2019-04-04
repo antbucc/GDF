@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Distance;
   private ConceptPresentation props_Game;
   private ConceptPresentation props_Trips;
+  private ConceptPresentation props_tripAction;
 
   @Override
   @Nullable
@@ -55,6 +56,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Trips = cpb.create();
         }
         return props_Trips;
+      case LanguageConceptSwitch.tripAction:
+        if (props_tripAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_tripAction = cpb.create();
+        }
+        return props_tripAction;
     }
     return null;
   }

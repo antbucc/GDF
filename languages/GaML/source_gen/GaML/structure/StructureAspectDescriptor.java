@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDistance = createDescriptorForDistance();
   /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
   /*package*/ final ConceptDescriptor myConceptTrips = createDescriptorForTrips();
+  /*package*/ final ConceptDescriptor myConcepttripAction = createDescriptorFortripAction();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -27,7 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClasses, myConceptCount, myConceptDistance, myConceptGame, myConceptTrips);
+    return Arrays.asList(myConceptClasses, myConceptCount, myConceptDistance, myConceptGame, myConceptTrips, myConcepttripAction);
   }
 
   @Override
@@ -44,6 +45,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGame;
       case LanguageConceptSwitch.Trips:
         return myConceptTrips;
+      case LanguageConceptSwitch.tripAction:
+        return myConcepttripAction;
       default:
         return null;
     }
@@ -111,6 +114,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560532");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorFortripAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "tripAction", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L);
+    b.class_(false, false, true);
+    b.super_("GML.structure.Action", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6728922577946572484");
+    b.version(2);
+    b.alias("tripAction");
     return b.create();
   }
 }

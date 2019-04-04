@@ -14,6 +14,7 @@ public final class LanguageConceptSwitch {
   public static final int Distance = 2;
   public static final int Game = 3;
   public static final int Trips = 4;
+  public static final int tripAction = 5;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
@@ -22,6 +23,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x34b4aa922167ad1dL, Distance);
     builder.put(0x3eecc86bd03861a4L, Game);
     builder.put(0x34b4aa922167ad14L, Trips);
+    builder.put(0x5d61ef6eeb9c76c4L, tripAction);
     myIndex = builder.seal();
   }
 
