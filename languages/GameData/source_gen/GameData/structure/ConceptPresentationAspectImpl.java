@@ -51,7 +51,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Meteo:
         if (props_Meteo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("meteo");
+          cpb.presentationByName();
           props_Meteo = cpb.create();
         }
         return props_Meteo;

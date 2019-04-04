@@ -228,8 +228,8 @@
       <node id="6728922577946572484" at="121,33,122,100" concept="0" />
       <node id="6728922577946572484" at="122,100,123,91" concept="0" />
       <node id="6728922577946572484" at="123,91,124,17" concept="0" />
-      <node id="2588102812426504676" at="124,17,125,203" concept="0" />
-      <node id="6728922577946572484" at="125,203,126,26" concept="0" />
+      <node id="2588102812426840406" at="124,17,125,173" concept="0" />
+      <node id="6728922577946572484" at="125,173,126,26" concept="0" />
       <node id="6728922577946572484" at="126,26,127,22" concept="4" />
       <node id="6728922577946572484" at="119,0,129,0" concept="6" trace="createDescriptorFortripAction#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="6728922577946572484" at="48,44,49,35" />

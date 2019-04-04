@@ -119,12 +119,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461512");
     b.version(2);
+    b.aggregate("meteo", 0x23eac9cba8e6ba3eL).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac55aL).optional(false).ordered(true).multiple(false).origin("2588102812427008574").done();
     b.alias("gameData");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMeteo() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "Meteo", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac55aL);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameData", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461530");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac55bL).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac54cL)).origin("6728922577946461531").done();

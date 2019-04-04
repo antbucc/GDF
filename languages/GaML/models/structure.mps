@@ -140,11 +140,11 @@
     <property role="34LRSv" value="tripAction" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdTNN" resolve="Action" />
-    <node concept="1TJgyj" id="2fEMsICRKB$" role="1TKVEi">
-      <property role="IQ2ns" value="2588102812426504676" />
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="2fEMsICT2_m" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812426840406" />
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actionData" />
-      <ref role="20lvS9" to="2kc8:2fEMsICRFaA" resolve="metersDistance" />
+      <ref role="20lvS9" to="2kc8:5PxVQVFAGl8" resolve="GameData" />
     </node>
   </node>
 </model>

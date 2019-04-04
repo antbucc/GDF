@@ -41,6 +41,7 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
@@ -59,6 +60,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5PxVQVFAGl9" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2fEMsICTFCY" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812427008574" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="meteo" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5PxVQVFAGlq" resolve="Meteo" />
     </node>
   </node>
   <node concept="AxPO7" id="5PxVQVFAGlc">
@@ -81,7 +89,7 @@
     <property role="EcuMT" value="6728922577946461530" />
     <property role="TrG5h" value="Meteo" />
     <property role="34LRSv" value="meteo" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="5PxVQVFAGl8" resolve="GameData" />
     <node concept="1TJgyi" id="5PxVQVFAGlr" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461531" />
       <property role="TrG5h" value="value" />
