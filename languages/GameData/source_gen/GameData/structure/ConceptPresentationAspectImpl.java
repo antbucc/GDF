@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BonusPointType;
   private ConceptPresentation props_ChallengeData;
   private ConceptPresentation props_GameData;
+  private ConceptPresentation props_GameDataType;
   private ConceptPresentation props_Meteo;
   private ConceptPresentation props_Mode;
   private ConceptPresentation props_SchoolDate;
@@ -44,14 +45,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.GameData:
         if (props_GameData == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("gameData");
           props_GameData = cpb.create();
         }
         return props_GameData;
+      case LanguageConceptSwitch.GameDataType:
+        if (props_GameDataType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GameDataType");
+          props_GameDataType = cpb.create();
+        }
+        return props_GameDataType;
       case LanguageConceptSwitch.Meteo:
         if (props_Meteo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("meteo");
           props_Meteo = cpb.create();
         }
         return props_Meteo;

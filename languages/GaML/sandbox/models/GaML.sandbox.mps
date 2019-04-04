@@ -8,8 +8,16 @@
   </languages>
   <imports />
   <registry>
+    <language id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData">
+      <concept id="6728922577946461559" name="GameData.structure.metersWalked" flags="ng" index="2QYMCp" />
+      <concept id="6728922577946461512" name="GameData.structure.GameData" flags="ng" index="2QYMCA">
+        <child id="2588102812427889822" name="dataType" index="2b7Ill" />
+      </concept>
+    </language>
     <language id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML">
-      <concept id="6728922577946572484" name="GaML.structure.tripAction" flags="ng" index="2QZpAE" />
+      <concept id="6728922577946572484" name="GaML.structure.tripAction" flags="ng" index="2QZpAE">
+        <child id="2588102812427867036" name="data" index="2b6hDn" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -22,9 +30,12 @@
       </concept>
     </language>
   </registry>
-  <node concept="2QZpAE" id="2fEMsICU3es">
+  <node concept="2QZpAE" id="2fEMsICYRPy">
     <property role="TrG5h" value="PediBusKidTrip" />
-    <property role="3IQPlD" value="pedibusKidTrip" />
+    <property role="3IQPlD" value="idPediBusKidTrip" />
+    <node concept="2QYMCA" id="2fEMsICYRPz" role="2b6hDn">
+      <node concept="2QYMCp" id="2fEMsICYRPN" role="2b7Ill" />
+    </node>
   </node>
 </model>
 

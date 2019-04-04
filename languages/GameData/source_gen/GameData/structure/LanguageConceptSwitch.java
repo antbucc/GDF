@@ -12,21 +12,23 @@ public final class LanguageConceptSwitch {
   public static final int BonusPointType = 0;
   public static final int ChallengeData = 1;
   public static final int GameData = 2;
-  public static final int Meteo = 3;
-  public static final int Mode = 4;
-  public static final int SchoolDate = 5;
-  public static final int bonusScore = 6;
-  public static final int legNameType = 7;
-  public static final int metersDistance = 8;
-  public static final int metersWalked = 9;
-  public static final int prizeWon = 10;
-  public static final int virtualPriceType = 11;
+  public static final int GameDataType = 3;
+  public static final int Meteo = 4;
+  public static final int Mode = 5;
+  public static final int SchoolDate = 6;
+  public static final int bonusScore = 7;
+  public static final int legNameType = 8;
+  public static final int metersDistance = 9;
+  public static final int metersWalked = 10;
+  public static final int prizeWon = 11;
+  public static final int virtualPriceType = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L);
     builder.put(0x5d61ef6eeb9ac5a5L, BonusPointType);
     builder.put(0x5d61ef6eeb9ac5a9L, ChallengeData);
     builder.put(0x5d61ef6eeb9ac548L, GameData);
+    builder.put(0x23eac9cba8f42c9dL, GameDataType);
     builder.put(0x5d61ef6eeb9ac55aL, Meteo);
     builder.put(0x5d61ef6eeb9ac55eL, Mode);
     builder.put(0x5d61ef6eeb9ac5faL, SchoolDate);

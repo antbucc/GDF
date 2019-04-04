@@ -21,6 +21,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBonusPointType = createDescriptorForBonusPointType();
   /*package*/ final ConceptDescriptor myConceptChallengeData = createDescriptorForChallengeData();
   /*package*/ final ConceptDescriptor myConceptGameData = createDescriptorForGameData();
+  /*package*/ final ConceptDescriptor myConceptGameDataType = createDescriptorForGameDataType();
   /*package*/ final ConceptDescriptor myConceptMeteo = createDescriptorForMeteo();
   /*package*/ final ConceptDescriptor myConceptMode = createDescriptorForMode();
   /*package*/ final ConceptDescriptor myConceptSchoolDate = createDescriptorForSchoolDate();
@@ -46,7 +47,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBonusPointType, myConceptChallengeData, myConceptGameData, myConceptMeteo, myConceptMode, myConceptSchoolDate, myConceptbonusScore, myConceptlegNameType, myConceptmetersDistance, myConceptmetersWalked, myConceptprizeWon, myConceptvirtualPriceType);
+    return Arrays.asList(myConceptBonusPointType, myConceptChallengeData, myConceptGameData, myConceptGameDataType, myConceptMeteo, myConceptMode, myConceptSchoolDate, myConceptbonusScore, myConceptlegNameType, myConceptmetersDistance, myConceptmetersWalked, myConceptprizeWon, myConceptvirtualPriceType);
   }
 
   @Override
@@ -59,6 +60,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptChallengeData;
       case LanguageConceptSwitch.GameData:
         return myConceptGameData;
+      case LanguageConceptSwitch.GameDataType:
+        return myConceptGameDataType;
       case LanguageConceptSwitch.Meteo:
         return myConceptMeteo;
       case LanguageConceptSwitch.Mode:
@@ -94,6 +97,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForBonusPointType() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "BonusPointType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a5L);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461605");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac5a6L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a3L)).origin("6728922577946461606").done();
@@ -116,17 +120,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForGameData() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "GameData", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L);
     b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461512");
     b.version(2);
-    b.aggregate("meteo", 0x23eac9cba8e6ba3eL).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac55aL).optional(false).ordered(true).multiple(false).origin("2588102812427008574").done();
+    b.aggregate("dataType", 0x23eac9cba8f42c9eL).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL).optional(false).ordered(true).multiple(false).origin("2588102812427889822").done();
     b.alias("gameData");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGameDataType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
+    b.class_(false, false, false);
+    b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/2588102812427889821");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMeteo() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "Meteo", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac55aL);
     b.class_(false, false, false);
-    b.super_("GameData.structure.GameData", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461530");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac55bL).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac54cL)).origin("6728922577946461531").done();
@@ -136,6 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForMode() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "Mode", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac55eL);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461534");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac55fL).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac562L)).origin("6728922577946461535").done();
@@ -145,6 +156,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForSchoolDate() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "SchoolDate", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5faL);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461690");
     b.version(2);
     b.property("startTimeStamp", 0x5d61ef6eeb9ac5fbL).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5f9L)).origin("6728922577946461691").done();
@@ -155,6 +167,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForbonusScore() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "bonusScore", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5b0L);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461616");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac5b1L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a2L)).origin("6728922577946461617").done();
@@ -163,6 +176,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForlegNameType() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "legNameType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5eaL);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461674");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac5ebL).type(PrimitiveTypeId.STRING).origin("6728922577946461675").done();
@@ -171,6 +185,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorFormetersDistance() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "metersDistance", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8deb2a6L);
     b.class_(false, false, true);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/2588102812426482342");
     b.version(2);
     b.property("value", 0x23eac9cba8deb2a7L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8deb2a9L)).origin("2588102812426482343").done();
@@ -180,6 +195,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorFormetersWalked() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "metersWalked", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac577L);
     b.class_(false, false, false);
+    b.super_("GameData.structure.GameDataType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL);
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461559");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac57cL).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac57bL)).origin("6728922577946461564").done();

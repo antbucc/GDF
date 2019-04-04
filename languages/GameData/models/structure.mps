@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -58,15 +59,12 @@
     <property role="TrG5h" value="GameData" />
     <property role="34LRSv" value="gameData" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5PxVQVFAGl9" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2fEMsICTFCY" role="1TKVEi">
-      <property role="IQ2ns" value="2588102812427008574" />
+    <node concept="1TJgyj" id="2fEMsICX2Mu" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812427889822" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="meteo" />
+      <property role="20kJfa" value="dataType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5PxVQVFAGlq" resolve="Meteo" />
+      <ref role="20lvS9" node="2fEMsICX2Mt" resolve="GameDataType" />
     </node>
   </node>
   <node concept="AxPO7" id="5PxVQVFAGlc">
@@ -89,7 +87,7 @@
     <property role="EcuMT" value="6728922577946461530" />
     <property role="TrG5h" value="Meteo" />
     <property role="34LRSv" value="meteo" />
-    <ref role="1TJDcQ" node="5PxVQVFAGl8" resolve="GameData" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGlr" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461531" />
       <property role="TrG5h" value="value" />
@@ -100,7 +98,7 @@
     <property role="EcuMT" value="6728922577946461534" />
     <property role="TrG5h" value="Mode" />
     <property role="34LRSv" value="mode" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGlv" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461535" />
       <property role="TrG5h" value="value" />
@@ -127,7 +125,7 @@
     <property role="EcuMT" value="6728922577946461559" />
     <property role="TrG5h" value="metersWalked" />
     <property role="34LRSv" value="meters-walked" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGlW" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461564" />
       <property role="TrG5h" value="value" />
@@ -186,7 +184,7 @@
   <node concept="1TIwiD" id="5PxVQVFAGm_">
     <property role="EcuMT" value="6728922577946461605" />
     <property role="TrG5h" value="BonusPointType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGmA" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461606" />
       <property role="TrG5h" value="value" />
@@ -235,7 +233,7 @@
   <node concept="1TIwiD" id="5PxVQVFAGmK">
     <property role="EcuMT" value="6728922577946461616" />
     <property role="TrG5h" value="bonusScore" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGmL" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461617" />
       <property role="TrG5h" value="value" />
@@ -245,7 +243,7 @@
   <node concept="1TIwiD" id="5PxVQVFAGnE">
     <property role="EcuMT" value="6728922577946461674" />
     <property role="TrG5h" value="legNameType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGnF" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461675" />
       <property role="TrG5h" value="value" />
@@ -260,7 +258,7 @@
     <property role="EcuMT" value="6728922577946461690" />
     <property role="TrG5h" value="SchoolDate" />
     <property role="34LRSv" value="school_date" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGnV" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461691" />
       <property role="TrG5h" value="startTimeStamp" />
@@ -277,7 +275,7 @@
     <property role="TrG5h" value="metersDistance" />
     <property role="34LRSv" value="meters_distance" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="2fEMsICRFaB" role="1TKVEl">
       <property role="IQ2nx" value="2588102812426482343" />
       <property role="TrG5h" value="value" />
@@ -287,6 +285,11 @@
   <node concept="Az7Fb" id="2fEMsICRFaD">
     <property role="TrG5h" value="_metersDistance" />
     <property role="FLfZY" value="[0-9]+[d]{1}" />
+  </node>
+  <node concept="1TIwiD" id="2fEMsICX2Mt">
+    <property role="EcuMT" value="2588102812427889821" />
+    <property role="TrG5h" value="GameDataType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 
