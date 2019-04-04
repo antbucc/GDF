@@ -2,8 +2,8 @@
 <model ref="r:15943eb5-e32e-463c-866f-5c1a9e040a95(GameData.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
-    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="-1" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -42,6 +42,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -105,7 +108,7 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
-      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
@@ -175,11 +178,16 @@
               </node>
             </node>
             <node concept="3cpWs6" id="3aVZyrUSmUE" role="3cqZAp">
-              <node concept="2OqwBi" id="3aVZyrUSo5u" role="3cqZAk">
-                <node concept="37vLTw" id="3aVZyrUSncC" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3aVZyrURypZ" resolve="dataList" />
+              <node concept="3clFbC" id="3aVZyrUSSxj" role="3cqZAk">
+                <node concept="3cmrfG" id="3aVZyrUST4p" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
                 </node>
-                <node concept="1v1jN8" id="3aVZyrUSouv" role="2OqNvi" />
+                <node concept="2OqwBi" id="3aVZyrUSo5u" role="3uHU7B">
+                  <node concept="37vLTw" id="3aVZyrUSncC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3aVZyrURypZ" resolve="dataList" />
+                  </node>
+                  <node concept="34oBXx" id="3aVZyrUSFGy" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>
