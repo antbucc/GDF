@@ -46,7 +46,7 @@ public class GameData_Constraints extends BaseConstraintsDescriptor {
           return SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L, 0x23eac9cba8f42c9eL, "dataType")) == SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L, 0x23eac9cba8f42c9eL, "dataType"));
         }
       });
-      return Sequence.fromIterable(dataList).isEmpty();
+      return Sequence.fromIterable(dataList).count() == 1;
     }
     return true;
   }
