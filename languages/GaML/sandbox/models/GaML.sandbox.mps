@@ -2,9 +2,9 @@
 <model ref="r:add2332b-81ce-4ddf-8f02-baa0b90ec72a(GaML.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML" version="0" />
-    <use id="bc08d5ab-032d-46dc-9964-46504a89c9c8" name="GML" version="0" />
-    <use id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData" version="0" />
+    <use id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML" version="-1" />
+    <use id="bc08d5ab-032d-46dc-9964-46504a89c9c8" name="GML" version="-1" />
+    <use id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -48,6 +48,10 @@
     <node concept="2QYMCA" id="2fEMsICZcx0" role="2b6hDn">
       <node concept="2b7Ilm" id="2fEMsICZcx1" role="2b7Ill" />
     </node>
+  </node>
+  <node concept="2QZpAE" id="3aVZyrUSD3k">
+    <property role="TrG5h" value="pediTest" />
+    <property role="3IQPlD" value="test" />
   </node>
 </model>
 
