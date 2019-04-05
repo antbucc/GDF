@@ -8,6 +8,7 @@
   <imports />
   <registry>
     <language id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData">
+      <concept id="2588102812427889821" name="GameData.structure.GameDataType" flags="ng" index="2b7Ilm" />
       <concept id="2588102812426482342" name="GameData.structure.metersDistance" flags="ng" index="2bd7HH" />
       <concept id="6728922577946461559" name="GameData.structure.metersWalked" flags="ng" index="2QYMCp" />
       <concept id="6728922577946461512" name="GameData.structure.GameData" flags="ng" index="2QYMCA">
@@ -46,6 +47,12 @@
     </node>
     <node concept="2QYMCA" id="2fEMsIDk0CP" role="2b6hDn">
       <node concept="2QYMCK" id="2fEMsIDk0CZ" role="2b7Ill" />
+    </node>
+    <node concept="2QYMCA" id="2fEMsIDk1OL" role="2b6hDn">
+      <node concept="2QYMCp" id="2fEMsIDk1OX" role="2b7Ill" />
+    </node>
+    <node concept="2QYMCA" id="2fEMsIDk1P0" role="2b6hDn">
+      <node concept="2b7Ilm" id="2fEMsIDk1P1" role="2b7Ill" />
     </node>
   </node>
   <node concept="2QZpAE" id="3aVZyrUSD3k">
