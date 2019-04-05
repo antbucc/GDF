@@ -23,28 +23,28 @@
       <node id="3655794965912021786" at="34,55,35,71" concept="1" />
       <node id="3655794965912021786" at="36,9,37,0" concept="6" />
       <node id="3655794965912021786" at="37,0,38,22" concept="5" />
-      <node id="3655794965912551227" at="45,41,46,352" concept="5" />
-      <node id="3655794965912579754" at="48,9,49,58" concept="5" />
-      <node id="3655794965912191819" at="50,5,51,16" concept="5" />
+      <node id="3655794965912551227" at="45,41,46,408" concept="5" />
+      <node id="2588102812433409634" at="48,9,49,58" concept="5" />
+      <node id="2588102812433481566" at="50,5,51,16" concept="5" />
       <node id="3655794965912021786" at="53,0,54,0" concept="7" trace="canBeChildBreakingPoint" />
       <node id="3655794965912021786" at="23,0,26,0" concept="0" trace="GameData_Constraints#()V" />
       <node id="3655794965912021786" at="33,0,36,9" concept="2" />
       <node id="3655794965912550083" at="45,0,48,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="3655794965912364668" at="43,174,48,9" concept="4" />
-      <node id="3655794965912153691" at="42,134,50,5" concept="2" />
+      <node id="2588102812431157557" at="43,174,48,9" concept="4" />
+      <node id="2588102812431157551" at="42,134,50,5" concept="2" />
       <node id="3655794965912021786" at="30,0,40,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
       <node id="3655794965912021786" at="42,0,53,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
       <node id="3655794965912021786" at="28,103,40,6" concept="5" />
       <node id="3655794965912021786" at="27,0,42,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="3655794965912021786" at="23,33,24,135" />
       <scope id="3655794965912021786" at="34,55,35,71" />
-      <scope id="3655794965912550084" at="45,41,46,352" />
+      <scope id="3655794965912550084" at="45,41,46,408" />
       <scope id="3655794965912021786" at="23,0,26,0" />
       <scope id="3655794965912550083" at="45,0,48,0">
         <var name="it" id="3655794965912550083" />
       </scope>
-      <scope id="3655794965912153693" at="43,174,49,58">
-        <var name="dataList" id="3655794965912364671" />
+      <scope id="2588102812431157556" at="43,174,49,58">
+        <var name="dataList" id="2588102812431157558" />
       </scope>
       <scope id="3655794965912021786" at="31,127,38,22">
         <var name="result" id="3655794965912021786" />

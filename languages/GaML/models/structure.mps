@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <use id="bc08d5ab-032d-46dc-9964-46504a89c9c8" name="GML" version="0" />
-    <use id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
