@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class tripAction_Editor extends DefaultNodeEditor {
+public class experiencePoint_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new tripAction_EditorBuilder_a(editorContext, node).createCell();
+    return new experiencePoint_EditorBuilder_a(editorContext, node).createCell();
   }
 }

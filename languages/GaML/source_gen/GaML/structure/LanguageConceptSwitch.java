@@ -9,21 +9,37 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Classes = 0;
-  public static final int Count = 1;
-  public static final int Distance = 2;
-  public static final int Game = 3;
-  public static final int Trips = 4;
-  public static final int tripAction = 5;
+  public static final int ActionRule = 0;
+  public static final int ChallengeRule = 1;
+  public static final int GameDefinition = 2;
+  public static final int PlayerChallenge = 3;
+  public static final int Rule = 4;
+  public static final int TeamChallenge = 5;
+  public static final int ThenActionRule = 6;
+  public static final int ThenChallengeRule = 7;
+  public static final int WhenActionRule = 8;
+  public static final int WhenChallengeRule = 9;
+  public static final int dataDrivenAction = 10;
+  public static final int eventDrivenAction = 11;
+  public static final int experiencePoint = 12;
+  public static final int skillPoint = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
-    builder.put(0x34b4aa922167ad21L, Classes);
-    builder.put(0x34b4aa922167ad19L, Count);
-    builder.put(0x34b4aa922167ad1dL, Distance);
-    builder.put(0x3eecc86bd03861a4L, Game);
-    builder.put(0x34b4aa922167ad14L, Trips);
-    builder.put(0x5d61ef6eeb9c76c4L, tripAction);
+    builder.put(0x23eac9cba9511f4dL, ActionRule);
+    builder.put(0x23eac9cba9511f57L, ChallengeRule);
+    builder.put(0x23eac9cba952c550L, GameDefinition);
+    builder.put(0x23eac9cba951fea9L, PlayerChallenge);
+    builder.put(0x3eecc86bd037a723L, Rule);
+    builder.put(0x23eac9cba951feaaL, TeamChallenge);
+    builder.put(0x23eac9cba9511f54L, ThenActionRule);
+    builder.put(0x23eac9cba9511f56L, ThenChallengeRule);
+    builder.put(0x23eac9cba9511f53L, WhenActionRule);
+    builder.put(0x23eac9cba9511f55L, WhenChallengeRule);
+    builder.put(0x5d61ef6eeb9c76c4L, dataDrivenAction);
+    builder.put(0x23eac9cba9555d7eL, eventDrivenAction);
+    builder.put(0x23eac9cba9555d7fL, experiencePoint);
+    builder.put(0x23eac9cba9555d80L, skillPoint);
     myIndex = builder.seal();
   }
 

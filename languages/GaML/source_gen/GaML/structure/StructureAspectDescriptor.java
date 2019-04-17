@@ -14,12 +14,20 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptClasses = createDescriptorForClasses();
-  /*package*/ final ConceptDescriptor myConceptCount = createDescriptorForCount();
-  /*package*/ final ConceptDescriptor myConceptDistance = createDescriptorForDistance();
-  /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
-  /*package*/ final ConceptDescriptor myConceptTrips = createDescriptorForTrips();
-  /*package*/ final ConceptDescriptor myConcepttripAction = createDescriptorFortripAction();
+  /*package*/ final ConceptDescriptor myConceptActionRule = createDescriptorForActionRule();
+  /*package*/ final ConceptDescriptor myConceptChallengeRule = createDescriptorForChallengeRule();
+  /*package*/ final ConceptDescriptor myConceptGameDefinition = createDescriptorForGameDefinition();
+  /*package*/ final ConceptDescriptor myConceptPlayerChallenge = createDescriptorForPlayerChallenge();
+  /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
+  /*package*/ final ConceptDescriptor myConceptTeamChallenge = createDescriptorForTeamChallenge();
+  /*package*/ final ConceptDescriptor myConceptThenActionRule = createDescriptorForThenActionRule();
+  /*package*/ final ConceptDescriptor myConceptThenChallengeRule = createDescriptorForThenChallengeRule();
+  /*package*/ final ConceptDescriptor myConceptWhenActionRule = createDescriptorForWhenActionRule();
+  /*package*/ final ConceptDescriptor myConceptWhenChallengeRule = createDescriptorForWhenChallengeRule();
+  /*package*/ final ConceptDescriptor myConceptdataDrivenAction = createDescriptorFordataDrivenAction();
+  /*package*/ final ConceptDescriptor myConcepteventDrivenAction = createDescriptorForeventDrivenAction();
+  /*package*/ final ConceptDescriptor myConceptexperiencePoint = createDescriptorForexperiencePoint();
+  /*package*/ final ConceptDescriptor myConceptskillPoint = createDescriptorForskillPoint();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -28,25 +36,41 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClasses, myConceptCount, myConceptDistance, myConceptGame, myConceptTrips, myConcepttripAction);
+    return Arrays.asList(myConceptActionRule, myConceptChallengeRule, myConceptGameDefinition, myConceptPlayerChallenge, myConceptRule, myConceptTeamChallenge, myConceptThenActionRule, myConceptThenChallengeRule, myConceptWhenActionRule, myConceptWhenChallengeRule, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Classes:
-        return myConceptClasses;
-      case LanguageConceptSwitch.Count:
-        return myConceptCount;
-      case LanguageConceptSwitch.Distance:
-        return myConceptDistance;
-      case LanguageConceptSwitch.Game:
-        return myConceptGame;
-      case LanguageConceptSwitch.Trips:
-        return myConceptTrips;
-      case LanguageConceptSwitch.tripAction:
-        return myConcepttripAction;
+      case LanguageConceptSwitch.ActionRule:
+        return myConceptActionRule;
+      case LanguageConceptSwitch.ChallengeRule:
+        return myConceptChallengeRule;
+      case LanguageConceptSwitch.GameDefinition:
+        return myConceptGameDefinition;
+      case LanguageConceptSwitch.PlayerChallenge:
+        return myConceptPlayerChallenge;
+      case LanguageConceptSwitch.Rule:
+        return myConceptRule;
+      case LanguageConceptSwitch.TeamChallenge:
+        return myConceptTeamChallenge;
+      case LanguageConceptSwitch.ThenActionRule:
+        return myConceptThenActionRule;
+      case LanguageConceptSwitch.ThenChallengeRule:
+        return myConceptThenChallengeRule;
+      case LanguageConceptSwitch.WhenActionRule:
+        return myConceptWhenActionRule;
+      case LanguageConceptSwitch.WhenChallengeRule:
+        return myConceptWhenChallengeRule;
+      case LanguageConceptSwitch.dataDrivenAction:
+        return myConceptdataDrivenAction;
+      case LanguageConceptSwitch.eventDrivenAction:
+        return myConcepteventDrivenAction;
+      case LanguageConceptSwitch.experiencePoint:
+        return myConceptexperiencePoint;
+      case LanguageConceptSwitch.skillPoint:
+        return myConceptskillPoint;
       default:
         return null;
     }
@@ -61,69 +85,138 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForClasses() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classes", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad21L);
+  private static ConceptDescriptor createDescriptorForActionRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ActionRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f4dL);
     b.class_(false, false, false);
-    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560545");
+    b.super_("GaML.structure.Rule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3eecc86bd037a723L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812433981261");
     b.version(2);
-    b.alias("classes");
+    b.aggregate("when", 0x23eac9cba95128baL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f53L).optional(false).ordered(true).multiple(false).origin("2588102812433983674").done();
+    b.aggregate("then", 0x23eac9cba9520687L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f54L).optional(false).ordered(true).multiple(false).origin("2588102812434040455").done();
+    b.alias("actionRule");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForCount() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Count", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad19L);
+  private static ConceptDescriptor createDescriptorForChallengeRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ChallengeRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f57L);
     b.class_(false, false, false);
-    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560537");
+    b.super_("GaML.structure.Rule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3eecc86bd037a723L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812433981271");
     b.version(2);
-    b.alias("count");
+    b.aggregate("when", 0x23eac9cba95128c1L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f55L).optional(false).ordered(true).multiple(false).origin("2588102812433983681").done();
+    b.aggregate("then", 0x23eac9cba952068bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f56L).optional(false).ordered(true).multiple(false).origin("2588102812434040459").done();
+    b.alias("challengeRule");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForDistance() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Distance", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad1dL);
-    b.class_(false, false, false);
-    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560541");
-    b.version(2);
-    b.alias("distance");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForGame() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Game", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3eecc86bd03861a4L);
+  private static ConceptDescriptor createDescriptorForGameDefinition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "GameDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L);
     b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/4534219290235658660");
+    b.super_("GML.structure.Game", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd03861a4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434089296");
     b.version(2);
-    b.property("id", 0x3eecc86bd0389f79L).type(PrimitiveTypeId.STRING).origin("4534219290235674489").done();
-    b.property("domain", 0x3eecc86bd0389f7bL).type(PrimitiveTypeId.STRING).origin("4534219290235674491").done();
-    b.property("owner", 0x3eecc86bd0389f7eL).type(PrimitiveTypeId.STRING).origin("4534219290235674494").done();
-    b.aggregate("actions", 0x3eecc86bd03886acL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L).optional(true).ordered(true).multiple(true).origin("4534219290235668140").done();
-    b.aggregate("badgeCollections", 0x3eecc86bd03886aaL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("4534219290235668138").done();
-    b.aggregate("points", 0x3eecc86bd03886afL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L).optional(true).ordered(true).multiple(true).origin("4534219290235668143").done();
-    b.aggregate("rules", 0x3eecc86bd0389f74L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a723L).optional(true).ordered(true).multiple(true).origin("4534219290235674484").done();
-    b.alias("game");
+    b.aggregate("dataDrivenActions", 0x23eac9cba955f45bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L).optional(true).ordered(true).multiple(true).origin("2588102812434297947").done();
+    b.aggregate("eventDrivenActions", 0x23eac9cba955f45dL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7eL).optional(true).ordered(true).multiple(true).origin("2588102812434297949").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForTrips() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Trips", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x34b4aa922167ad14L);
+  private static ConceptDescriptor createDescriptorForPlayerChallenge() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "PlayerChallenge", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba951fea9L);
     b.class_(false, false, false);
-    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3797847930382560532");
+    b.super_("GML.structure.Challenge", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037b7b3L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434038441");
     b.version(2);
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorFortripAction() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "tripAction", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L);
+  private static ConceptDescriptor createDescriptorForRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Rule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3eecc86bd037a723L);
+    b.class_(false, false, false);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/4534219290235610915");
+    b.version(2);
+    b.property("gameId", 0x3eecc86bd037a724L).type(PrimitiveTypeId.STRING).origin("4534219290235610916").done();
+    b.alias("rule");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTeamChallenge() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "TeamChallenge", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba951feaaL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Challenge", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037b7b3L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434038442");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForThenActionRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ThenActionRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f54L);
+    b.class_(false, false, false);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812433981268");
+    b.version(2);
+    b.associate("when", 0x23eac9cba951ac4fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f53L).optional(false).origin("2588102812434017359").done();
+    b.alias("thenAction");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForThenChallengeRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ThenChallengeRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f56L);
+    b.class_(false, false, true);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812433981270");
+    b.version(2);
+    b.associate("whenRef", 0x23eac9cba95128e0L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f55L).optional(false).origin("2588102812433983712").done();
+    b.alias("thenChallenge");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWhenActionRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "WhenActionRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f53L);
+    b.class_(false, false, false);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812433981267");
+    b.version(2);
+    b.aggregate("action", 0x23eac9cba951ac4aL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L).optional(false).ordered(true).multiple(false).origin("2588102812434017354").done();
+    b.aggregate("points", 0x23eac9cba951ac4cL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L).optional(true).ordered(true).multiple(true).origin("2588102812434017356").done();
+    b.alias("whenAction");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWhenChallengeRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "WhenChallengeRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f55L);
+    b.class_(false, false, false);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812433981269");
+    b.version(2);
+    b.aggregate("challenge", 0x23eac9cba95128c8L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037b7b3L).optional(false).ordered(true).multiple(false).origin("2588102812433983688").done();
+    b.aggregate("player", 0x23eac9cba95128caL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L).optional(false).ordered(true).multiple(false).origin("2588102812433983690").done();
+    b.aggregate("game", 0x23eac9cba951d8adL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd03861a4L).optional(false).ordered(true).multiple(false).origin("2588102812434028717").done();
+    b.aggregate("points", 0x23eac9cba95128d1L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L).optional(true).ordered(true).multiple(true).origin("2588102812433983697").done();
+    b.aggregate("badgeCollection", 0x23eac9cba951ac44L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("2588102812434017348").done();
+    b.alias("whenChallenge");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorFordataDrivenAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "dataDrivenAction", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L);
     b.class_(false, false, true);
     b.super_("GML.structure.Action", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6728922577946572484");
     b.version(2);
-    b.aggregate("data", 0x23eac9cba8f3d39cL).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L).optional(true).ordered(true).multiple(true).origin("2588102812427867036").done();
-    b.alias("tripAction");
+    b.aggregate("inputData", 0x23eac9cba8f3d39cL).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L).optional(true).ordered(true).multiple(true).origin("2588102812427867036").done();
+    b.alias("dataAction");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForeventDrivenAction() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "eventDrivenAction", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7eL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Action", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434259326");
+    b.version(2);
+    b.property("executed", 0x23eac9cba956d111L).type(PrimitiveTypeId.BOOLEAN).origin("2588102812434354449").done();
+    b.alias("eventAction");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForexperiencePoint() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "experiencePoint", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434259327");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForskillPoint() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "skillPoint", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434259328");
+    b.version(2);
     return b.create();
   }
 }

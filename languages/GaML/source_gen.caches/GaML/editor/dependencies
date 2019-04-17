@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="GaML.editor.EditorAspectDescriptorImpl">
-    <classNode dependClassName="GaML.editor.Game_Editor" />
-    <classNode dependClassName="GaML.editor.tripAction_Editor" />
+    <classNode dependClassName="GaML.editor.GameDefinition_Editor" />
+    <classNode dependClassName="GaML.editor.experiencePoint_Editor" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -13,14 +13,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
   </dependency>
-  <dependency className="GaML.editor.Game_Editor">
-    <classNode dependClassName="GaML.editor.Game_EditorBuilder_a" />
+  <dependency className="GaML.editor.GameDefinition_Editor">
+    <classNode dependClassName="GaML.editor.GameDefinition_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="GaML.editor.Game_EditorBuilder_a">
+  <dependency className="GaML.editor.GameDefinition_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />
@@ -61,14 +61,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="GaML.editor.tripAction_Editor">
-    <classNode dependClassName="GaML.editor.tripAction_EditorBuilder_a" />
+  <dependency className="GaML.editor.experiencePoint_Editor">
+    <classNode dependClassName="GaML.editor.experiencePoint_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="GaML.editor.tripAction_EditorBuilder_a">
+  <dependency className="GaML.editor.experiencePoint_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />

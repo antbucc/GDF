@@ -23,7 +23,7 @@ public class Generator extends TemplateModuleInterpreted2 {
   @NotNull
   @Override
   public SModuleReference getModuleReference() {
-    return PersistenceFacade.getInstance().createModuleReference("8c85542c-661e-4f7c-9ff6-b812a78ad2b3(GaML#01)");
+    return PersistenceFacade.getInstance().createModuleReference("be30732c-c7a7-4050-9ed5-f3d844eaf9a6(GaML#2588102812434631028)");
   }
 
   @Override
@@ -34,8 +34,9 @@ public class Generator extends TemplateModuleInterpreted2 {
 
   @Override
   public Collection<SLanguage> getTargetLanguages() {
-    SLanguage[] rv = new SLanguage[1];
+    SLanguage[] rv = new SLanguage[2];
     rv[0] = MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
+    rv[1] = MetaAdapterFactory.getLanguage(0x8388864671ce4f1cL, 0x9c53c54016f6ad4fL, "jetbrains.mps.baseLanguage.collections");
     return Arrays.asList(rv);
   }
 
