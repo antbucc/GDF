@@ -1,64 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root nodeRef="r:add2332b-81ce-4ddf-8f02-baa0b90ec72a(GaML.sandbox)/2588102812434297944">
-    <file name="kggID.java">
-      <node id="2588102812434297944" at="16,0,17,0" concept="4" trace="GAMIFICATION_URL" />
-      <node id="2588102812434297944" at="17,0,18,0" concept="4" trace="USER" />
-      <node id="2588102812434297944" at="18,0,19,0" concept="4" trace="PWD" />
-      <node id="2588102812434297944" at="20,28,21,55" concept="1" />
-      <node id="2588102812434297944" at="21,55,22,29" concept="0" />
-      <node id="2588102812434297944" at="22,29,23,28" concept="0" />
-      <node id="2588102812434297944" at="23,28,24,68" concept="1" />
-      <node id="2588102812434297944" at="24,68,25,62" concept="1" />
-      <node id="2588102812434297944" at="26,9,27,35" concept="1" />
-      <node id="2588102812434297944" at="27,35,28,0" concept="3" />
-      <node id="2588102812434297944" at="28,0,29,38" concept="2" />
-      <node id="2588102812434297944" at="29,38,30,80" concept="1" />
-      <node id="2588102812434598064" at="30,80,31,40" concept="0" />
-      <node id="2588102812434297944" at="31,40,32,35" concept="0" />
-      <node id="2588102812434297944" at="32,35,33,0" concept="3" />
-      <node id="2588102812434297944" at="33,0,34,39" concept="2" />
-      <node id="2588102812434297944" at="34,39,35,81" concept="1" />
-      <node id="2588102812434598073" at="35,81,36,45" concept="0" />
-      <node id="2588102812434297944" at="36,45,37,36" concept="0" />
-      <node id="2588102812434297944" at="37,36,38,0" concept="3" />
-      <node id="2588102812434297944" at="38,0,39,0" concept="3" />
-      <node id="2588102812434297944" at="39,0,40,0" concept="3" />
-      <node id="2588102812434297944" at="40,0,41,37" concept="2" />
-      <node id="2588102812434297944" at="41,37,42,87" concept="1" />
-      <node id="2588102812434297944" at="42,87,43,57" concept="2" />
-      <node id="2588102812434297944" at="43,57,44,35" concept="0" />
-      <node id="2588102812434297944" at="44,35,45,39" concept="0" />
-      <node id="2588102812434297944" at="45,39,46,0" concept="3" />
-      <node id="2588102812434297944" at="47,30,48,26" concept="0" />
-      <node id="2588102812434297944" at="49,5,50,0" concept="3" />
-      <node id="2588102812434297944" at="50,0,51,0" concept="3" />
-      <node id="2588102812434297944" at="25,62,49,5" concept="6" />
-      <node id="2588102812434297944" at="20,0,53,0" concept="5" trace="run#()V" />
-      <scope id="2588102812434297944" at="47,0,48,26">
-        <var name="e" id="2588102812434297944" />
-      </scope>
-      <scope id="2588102812434297944" at="47,30,48,26" />
-      <scope id="2588102812434297944" at="26,9,46,0">
-        <var name="DataActions" id="2588102812434297944" />
-        <var name="EventActions" id="2588102812434297944" />
-        <var name="game" id="2588102812434297944" />
-        <var name="points" id="2588102812434297944" />
-      </scope>
-      <scope id="2588102812434297944" at="20,28,51,0">
-        <var name="client" id="2588102812434297944" />
-        <var name="gameApi" id="2588102812434297944" />
-        <var name="playerApi" id="2588102812434297944" />
-      </scope>
-      <scope id="2588102812434297944" at="20,0,53,0" />
-      <unit id="2588102812434297944" at="15,0,54,0" name="GaML.sandbox.kggID" />
+    <file name="KGG.java">
+      <unit id="2588102812434297944" at="6,0,8,0" name="GaML.sandbox.KGG" />
     </file>
   </root>
 </debug-info>

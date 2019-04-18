@@ -207,6 +207,7 @@
     <property role="EcuMT" value="2588102812434089296" />
     <property role="TrG5h" value="GameDefinition" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="gameDefinition" />
     <ref role="1TJDcQ" to="mupf:3VGM6Jge66$" resolve="Game" />
     <node concept="1TJgyj" id="2fEMsIDlvhr" role="1TKVEi">
       <property role="IQ2ns" value="2588102812434297947" />
@@ -221,6 +222,20 @@
       <property role="20kJfa" value="eventDrivenActions" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2fEMsIDllPY" resolve="eventDrivenAction" />
+    </node>
+    <node concept="1TJgyj" id="2fEMsIDvYRR" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812437048823" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="skillPoints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2fEMsIDllQ0" resolve="skillPoint" />
+    </node>
+    <node concept="1TJgyj" id="2fEMsIDvYRY" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812437048830" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="experiencePoints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2fEMsIDllPZ" resolve="experiencePoint" />
     </node>
   </node>
   <node concept="1TIwiD" id="2fEMsIDllPY">
@@ -238,11 +253,25 @@
     <property role="EcuMT" value="2588102812434259327" />
     <property role="TrG5h" value="experiencePoint" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUqL" resolve="Point" />
+    <node concept="1TJgyj" id="2fEMsIDx5MK" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812437339312" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="period" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="2kc8:2fEMsIDw9Rg" resolve="periodType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2fEMsIDllQ0">
     <property role="EcuMT" value="2588102812434259328" />
     <property role="TrG5h" value="skillPoint" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUqL" resolve="Point" />
+    <node concept="1TJgyj" id="2fEMsIDwTU8" role="1TKVEi">
+      <property role="IQ2ns" value="2588102812437290632" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="period" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="2kc8:2fEMsIDw9Rg" resolve="periodType" />
+    </node>
   </node>
 </model>
 

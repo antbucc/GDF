@@ -8,7 +8,9 @@
   <imports />
   <registry>
     <language id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData">
-      <concept id="2588102812427889821" name="GameData.structure.GameDataType" flags="ng" index="2b7Ilm" />
+      <concept id="2588102812437093840" name="GameData.structure.periodType" flags="ng" index="2aq_gr">
+        <property id="2588102812437093860" name="value" index="2aq_gJ" />
+      </concept>
       <concept id="6728922577946461559" name="GameData.structure.metersWalked" flags="ng" index="2QYMCp" />
       <concept id="6728922577946461512" name="GameData.structure.GameData" flags="ng" index="2QYMCA">
         <child id="2588102812427889822" name="dataType" index="2b7Ill" />
@@ -16,8 +18,16 @@
     </language>
     <language id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML">
       <concept id="2588102812434089296" name="GaML.structure.GameDefinition" flags="ng" index="2aI0Mr">
+        <child id="2588102812437048830" name="experiencePoints" index="2a_igP" />
+        <child id="2588102812437048823" name="skillPoints" index="2a_igW" />
         <child id="2588102812434297947" name="dataDrivenActions" index="2aJNQg" />
         <child id="2588102812434297949" name="eventDrivenActions" index="2aJNQm" />
+      </concept>
+      <concept id="2588102812434259328" name="GaML.structure.skillPoint" flags="ng" index="2aJThb">
+        <child id="2588102812437290632" name="period" index="2aqlt3" />
+      </concept>
+      <concept id="2588102812434259327" name="GaML.structure.experiencePoint" flags="ng" index="2aJTiO">
+        <child id="2588102812437339312" name="period" index="2arDlV" />
       </concept>
       <concept id="2588102812434259326" name="GaML.structure.eventDrivenAction" flags="ng" index="2aJTiP" />
       <concept id="6728922577946572484" name="GaML.structure.dataDrivenAction" flags="ng" index="2QZpAE">
@@ -42,13 +52,19 @@
     </language>
   </registry>
   <node concept="2aI0Mr" id="2fEMsIDlvho">
-    <property role="TrG5h" value="Kgg_Test" />
+    <property role="TrG5h" value="KGG" />
     <property role="3IP5si" value="kggID" />
     <property role="3IP5sg" value="KGG" />
     <property role="3IP5sl" value="FBK" />
+    <node concept="2aJTiO" id="2fEMsIDxsd$" role="2a_igP">
+      <property role="TrG5h" value="pedibus_distance" />
+      <node concept="2aq_gr" id="2fEMsIDxsd_" role="2arDlV">
+        <property role="2aq_gJ" value="daily" />
+      </node>
+    </node>
     <node concept="2aJTiP" id="2fEMsIDmCyT" role="2aJNQm">
-      <property role="TrG5h" value="questionarieFilled" />
-      <property role="3IQPlD" value="testID" />
+      <property role="TrG5h" value="TeacherQuestionarie" />
+      <property role="3IQPlD" value="questionariedId" />
     </node>
     <node concept="2QZpAE" id="2fEMsIDmCyK" role="2aJNQg">
       <property role="TrG5h" value="PediBusKidTrip" />
@@ -58,15 +74,16 @@
       </node>
     </node>
     <node concept="3IQPio" id="2fEMsIDlvhp" role="3IP4V7" />
+    <node concept="2aJThb" id="2fEMsIDxsdu" role="2a_igW">
+      <property role="TrG5h" value="participation_count" />
+      <node concept="2aq_gr" id="2fEMsIDxsdv" role="2aqlt3" />
+    </node>
   </node>
   <node concept="2QZpAE" id="2fEMsIDmosd">
     <property role="TrG5h" value="PediBusKidTrip" />
     <property role="3IQPlD" value="pedibusKidTripID" />
     <node concept="2QYMCA" id="2fEMsIDmwvq" role="2b6hDn">
       <node concept="2QYMCp" id="2fEMsIDmwvu" role="2b7Ill" />
-    </node>
-    <node concept="2QYMCA" id="2fEMsIDtSwW" role="2b6hDn">
-      <node concept="2b7Ilm" id="2fEMsIDtSwX" role="2b7Ill" />
     </node>
   </node>
 </model>

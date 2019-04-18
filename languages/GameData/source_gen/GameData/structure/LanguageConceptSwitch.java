@@ -20,8 +20,9 @@ public final class LanguageConceptSwitch {
   public static final int legNameType = 8;
   public static final int metersDistance = 9;
   public static final int metersWalked = 10;
-  public static final int prizeWon = 11;
-  public static final int virtualPriceType = 12;
+  public static final int periodType = 11;
+  public static final int prizeWon = 12;
+  public static final int virtualPriceType = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L);
@@ -36,6 +37,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x5d61ef6eeb9ac5eaL, legNameType);
     builder.put(0x23eac9cba8deb2a6L, metersDistance);
     builder.put(0x5d61ef6eeb9ac577L, metersWalked);
+    builder.put(0x23eac9cba9809dd0L, periodType);
     builder.put(0x5d61ef6eeb9ac593L, prizeWon);
     builder.put(0x5d61ef6eeb9ac59eL, virtualPriceType);
     myIndex = builder.seal();

@@ -115,6 +115,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("dataDrivenActions", 0x23eac9cba955f45bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L).optional(true).ordered(true).multiple(true).origin("2588102812434297947").done();
     b.aggregate("eventDrivenActions", 0x23eac9cba955f45dL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7eL).optional(true).ordered(true).multiple(true).origin("2588102812434297949").done();
+    b.aggregate("skillPoints", 0x23eac9cba97fedf7L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L).optional(true).ordered(true).multiple(true).origin("2588102812437048823").done();
+    b.aggregate("experiencePoints", 0x23eac9cba97fedfeL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL).optional(true).ordered(true).multiple(true).origin("2588102812437048830").done();
+    b.alias("gameDefinition");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlayerChallenge() {
@@ -209,6 +212,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434259327");
     b.version(2);
+    b.aggregate("period", 0x23eac9cba9845cb0L).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba9809dd0L).optional(false).ordered(true).multiple(false).origin("2588102812437339312").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForskillPoint() {
@@ -217,6 +221,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("GML.structure.Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434259328");
     b.version(2);
+    b.aggregate("period", 0x23eac9cba9839e88L).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba9809dd0L).optional(false).ordered(true).multiple(false).origin("2588102812437290632").done();
     return b.create();
   }
 }

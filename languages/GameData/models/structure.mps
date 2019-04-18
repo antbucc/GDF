@@ -290,5 +290,28 @@
     <property role="TrG5h" value="GameDataType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="2fEMsIDw9Rg">
+    <property role="EcuMT" value="2588102812437093840" />
+    <property role="TrG5h" value="periodType" />
+    <property role="34LRSv" value="period" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2fEMsIDw9R$" role="1TKVEl">
+      <property role="IQ2nx" value="2588102812437093860" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="2fEMsIDw9RB" resolve="periodValues" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="2fEMsIDw9RB">
+    <property role="TrG5h" value="periodValues" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="2fEMsIDw9RC" role="M5hS2">
+      <property role="1uS6qv" value="weekly" />
+      <property role="1uS6qo" value="weekly" />
+    </node>
+    <node concept="M4N5e" id="2fEMsIDw9RW" role="M5hS2">
+      <property role="1uS6qv" value="daily" />
+      <property role="1uS6qo" value="daily" />
+    </node>
+  </node>
 </model>
 

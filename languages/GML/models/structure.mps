@@ -64,18 +64,6 @@
     <node concept="PrWs8" id="3VGM6JgdY6D" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="3VGM6JgdY6G" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235625900" />
-      <property role="TrG5h" value="score" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6JgdY6J" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235625903" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="periods" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUqW" resolve="Period" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3VGM6JgdUqW">
     <property role="EcuMT" value="4534219290235610812" />
@@ -85,21 +73,6 @@
     <node concept="PrWs8" id="3VGM6JgdUqX" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="3VGM6JgdUr0" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235610816" />
-      <property role="TrG5h" value="start" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="3VGM6JgdUr3" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235610819" />
-      <property role="TrG5h" value="period" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="3VGM6JgdUr8" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235610824" />
-      <property role="TrG5h" value="capacity" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3VGM6JgdUry">
     <property role="EcuMT" value="4534219290235610850" />
@@ -108,11 +81,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3VGM6JgdUrz" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="3VGM6JgdUrA" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235610854" />
-      <property role="TrG5h" value="icon" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="3VGM6JgdUrD">

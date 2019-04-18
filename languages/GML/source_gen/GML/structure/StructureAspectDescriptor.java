@@ -91,7 +91,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235610850");
     b.version(2);
-    b.property("icon", 0x3eecc86bd037a6e6L).type(PrimitiveTypeId.STRING).origin("4534219290235610854").done();
     b.alias("badge");
     return b.create();
   }
@@ -158,9 +157,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235610812");
     b.version(2);
-    b.property("start", 0x3eecc86bd037a6c0L).type(PrimitiveTypeId.STRING).origin("4534219290235610816").done();
-    b.property("period", 0x3eecc86bd037a6c3L).type(PrimitiveTypeId.INTEGER).origin("4534219290235610819").done();
-    b.property("capacity", 0x3eecc86bd037a6c8L).type(PrimitiveTypeId.INTEGER).origin("4534219290235610824").done();
     b.alias("period");
     return b.create();
   }
@@ -180,8 +176,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235610801");
     b.version(2);
-    b.property("score", 0x3eecc86bd037e1acL).type(PrimitiveTypeId.INTEGER).origin("4534219290235625900").done();
-    b.aggregate("periods", 0x3eecc86bd037e1afL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6bcL).optional(true).ordered(true).multiple(true).origin("4534219290235625903").done();
     b.alias("point");
     return b.create();
   }

@@ -44,6 +44,17 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
   </dependency>
+  <dependency className="GameData.structure.EnumerationDescriptor_periodValues">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
   <dependency className="GameData.structure.EnumerationDescriptor_prizeWonValues">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -65,6 +76,7 @@
     <classNode dependClassName="GameData.structure.EnumerationDescriptor_bonusPointTypeValues" />
     <classNode dependClassName="GameData.structure.EnumerationDescriptor_meteoValues" />
     <classNode dependClassName="GameData.structure.EnumerationDescriptor_modeValues" />
+    <classNode dependClassName="GameData.structure.EnumerationDescriptor_periodValues" />
     <classNode dependClassName="GameData.structure.EnumerationDescriptor_prizeWonValues" />
     <classNode dependClassName="GameData.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />

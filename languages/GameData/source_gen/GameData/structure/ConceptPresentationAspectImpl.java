@@ -20,6 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_legNameType;
   private ConceptPresentation props_metersDistance;
   private ConceptPresentation props_metersWalked;
+  private ConceptPresentation props_periodType;
   private ConceptPresentation props_prizeWon;
   private ConceptPresentation props_virtualPriceType;
 
@@ -105,6 +106,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_metersWalked = cpb.create();
         }
         return props_metersWalked;
+      case LanguageConceptSwitch.periodType:
+        if (props_periodType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("period");
+          props_periodType = cpb.create();
+        }
+        return props_periodType;
       case LanguageConceptSwitch.prizeWon:
         if (props_prizeWon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

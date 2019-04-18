@@ -29,11 +29,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptlegNameType = createDescriptorForlegNameType();
   /*package*/ final ConceptDescriptor myConceptmetersDistance = createDescriptorFormetersDistance();
   /*package*/ final ConceptDescriptor myConceptmetersWalked = createDescriptorFormetersWalked();
+  /*package*/ final ConceptDescriptor myConceptperiodType = createDescriptorForperiodType();
   /*package*/ final ConceptDescriptor myConceptprizeWon = createDescriptorForprizeWon();
   /*package*/ final ConceptDescriptor myConceptvirtualPriceType = createDescriptorForvirtualPriceType();
   /*package*/ final EnumerationDescriptor myEnumerationbonusPointTypeValues = new EnumerationDescriptor_bonusPointTypeValues();
   /*package*/ final EnumerationDescriptor myEnumerationmeteoValues = new EnumerationDescriptor_meteoValues();
   /*package*/ final EnumerationDescriptor myEnumerationmodeValues = new EnumerationDescriptor_modeValues();
+  /*package*/ final EnumerationDescriptor myEnumerationperiodValues = new EnumerationDescriptor_periodValues();
   /*package*/ final EnumerationDescriptor myEnumerationprizeWonValues = new EnumerationDescriptor_prizeWonValues();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatype_TimeStamp = new ConstrainedStringDatatypeDescriptorImpl(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5f9L, "_TimeStamp", "r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461689", "[0-9]{8}");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatype_bonusScore = new ConstrainedStringDatatypeDescriptorImpl(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a2L, "_bonusScore", "r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461602", "[0-9]+[d]{1}");
@@ -47,7 +49,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBonusPointType, myConceptChallengeData, myConceptGameData, myConceptGameDataType, myConceptMeteo, myConceptMode, myConceptSchoolDate, myConceptbonusScore, myConceptlegNameType, myConceptmetersDistance, myConceptmetersWalked, myConceptprizeWon, myConceptvirtualPriceType);
+    return Arrays.asList(myConceptBonusPointType, myConceptChallengeData, myConceptGameData, myConceptGameDataType, myConceptMeteo, myConceptMode, myConceptSchoolDate, myConceptbonusScore, myConceptlegNameType, myConceptmetersDistance, myConceptmetersWalked, myConceptperiodType, myConceptprizeWon, myConceptvirtualPriceType);
   }
 
   @Override
@@ -76,6 +78,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptmetersDistance;
       case LanguageConceptSwitch.metersWalked:
         return myConceptmetersWalked;
+      case LanguageConceptSwitch.periodType:
+        return myConceptperiodType;
       case LanguageConceptSwitch.prizeWon:
         return myConceptprizeWon;
       case LanguageConceptSwitch.virtualPriceType:
@@ -87,7 +91,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationbonusPointTypeValues, myEnumerationmeteoValues, myEnumerationmodeValues, myEnumerationprizeWonValues, myCSDatatype_TimeStamp, myCSDatatype_bonusScore, myCSDatatype_metersDistance, myCSDatatype_metersWalked);
+    return Arrays.asList(myEnumerationbonusPointTypeValues, myEnumerationmeteoValues, myEnumerationmodeValues, myEnumerationperiodValues, myEnumerationprizeWonValues, myCSDatatype_TimeStamp, myCSDatatype_bonusScore, myCSDatatype_metersDistance, myCSDatatype_metersWalked);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -200,6 +204,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac57cL).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac57bL)).origin("6728922577946461564").done();
     b.alias("meters-walked");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForperiodType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "periodType", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba9809dd0L);
+    b.class_(false, false, false);
+    b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/2588102812437093840");
+    b.version(2);
+    b.property("value", 0x23eac9cba9809de4L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba9809de7L)).origin("2588102812437093860").done();
+    b.alias("period");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForprizeWon() {
