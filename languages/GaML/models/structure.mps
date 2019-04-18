@@ -237,6 +237,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2fEMsIDllPZ" resolve="experiencePoint" />
     </node>
+    <node concept="1TJgyj" id="1ATeiwHPFZt" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566370193373" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="badgesCollection" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mupf:3VGM6JgdUrD" resolve="BadgeCollection" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2fEMsIDllPY">
     <property role="EcuMT" value="2588102812434259326" />

@@ -22,6 +22,7 @@
         <child id="2588102812437048823" name="skillPoints" index="2a_igW" />
         <child id="2588102812434297947" name="dataDrivenActions" index="2aJNQg" />
         <child id="2588102812434297949" name="eventDrivenActions" index="2aJNQm" />
+        <child id="1853575566370193373" name="badgesCollection" index="OrSrP" />
       </concept>
       <concept id="2588102812434259328" name="GaML.structure.skillPoint" flags="ng" index="2aJThb">
         <child id="2588102812437290632" name="period" index="2aqlt3" />
@@ -49,6 +50,7 @@
       <concept id="4534219290235608307" name="GML.structure.Action" flags="ng" index="3IQPio">
         <property id="4534219290235608322" name="id" index="3IQPlD" />
       </concept>
+      <concept id="4534219290235610857" name="GML.structure.BadgeCollection" flags="ng" index="3IQQU2" />
     </language>
   </registry>
   <node concept="2aI0Mr" id="2fEMsIDlvho">
@@ -56,6 +58,9 @@
     <property role="3IP5si" value="kggID" />
     <property role="3IP5sg" value="KGG" />
     <property role="3IP5sl" value="FBK" />
+    <node concept="3IQQU2" id="1ATeiwHQz4U" role="OrSrP">
+      <property role="TrG5h" value="testBadge" />
+    </node>
     <node concept="2aJTiO" id="2fEMsIDxsd$" role="2a_igP">
       <property role="TrG5h" value="pedibus_distance" />
       <node concept="2aq_gr" id="2fEMsIDxsd_" role="2arDlV">

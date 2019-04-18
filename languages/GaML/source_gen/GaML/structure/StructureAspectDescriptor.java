@@ -117,6 +117,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("eventDrivenActions", 0x23eac9cba955f45dL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7eL).optional(true).ordered(true).multiple(true).origin("2588102812434297949").done();
     b.aggregate("skillPoints", 0x23eac9cba97fedf7L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L).optional(true).ordered(true).multiple(true).origin("2588102812437048823").done();
     b.aggregate("experiencePoints", 0x23eac9cba97fedfeL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL).optional(true).ordered(true).multiple(true).origin("2588102812437048830").done();
+    b.aggregate("badgesCollection", 0x19b939282dd6bfddL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("1853575566370193373").done();
     b.alias("gameDefinition");
     return b.create();
   }

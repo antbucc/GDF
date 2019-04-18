@@ -14,6 +14,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
     <import index="2kc8" ref="r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)" implicit="true" />
   </imports>
   <registry>
@@ -25,6 +26,7 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+        <child id="2820489544402271667" name="typeParameter" index="HU9BZ" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -167,6 +169,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
   </registry>
   <node concept="bUwia" id="1ATeiwHN_Ft">
@@ -305,36 +314,128 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1ATeiwHOih3" role="3cqZAp" />
-            <node concept="3SKdUt" id="1ATeiwHOiig" role="3cqZAp">
-              <node concept="3SKdUq" id="1ATeiwHOiii" role="3SKWNk">
-                <property role="3SKdUp" value=" Add Game DataDriven Actions" />
+            <node concept="3clFbH" id="1ATeiwHPHKw" role="3cqZAp" />
+            <node concept="3SKdUt" id="1ATeiwHPIVc" role="3cqZAp">
+              <node concept="3SKdUq" id="1ATeiwHPIVe" role="3SKWNk">
+                <property role="3SKdUp" value="add Game Info" />
               </node>
             </node>
-            <node concept="3cpWs8" id="1ATeiwHOqTY" role="3cqZAp">
-              <node concept="3cpWsn" id="1ATeiwHOqTZ" role="3cpWs9">
-                <property role="TrG5h" value="dataActions" />
-                <node concept="3uibUv" id="1ATeiwHOqTW" role="1tU5fm">
+            <node concept="3clFbF" id="1ATeiwHPL0o" role="3cqZAp">
+              <node concept="2OqwBi" id="1ATeiwHPLqv" role="3clFbG">
+                <node concept="37vLTw" id="1ATeiwHPL0m" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHOi9l" resolve="game" />
+                </node>
+                <node concept="liA8E" id="1ATeiwHPM9o" role="2OqNvi">
+                  <ref role="37wK5l" to="qnb9:~GameDTO.setName(java.lang.String):void" resolve="setName" />
+                  <node concept="Xl_RD" id="1ATeiwHPMm4" role="37wK5m">
+                    <property role="Xl_RC" value="gameName" />
+                    <node concept="17Uvod" id="1ATeiwHPSSp" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <node concept="3zFVjK" id="1ATeiwHPSSq" role="3zH0cK">
+                        <node concept="3clFbS" id="1ATeiwHPSSr" role="2VODD2">
+                          <node concept="3clFbF" id="1ATeiwHPU0r" role="3cqZAp">
+                            <node concept="2OqwBi" id="1ATeiwHPUf5" role="3clFbG">
+                              <node concept="30H73N" id="1ATeiwHPU0q" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="1ATeiwHPV3I" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1ATeiwHPNMC" role="3cqZAp">
+              <node concept="2OqwBi" id="1ATeiwHPOd2" role="3clFbG">
+                <node concept="37vLTw" id="1ATeiwHPNMA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHOi9l" resolve="game" />
+                </node>
+                <node concept="liA8E" id="1ATeiwHPOWm" role="2OqNvi">
+                  <ref role="37wK5l" to="qnb9:~GameDTO.setId(java.lang.String):void" resolve="setId" />
+                  <node concept="Xl_RD" id="1ATeiwHPSdh" role="37wK5m">
+                    <property role="Xl_RC" value="gameId" />
+                    <node concept="17Uvod" id="1ATeiwHPVTb" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <node concept="3zFVjK" id="1ATeiwHPVTc" role="3zH0cK">
+                        <node concept="3clFbS" id="1ATeiwHPVTd" role="2VODD2">
+                          <node concept="3clFbF" id="1ATeiwHPW_v" role="3cqZAp">
+                            <node concept="2OqwBi" id="1ATeiwHPWO9" role="3clFbG">
+                              <node concept="30H73N" id="1ATeiwHPW_u" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="1ATeiwHPXMF" role="2OqNvi">
+                                <ref role="3TsBF5" to="mupf:3VGM6Jge9XT" resolve="id" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1ATeiwHPQdi" role="3cqZAp">
+              <node concept="2OqwBi" id="1ATeiwHPQBT" role="3clFbG">
+                <node concept="37vLTw" id="1ATeiwHPQdg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHOi9l" resolve="game" />
+                </node>
+                <node concept="liA8E" id="1ATeiwHPRnA" role="2OqNvi">
+                  <ref role="37wK5l" to="qnb9:~GameDTO.setOwner(java.lang.String):void" resolve="setOwner" />
+                  <node concept="Xl_RD" id="1ATeiwHPR$O" role="37wK5m">
+                    <property role="Xl_RC" value="gameOwner" />
+                    <node concept="17Uvod" id="1ATeiwHPYk9" role="lGtFl">
+                      <property role="2qtEX9" value="value" />
+                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                      <node concept="3zFVjK" id="1ATeiwHPYka" role="3zH0cK">
+                        <node concept="3clFbS" id="1ATeiwHPYkb" role="2VODD2">
+                          <node concept="3clFbF" id="1ATeiwHPYJJ" role="3cqZAp">
+                            <node concept="2OqwBi" id="1ATeiwHPYYp" role="3clFbG">
+                              <node concept="30H73N" id="1ATeiwHPYJI" role="2Oq$k0" />
+                              <node concept="3TrcHB" id="1ATeiwHPZNH" role="2OqNvi">
+                                <ref role="3TsBF5" to="mupf:3VGM6Jge9XY" resolve="owner" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1ATeiwHQ0eJ" role="3cqZAp" />
+            <node concept="3cpWs8" id="1ATeiwHQ1v1" role="3cqZAp">
+              <node concept="3cpWsn" id="1ATeiwHQ1v2" role="3cpWs9">
+                <property role="TrG5h" value="actions" />
+                <node concept="3uibUv" id="1ATeiwHQ1v3" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="1ATeiwHOqV3" role="11_B2D">
+                  <node concept="3uibUv" id="1ATeiwHQ1v4" role="11_B2D">
                     <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                   </node>
                 </node>
-                <node concept="2ShNRf" id="1ATeiwHOqY3" role="33vP2m">
-                  <node concept="1pGfFk" id="1ATeiwHOrdo" role="2ShVmc">
+                <node concept="2ShNRf" id="1ATeiwHQ1v5" role="33vP2m">
+                  <node concept="1pGfFk" id="1ATeiwHQ1v6" role="2ShVmc">
                     <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                    <node concept="3uibUv" id="1ATeiwHOrwV" role="1pMfVU">
+                    <node concept="3uibUv" id="1ATeiwHQ1v7" role="1pMfVU">
                       <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="1ATeiwHQ0o4" role="3cqZAp" />
+            <node concept="3clFbH" id="1ATeiwHOih3" role="3cqZAp" />
+            <node concept="3SKdUt" id="1ATeiwHOiig" role="3cqZAp">
+              <node concept="3SKdUq" id="1ATeiwHOiii" role="3SKWNk">
+                <property role="3SKdUp" value=" Add Game DataDriven Actions" />
+              </node>
+            </node>
             <node concept="3clFbF" id="1ATeiwHOrCR" role="3cqZAp">
               <node concept="2OqwBi" id="1ATeiwHOsbo" role="3clFbG">
-                <node concept="37vLTw" id="1ATeiwHOrCP" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1ATeiwHOqTZ" resolve="dataActions" />
-                </node>
                 <node concept="liA8E" id="1ATeiwHOsKu" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
                   <node concept="Xl_RD" id="1ATeiwHOsOp" role="37wK5m">
@@ -356,6 +457,9 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="37vLTw" id="1ATeiwHQ3Ev" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHQ1v2" resolve="actions" />
                 </node>
               </node>
               <node concept="1WS0z7" id="1ATeiwHOuOY" role="lGtFl">
@@ -380,29 +484,10 @@
                 <property role="3SKdUp" value=" Add Game EventDriven Actions" />
               </node>
             </node>
-            <node concept="3cpWs8" id="1ATeiwHOwoG" role="3cqZAp">
-              <node concept="3cpWsn" id="1ATeiwHOwoH" role="3cpWs9">
-                <property role="TrG5h" value="eventActions" />
-                <node concept="3uibUv" id="1ATeiwHOwoI" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="1ATeiwHOwoJ" role="11_B2D">
-                    <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="1ATeiwHOwoK" role="33vP2m">
-                  <node concept="1pGfFk" id="1ATeiwHOwoL" role="2ShVmc">
-                    <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                    <node concept="3uibUv" id="1ATeiwHOwoM" role="1pMfVU">
-                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="1ATeiwHOwoN" role="3cqZAp">
               <node concept="2OqwBi" id="1ATeiwHOwoO" role="3clFbG">
-                <node concept="37vLTw" id="1ATeiwHOwoP" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1ATeiwHOwoH" resolve="eventActions" />
+                <node concept="37vLTw" id="1ATeiwHQ6rR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHQ1v2" resolve="actions" />
                 </node>
                 <node concept="liA8E" id="1ATeiwHOwoQ" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
@@ -451,7 +536,7 @@
             </node>
             <node concept="3cpWs8" id="1ATeiwHO_mP" role="3cqZAp">
               <node concept="3cpWsn" id="1ATeiwHO_mV" role="3cpWs9">
-                <property role="TrG5h" value="skillPoints" />
+                <property role="TrG5h" value="points" />
                 <node concept="3uibUv" id="1ATeiwHO_mX" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
                   <node concept="3uibUv" id="1ATeiwHO_Qf" role="11_B2D">
@@ -586,21 +671,25 @@
                 </node>
                 <node concept="3clFbJ" id="1ATeiwHORRo" role="3cqZAp">
                   <node concept="3clFbS" id="1ATeiwHORRq" role="3clFbx">
-                    <node concept="3clFbF" id="1ATeiwHOSPL" role="3cqZAp">
-                      <node concept="2OqwBi" id="1ATeiwHOSXO" role="3clFbG">
-                        <node concept="37vLTw" id="1ATeiwHOSPJ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1ATeiwHOQr5" resolve="p" />
-                        </node>
-                        <node concept="liA8E" id="1ATeiwHOT9H" role="2OqNvi">
-                          <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
-                          <node concept="37vLTw" id="1ATeiwHOTey" role="37wK5m">
-                            <ref role="3cqZAo" node="1ATeiwHOR5h" resolve="periodType" />
+                    <node concept="1X3_iC" id="1ATeiwHQ7vr" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="1ATeiwHOSPL" role="8Wnug">
+                        <node concept="2OqwBi" id="1ATeiwHOSXO" role="3clFbG">
+                          <node concept="37vLTw" id="1ATeiwHOSPJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1ATeiwHOQr5" resolve="p" />
                           </node>
-                          <node concept="37vLTw" id="1ATeiwHOTnI" role="37wK5m">
-                            <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
-                          </node>
-                          <node concept="37vLTw" id="1ATeiwHOTsW" role="37wK5m">
-                            <ref role="3cqZAo" node="1ATeiwHOEFR" resolve="WEEK" />
+                          <node concept="liA8E" id="1ATeiwHOT9H" role="2OqNvi">
+                            <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
+                            <node concept="37vLTw" id="1ATeiwHOTey" role="37wK5m">
+                              <ref role="3cqZAo" node="1ATeiwHOR5h" resolve="periodType" />
+                            </node>
+                            <node concept="37vLTw" id="1ATeiwHOTnI" role="37wK5m">
+                              <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
+                            </node>
+                            <node concept="37vLTw" id="1ATeiwHOTsW" role="37wK5m">
+                              <ref role="3cqZAo" node="1ATeiwHOEFR" resolve="WEEK" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -625,21 +714,25 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="1ATeiwHOTyo" role="3eOfB_">
-                      <node concept="3clFbF" id="1ATeiwHOVod" role="3cqZAp">
-                        <node concept="2OqwBi" id="1ATeiwHOVHx" role="3clFbG">
-                          <node concept="37vLTw" id="1ATeiwHOVob" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1ATeiwHOQr5" resolve="p" />
-                          </node>
-                          <node concept="liA8E" id="1ATeiwHOVUE" role="2OqNvi">
-                            <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
-                            <node concept="37vLTw" id="1ATeiwHOW0V" role="37wK5m">
-                              <ref role="3cqZAo" node="1ATeiwHOR5h" resolve="periodType" />
+                      <node concept="1X3_iC" id="1ATeiwHQ7k3" role="lGtFl">
+                        <property role="3V$3am" value="statement" />
+                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                        <node concept="3clFbF" id="1ATeiwHOVod" role="8Wnug">
+                          <node concept="2OqwBi" id="1ATeiwHOVHx" role="3clFbG">
+                            <node concept="37vLTw" id="1ATeiwHOVob" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1ATeiwHOQr5" resolve="p" />
                             </node>
-                            <node concept="37vLTw" id="1ATeiwHOW7r" role="37wK5m">
-                              <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
-                            </node>
-                            <node concept="37vLTw" id="1ATeiwHOWf3" role="37wK5m">
-                              <ref role="3cqZAo" node="1ATeiwHOAZC" resolve="DAY" />
+                            <node concept="liA8E" id="1ATeiwHOVUE" role="2OqNvi">
+                              <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
+                              <node concept="37vLTw" id="1ATeiwHOW0V" role="37wK5m">
+                                <ref role="3cqZAo" node="1ATeiwHOR5h" resolve="periodType" />
+                              </node>
+                              <node concept="37vLTw" id="1ATeiwHOW7r" role="37wK5m">
+                                <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
+                              </node>
+                              <node concept="37vLTw" id="1ATeiwHOWf3" role="37wK5m">
+                                <ref role="3cqZAo" node="1ATeiwHOAZC" resolve="DAY" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -650,7 +743,7 @@
                 <node concept="3clFbF" id="1ATeiwHOWtM" role="3cqZAp">
                   <node concept="2OqwBi" id="1ATeiwHOX0G" role="3clFbG">
                     <node concept="37vLTw" id="1ATeiwHOWtK" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1ATeiwHO_mV" resolve="skillPoints" />
+                      <ref role="3cqZAo" node="1ATeiwHO_mV" resolve="points" />
                     </node>
                     <node concept="liA8E" id="1ATeiwHOYMu" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
@@ -682,26 +775,6 @@
                 <property role="3SKdUp" value=" Add Game Experience Points" />
               </node>
             </node>
-            <node concept="3cpWs8" id="1ATeiwHP70s" role="3cqZAp">
-              <node concept="3cpWsn" id="1ATeiwHP70t" role="3cpWs9">
-                <property role="TrG5h" value="experiencePoints" />
-                <node concept="3uibUv" id="1ATeiwHP70u" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="1ATeiwHP70v" role="11_B2D">
-                    <ref role="3uigEE" to="yk3c:~PointConcept" resolve="PointConcept" />
-                  </node>
-                </node>
-                <node concept="2ShNRf" id="1ATeiwHP70w" role="33vP2m">
-                  <node concept="1pGfFk" id="1ATeiwHP70x" role="2ShVmc">
-                    <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                    <node concept="3uibUv" id="1ATeiwHP70y" role="1pMfVU">
-                      <ref role="3uigEE" to="yk3c:~PointConcept" resolve="PointConcept" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="1ATeiwHP70S" role="3cqZAp" />
             <node concept="9aQIb" id="1ATeiwHP70T" role="3cqZAp">
               <node concept="3clFbS" id="1ATeiwHP70U" role="9aQI4">
                 <node concept="3cpWs8" id="1ATeiwHP70V" role="3cqZAp">
@@ -768,21 +841,25 @@
                 </node>
                 <node concept="3clFbJ" id="1ATeiwHP71l" role="3cqZAp">
                   <node concept="3clFbS" id="1ATeiwHP71m" role="3clFbx">
-                    <node concept="3clFbF" id="1ATeiwHP71n" role="3cqZAp">
-                      <node concept="2OqwBi" id="1ATeiwHP71o" role="3clFbG">
-                        <node concept="37vLTw" id="1ATeiwHP71p" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1ATeiwHP70W" resolve="p" />
-                        </node>
-                        <node concept="liA8E" id="1ATeiwHP71q" role="2OqNvi">
-                          <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
-                          <node concept="37vLTw" id="1ATeiwHP71r" role="37wK5m">
-                            <ref role="3cqZAo" node="1ATeiwHP719" resolve="periodType" />
+                    <node concept="1X3_iC" id="1ATeiwHQ6Tq" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="1ATeiwHP71n" role="8Wnug">
+                        <node concept="2OqwBi" id="1ATeiwHP71o" role="3clFbG">
+                          <node concept="37vLTw" id="1ATeiwHP71p" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1ATeiwHP70W" resolve="p" />
                           </node>
-                          <node concept="37vLTw" id="1ATeiwHPdSJ" role="37wK5m">
-                            <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
-                          </node>
-                          <node concept="37vLTw" id="1ATeiwHPeeC" role="37wK5m">
-                            <ref role="3cqZAo" node="1ATeiwHOEFR" resolve="WEEK" />
+                          <node concept="liA8E" id="1ATeiwHP71q" role="2OqNvi">
+                            <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
+                            <node concept="37vLTw" id="1ATeiwHP71r" role="37wK5m">
+                              <ref role="3cqZAo" node="1ATeiwHP719" resolve="periodType" />
+                            </node>
+                            <node concept="37vLTw" id="1ATeiwHPdSJ" role="37wK5m">
+                              <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
+                            </node>
+                            <node concept="37vLTw" id="1ATeiwHPeeC" role="37wK5m">
+                              <ref role="3cqZAo" node="1ATeiwHOEFR" resolve="WEEK" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -807,21 +884,25 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="1ATeiwHP71A" role="3eOfB_">
-                      <node concept="3clFbF" id="1ATeiwHP71B" role="3cqZAp">
-                        <node concept="2OqwBi" id="1ATeiwHP71C" role="3clFbG">
-                          <node concept="37vLTw" id="1ATeiwHP71D" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1ATeiwHP70W" resolve="p" />
-                          </node>
-                          <node concept="liA8E" id="1ATeiwHP71E" role="2OqNvi">
-                            <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
-                            <node concept="37vLTw" id="1ATeiwHP71F" role="37wK5m">
-                              <ref role="3cqZAo" node="1ATeiwHP719" resolve="periodType" />
+                      <node concept="1X3_iC" id="1ATeiwHQ77S" role="lGtFl">
+                        <property role="3V$3am" value="statement" />
+                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                        <node concept="3clFbF" id="1ATeiwHP71B" role="8Wnug">
+                          <node concept="2OqwBi" id="1ATeiwHP71C" role="3clFbG">
+                            <node concept="37vLTw" id="1ATeiwHP71D" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1ATeiwHP70W" resolve="p" />
                             </node>
-                            <node concept="37vLTw" id="1ATeiwHPf1E" role="37wK5m">
-                              <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
-                            </node>
-                            <node concept="37vLTw" id="1ATeiwHPfno" role="37wK5m">
-                              <ref role="3cqZAo" node="1ATeiwHOAZC" resolve="DAY" />
+                            <node concept="liA8E" id="1ATeiwHP71E" role="2OqNvi">
+                              <ref role="37wK5l" to="yk3c:~PointConcept.addPeriod(java.lang.String,java.util.Date,long):void" resolve="addPeriod" />
+                              <node concept="37vLTw" id="1ATeiwHP71F" role="37wK5m">
+                                <ref role="3cqZAo" node="1ATeiwHP719" resolve="periodType" />
+                              </node>
+                              <node concept="37vLTw" id="1ATeiwHPf1E" role="37wK5m">
+                                <ref role="3cqZAo" node="1ATeiwHOGX6" resolve="start" />
+                              </node>
+                              <node concept="37vLTw" id="1ATeiwHPfno" role="37wK5m">
+                                <ref role="3cqZAo" node="1ATeiwHOAZC" resolve="DAY" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -831,8 +912,8 @@
                 </node>
                 <node concept="3clFbF" id="1ATeiwHP71I" role="3cqZAp">
                   <node concept="2OqwBi" id="1ATeiwHP71J" role="3clFbG">
-                    <node concept="37vLTw" id="1ATeiwHP71K" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1ATeiwHP70t" resolve="experiencePoints" />
+                    <node concept="37vLTw" id="1ATeiwHQapL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1ATeiwHO_mV" resolve="points" />
                     </node>
                     <node concept="liA8E" id="1ATeiwHP71L" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
@@ -867,20 +948,85 @@
                 <node concept="liA8E" id="1ATeiwHPozi" role="2OqNvi">
                   <ref role="37wK5l" to="qnb9:~GameDTO.setPointConcept(java.util.List):void" resolve="setPointConcept" />
                   <node concept="37vLTw" id="1ATeiwHPp7N" role="37wK5m">
-                    <ref role="3cqZAo" node="1ATeiwHO_mV" resolve="skillPoints" />
+                    <ref role="3cqZAo" node="1ATeiwHO_mV" resolve="points" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1ATeiwHPqjM" role="3cqZAp">
-              <node concept="2OqwBi" id="1ATeiwHPqH8" role="3clFbG">
-                <node concept="37vLTw" id="1ATeiwHPqjK" role="2Oq$k0">
+            <node concept="3clFbH" id="1ATeiwHQI8F" role="3cqZAp" />
+            <node concept="3SKdUt" id="1ATeiwHRE7a" role="3cqZAp">
+              <node concept="3SKdUq" id="1ATeiwHRE7c" role="3SKWNk">
+                <property role="3SKdUp" value=" add badge collections" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="1ATeiwHRylI" role="3cqZAp">
+              <node concept="3cpWsn" id="1ATeiwHRylJ" role="3cpWs9">
+                <property role="TrG5h" value="badgeCollections" />
+                <node concept="3uibUv" id="1ATeiwHRylG" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="3uibUv" id="1ATeiwHRJ7T" role="11_B2D">
+                    <ref role="3uigEE" to="qnb9:~BadgeCollectionConcept" resolve="BadgeCollectionConcept" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="1ATeiwHR_T9" role="33vP2m">
+                  <node concept="HV5vD" id="1ATeiwHRAao" role="2ShVmc">
+                    <ref role="HV5vE" to="33ny:~ArrayList" resolve="ArrayList" />
+                    <node concept="3uibUv" id="1ATeiwHRJm6" role="HU9BZ">
+                      <ref role="3uigEE" to="qnb9:~BadgeCollectionConcept" resolve="BadgeCollectionConcept" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="1ATeiwHQMfP" role="3cqZAp">
+              <node concept="3cpWsn" id="1ATeiwHQMfQ" role="3cpWs9">
+                <property role="TrG5h" value="badgeCollection" />
+                <node concept="3uibUv" id="1ATeiwHRGl9" role="1tU5fm">
+                  <ref role="3uigEE" to="yk3c:~BadgeCollectionConcept" resolve="BadgeCollectionConcept" />
+                </node>
+                <node concept="2ShNRf" id="1ATeiwHQNOc" role="33vP2m">
+                  <node concept="1pGfFk" id="1ATeiwHQOaQ" role="2ShVmc">
+                    <ref role="37wK5l" to="yk3c:~BadgeCollectionConcept.&lt;init&gt;()" resolve="BadgeCollectionConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1ATeiwHQPjg" role="3cqZAp">
+              <node concept="2OqwBi" id="1ATeiwHQPW9" role="3clFbG">
+                <node concept="37vLTw" id="1ATeiwHQPje" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHQMfQ" resolve="badgeCollection" />
+                </node>
+                <node concept="liA8E" id="1ATeiwHQQIu" role="2OqNvi">
+                  <ref role="37wK5l" to="yk3c:~GameConcept.setId(java.lang.String):void" resolve="setId" />
+                  <node concept="Xl_RD" id="1ATeiwHQQRo" role="37wK5m">
+                    <property role="Xl_RC" value="badgeCollectionID" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1ATeiwHQSrr" role="3cqZAp">
+              <node concept="2OqwBi" id="1ATeiwHQT1z" role="3clFbG">
+                <node concept="37vLTw" id="1ATeiwHQSrp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ATeiwHQMfQ" resolve="badgeCollection" />
+                </node>
+                <node concept="liA8E" id="1ATeiwHQT_m" role="2OqNvi">
+                  <ref role="37wK5l" to="yk3c:~GameConcept.setName(java.lang.String):void" resolve="setName" />
+                  <node concept="Xl_RD" id="1ATeiwHQTIx" role="37wK5m">
+                    <property role="Xl_RC" value="badgeCollectionName" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="1ATeiwHRLEB" role="3cqZAp" />
+            <node concept="3clFbF" id="1ATeiwHRK9h" role="3cqZAp">
+              <node concept="2OqwBi" id="1ATeiwHRKzC" role="3clFbG">
+                <node concept="37vLTw" id="1ATeiwHRK9f" role="2Oq$k0">
                   <ref role="3cqZAo" node="1ATeiwHOi9l" resolve="game" />
                 </node>
-                <node concept="liA8E" id="1ATeiwHPrvv" role="2OqNvi">
-                  <ref role="37wK5l" to="qnb9:~GameDTO.setPointConcept(java.util.List):void" resolve="setPointConcept" />
-                  <node concept="37vLTw" id="1ATeiwHPrF4" role="37wK5m">
-                    <ref role="3cqZAo" node="1ATeiwHP70t" resolve="experiencePoints" />
+                <node concept="liA8E" id="1ATeiwHRLmO" role="2OqNvi">
+                  <ref role="37wK5l" to="qnb9:~GameDTO.setBadgeCollectionConcept(java.util.List):void" resolve="setBadgeCollectionConcept" />
+                  <node concept="37vLTw" id="1ATeiwHRLwz" role="37wK5m">
+                    <ref role="3cqZAo" node="1ATeiwHRylJ" resolve="badgeCollections" />
                   </node>
                 </node>
               </node>
