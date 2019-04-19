@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
+    <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -176,6 +177,37 @@
       <property role="TrG5h" value="valueVariable" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1ATeiwIarG$">
+    <property role="EcuMT" value="1853575566375631652" />
+    <property role="TrG5h" value="GameInstance" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1ATeiwIarGS" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566375631672" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="environment" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3iOED8xppbL" resolve="Environment" />
+    </node>
+    <node concept="1TJgyj" id="1ATeiwIarHm" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566375631702" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="executionData" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1ATeiwIarH0" resolve="Execution" />
+    </node>
+    <node concept="1TJgyj" id="1ATeiwIarHr" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566375631707" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="gameModel" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="2qee:2fEMsIDkGlg" resolve="GameDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ATeiwIarH0">
+    <property role="EcuMT" value="1853575566375631680" />
+    <property role="TrG5h" value="Execution" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

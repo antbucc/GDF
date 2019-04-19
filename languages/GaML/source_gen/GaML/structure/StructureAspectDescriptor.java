@@ -15,6 +15,8 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActionRule = createDescriptorForActionRule();
+  /*package*/ final ConceptDescriptor myConceptChallengeField = createDescriptorForChallengeField();
+  /*package*/ final ConceptDescriptor myConceptChallengeModel = createDescriptorForChallengeModel();
   /*package*/ final ConceptDescriptor myConceptChallengeRule = createDescriptorForChallengeRule();
   /*package*/ final ConceptDescriptor myConceptGameDefinition = createDescriptorForGameDefinition();
   /*package*/ final ConceptDescriptor myConceptPlayerChallenge = createDescriptorForPlayerChallenge();
@@ -36,7 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActionRule, myConceptChallengeRule, myConceptGameDefinition, myConceptPlayerChallenge, myConceptRule, myConceptTeamChallenge, myConceptThenActionRule, myConceptThenChallengeRule, myConceptWhenActionRule, myConceptWhenChallengeRule, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
+    return Arrays.asList(myConceptActionRule, myConceptChallengeField, myConceptChallengeModel, myConceptChallengeRule, myConceptGameDefinition, myConceptPlayerChallenge, myConceptRule, myConceptTeamChallenge, myConceptThenActionRule, myConceptThenChallengeRule, myConceptWhenActionRule, myConceptWhenChallengeRule, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
   }
 
   @Override
@@ -45,6 +47,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.ActionRule:
         return myConceptActionRule;
+      case LanguageConceptSwitch.ChallengeField:
+        return myConceptChallengeField;
+      case LanguageConceptSwitch.ChallengeModel:
+        return myConceptChallengeModel;
       case LanguageConceptSwitch.ChallengeRule:
         return myConceptChallengeRule;
       case LanguageConceptSwitch.GameDefinition:
@@ -96,6 +102,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("actionRule");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForChallengeField() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ChallengeField", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e254233L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1853575566375338547");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForChallengeModel() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ChallengeModel", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e25420aL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Challenge", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037b7b3L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1853575566375338506");
+    b.version(2);
+    b.property("modelName", 0x19b939282e254221L).type(PrimitiveTypeId.STRING).origin("1853575566375338529").done();
+    b.property("start", 0x19b939282e254229L).type(PrimitiveTypeId.STRING).origin("1853575566375338537").done();
+    b.property("end", 0x19b939282e254224L).type(PrimitiveTypeId.STRING).origin("1853575566375338532").done();
+    b.aggregate("fields", 0x19b939282e25424aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e254233L).optional(true).ordered(true).multiple(true).origin("1853575566375338570").done();
+    b.alias("challengeModel");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForChallengeRule() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ChallengeRule", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9511f57L);
     b.class_(false, false, false);
@@ -118,6 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("skillPoints", 0x23eac9cba97fedf7L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L).optional(true).ordered(true).multiple(true).origin("2588102812437048823").done();
     b.aggregate("experiencePoints", 0x23eac9cba97fedfeL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL).optional(true).ordered(true).multiple(true).origin("2588102812437048830").done();
     b.aggregate("badgesCollection", 0x19b939282dd6bfddL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("1853575566370193373").done();
+    b.aggregate("challengeModels", 0x19b939282e254260L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e25420aL).optional(true).ordered(true).multiple(true).origin("1853575566375338592").done();
     b.alias("gameDefinition");
     return b.create();
   }

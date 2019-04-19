@@ -18,7 +18,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBadge = createDescriptorForBadge();
   /*package*/ final ConceptDescriptor myConceptBadgeCollection = createDescriptorForBadgeCollection();
   /*package*/ final ConceptDescriptor myConceptChallenge = createDescriptorForChallenge();
-  /*package*/ final ConceptDescriptor myConceptChallengeVariable = createDescriptorForChallengeVariable();
   /*package*/ final ConceptDescriptor myConceptGame = createDescriptorForGame();
   /*package*/ final ConceptDescriptor myConceptLevel = createDescriptorForLevel();
   /*package*/ final ConceptDescriptor myConceptPeriod = createDescriptorForPeriod();
@@ -33,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptBadge, myConceptBadgeCollection, myConceptChallenge, myConceptChallengeVariable, myConceptGame, myConceptLevel, myConceptPeriod, myConceptPlayer, myConceptPoint, myConceptTeam);
+    return Arrays.asList(myConceptAction, myConceptBadge, myConceptBadgeCollection, myConceptChallenge, myConceptGame, myConceptLevel, myConceptPeriod, myConceptPlayer, myConceptPoint, myConceptTeam);
   }
 
   @Override
@@ -48,8 +47,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBadgeCollection;
       case LanguageConceptSwitch.Challenge:
         return myConceptChallenge;
-      case LanguageConceptSwitch.ChallengeVariable:
-        return myConceptChallengeVariable;
       case LanguageConceptSwitch.Game:
         return myConceptGame;
       case LanguageConceptSwitch.Level:
@@ -110,19 +107,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235615155");
     b.version(2);
-    b.property("id", 0x23eac9cba952067dL).type(PrimitiveTypeId.STRING).origin("2588102812434040445").done();
-    b.aggregate("game", 0x23eac9cba9520682L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd03861a4L).optional(false).ordered(true).multiple(false).origin("2588102812434040450").done();
-    b.aggregate("variables", 0x34b4aa9221659374L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x34b4aa9221659370L).optional(true).ordered(true).multiple(true).origin("3797847930382422900").done();
     b.alias("challenge");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForChallengeVariable() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GML", "ChallengeVariable", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x34b4aa9221659370L);
-    b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/3797847930382422896");
-    b.version(2);
-    b.alias("challengevariable");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGame() {
@@ -138,6 +123,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("badgeCollections", 0x3eecc86bd03886aaL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("4534219290235668138").done();
     b.aggregate("points", 0x3eecc86bd03886afL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L).optional(true).ordered(true).multiple(true).origin("4534219290235668143").done();
     b.aggregate("challenges", 0x3eecc86bd0389f74L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037b7b3L).optional(true).ordered(true).multiple(true).origin("4534219290235674484").done();
+    b.aggregate("players", 0x19b939282e6b352eL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L).optional(true).ordered(true).multiple(true).origin("1853575566379922734").done();
+    b.aggregate("team", 0x19b939282e6b3539L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(true).ordered(true).multiple(true).origin("1853575566379922745").done();
     b.alias("game");
     return b.create();
   }

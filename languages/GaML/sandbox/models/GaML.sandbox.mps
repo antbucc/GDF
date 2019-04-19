@@ -4,6 +4,7 @@
   <languages>
     <use id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML" version="-1" />
     <use id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData" version="-1" />
+    <use id="bc08d5ab-032d-46dc-9964-46504a89c9c8" name="GML" version="0" />
   </languages>
   <imports />
   <registry>
@@ -23,6 +24,7 @@
         <child id="2588102812434297947" name="dataDrivenActions" index="2aJNQg" />
         <child id="2588102812434297949" name="eventDrivenActions" index="2aJNQm" />
         <child id="1853575566370193373" name="badgesCollection" index="OrSrP" />
+        <child id="1853575566375338592" name="challengeModels" index="RB7H8" />
       </concept>
       <concept id="2588102812434259328" name="GaML.structure.skillPoint" flags="ng" index="2aJThb">
         <child id="2588102812437290632" name="period" index="2aqlt3" />
@@ -33,6 +35,13 @@
       <concept id="2588102812434259326" name="GaML.structure.eventDrivenAction" flags="ng" index="2aJTiP" />
       <concept id="6728922577946572484" name="GaML.structure.dataDrivenAction" flags="ng" index="2QZpAE">
         <child id="2588102812427867036" name="inputData" index="2b6hDn" />
+      </concept>
+      <concept id="1853575566375338547" name="GaML.structure.ChallengeField" flags="ng" index="RB7Gr" />
+      <concept id="1853575566375338506" name="GaML.structure.ChallengeModel" flags="ng" index="RB7Gy">
+        <property id="1853575566375338537" name="start" index="RB7G1" />
+        <property id="1853575566375338529" name="modelName" index="RB7G9" />
+        <property id="1853575566375338532" name="end" index="RB7Gc" />
+        <child id="1853575566375338570" name="fields" index="RB7Hy" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -50,7 +59,10 @@
       <concept id="4534219290235608307" name="GML.structure.Action" flags="ng" index="3IQPio">
         <property id="4534219290235608322" name="id" index="3IQPlD" />
       </concept>
-      <concept id="4534219290235610857" name="GML.structure.BadgeCollection" flags="ng" index="3IQQU2" />
+      <concept id="4534219290235610857" name="GML.structure.BadgeCollection" flags="ng" index="3IQQU2">
+        <child id="4534219290235610861" name="badgesEarned" index="3IQQU6" />
+      </concept>
+      <concept id="4534219290235610850" name="GML.structure.Badge" flags="ng" index="3IQQU9" />
     </language>
   </registry>
   <node concept="2aI0Mr" id="2fEMsIDlvho">
@@ -58,8 +70,29 @@
     <property role="3IP5si" value="kggID" />
     <property role="3IP5sg" value="KGG" />
     <property role="3IP5sl" value="FBK" />
+    <node concept="RB7Gy" id="1ATeiwI9Ix7" role="RB7H8">
+      <property role="TrG5h" value="esempioChallenge" />
+      <property role="RB7G9" value="rwerwerew" />
+      <property role="RB7G1" value="rwerew" />
+      <property role="RB7Gc" value="werew" />
+      <node concept="RB7Gr" id="1ATeiwI9Ixa" role="RB7Hy">
+        <property role="TrG5h" value="werwer" />
+      </node>
+      <node concept="RB7Gr" id="1ATeiwI9Ixd" role="RB7Hy">
+        <property role="TrG5h" value="werew" />
+      </node>
+      <node concept="RB7Gr" id="1ATeiwI9Ixi" role="RB7Hy">
+        <property role="TrG5h" value="wrew" />
+      </node>
+    </node>
     <node concept="3IQQU2" id="1ATeiwHQz4U" role="OrSrP">
       <property role="TrG5h" value="testBadge" />
+      <node concept="3IQQU9" id="1ATeiwHW$EO" role="3IQQU6">
+        <property role="TrG5h" value="primoBadge" />
+      </node>
+      <node concept="3IQQU9" id="1ATeiwHW$ER" role="3IQQU6">
+        <property role="TrG5h" value="secondoBadge" />
+      </node>
     </node>
     <node concept="2aJTiO" id="2fEMsIDxsd$" role="2a_igP">
       <property role="TrG5h" value="pedibus_distance" />

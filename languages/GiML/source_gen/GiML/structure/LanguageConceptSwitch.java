@@ -13,7 +13,9 @@ public final class LanguageConceptSwitch {
   public static final int ChallengeInstance = 1;
   public static final int ChallengeVariableAssignment = 2;
   public static final int Environment = 3;
-  public static final int TeamState = 4;
+  public static final int Execution = 4;
+  public static final int GameInstance = 5;
+  public static final int TeamState = 6;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL);
@@ -21,6 +23,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x34b4aa9221659304L, ChallengeInstance);
     builder.put(0x34b4aa9221659377L, ChallengeVariableAssignment);
     builder.put(0x34b4aa92216592f1L, Environment);
+    builder.put(0x19b939282e29bb40L, Execution);
+    builder.put(0x19b939282e29bb24L, GameInstance);
     builder.put(0x34b4aa92216592f5L, TeamState);
     myIndex = builder.seal();
   }

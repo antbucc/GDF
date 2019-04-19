@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ActionRule;
+  private ConceptPresentation props_ChallengeField;
+  private ConceptPresentation props_ChallengeModel;
   private ConceptPresentation props_ChallengeRule;
   private ConceptPresentation props_GameDefinition;
   private ConceptPresentation props_PlayerChallenge;
@@ -36,6 +38,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ActionRule = cpb.create();
         }
         return props_ActionRule;
+      case LanguageConceptSwitch.ChallengeField:
+        if (props_ChallengeField == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ChallengeField = cpb.create();
+        }
+        return props_ChallengeField;
+      case LanguageConceptSwitch.ChallengeModel:
+        if (props_ChallengeModel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ChallengeModel = cpb.create();
+        }
+        return props_ChallengeModel;
       case LanguageConceptSwitch.ChallengeRule:
         if (props_ChallengeRule == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -98,6 +98,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.addEditorCell(createRefNodeList_4());
     editorCell.addEditorCell(createConstant_23());
     editorCell.addEditorCell(createConstant_24());
+    editorCell.addEditorCell(createConstant_25());
+    editorCell.addEditorCell(createConstant_26());
+    editorCell.addEditorCell(createRefNodeList_5());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -735,5 +738,84 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
+  }
+  private EditorCell createConstant_25() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "challengeModels");
+    editorCell.setCellId("Constant_kts4qr_ib0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_26() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    editorCell.setCellId("Constant_kts4qr_jb0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_5() {
+    AbstractCellListHandler handler = new GameDefinition_EditorBuilder_a.challengeModelsListHandler_kts4qr_kb0(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_challengeModels");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSRole(handler.getElementSRole());
+    return editorCell;
+  }
+  private static class challengeModelsListHandler_kts4qr_kb0 extends RefNodeListHandler {
+    @NotNull
+    private SNode myNode;
+
+    public challengeModelsListHandler_kts4qr_kb0(SNode ownerNode, EditorContext context) {
+      super(context, false);
+      myNode = ownerNode;
+    }
+
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+    public SContainmentLink getSLink() {
+      return MetaAdapterFactory.getContainmentLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L, 0x19b939282e254260L, "challengeModels");
+    }
+    public SAbstractConcept getChildSConcept() {
+      return MetaAdapterFactory.getConcept(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e25420aL, "GaML.structure.ChallengeModel");
+    }
+
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
+      installElementCellActions(elementNode, elementCell, false);
+      return elementCell;
+    }
+    public EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(challengeModelsListHandler_kts4qr_kb0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L, 0x19b939282e254260L, "challengeModels")));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell();
+        installElementCellActions(null, emptyCell, true);
+        setCellContext(emptyCell);
+        return emptyCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
+        }
+      }
+    }
   }
 }

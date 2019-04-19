@@ -18,9 +18,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -244,6 +248,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mupf:3VGM6JgdUrD" resolve="BadgeCollection" />
     </node>
+    <node concept="1TJgyj" id="1ATeiwI9k9w" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566375338592" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="challengeModels" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1ATeiwI9k8a" resolve="ChallengeModel" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2fEMsIDllPY">
     <property role="EcuMT" value="2588102812434259326" />
@@ -278,6 +289,45 @@
       <property role="20kJfa" value="period" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="2kc8:2fEMsIDw9Rg" resolve="periodType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ATeiwI9k8a">
+    <property role="EcuMT" value="1853575566375338506" />
+    <property role="TrG5h" value="ChallengeModel" />
+    <property role="34LRSv" value="challengeModel" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdVuN" resolve="Challenge" />
+    <node concept="PrWs8" id="1ATeiwI9k8u" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1ATeiwI9k8x" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566375338529" />
+      <property role="TrG5h" value="modelName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1ATeiwI9k8D" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566375338537" />
+      <property role="TrG5h" value="start" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1ATeiwI9k8$" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566375338532" />
+      <property role="TrG5h" value="end" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="1ATeiwI9k9a" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566375338570" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fields" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1ATeiwI9k8N" resolve="ChallengeField" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ATeiwI9k8N">
+    <property role="EcuMT" value="1853575566375338547" />
+    <property role="TrG5h" value="ChallengeField" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1ATeiwI9k97" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

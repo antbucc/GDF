@@ -13,7 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Badge;
   private ConceptPresentation props_BadgeCollection;
   private ConceptPresentation props_Challenge;
-  private ConceptPresentation props_ChallengeVariable;
   private ConceptPresentation props_Game;
   private ConceptPresentation props_Level;
   private ConceptPresentation props_Period;
@@ -54,13 +53,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Challenge = cpb.create();
         }
         return props_Challenge;
-      case LanguageConceptSwitch.ChallengeVariable:
-        if (props_ChallengeVariable == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ChallengeVariable = cpb.create();
-        }
-        return props_ChallengeVariable;
       case LanguageConceptSwitch.Game:
         if (props_Game == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

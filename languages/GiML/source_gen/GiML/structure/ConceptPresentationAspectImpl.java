@@ -13,6 +13,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ChallengeInstance;
   private ConceptPresentation props_ChallengeVariableAssignment;
   private ConceptPresentation props_Environment;
+  private ConceptPresentation props_Execution;
+  private ConceptPresentation props_GameInstance;
   private ConceptPresentation props_TeamState;
 
   @Override
@@ -48,6 +50,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Environment = cpb.create();
         }
         return props_Environment;
+      case LanguageConceptSwitch.Execution:
+        if (props_Execution == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Execution");
+          props_Execution = cpb.create();
+        }
+        return props_Execution;
+      case LanguageConceptSwitch.GameInstance:
+        if (props_GameInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("GameInstance");
+          props_GameInstance = cpb.create();
+        }
+        return props_GameInstance;
       case LanguageConceptSwitch.TeamState:
         if (props_TeamState == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

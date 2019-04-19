@@ -20,6 +20,7 @@
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -274,6 +275,25 @@
         <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1ATeiwHPGcE" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1ATeiwI9rLn" role="3EZMnx">
+        <property role="3F0ifm" value="challengeModels" />
+        <node concept="pVoyu" id="1ATeiwI9s8Q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1ATeiwI9sb$" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="ljvvj" id="1ATeiwI9seg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1ATeiwI9rQs" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:1ATeiwI9k9w" resolve="challengeModels" />
+        <node concept="l2Vlx" id="1ATeiwI9rQu" role="2czzBx" />
+        <node concept="ljvvj" id="1ATeiwI9s3x" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

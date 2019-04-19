@@ -18,6 +18,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptChallengeInstance = createDescriptorForChallengeInstance();
   /*package*/ final ConceptDescriptor myConceptChallengeVariableAssignment = createDescriptorForChallengeVariableAssignment();
   /*package*/ final ConceptDescriptor myConceptEnvironment = createDescriptorForEnvironment();
+  /*package*/ final ConceptDescriptor myConceptExecution = createDescriptorForExecution();
+  /*package*/ final ConceptDescriptor myConceptGameInstance = createDescriptorForGameInstance();
   /*package*/ final ConceptDescriptor myConceptTeamState = createDescriptorForTeamState();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -27,7 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptChallengeAssignment, myConceptChallengeInstance, myConceptChallengeVariableAssignment, myConceptEnvironment, myConceptTeamState);
+    return Arrays.asList(myConceptChallengeAssignment, myConceptChallengeInstance, myConceptChallengeVariableAssignment, myConceptEnvironment, myConceptExecution, myConceptGameInstance, myConceptTeamState);
   }
 
   @Override
@@ -42,6 +44,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptChallengeVariableAssignment;
       case LanguageConceptSwitch.Environment:
         return myConceptEnvironment;
+      case LanguageConceptSwitch.Execution:
+        return myConceptExecution;
+      case LanguageConceptSwitch.GameInstance:
+        return myConceptGameInstance;
       case LanguageConceptSwitch.TeamState:
         return myConceptTeamState;
       default:
@@ -105,6 +111,23 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("teamsInstances", 0x34b4aa9221659301L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f5L).optional(true).ordered(true).multiple(true).origin("3797847930382422785").done();
     b.aggregate("assignedChallenges", 0x34b4aa9221659305L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa9221659304L).optional(true).ordered(true).multiple(true).origin("3797847930382422789").done();
     b.alias("environment");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExecution() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "Execution", 0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x19b939282e29bb40L);
+    b.class_(false, false, false);
+    b.origin("r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/1853575566375631680");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGameInstance() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GameInstance", 0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x19b939282e29bb24L);
+    b.class_(false, false, false);
+    b.origin("r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/1853575566375631652");
+    b.version(2);
+    b.aggregate("environment", 0x19b939282e29bb38L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f1L).optional(false).ordered(true).multiple(false).origin("1853575566375631672").done();
+    b.aggregate("executionData", 0x19b939282e29bb56L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x19b939282e29bb40L).optional(false).ordered(true).multiple(false).origin("1853575566375631702").done();
+    b.aggregate("gameModel", 0x19b939282e29bb5bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).ordered(true).multiple(false).origin("1853575566375631707").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTeamState() {
