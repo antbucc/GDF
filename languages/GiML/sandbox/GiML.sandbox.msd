@@ -15,7 +15,6 @@
     <source path="/Users/amministratore/Desktop/GameTest" />
   </sourcePath>
   <dependencies>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">b55d8dfc-0d9d-43d5-886d-c644e7083bff(jetbrains.mps.java.stub)</dependency>
   </dependencies>
   <languageVersions>
@@ -25,7 +24,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="ce59fb92-2f34-4788-b428-0c0f1e958922(GiML.sandbox)" version="0" />
-    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="b55d8dfc-0d9d-43d5-886d-c644e7083bff(jetbrains.mps.java.stub)" version="0" />
   </dependencyVersions>
 </solution>

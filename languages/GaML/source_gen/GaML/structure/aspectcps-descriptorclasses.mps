@@ -5521,9 +5521,7 @@
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.class_(boolean,boolean,boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" resolve="class_" />
               <node concept="3clFbT" id="vZ" role="37wK5m" />
               <node concept="3clFbT" id="w0" role="37wK5m" />
-              <node concept="3clFbT" id="w1" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+              <node concept="3clFbT" id="w1" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -5592,7 +5590,7 @@
                             <property role="Xl_RC" value="inputData" />
                           </node>
                           <node concept="1adDum" id="wx" role="37wK5m">
-                            <property role="1adDun" value="0x23eac9cba8f3d39cL" />
+                            <property role="1adDun" value="0x19b939282e9481feL" />
                           </node>
                         </node>
                       </node>
@@ -5633,7 +5631,7 @@
               <node concept="liA8E" id="wl" role="2OqNvi">
                 <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.origin(java.lang.String):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="origin" />
                 <node concept="Xl_RD" id="wC" role="37wK5m">
-                  <property role="Xl_RC" value="2588102812427867036" />
+                  <property role="Xl_RC" value="1853575566382629374" />
                 </node>
               </node>
             </node>

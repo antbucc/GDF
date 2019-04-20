@@ -9,8 +9,7 @@
     <import index="l7d5" ref="ce59fb92-2f34-4788-b428-0c0f1e958922/java:eu.trentorise.game.test(GiML.sandbox/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="byl1" ref="601ea67c-6c1a-48f6-aba0-130276016d55/java:eu.trentorise.game.services(GML.sandbox/)" />
-    <import index="byl2" ref="ce59fb92-2f34-4788-b428-0c0f1e958922/java:eu.trentorise.game.services(GiML.sandbox/)" />
+    <import index="byl1" ref="ce59fb92-2f34-4788-b428-0c0f1e958922/java:eu.trentorise.game.services(GiML.sandbox/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -166,14 +165,14 @@
       <property role="TrG5h" value="playerSrv" />
       <node concept="3Tm6S6" id="1ATeiwIqy_m" role="1B3o_S" />
       <node concept="3uibUv" id="1ATeiwIqySt" role="1tU5fm">
-        <ref role="3uigEE" to="byl2:~PlayerService" resolve="PlayerService" />
+        <ref role="3uigEE" to="byl1:~PlayerService" resolve="PlayerService" />
       </node>
     </node>
     <node concept="312cEg" id="1ATeiwIqzWY" role="jymVt">
       <property role="TrG5h" value="gameSrv" />
       <node concept="3Tm6S6" id="1ATeiwIqzyJ" role="1B3o_S" />
       <node concept="3uibUv" id="1ATeiwIqzSO" role="1tU5fm">
-        <ref role="3uigEE" to="byl2:~GameService" resolve="GameService" />
+        <ref role="3uigEE" to="byl1:~GameService" resolve="GameService" />
       </node>
     </node>
     <node concept="2tJIrI" id="1ATeiwIq$g7" role="jymVt" />
