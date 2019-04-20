@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="c9iirfnpbo2yrovce48dkveuwpyebkv">
-  <files names="EditorAspectDescriptorImpl.java:GameDefinition_Editor.java:GameDefinition_EditorBuilder_a.java:experiencePoint_Editor.java:experiencePoint_EditorBuilder_a.java:skillPoint_Editor.java:skillPoint_EditorBuilder_a.java" />
+<product version="3" modelHash="-3ga1dafq08eg4xuwi8ylgp32i4hrlb6">
+  <files names="EditorAspectDescriptorImpl.java:GameDefinition_Editor.java:GameDefinition_EditorBuilder_a.java:dataDrivenAction_Editor.java:dataDrivenAction_EditorBuilder_a.java:experiencePoint_Editor.java:experiencePoint_EditorBuilder_a.java:skillPoint_Editor.java:skillPoint_EditorBuilder_a.java" />
 </product>
 

@@ -54,7 +54,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="inputData" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="2kc8:5PxVQVFAGl8" resolve="GameData" />
+      <ref role="20lvS9" to="2kc8:2fEMsICX2Mt" resolve="GameDataType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2fEMsIDkvUD">

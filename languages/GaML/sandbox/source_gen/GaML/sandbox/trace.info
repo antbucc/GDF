@@ -1,3 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:add2332b-81ce-4ddf-8f02-baa0b90ec72a(GaML.sandbox)/1853575566383711407">
+    <file name="KGG.java">
+      <node id="1853575566383711407" at="17,0,18,0" concept="4" trace="GAMIFICATION_URL" />
+      <node id="1853575566383711407" at="18,0,19,0" concept="4" trace="USER" />
+      <node id="1853575566383711407" at="19,0,20,0" concept="4" trace="PWD" />
+      <node id="1853575566383711407" at="21,28,22,55" concept="1" />
+      <node id="1853575566383711407" at="22,55,23,29" concept="0" />
+      <node id="1853575566383711407" at="23,29,24,28" concept="0" />
+      <node id="1853575566383711407" at="24,28,25,0" concept="3" />
+      <node id="1853575566383711407" at="25,0,26,68" concept="1" />
+      <node id="1853575566383711407" at="26,68,27,62" concept="1" />
+      <node id="1853575566383711407" at="28,9,29,35" concept="1" />
+      <node id="1853575566383711407" at="29,35,30,0" concept="3" />
+      <node id="1853575566383711407" at="30,0,31,23" concept="2" />
+      <node id="1853575566383711407" at="31,23,32,26" concept="0" />
+      <node id="1853575566383711407" at="32,26,33,26" concept="0" />
+      <node id="1853575566383711407" at="33,26,34,27" concept="0" />
+      <node id="1853575566383711407" at="34,27,35,0" concept="3" />
+      <node id="1853575566383711407" at="35,0,36,53" concept="1" />
+      <node id="1853575566383711407" at="36,53,37,0" concept="3" />
+      <node id="1853575566383711407" at="37,0,38,0" concept="3" />
+      <node id="1853575566383711407" at="38,0,39,38" concept="2" />
+      <node id="1853575566383711408" at="39,38,40,36" concept="0" />
+      <node id="1853575566383959094" at="40,36,41,35" concept="0" />
+      <node id="1853575566384053129" at="41,35,42,40" concept="0" />
+      <node id="1853575566383711407" at="42,40,43,0" concept="3" />
+      <node id="1853575566383711407" at="43,0,44,0" concept="3" />
+      <node id="1853575566383711407" at="44,0,45,39" concept="2" />
+      <node id="1853575566383959092" at="45,39,46,39" concept="0" />
+      <node id="1853575566383711407" at="46,39,47,0" concept="3" />
+      <node id="1853575566383711407" at="47,0,48,32" concept="2" />
+      <node id="1853575566383711407" at="48,32,49,0" concept="3" />
+      <node id="1853575566383711407" at="49,0,50,64" concept="1" />
+      <node id="1853575566383711407" at="50,64,51,37" concept="1" />
+      <node id="1853575566383711407" at="51,37,52,26" concept="1" />
+      <node id="1853575566383711407" at="52,26,53,30" concept="1" />
+      <node id="1853575566383711407" at="53,30,54,0" concept="3" />
+      <node id="1853575566383711407" at="54,0,55,0" concept="3" />
+      <node id="1853575566383711407" at="55,0,56,37" concept="2" />
+      <node id="1853575566383711407" at="56,37,57,0" concept="3" />
+      <node id="1853575566383711407" at="57,0,58,35" concept="0" />
+      <node id="1853575566383711407" at="58,35,59,0" concept="3" />
+      <node id="1853575566383711407" at="59,0,60,32" concept="2" />
+      <node id="1853575566383711407" at="60,32,61,94" concept="1" />
+      <node id="1853575566383711407" at="61,94,62,37" concept="2" />
+      <node id="1853575566383711407" at="62,37,63,0" concept="3" />
+      <node id="1853575566383711407" at="63,0,64,0" concept="3" />
+      <node id="1853575566383711407" at="64,0,65,0" concept="3" />
+      <node id="1853575566383711407" at="65,0,66,53" concept="2" />
+      <node id="1853575566383711407" at="66,53,67,31" concept="0" />
+      <node id="1853575566383711407" at="67,31,68,35" concept="0" />
+      <node id="1853575566383711407" at="68,35,69,55" concept="0" />
+      <node id="1853575566383711407" at="69,55,70,0" concept="3" />
+      <node id="1853575566383711407" at="70,0,71,81" concept="2" />
+      <node id="1853575566383711407" at="71,81,72,39" concept="0" />
+      <node id="1853575566383711407" at="72,39,73,0" concept="3" />
+      <node id="1853575566383711407" at="74,30,75,26" concept="0" />
+      <node id="1853575566383711407" at="76,5,77,0" concept="3" />
+      <node id="1853575566383711407" at="27,62,76,5" concept="6" />
+      <node id="1853575566383711407" at="21,0,79,0" concept="5" trace="run#()V" />
+      <scope id="1853575566383711407" at="74,0,75,26">
+        <var name="e" id="1853575566383711407" />
+      </scope>
+      <scope id="1853575566383711407" at="74,30,75,26" />
+      <scope id="1853575566383711407" at="28,9,73,0">
+        <var name="DAY" id="1853575566383711407" />
+        <var name="WEEK" id="1853575566383711407" />
+        <var name="actions" id="1853575566383711407" />
+        <var name="badgeCollections" id="1853575566383711407" />
+        <var name="game" id="1853575566383711407" />
+        <var name="points" id="1853575566383711407" />
+        <var name="start" id="1853575566383711407" />
+      </scope>
+      <scope id="1853575566383711407" at="21,28,77,0">
+        <var name="client" id="1853575566383711407" />
+        <var name="gameApi" id="1853575566383711407" />
+        <var name="playerApi" id="1853575566383711407" />
+      </scope>
+      <scope id="1853575566383711407" at="21,0,79,0" />
+      <unit id="1853575566383711407" at="16,0,80,0" name="GaML.sandbox.KGG" />
+    </file>
+  </root>
+</debug-info>
 

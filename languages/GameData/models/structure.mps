@@ -313,5 +313,27 @@
       <property role="1uS6qo" value="daily" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1ATeiwIEcKW">
+    <property role="EcuMT" value="1853575566383959100" />
+    <property role="TrG5h" value="classDistance" />
+    <property role="34LRSv" value="class_distance" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
+    <node concept="1TJgyi" id="1ATeiwIEcKX" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566383959101" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="2fEMsICRFaD" resolve="_metersDistance" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1ATeiwIEoiY">
+    <property role="EcuMT" value="1853575566384006334" />
+    <property role="TrG5h" value="Participants" />
+    <property role="34LRSv" value="participants" />
+    <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
+    <node concept="1TJgyi" id="1ATeiwIEoiZ" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566384006335" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

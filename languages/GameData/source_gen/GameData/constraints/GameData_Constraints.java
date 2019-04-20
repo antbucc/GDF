@@ -13,6 +13,10 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class GameData_Constraints extends BaseConstraintsDescriptor {
@@ -35,10 +39,16 @@ public class GameData_Constraints extends BaseConstraintsDescriptor {
       }
     };
   }
-  private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
+  private static boolean staticCanBeAChild(final SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
     if (SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L, "GaML.structure.dataDrivenAction"))) {
+      Iterable<SNode> dataList = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(parentNode, MetaAdapterFactory.getConcept(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L, "GaML.structure.dataDrivenAction")), MetaAdapterFactory.getContainmentLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L, 0x19b939282e9481feL, "inputData"))).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.getConcept(it) == SNodeOperations.getConcept(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac548L, 0x23eac9cba8f42c9eL, "dataType")));
+        }
+      });
+      return Sequence.fromIterable(dataList).count() == 1;
     }
     return true;
   }
-  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:15943eb5-e32e-463c-866f-5c1a9e040a95(GameData.constraints)", "3655794965912021787");
+  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:15943eb5-e32e-463c-866f-5c1a9e040a95(GameData.constraints)", "1853575566383335459");
 }

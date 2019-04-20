@@ -15,8 +15,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_GameDataType;
   private ConceptPresentation props_Meteo;
   private ConceptPresentation props_Mode;
+  private ConceptPresentation props_Participants;
   private ConceptPresentation props_SchoolDate;
   private ConceptPresentation props_bonusScore;
+  private ConceptPresentation props_classDistance;
   private ConceptPresentation props_legNameType;
   private ConceptPresentation props_metersDistance;
   private ConceptPresentation props_metersWalked;
@@ -71,6 +73,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Mode = cpb.create();
         }
         return props_Mode;
+      case LanguageConceptSwitch.Participants:
+        if (props_Participants == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("participants");
+          props_Participants = cpb.create();
+        }
+        return props_Participants;
       case LanguageConceptSwitch.SchoolDate:
         if (props_SchoolDate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -85,6 +94,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_bonusScore = cpb.create();
         }
         return props_bonusScore;
+      case LanguageConceptSwitch.classDistance:
+        if (props_classDistance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("class_distance");
+          props_classDistance = cpb.create();
+        }
+        return props_classDistance;
       case LanguageConceptSwitch.legNameType:
         if (props_legNameType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

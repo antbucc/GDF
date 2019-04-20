@@ -20,8 +20,10 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 0:
         return Collections.<ConceptEditor>singletonList(new GameDefinition_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new experiencePoint_Editor());
+        return Collections.<ConceptEditor>singletonList(new dataDrivenAction_Editor());
       case 2:
+        return Collections.<ConceptEditor>singletonList(new experiencePoint_Editor());
+      case 3:
         return Collections.<ConceptEditor>singletonList(new skillPoint_Editor());
       default:
     }
@@ -30,5 +32,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L)).seal();
 }
