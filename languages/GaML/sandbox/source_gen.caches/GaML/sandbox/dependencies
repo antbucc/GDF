@@ -4,7 +4,6 @@
     <classNode dependClassName="it.smartcommunitylab.ApiClient" />
     <classNode dependClassName="it.smartcommunitylab.ApiException" />
     <classNode dependClassName="it.smartcommunitylab.basic.api.GameControllerApi" />
-    <classNode dependClassName="it.smartcommunitylab.basic.api.PlayerControllerApi" />
     <classNode dependClassName="it.smartcommunitylab.model.BadgeCollectionConcept" />
     <classNode dependClassName="it.smartcommunitylab.model.GameDTO" />
     <classNode dependClassName="it.smartcommunitylab.model.ext.PointConcept" />
@@ -17,7 +16,6 @@
     <classNode dependClassName="it.smartcommunitylab.ApiClient" />
     <classNode dependClassName="it.smartcommunitylab.ApiException" />
     <classNode dependClassName="it.smartcommunitylab.basic.api.GameControllerApi" />
-    <classNode dependClassName="it.smartcommunitylab.basic.api.PlayerControllerApi" />
     <classNode dependClassName="it.smartcommunitylab.model.BadgeCollectionConcept" />
     <classNode dependClassName="it.smartcommunitylab.model.GameDTO" />
     <classNode dependClassName="it.smartcommunitylab.model.ext.PointConcept" />

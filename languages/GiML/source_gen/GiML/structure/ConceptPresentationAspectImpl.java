@@ -9,40 +9,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_ChallengeAssignment;
-  private ConceptPresentation props_ChallengeInstance;
-  private ConceptPresentation props_ChallengeVariableAssignment;
   private ConceptPresentation props_Environment;
-  private ConceptPresentation props_Execution;
   private ConceptPresentation props_GameInstance;
-  private ConceptPresentation props_TeamState;
+  private ConceptPresentation props_TeamInstance;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.ChallengeAssignment:
-        if (props_ChallengeAssignment == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_ChallengeAssignment = cpb.create();
-        }
-        return props_ChallengeAssignment;
-      case LanguageConceptSwitch.ChallengeInstance:
-        if (props_ChallengeInstance == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("challengeInstance");
-          props_ChallengeInstance = cpb.create();
-        }
-        return props_ChallengeInstance;
-      case LanguageConceptSwitch.ChallengeVariableAssignment:
-        if (props_ChallengeVariableAssignment == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("variableAssignment");
-          props_ChallengeVariableAssignment = cpb.create();
-        }
-        return props_ChallengeVariableAssignment;
       case LanguageConceptSwitch.Environment:
         if (props_Environment == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -50,13 +25,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Environment = cpb.create();
         }
         return props_Environment;
-      case LanguageConceptSwitch.Execution:
-        if (props_Execution == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Execution");
-          props_Execution = cpb.create();
-        }
-        return props_Execution;
       case LanguageConceptSwitch.GameInstance:
         if (props_GameInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -64,13 +32,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GameInstance = cpb.create();
         }
         return props_GameInstance;
-      case LanguageConceptSwitch.TeamState:
-        if (props_TeamState == null) {
+      case LanguageConceptSwitch.TeamInstance:
+        if (props_TeamInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_TeamState = cpb.create();
+          props_TeamInstance = cpb.create();
         }
-        return props_TeamState;
+        return props_TeamInstance;
     }
     return null;
   }

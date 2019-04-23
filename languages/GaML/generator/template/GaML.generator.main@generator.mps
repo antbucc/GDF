@@ -2,6 +2,7 @@
 <model ref="r:deeb0a0b-8388-47a5-8d46-a4a59f643409(GaML.generator.main@generator)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -259,22 +260,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1ATeiwI6kYn" role="3cqZAp" />
-        <node concept="3cpWs8" id="1ATeiwI7LDM" role="3cqZAp">
-          <node concept="3cpWsn" id="1ATeiwI7LDN" role="3cpWs9">
-            <property role="TrG5h" value="playerApi" />
-            <node concept="3uibUv" id="1ATeiwI7MQt" role="1tU5fm">
-              <ref role="3uigEE" to="ekdy:~PlayerControllerApi" resolve="PlayerControllerApi" />
-            </node>
-            <node concept="2ShNRf" id="1ATeiwI7N8b" role="33vP2m">
-              <node concept="1pGfFk" id="1ATeiwI7Noc" role="2ShVmc">
-                <ref role="37wK5l" to="ekdy:~PlayerControllerApi.&lt;init&gt;(it.smartcommunitylab.ApiClient)" resolve="PlayerControllerApi" />
-                <node concept="37vLTw" id="1ATeiwI7NVJ" role="37wK5m">
-                  <ref role="3cqZAo" node="1ATeiwI7zrX" resolve="client" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1ATeiwI7RIA" role="3cqZAp">
           <node concept="3cpWsn" id="1ATeiwI7RIB" role="3cpWs9">
             <property role="TrG5h" value="gameApi" />
