@@ -13,5 +13,18 @@
     <classNode dependClassName="java.util.Date" />
     <classNode dependClassName="java.util.List" />
   </dependency>
+  <dependency className="GaML.sandbox.PlayAndGo">
+    <classNode dependClassName="it.smartcommunitylab.ApiClient" />
+    <classNode dependClassName="it.smartcommunitylab.ApiException" />
+    <classNode dependClassName="it.smartcommunitylab.basic.api.GameControllerApi" />
+    <classNode dependClassName="it.smartcommunitylab.basic.api.PlayerControllerApi" />
+    <classNode dependClassName="it.smartcommunitylab.model.BadgeCollectionConcept" />
+    <classNode dependClassName="it.smartcommunitylab.model.GameDTO" />
+    <classNode dependClassName="it.smartcommunitylab.model.ext.PointConcept" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Date" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
 </dependenciesRoot>
 

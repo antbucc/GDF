@@ -686,7 +686,7 @@
                   </node>
                   <node concept="3clFbC" id="1ATeiwHORZo" role="3clFbw">
                     <node concept="Xl_RD" id="1ATeiwHOS3n" role="3uHU7w">
-                      <property role="Xl_RC" value="&quot;weekly" />
+                      <property role="Xl_RC" value="weekly" />
                     </node>
                     <node concept="37vLTw" id="1ATeiwHORVx" role="3uHU7B">
                       <ref role="3cqZAo" node="1ATeiwHOR5h" resolve="periodType" />
@@ -848,7 +848,7 @@
                   </node>
                   <node concept="3clFbC" id="1ATeiwHP71v" role="3clFbw">
                     <node concept="Xl_RD" id="1ATeiwHP71w" role="3uHU7w">
-                      <property role="Xl_RC" value="&quot;weekly" />
+                      <property role="Xl_RC" value="weekly" />
                     </node>
                     <node concept="37vLTw" id="1ATeiwHP71x" role="3uHU7B">
                       <ref role="3cqZAo" node="1ATeiwHP719" resolve="periodType" />
@@ -1108,7 +1108,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="1ATeiwHVCVo" role="3cqZAp" />
-            <node concept="3clFbH" id="1ATeiwI9KqO" role="3cqZAp" />
             <node concept="3clFbH" id="1ATeiwHVWuS" role="3cqZAp" />
             <node concept="3SKdUt" id="1ATeiwHW0Ed" role="3cqZAp">
               <node concept="3SKdUq" id="1ATeiwHW0Ef" role="3SKWNk">

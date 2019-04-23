@@ -13,7 +13,7 @@ import java.util.Date;
 import it.smartcommunitylab.model.BadgeCollectionConcept;
 import it.smartcommunitylab.ApiException;
 
-public class KGG {
+public class PlayAndGo {
   private static final String GAMIFICATION_URL = "http://localhost:18000/gamification";
   private static final String USER = "antbucc";
   private static final String PWD = "antbucc";
@@ -29,21 +29,20 @@ public class KGG {
       GameDTO game = new GameDTO();
 
       // add Game Info 
-      game.setName("KGG");
-      game.setId("kggId");
+      game.setName("PlayAndGo");
+      game.setId("playAndGoID");
       game.setOwner("FBK");
 
       List<String> actions = new ArrayList<String>();
 
 
       //  Add Game DataDriven Actions 
-      actions.add("PediBusKidTrip");
-      actions.add("ClassWalkTrip");
-      actions.add("PlayerCalendarTrip");
+      actions.add("Sava_Itinerary");
 
 
       //  Add Game EventDriven Actions 
-      actions.add("CalendarDayFilled");
+      actions.add("Survey_Complete");
+      actions.add("CheckIn_newUser");
 
       //  Add Game Skill Points 
 
@@ -53,8 +52,8 @@ public class KGG {
       Date start = new Date();
 
       {
-        PointConcept p = new PointConcept("participation_count");
-        String periodType = "daily";
+        PointConcept p = new PointConcept("green_leaves");
+        String periodType = "weekly";
         if (periodType == "weekly") {
           p.addPeriod(periodType, start, WEEK);
 
@@ -66,18 +65,7 @@ public class KGG {
 
       //  Add Game Experience Points 
       {
-        PointConcept p = new PointConcept("total_distance");
-        String periodType = "weekly";
-        if (periodType == "weekly") {
-          p.addPeriod(periodType, start, WEEK);
-
-        } else if (periodType == "daily") {
-          p.addPeriod(periodType, start, DAY);
-        }
-        points.add(p);
-      }
-      {
-        PointConcept p = new PointConcept("pedibus_distance");
+        PointConcept p = new PointConcept("Walk_Km");
         String periodType = "daily";
         if (periodType == "weekly") {
           p.addPeriod(periodType, start, WEEK);
@@ -88,7 +76,62 @@ public class KGG {
         points.add(p);
       }
       {
-        PointConcept p = new PointConcept("total_trips");
+        PointConcept p = new PointConcept("Bike_Km");
+        String periodType = "daily";
+        if (periodType == "weekly") {
+          p.addPeriod(periodType, start, WEEK);
+
+        } else if (periodType == "daily") {
+          p.addPeriod(periodType, start, DAY);
+        }
+        points.add(p);
+      }
+      {
+        PointConcept p = new PointConcept("BikeSharing_Km");
+        String periodType = "daily";
+        if (periodType == "weekly") {
+          p.addPeriod(periodType, start, WEEK);
+
+        } else if (periodType == "daily") {
+          p.addPeriod(periodType, start, DAY);
+        }
+        points.add(p);
+      }
+      {
+        PointConcept p = new PointConcept("Bus_Km");
+        String periodType = "daily";
+        if (periodType == "weekly") {
+          p.addPeriod(periodType, start, WEEK);
+
+        } else if (periodType == "daily") {
+          p.addPeriod(periodType, start, DAY);
+        }
+        points.add(p);
+      }
+      {
+        PointConcept p = new PointConcept("Train_Km");
+        String periodType = "daily";
+        if (periodType == "weekly") {
+          p.addPeriod(periodType, start, WEEK);
+
+        } else if (periodType == "daily") {
+          p.addPeriod(periodType, start, DAY);
+        }
+        points.add(p);
+      }
+      {
+        PointConcept p = new PointConcept("Car_Km");
+        String periodType = "daily";
+        if (periodType == "weekly") {
+          p.addPeriod(periodType, start, WEEK);
+
+        } else if (periodType == "daily") {
+          p.addPeriod(periodType, start, DAY);
+        }
+        points.add(p);
+      }
+      {
+        PointConcept p = new PointConcept("Bike_trips");
         String periodType = "weekly";
         if (periodType == "weekly") {
           p.addPeriod(periodType, start, WEEK);
@@ -99,7 +142,7 @@ public class KGG {
         points.add(p);
       }
       {
-        PointConcept p = new PointConcept("pedibus_trips");
+        PointConcept p = new PointConcept("BikeSharing_Trips");
         String periodType = "weekly";
         if (periodType == "weekly") {
           p.addPeriod(periodType, start, WEEK);
@@ -110,40 +153,7 @@ public class KGG {
         points.add(p);
       }
       {
-        PointConcept p = new PointConcept("car_trips");
-        String periodType = "weekly";
-        if (periodType == "weekly") {
-          p.addPeriod(periodType, start, WEEK);
-
-        } else if (periodType == "daily") {
-          p.addPeriod(periodType, start, DAY);
-        }
-        points.add(p);
-      }
-      {
-        PointConcept p = new PointConcept("zeroImpact_solo_trips");
-        String periodType = "weekly";
-        if (periodType == "weekly") {
-          p.addPeriod(periodType, start, WEEK);
-
-        } else if (periodType == "daily") {
-          p.addPeriod(periodType, start, DAY);
-        }
-        points.add(p);
-      }
-      {
-        PointConcept p = new PointConcept("zeroImpact_wAdult_trips");
-        String periodType = "weekly";
-        if (periodType == "weekly") {
-          p.addPeriod(periodType, start, WEEK);
-
-        } else if (periodType == "daily") {
-          p.addPeriod(periodType, start, DAY);
-        }
-        points.add(p);
-      }
-      {
-        PointConcept p = new PointConcept("group_trips");
+        PointConcept p = new PointConcept("NoCar_Trips");
         String periodType = "weekly";
         if (periodType == "weekly") {
           p.addPeriod(periodType, start, WEEK);
@@ -161,11 +171,21 @@ public class KGG {
       //  Add Game Experience Points 
       {
         BadgeCollectionConcept bc = new BadgeCollectionConcept();
-        bc.setName("LegsCollections");
+        bc.setName("BikeSharing_Pioneer");
         List<String> badgesEarned = new ArrayList<String>();
-        badgesEarned.add("first_distance");
-        badgesEarned.add("second_distance");
-        badgesEarned.add("third_distance");
+        badgesEarned.add("1_bike_trip");
+        badgesEarned.add("5_bike_trip");
+        badgesEarned.add("10_bike_trip");
+        bc.setBadgeEarned(badgesEarned);
+        badgeCollections.add(bc);
+      }
+      {
+        BadgeCollectionConcept bc = new BadgeCollectionConcept();
+        bc.setName("GreenLeaves");
+        List<String> badgesEarned = new ArrayList<String>();
+        badgesEarned.add("50_point_green");
+        badgesEarned.add("100_point_green");
+        badgesEarned.add("150_point_green");
         bc.setBadgeEarned(badgesEarned);
         badgeCollections.add(bc);
       }
