@@ -15,15 +15,15 @@
       <unit at="10,0,32,0" name="GiML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="15,0,85,0" name="GiML.structure.StructureAspectDescriptor" />
+      <unit at="16,0,89,0" name="GiML.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/1853575566375631652">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="1853575566375631652" at="13,0,14,0" concept="1" trace="props_GameInstance" />
       <node id="1853575566375631652" at="29,41,30,76" concept="3" />
-      <node id="1853575566375631652" at="30,76,31,46" concept="0" />
-      <node id="1853575566375631652" at="31,46,32,44" concept="0" />
+      <node id="1853575566375631652" at="30,76,31,35" concept="0" />
+      <node id="1853575566375631652" at="31,35,32,44" concept="0" />
       <node id="1853575566375631652" at="33,9,34,34" concept="4" />
       <node id="1853575566375631652" at="28,46,33,9" concept="2" />
       <scope id="1853575566375631652" at="29,41,32,44">
@@ -36,21 +36,24 @@
       <node id="1853575566375631652" at="18,50,19,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="1853575566375631652" at="17,0,18,0" concept="1" trace="myConceptGameInstance" />
-      <node id="1853575566375631652" at="36,46,37,37" concept="4" />
-      <node id="1853575566375631652" at="64,70,65,151" concept="3" />
-      <node id="1853575566375631652" at="65,151,66,33" concept="0" />
-      <node id="1853575566375631652" at="66,33,67,91" concept="0" />
-      <node id="1853575566375631652" at="67,91,68,17" concept="0" />
-      <node id="1853575566375631672" at="68,17,69,205" concept="0" />
-      <node id="1853575566375631707" at="69,205,70,203" concept="0" />
-      <node id="1853575566375631652" at="70,203,71,22" concept="4" />
-      <node id="1853575566375631652" at="64,0,73,0" concept="6" trace="createDescriptorForGameInstance#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="1853575566375631652" at="36,46,37,37" />
-      <scope id="1853575566375631652" at="64,70,71,22">
+      <node id="1853575566375631652" at="18,0,19,0" concept="1" trace="myConceptGameInstance" />
+      <node id="1853575566375631652" at="37,46,38,37" concept="4" />
+      <node id="1853575566375631652" at="65,70,66,151" concept="3" />
+      <node id="1853575566375631652" at="66,151,67,33" concept="0" />
+      <node id="1853575566375631652" at="67,33,68,71" concept="0" />
+      <node id="1853575566375631652" at="68,71,69,91" concept="0" />
+      <node id="1853575566375631652" at="69,91,70,17" concept="0" />
+      <node id="1853575566385640206" at="70,17,71,120" concept="0" />
+      <node id="1853575566375631672" at="71,120,72,205" concept="0" />
+      <node id="1853575566375631707" at="72,205,73,203" concept="0" />
+      <node id="1853575566375631652" at="73,203,74,28" concept="0" />
+      <node id="1853575566375631652" at="74,28,75,22" concept="4" />
+      <node id="1853575566375631652" at="65,0,77,0" concept="6" trace="createDescriptorForGameInstance#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1853575566375631652" at="37,46,38,37" />
+      <scope id="1853575566375631652" at="65,70,75,22">
         <var name="b" id="1853575566375631652" />
       </scope>
-      <scope id="1853575566375631652" at="64,0,73,0" />
+      <scope id="1853575566375631652" at="65,0,77,0" />
     </file>
   </root>
   <root nodeRef="r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/3797847930382422769">
@@ -71,22 +74,22 @@
       <node id="3797847930382422769" at="17,116,18,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="3797847930382422769" at="16,0,17,0" concept="1" trace="myConceptEnvironment" />
-      <node id="3797847930382422769" at="34,45,35,36" concept="4" />
-      <node id="3797847930382422769" at="54,69,55,150" concept="3" />
-      <node id="3797847930382422769" at="55,150,56,34" concept="0" />
-      <node id="3797847930382422769" at="56,34,57,71" concept="0" />
-      <node id="3797847930382422769" at="57,71,58,91" concept="0" />
-      <node id="3797847930382422769" at="58,91,59,17" concept="0" />
-      <node id="1853575566384936210" at="59,17,60,205" concept="0" />
-      <node id="3797847930382422769" at="60,205,61,27" concept="0" />
-      <node id="3797847930382422769" at="61,27,62,22" concept="4" />
-      <node id="3797847930382422769" at="54,0,64,0" concept="6" trace="createDescriptorForEnvironment#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="3797847930382422769" at="34,45,35,36" />
-      <scope id="3797847930382422769" at="54,69,62,22">
+      <node id="3797847930382422769" at="17,0,18,0" concept="1" trace="myConceptEnvironment" />
+      <node id="3797847930382422769" at="35,45,36,36" concept="4" />
+      <node id="3797847930382422769" at="55,69,56,150" concept="3" />
+      <node id="3797847930382422769" at="56,150,57,34" concept="0" />
+      <node id="3797847930382422769" at="57,34,58,71" concept="0" />
+      <node id="3797847930382422769" at="58,71,59,91" concept="0" />
+      <node id="3797847930382422769" at="59,91,60,17" concept="0" />
+      <node id="1853575566384936210" at="60,17,61,205" concept="0" />
+      <node id="3797847930382422769" at="61,205,62,27" concept="0" />
+      <node id="3797847930382422769" at="62,27,63,22" concept="4" />
+      <node id="3797847930382422769" at="55,0,65,0" concept="6" trace="createDescriptorForEnvironment#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3797847930382422769" at="35,45,36,36" />
+      <scope id="3797847930382422769" at="55,69,63,22">
         <var name="b" id="3797847930382422769" />
       </scope>
-      <scope id="3797847930382422769" at="54,0,64,0" />
+      <scope id="3797847930382422769" at="55,0,65,0" />
     </file>
   </root>
   <root nodeRef="r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/3797847930382422773">
@@ -107,23 +110,23 @@
       <node id="3797847930382422773" at="19,51,20,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="3797847930382422773" at="18,0,19,0" concept="1" trace="myConceptTeamInstance" />
-      <node id="3797847930382422773" at="38,46,39,37" concept="4" />
-      <node id="3797847930382422773" at="73,70,74,151" concept="3" />
-      <node id="3797847930382422773" at="74,151,75,34" concept="0" />
-      <node id="3797847930382422773" at="75,34,76,71" concept="0" />
-      <node id="3797847930382422773" at="76,71,77,91" concept="0" />
-      <node id="3797847930382422773" at="77,91,78,17" concept="0" />
-      <node id="3797847930382422777" at="78,17,79,198" concept="0" />
-      <node id="3797847930382422780" at="79,198,80,199" concept="0" />
-      <node id="3797847930382422773" at="80,199,81,28" concept="0" />
-      <node id="3797847930382422773" at="81,28,82,22" concept="4" />
-      <node id="3797847930382422773" at="73,0,84,0" concept="6" trace="createDescriptorForTeamInstance#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="3797847930382422773" at="38,46,39,37" />
-      <scope id="3797847930382422773" at="73,70,82,22">
+      <node id="3797847930382422773" at="19,0,20,0" concept="1" trace="myConceptTeamInstance" />
+      <node id="3797847930382422773" at="39,46,40,37" concept="4" />
+      <node id="3797847930382422773" at="77,70,78,151" concept="3" />
+      <node id="3797847930382422773" at="78,151,79,34" concept="0" />
+      <node id="3797847930382422773" at="79,34,80,71" concept="0" />
+      <node id="3797847930382422773" at="80,71,81,91" concept="0" />
+      <node id="3797847930382422773" at="81,91,82,17" concept="0" />
+      <node id="3797847930382422777" at="82,17,83,198" concept="0" />
+      <node id="3797847930382422780" at="83,198,84,199" concept="0" />
+      <node id="3797847930382422773" at="84,199,85,28" concept="0" />
+      <node id="3797847930382422773" at="85,28,86,22" concept="4" />
+      <node id="3797847930382422773" at="77,0,88,0" concept="6" trace="createDescriptorForTeamInstance#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3797847930382422773" at="39,46,40,37" />
+      <scope id="3797847930382422773" at="77,70,86,22">
         <var name="b" id="3797847930382422773" />
       </scope>
-      <scope id="3797847930382422773" at="73,0,84,0" />
+      <scope id="3797847930382422773" at="77,0,88,0" />
     </file>
   </root>
 </debug-info>

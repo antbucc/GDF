@@ -28,7 +28,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.GameInstance:
         if (props_GameInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("GameInstance");
+          cpb.presentationByName();
           props_GameInstance = cpb.create();
         }
         return props_GameInstance;

@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEnvironment = createDescriptorForEnvironment();
@@ -64,10 +65,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForGameInstance() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GameInstance", 0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x19b939282e29bb24L);
     b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/1853575566375631652");
     b.version(2);
+    b.property("gameInstanceId", 0x19b939282ec2730eL).type(PrimitiveTypeId.STRING).origin("1853575566385640206").done();
     b.aggregate("environment", 0x19b939282e29bb38L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f1L).optional(false).ordered(true).multiple(false).origin("1853575566375631672").done();
     b.aggregate("gameModel", 0x19b939282e29bb5bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).ordered(true).multiple(false).origin("1853575566375631707").done();
+    b.alias("gameInstance");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTeamInstance() {

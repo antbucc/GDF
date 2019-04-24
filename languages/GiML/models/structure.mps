@@ -16,6 +16,7 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -24,6 +25,10 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -51,7 +56,7 @@
       <property role="IQ2ns" value="1853575566384936210" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="teamInstances" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="3iOED8xppbP" resolve="TeamInstance" />
     </node>
   </node>
@@ -82,6 +87,7 @@
     <property role="EcuMT" value="1853575566375631652" />
     <property role="TrG5h" value="GameInstance" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="gameInstance" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1ATeiwIarGS" role="1TKVEi">
       <property role="IQ2ns" value="1853575566375631672" />
@@ -90,10 +96,18 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3iOED8xppbL" resolve="Environment" />
     </node>
-    <node concept="1TJgyj" id="1ATeiwIarHr" role="1TKVEi">
-      <property role="IQ2ns" value="1853575566375631707" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="gameModel" />
+    <node concept="PrWs8" id="1ATeiwIKBcc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1ATeiwIKBce" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566385640206" />
+      <property role="TrG5h" value="gameInstanceId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="1ATeiwIKNGH" role="1TKVEi">
+      <property role="IQ2ns" value="1853575566385691437" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="gameDefinition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="2qee:2fEMsIDkGlg" resolve="GameDefinition" />
     </node>
