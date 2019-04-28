@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4c19f8ce-1cd3-46b0-a07c-8fe45c79fc88(GiML.typesystem)">
+<model ref="r:ef0df0b3-102a-455e-9373-736c6234dd9a(GiML.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />

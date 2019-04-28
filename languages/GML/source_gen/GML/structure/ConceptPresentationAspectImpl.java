@@ -77,7 +77,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Player:
         if (props_Player == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Player");
+          cpb.presentationByName();
           props_Player = cpb.create();
         }
         return props_Player;

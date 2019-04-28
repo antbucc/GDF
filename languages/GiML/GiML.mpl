@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="GiML" uuid="8c6624b0-6c1e-43b4-b7ca-7509cedad45b" languageVersion="0" moduleVersion="0">
+<language namespace="GiML" uuid="119e117f-1260-4f12-b46e-efd3d0e4c44f" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="/Users/amministratore/Desktop/GameTest" type="java_classes">
+      <sourceRoot location="game-engine.test-1.0.0-SNAPSHOT-jar-with-dependencies.jar" />
+    </modelRoot>
+    <modelRoot contentPath="/Users/amministratore/Desktop/GamificationClient" type="java_classes">
+      <sourceRoot location="gamification-java-client-2.0.0.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="GiML#01" uuid="68146469-3fff-4287-8c01-010b57752927">
+    <generator alias="main" namespace="GiML#01" uuid="fb20cb40-4d51-4806-a3a0-b796e96fc370">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
-          <sourceRoot location="main@generator.mps" />
         </modelRoot>
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="false">ce59fb92-2f34-4788-b428-0c0f1e958922(GiML.sandbox)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">601ea67c-6c1a-48f6-aba0-130276016d55(GML.sandbox)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
+        <language slang="l:1472546d-a964-48a0-a11e-4271b165a42c:GaML" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -38,27 +45,31 @@
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
       <dependencyVersions>
+        <module reference="f8140935-e680-4f7f-94a5-24530ac2c9cc(ActionData)" version="0" />
+        <module reference="014000bb-9a0c-4ae0-996d-12e6232d77ca(ActionData.sandbox)" version="0" />
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
-        <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
-        <module reference="8c6624b0-6c1e-43b4-b7ca-7509cedad45b(GiML)" version="0" />
-        <module reference="68146469-3fff-4287-8c01-010b57752927(GiML#01)" version="0" />
-        <module reference="ce59fb92-2f34-4788-b428-0c0f1e958922(GiML.sandbox)" version="0" />
+        <module reference="601ea67c-6c1a-48f6-aba0-130276016d55(GML.sandbox)" version="0" />
+        <module reference="119e117f-1260-4f12-b46e-efd3d0e4c44f(GiML)" version="0" />
+        <module reference="fb20cb40-4d51-4806-a3a0-b796e96fc370(GiML#01)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
+        <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+        <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="true">bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)</dependency>
-    <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false" scope="generate-into">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">1472546d-a964-48a0-a11e-4271b165a42c(GaML)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
+    <language slang="l:1472546d-a964-48a0-a11e-4271b165a42c:GaML" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -86,19 +97,13 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
     <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
-    <module reference="8c6624b0-6c1e-43b4-b7ca-7509cedad45b(GiML)" version="0" />
+    <module reference="119e117f-1260-4f12-b46e-efd3d0e4c44f(GiML)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
-    <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
-    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
-  <extendedLanguages>
-    <extendedLanguage>1472546d-a964-48a0-a11e-4271b165a42c(GaML)</extendedLanguage>
-  </extendedLanguages>
+  <extendedLanguages />
 </language>
 

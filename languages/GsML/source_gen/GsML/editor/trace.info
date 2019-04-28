@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root>
+    <file name="ChallengeInstance_SubstituteMenu.java">
+      <unit at="47,0,66,0" name="GsML.editor.ChallengeInstance_SubstituteMenu$SMP_ReferenceScope_jli8mo_a" />
+      <unit at="66,0,87,0" name="GsML.editor.ChallengeInstance_SubstituteMenu$SMP_Subconcepts_jli8mo_b" />
+      <unit at="24,0,88,0" name="GsML.editor.ChallengeInstance_SubstituteMenu" />
+    </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="7,0,12,0" name="GsML.editor.EditorAspectDescriptorImpl" />
+      <unit at="15,0,34,0" name="GsML.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="GameSimulation_SubstituteMenu.java">
+      <unit at="47,0,66,0" name="GsML.editor.GameSimulation_SubstituteMenu$SMP_ReferenceScope_vklzjz_a" />
+      <unit at="66,0,87,0" name="GsML.editor.GameSimulation_SubstituteMenu$SMP_Subconcepts_vklzjz_b" />
+      <unit at="24,0,88,0" name="GsML.editor.GameSimulation_SubstituteMenu" />
     </file>
   </root>
 </debug-info>

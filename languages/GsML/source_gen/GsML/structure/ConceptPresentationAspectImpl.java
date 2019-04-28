@@ -9,13 +9,24 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ChallengeInstance;
   private ConceptPresentation props_GameSimulation;
+  private ConceptPresentation props_SingleGameExecution;
+  private ConceptPresentation props_dataDrivenActionInstance;
+  private ConceptPresentation props_eventDrivenActionInstance;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ChallengeInstance:
+        if (props_ChallengeInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL, 0x19b939282ec33ec9L, 0x19b939282ec33ecdL, "challengeType", "", "");
+          props_ChallengeInstance = cpb.create();
+        }
+        return props_ChallengeInstance;
       case LanguageConceptSwitch.GameSimulation:
         if (props_GameSimulation == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -23,6 +34,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GameSimulation = cpb.create();
         }
         return props_GameSimulation;
+      case LanguageConceptSwitch.SingleGameExecution:
+        if (props_SingleGameExecution == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("singleGameExecution");
+          props_SingleGameExecution = cpb.create();
+        }
+        return props_SingleGameExecution;
+      case LanguageConceptSwitch.dataDrivenActionInstance:
+        if (props_dataDrivenActionInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_dataDrivenActionInstance = cpb.create();
+        }
+        return props_dataDrivenActionInstance;
+      case LanguageConceptSwitch.eventDrivenActionInstance:
+        if (props_eventDrivenActionInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_eventDrivenActionInstance = cpb.create();
+        }
+        return props_eventDrivenActionInstance;
     }
     return null;
   }

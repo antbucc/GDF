@@ -18,6 +18,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
+        return Collections.<ConceptEditor>singletonList(new Environment_Editor());
+      case 1:
         return Collections.<ConceptEditor>singletonList(new GameInstance_Editor());
       default:
     }
@@ -26,5 +28,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x19b939282e29bb24L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee45dddL), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L)).seal();
 }

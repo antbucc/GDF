@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:55b6b1b6-2ad9-4d6a-a45e-068860f6ff74(GiML.behavior)">
+<model ref="r:7ccdeb1e-02b6-4854-94e3-59402f2eb243(GiML.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />

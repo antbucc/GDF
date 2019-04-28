@@ -22,6 +22,8 @@ public class PlayAndGo {
     client.setUsername(USER);
     client.setPassword(PWD);
 
+
+
     GameControllerApi gameApi = new GameControllerApi(client);
     try {
       GameDTO game = new GameDTO();

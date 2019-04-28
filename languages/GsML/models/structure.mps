@@ -3,12 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="119e117f-1260-4f12-b46e-efd3d0e4c44f" name="GiML" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
-    <import index="qzae" ref="r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)" implicit="true" />
+    <import index="k2kp" ref="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)" implicit="true" />
     <import index="2kc8" ref="r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)" implicit="true" />
     <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
   </imports>
@@ -72,7 +73,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="teamInstance" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="qzae:3iOED8xppbP" resolve="TeamInstance" />
+      <ref role="20lvS9" to="k2kp:1ATeiwITn0F" resolve="TeamInstance" />
     </node>
     <node concept="1TJgyj" id="1ATeiwIKNUT" role="1TKVEi">
       <property role="IQ2ns" value="1853575566385692345" />

@@ -9,11 +9,19 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int GameSimulation = 0;
+  public static final int ChallengeInstance = 0;
+  public static final int GameSimulation = 1;
+  public static final int SingleGameExecution = 2;
+  public static final int dataDrivenActionInstance = 3;
+  public static final int eventDrivenActionInstance = 4;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL);
+    builder.put(0x19b939282ec33ec9L, ChallengeInstance);
     builder.put(0x19b939282eb4c146L, GameSimulation);
+    builder.put(0x19b939282ec33eb0L, SingleGameExecution);
+    builder.put(0x19b939282ec33ec0L, dataDrivenActionInstance);
+    builder.put(0x19b939282ec33f23L, eventDrivenActionInstance);
     myIndex = builder.seal();
   }
 

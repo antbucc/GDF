@@ -1,3 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/1853575566389505234">
+    <file name="map_gameInstance.java">
+      <node id="1853575566389505234" at="13,0,14,0" concept="2" trace="playerSrv" />
+      <node id="1853575566389505234" at="14,0,15,0" concept="7" trace="GAME_ID" />
+      <node id="1853575566389505234" at="18,25,19,57" concept="5" />
+      <node id="1853575566389505234" at="19,57,20,0" concept="6" />
+      <node id="1853575566391171766" at="21,5,22,50" concept="4" />
+      <node id="1853575566391171766" at="22,50,23,53" concept="4" />
+      <node id="1853575566391171766" at="23,53,24,26" concept="1" />
+      <node id="1853575566389505234" at="25,5,26,0" concept="6" />
+      <node id="1853575566389505234" at="26,0,27,0" concept="6" />
+      <node id="1853575566389505234" at="30,28,31,53" concept="5" />
+      <node id="1853575566389505234" at="31,53,32,0" concept="6" />
+      <node id="1853575566389505234" at="32,0,33,0" concept="6" />
+      <node id="1853575566389505234" at="36,0,39,0" concept="3" trace="analyzeResult#()V" />
+      <node id="1853575566389505234" at="39,0,42,0" concept="3" trace="defineExecData#(Ljava/util/List;)V" />
+      <node id="1853575566391171766" at="20,0,25,5" concept="0" />
+      <node id="1853575566389505234" at="29,0,35,0" concept="3" trace="defineGame#()V" />
+      <node id="1853575566389505234" at="17,0,29,0" concept="3" trace="initEnv#()V" />
+      <scope id="1853575566389505234" at="37,31,37,31" />
+      <scope id="1853575566389505234" at="40,60,40,60" />
+      <scope id="1853575566391171766" at="21,5,24,26">
+        <var name="members" id="1853575566391171766" />
+        <var name="team" id="1853575566391171766" />
+      </scope>
+      <scope id="1853575566389505234" at="30,28,33,0" />
+      <scope id="1853575566389505234" at="36,0,39,0" />
+      <scope id="1853575566389505234" at="39,0,42,0">
+        <var name="list" id="1853575566389505234" />
+      </scope>
+      <scope id="1853575566389505234" at="29,0,35,0" />
+      <scope id="1853575566389505234" at="18,25,27,0" />
+      <scope id="1853575566389505234" at="17,0,29,0" />
+      <unit id="1853575566389505234" at="11,0,43,0" name="GiML.sandbox.map_gameInstance" />
+    </file>
+  </root>
+</debug-info>
 

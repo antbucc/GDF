@@ -12,7 +12,6 @@
       <modulePath path="$PROJECT_DIR$/languages/GiML/GiML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GiML/sandbox/GiML.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GsML/GsML.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/GsML/sandbox/GsML.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

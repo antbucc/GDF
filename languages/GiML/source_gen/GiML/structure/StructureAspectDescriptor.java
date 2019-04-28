@@ -53,35 +53,34 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   private static ConceptDescriptor createDescriptorForEnvironment() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "Environment", 0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f1L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "Environment", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee45dddL);
     b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/3797847930382422769");
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387863005");
     b.version(2);
-    b.aggregate("teamInstances", 0x19b939282eb7b512L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f5L).optional(true).ordered(true).multiple(true).origin("1853575566384936210").done();
+    b.aggregate("teamInstances", 0x19b939282ee57028L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee5702bL).optional(false).ordered(true).multiple(true).origin("1853575566387933224").done();
     b.alias("environment");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGameInstance() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GameInstance", 0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x19b939282e29bb24L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GameInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/1853575566375631652");
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933250");
     b.version(2);
-    b.property("gameInstanceId", 0x19b939282ec2730eL).type(PrimitiveTypeId.STRING).origin("1853575566385640206").done();
-    b.aggregate("environment", 0x19b939282e29bb38L).target(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f1L).optional(false).ordered(true).multiple(false).origin("1853575566375631672").done();
-    b.aggregate("gameModel", 0x19b939282e29bb5bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).ordered(true).multiple(false).origin("1853575566375631707").done();
+    b.property("gameInstanceId", 0x19b939282ee57059L).type(PrimitiveTypeId.STRING).origin("1853575566387933273").done();
+    b.associate("gameDefinition", 0x19b939282ee5705fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).origin("1853575566387933279").done();
+    b.aggregate("environment", 0x19b939282ee5705cL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee45dddL).optional(false).ordered(true).multiple(false).origin("1853575566387933276").done();
     b.alias("gameInstance");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTeamInstance() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "TeamInstance", 0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL, 0x34b4aa92216592f5L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "TeamInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee5702bL);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:3aec94a4-ce6f-409b-b63c-bd90270fe589(GiML.structure)/3797847930382422773");
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933227");
     b.version(2);
-    b.aggregate("team", 0x34b4aa92216592f9L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(false).ordered(true).multiple(false).origin("3797847930382422777").done();
-    b.aggregate("players", 0x34b4aa92216592fcL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L).optional(true).ordered(true).multiple(true).origin("3797847930382422780").done();
+    b.aggregate("team", 0x19b939282ee68c70L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(false).ordered(true).multiple(false).origin("1853575566388006000").done();
+    b.aggregate("players", 0x19b939282ee68c73L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L).optional(true).ordered(true).multiple(true).origin("1853575566388006003").done();
     b.alias("teamInstance");
     return b.create();
   }

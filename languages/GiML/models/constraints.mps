@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:89ab9264-9d9e-4c07-979d-c91efb92a5e5(GiML.constraints)">
+<model ref="r:71630337-56c4-48d4-b9d4-99f81cd88d7d(GiML.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />

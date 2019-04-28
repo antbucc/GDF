@@ -127,6 +127,9 @@
       <property role="TrG5h" value="totalMembers" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="PrWs8" id="1ATeiwJ55g_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3VGM6JgdVuN">
     <property role="EcuMT" value="4534219290235615155" />

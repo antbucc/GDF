@@ -14,10 +14,10 @@ public final class LanguageConceptSwitch {
   public static final int TeamInstance = 2;
 
   public LanguageConceptSwitch() {
-    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x8c6624b06c1e43b4L, 0xb7ca7509cedad45bL);
-    builder.put(0x34b4aa92216592f1L, Environment);
-    builder.put(0x19b939282e29bb24L, GameInstance);
-    builder.put(0x34b4aa92216592f5L, TeamInstance);
+    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL);
+    builder.put(0x19b939282ee45dddL, Environment);
+    builder.put(0x19b939282ee57042L, GameInstance);
+    builder.put(0x19b939282ee5702bL, TeamInstance);
     myIndex = builder.seal();
   }
 
