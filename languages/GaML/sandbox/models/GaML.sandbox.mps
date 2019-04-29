@@ -4,6 +4,7 @@
   <languages>
     <use id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML" version="-1" />
     <use id="dc26d825-2883-4e88-933c-f0e9f65c69c4" name="GameData" version="-1" />
+    <use id="bc08d5ab-032d-46dc-9964-46504a89c9c8" name="GML" version="0" />
   </languages>
   <imports />
   <registry>
@@ -253,7 +254,7 @@
       <property role="3IQPlD" value="checkInNewUserId" />
     </node>
     <node concept="2QZpAE" id="1ATeiwIF82c" role="2aJNQg">
-      <property role="TrG5h" value="Sava_Itinerary" />
+      <property role="TrG5h" value="Save_Itinerary" />
       <property role="3IQPlD" value="saveItineraryId" />
       <node concept="2b7Ilm" id="1ATeiwIF82e" role="Rbrzm" />
     </node>

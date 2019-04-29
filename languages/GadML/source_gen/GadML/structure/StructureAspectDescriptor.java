@@ -11,9 +11,11 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptGameAdaptation = createDescriptorForGameAdaptation();
+  /*package*/ final ConceptDescriptor myConceptnewChallenge = createDescriptorFornewChallenge();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -22,7 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptGameAdaptation);
+    return Arrays.asList(myConceptGameAdaptation, myConceptnewChallenge);
   }
 
   @Override
@@ -31,6 +33,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.GameAdaptation:
         return myConceptGameAdaptation;
+      case LanguageConceptSwitch.newChallenge:
+        return myConceptnewChallenge;
       default:
         return null;
     }
@@ -47,10 +51,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForGameAdaptation() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GadML", "GameAdaptation", 0xdbb8e023c83248dbL, 0xa6c3fe72f22d0621L, 0x19b939282eb4c714L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:1b5dcde8-3e50-483a-8eec-9a6e618de92b(GadML.structure)/1853575566384744212");
     b.version(2);
+    b.property("gameId", 0x19b939282f833fe1L).type(PrimitiveTypeId.STRING).origin("1853575566398275553").done();
+    b.property("playerId", 0x19b939282f833fe3L).type(PrimitiveTypeId.STRING).origin("1853575566398275555").done();
+    b.alias("adaptation");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorFornewChallenge() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GadML", "newChallenge", 0xdbb8e023c83248dbL, 0xa6c3fe72f22d0621L, 0x19b939282f83abbfL);
+    b.class_(false, false, true);
+    b.super_("GadML.structure.GameAdaptation", 0xdbb8e023c83248dbL, 0xa6c3fe72f22d0621L, 0x19b939282eb4c714L);
+    b.origin("r:1b5dcde8-3e50-483a-8eec-9a6e618de92b(GadML.structure)/1853575566398303167");
+    b.version(2);
+    b.aggregate("challengeModel", 0x19b939282f83abd3L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e25420aL).optional(false).ordered(true).multiple(false).origin("1853575566398303187").done();
+    b.aggregate("challengeDataSet", 0x19b939282f83abd4L).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a9L).optional(true).ordered(true).multiple(true).origin("1853575566398303188").done();
+    b.aggregate("challengeDate", 0x19b939282f83abd5L).target(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x19b939282f8363ddL).optional(false).ordered(true).multiple(false).origin("1853575566398303189").done();
+    b.alias("newChallenge");
     return b.create();
   }
 }

@@ -19,6 +19,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBonusPointType = createDescriptorForBonusPointType();
+  /*package*/ final ConceptDescriptor myConceptChallendeDate = createDescriptorForChallendeDate();
   /*package*/ final ConceptDescriptor myConceptChallengeData = createDescriptorForChallengeData();
   /*package*/ final ConceptDescriptor myConceptGameData = createDescriptorForGameData();
   /*package*/ final ConceptDescriptor myConceptGameDataType = createDescriptorForGameDataType();
@@ -51,7 +52,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBonusPointType, myConceptChallengeData, myConceptGameData, myConceptGameDataType, myConceptMeteo, myConceptMode, myConceptParticipants, myConceptSchoolDate, myConceptbonusScore, myConceptclassDistance, myConceptlegNameType, myConceptmetersDistance, myConceptmetersWalked, myConceptperiodType, myConceptprizeWon, myConceptvirtualPriceType);
+    return Arrays.asList(myConceptBonusPointType, myConceptChallendeDate, myConceptChallengeData, myConceptGameData, myConceptGameDataType, myConceptMeteo, myConceptMode, myConceptParticipants, myConceptSchoolDate, myConceptbonusScore, myConceptclassDistance, myConceptlegNameType, myConceptmetersDistance, myConceptmetersWalked, myConceptperiodType, myConceptprizeWon, myConceptvirtualPriceType);
   }
 
   @Override
@@ -60,6 +61,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.BonusPointType:
         return myConceptBonusPointType;
+      case LanguageConceptSwitch.ChallendeDate:
+        return myConceptChallendeDate;
       case LanguageConceptSwitch.ChallengeData:
         return myConceptChallengeData;
       case LanguageConceptSwitch.GameData:
@@ -111,6 +114,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/6728922577946461605");
     b.version(2);
     b.property("value", 0x5d61ef6eeb9ac5a6L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a3L)).origin("6728922577946461606").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForChallendeDate() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GameData", "ChallendeDate", 0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x19b939282f8363ddL);
+    b.class_(false, false, false);
+    b.origin("r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)/1853575566398284765");
+    b.version(2);
+    b.property("startDate", 0x19b939282f8363f1L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5f9L)).origin("1853575566398284785").done();
+    b.property("endDate", 0x19b939282f8363f3L).type(MetaIdFactory.dataTypeId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5f9L)).origin("1853575566398284787").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForChallengeData() {

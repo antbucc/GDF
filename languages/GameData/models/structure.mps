@@ -335,5 +335,20 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1ATeiwJwQft">
+    <property role="EcuMT" value="1853575566398284765" />
+    <property role="TrG5h" value="ChallendeDate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1ATeiwJwQfL" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566398284785" />
+      <property role="TrG5h" value="startDate" />
+      <ref role="AX2Wp" node="5PxVQVFAGnT" resolve="_TimeStamp" />
+    </node>
+    <node concept="1TJgyi" id="1ATeiwJwQfN" role="1TKVEl">
+      <property role="IQ2nx" value="1853575566398284787" />
+      <property role="TrG5h" value="endDate" />
+      <ref role="AX2Wp" node="5PxVQVFAGnT" resolve="_TimeStamp" />
+    </node>
+  </node>
 </model>
 

@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BonusPointType;
+  private ConceptPresentation props_ChallendeDate;
   private ConceptPresentation props_ChallengeData;
   private ConceptPresentation props_GameData;
   private ConceptPresentation props_GameDataType;
@@ -38,6 +39,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BonusPointType = cpb.create();
         }
         return props_BonusPointType;
+      case LanguageConceptSwitch.ChallendeDate:
+        if (props_ChallendeDate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ChallendeDate");
+          props_ChallendeDate = cpb.create();
+        }
+        return props_ChallendeDate;
       case LanguageConceptSwitch.ChallengeData:
         if (props_ChallengeData == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

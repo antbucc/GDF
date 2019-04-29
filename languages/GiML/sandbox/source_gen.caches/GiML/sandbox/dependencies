@@ -1,13 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <dependency className="GiML.sandbox.map_gameInstance">
-    <classNode dependClassName="eu.trentorise.game.model.TeamState" />
-    <classNode dependClassName="eu.trentorise.game.services.PlayerService" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode extendsClassName="eu.trentorise.game.test.GameTest" />
-  </dependency>
-</dependenciesRoot>
+<dependenciesRoot />
 

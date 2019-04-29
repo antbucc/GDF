@@ -41,30 +41,51 @@
     <ref role="Rn4_R" to="bxq6:1ATeiwIDgiJ" resolve="KGG" />
     <node concept="RnmjP" id="1ATeiwJ62EQ" role="Rn4_O">
       <node concept="Rn4$3" id="1ATeiwJ62ER" role="Rn4$0">
-        <property role="TrG5h" value="School Trento2" />
+        <property role="TrG5h" value="school" />
         <node concept="3IQQXi" id="1ATeiwJ62Fc" role="RnVlr">
-          <property role="TrG5h" value="Class 1A" />
+          <property role="TrG5h" value="classroom" />
         </node>
         <node concept="3IQQXi" id="1ATeiwJ66IL" role="RnVlr">
-          <property role="TrG5h" value="Class 2A" />
-        </node>
-        <node concept="3IQQXi" id="1ATeiwJ66IQ" role="RnVlr">
-          <property role="TrG5h" value="Class 34" />
+          <property role="TrG5h" value="volunteeer" />
         </node>
         <node concept="3IQQXu" id="1ATeiwJ62ES" role="RnVlo">
-          <property role="TrG5h" value="Trento2" />
+          <property role="TrG5h" value="school" />
         </node>
       </node>
       <node concept="Rn4$3" id="1ATeiwJ66Jr" role="Rn4$0">
-        <property role="TrG5h" value="School Trento3" />
+        <property role="TrG5h" value="classroom" />
         <node concept="3IQQXi" id="1ATeiwJ66JF" role="RnVlr">
-          <property role="TrG5h" value="Class 1B" />
-        </node>
-        <node concept="3IQQXi" id="1ATeiwJ66JI" role="RnVlr">
-          <property role="TrG5h" value="Class 2B" />
+          <property role="TrG5h" value="alice" />
         </node>
         <node concept="3IQQXu" id="1ATeiwJ66Js" role="RnVlo">
-          <property role="TrG5h" value="Trento3" />
+          <property role="TrG5h" value="classroom" />
+        </node>
+      </node>
+      <node concept="Rn4$3" id="1ATeiwJwNYn" role="Rn4$0">
+        <property role="TrG5h" value="classroom-B" />
+        <node concept="3IQQXi" id="1ATeiwJwNYF" role="RnVlr">
+          <property role="TrG5h" value="bob" />
+        </node>
+        <node concept="3IQQXi" id="1ATeiwJwNYI" role="RnVlr">
+          <property role="TrG5h" value="teacherSmith" />
+        </node>
+        <node concept="3IQQXu" id="1ATeiwJwNYo" role="RnVlo">
+          <property role="TrG5h" value="classroom-B" />
+        </node>
+      </node>
+      <node concept="Rn4$3" id="1ATeiwJwNYN" role="Rn4$0">
+        <property role="TrG5h" value="classroom-C" />
+        <node concept="3IQQXi" id="1ATeiwJwNZf" role="RnVlr">
+          <property role="TrG5h" value="cindy" />
+        </node>
+        <node concept="3IQQXi" id="1ATeiwJwNZi" role="RnVlr">
+          <property role="TrG5h" value="frank" />
+        </node>
+        <node concept="3IQQXi" id="1ATeiwJwNZn" role="RnVlr">
+          <property role="TrG5h" value="teacherSmith" />
+        </node>
+        <node concept="3IQQXu" id="1ATeiwJwNYO" role="RnVlo">
+          <property role="TrG5h" value="classroom-C" />
         </node>
       </node>
     </node>
