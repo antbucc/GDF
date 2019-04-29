@@ -12,8 +12,10 @@
     <import index="pedu" ref="119e117f-1260-4f12-b46e-efd3d0e4c44f/java:eu.trentorise.game.model(GiML/)" />
     <import index="byl1" ref="601ea67c-6c1a-48f6-aba0-130276016d55/java:eu.trentorise.game.services(GML.sandbox/)" />
     <import index="byl2" ref="119e117f-1260-4f12-b46e-efd3d0e4c44f/java:eu.trentorise.game.services(GiML/)" />
+    <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -193,6 +195,24 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="1ATeiwJwh6q" role="jymVt">
+      <property role="TrG5h" value="defineExecData" />
+      <node concept="3Tm1VV" id="1ATeiwJwh6r" role="1B3o_S" />
+      <node concept="3cqZAl" id="1ATeiwJwh6t" role="3clF45" />
+      <node concept="37vLTG" id="1ATeiwJwh6u" role="3clF46">
+        <property role="TrG5h" value="list" />
+        <node concept="3uibUv" id="1ATeiwJwh6v" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~List" resolve="List" />
+          <node concept="3uibUv" id="1ATeiwJwh6w" role="11_B2D">
+            <ref role="3uigEE" to="l7d5:~GameTest$ExecData" resolve="GameTest.ExecData" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="1ATeiwJwh6x" role="3clF47" />
+      <node concept="2AHcQZ" id="1ATeiwJwh6y" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1ATeiwJ4oEv" role="jymVt" />
     <node concept="2tJIrI" id="1ATeiwJ3j5n" role="jymVt" />
     <node concept="3Tm1VV" id="1ATeiwITCZL" role="1B3o_S" />
@@ -350,7 +370,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="1ATeiwJ3YtG" role="3cqZAp" />
-        <node concept="3clFbH" id="1ATeiwJ3lNg" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="1ATeiwIY5OJ" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -363,11 +382,87 @@
       <node concept="3clFbS" id="1ATeiwIY5OO" role="3clF47">
         <node concept="3SKdUt" id="1ATeiwJ3n7j" role="3cqZAp">
           <node concept="3SKdUq" id="1ATeiwJ3n7l" role="3SKWNk">
-            <property role="3SKdUp" value=" qui prendi i dati dalla definzione del gioco" />
+            <property role="3SKdUp" value=" add all the GameDefinition elements" />
           </node>
         </node>
-        <node concept="3clFbH" id="1ATeiwJ3n7$" role="3cqZAp" />
-        <node concept="3clFbH" id="1ATeiwIZqwl" role="3cqZAp" />
+        <node concept="3cpWs8" id="1ATeiwHQ1v1" role="3cqZAp">
+          <node concept="3cpWsn" id="1ATeiwHQ1v2" role="3cpWs9">
+            <property role="TrG5h" value="actions" />
+            <node concept="3uibUv" id="1ATeiwHQ1v3" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="1ATeiwHQ1v4" role="11_B2D">
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="1ATeiwHQ1v5" role="33vP2m">
+              <node concept="1pGfFk" id="1ATeiwHQ1v6" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <node concept="3uibUv" id="1ATeiwHQ1v7" role="1pMfVU">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1ATeiwHQ0o4" role="3cqZAp" />
+        <node concept="3SKdUt" id="1ATeiwHOiig" role="3cqZAp">
+          <node concept="3SKdUq" id="1ATeiwHOiii" role="3SKWNk">
+            <property role="3SKdUp" value=" Add Game DataDriven Actions" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1ATeiwHOrCR" role="3cqZAp">
+          <node concept="2OqwBi" id="1ATeiwHOsbo" role="3clFbG">
+            <node concept="liA8E" id="1ATeiwHOsKu" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="Xl_RD" id="1ATeiwHOsOp" role="37wK5m">
+                <property role="Xl_RC" value="actionName" />
+                <node concept="17Uvod" id="1ATeiwHOt1k" role="lGtFl">
+                  <property role="2qtEX9" value="value" />
+                  <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                  <node concept="3zFVjK" id="1ATeiwHOt1l" role="3zH0cK">
+                    <node concept="3clFbS" id="1ATeiwHOt1m" role="2VODD2">
+                      <node concept="3clFbF" id="1ATeiwHOtsR" role="3cqZAp">
+                        <node concept="2OqwBi" id="1ATeiwIDIgk" role="3clFbG">
+                          <node concept="30H73N" id="1ATeiwHOtsQ" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="1ATeiwIDQZa" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1ATeiwHQ3Ev" role="2Oq$k0">
+              <ref role="3cqZAo" node="1ATeiwHQ1v2" resolve="actions" />
+            </node>
+          </node>
+          <node concept="1WS0z7" id="1ATeiwHOuOY" role="lGtFl">
+            <node concept="3JmXsc" id="1ATeiwHOuP1" role="3Jn$fo">
+              <node concept="3clFbS" id="1ATeiwHOuP2" role="2VODD2">
+                <node concept="3clFbF" id="1ATeiwHOuP8" role="3cqZAp">
+                  <node concept="2OqwBi" id="1ATeiwJ6eE5" role="3clFbG">
+                    <node concept="2OqwBi" id="1ATeiwJ6dgY" role="2Oq$k0">
+                      <node concept="30H73N" id="1ATeiwHOuP7" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1ATeiwJ6dWH" role="2OqNvi">
+                        <ref role="3Tt5mk" to="k2kp:1ATeiwITn1v" resolve="gameDefinition" />
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="1ATeiwJ6ftj" role="2OqNvi">
+                      <ref role="3TtcxE" to="mupf:3VGM6Jge8qG" resolve="actions" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="1ATeiwJ6oiv" role="3cqZAp">
+          <node concept="3SKdUq" id="1ATeiwJ6oix" role="3SKWNk">
+            <property role="3SKdUp" value="......" />
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="1ATeiwIY5OP" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -383,24 +478,7 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="3clFb_" id="1ATeiwIYaFW" role="jymVt">
-      <property role="TrG5h" value="defineExecData" />
-      <node concept="3Tm1VV" id="1ATeiwIYaFX" role="1B3o_S" />
-      <node concept="3cqZAl" id="1ATeiwIYaFZ" role="3clF45" />
-      <node concept="37vLTG" id="1ATeiwIYaG0" role="3clF46">
-        <property role="TrG5h" value="list" />
-        <node concept="3uibUv" id="1ATeiwIYaG1" role="1tU5fm">
-          <ref role="3uigEE" to="33ny:~List" resolve="List" />
-          <node concept="3uibUv" id="1ATeiwIYaG2" role="11_B2D">
-            <ref role="3uigEE" to="l7d5:~GameTest$ExecData" resolve="GameTest.ExecData" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbS" id="1ATeiwIYaG3" role="3clF47" />
-      <node concept="2AHcQZ" id="1ATeiwIYaG4" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
+    <node concept="2tJIrI" id="1ATeiwJwbN9" role="jymVt" />
   </node>
 </model>
 

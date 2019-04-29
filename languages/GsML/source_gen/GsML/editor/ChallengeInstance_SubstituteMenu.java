@@ -26,7 +26,7 @@ public class ChallengeInstance_SubstituteMenu extends SubstituteMenuBase {
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new ChallengeInstance_SubstituteMenu.SMP_ReferenceScope_jli8mo_a(), MetaAdapterFactory.getConcept(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL, 0x19b939282ec33ec9L, "GsML.structure.ChallengeInstance")));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new ChallengeInstance_SubstituteMenu.SMP_ReferenceScope_jli8mo_a(), MetaAdapterFactory.getConcept(0x26aa16acedaa4cf5L, 0xa912305a69f850f0L, 0x19b939282f67a0afL, "GsML.structure.ChallengeInstance")));
     result.add(new ChallengeInstance_SubstituteMenu.SMP_Subconcepts_jli8mo_b());
     return result;
   }
@@ -35,7 +35,7 @@ public class ChallengeInstance_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for ChallengeInstance. Generated from implicit smart reference attribute.", new SNodePointer("r:20ea7de0-196a-4f4b-a486-b4e701f098a2(GsML.structure)", "1853575566385692361")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for ChallengeInstance. Generated from implicit smart reference attribute.", new SNodePointer("r:d46aadde-9758-4e16-af96-fa36d83545ab(GsML.structure)", "1853575566396465327")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -48,7 +48,7 @@ public class ChallengeInstance_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_jli8mo_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) MetaAdapterFactory.getConcept(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL, 0x19b939282ec33ec9L, "GsML.structure.ChallengeInstance"), MetaAdapterFactory.getReferenceLink(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL, 0x19b939282ec33ec9L, 0x19b939282ec33ecdL, "challengeType"));
+      super((SAbstractConcept) MetaAdapterFactory.getConcept(0x26aa16acedaa4cf5L, 0xa912305a69f850f0L, 0x19b939282f67a0afL, "GsML.structure.ChallengeInstance"), MetaAdapterFactory.getReferenceLink(0x26aa16acedaa4cf5L, 0xa912305a69f850f0L, 0x19b939282f67a0afL, 0x19b939282f67a0c6L, "challengeType"));
     }
     @NotNull
     @Override
@@ -65,7 +65,7 @@ public class ChallengeInstance_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_jli8mo_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL, 0x19b939282ec33ec9L, "GsML.structure.ChallengeInstance"));
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0x26aa16acedaa4cf5L, 0xa912305a69f850f0L, 0x19b939282f67a0afL, "GsML.structure.ChallengeInstance"));
     }
     @NotNull
     @Override

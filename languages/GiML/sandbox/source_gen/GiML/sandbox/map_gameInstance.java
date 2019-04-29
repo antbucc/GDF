@@ -4,14 +4,17 @@ package GiML.sandbox;
 
 import eu.trentorise.game.test.GameTest;
 import eu.trentorise.game.services.PlayerService;
-import eu.trentorise.game.model.TeamState;
 import java.util.List;
+import eu.trentorise.game.model.TeamState;
 import java.util.ArrayList;
 
 public class map_gameInstance extends GameTest {
 
   private PlayerService playerSrv;
-  private static final String GAME_ID = "kggInstance";
+  private static final String GAME_ID = "kggInstanceId";
+  @Override
+  public void defineExecData(List<GameTest.ExecData> list) {
+  }
 
 
   @Override
@@ -19,24 +22,33 @@ public class map_gameInstance extends GameTest {
     //  add all the Teams defined for this game instance 
 
     {
-      TeamState team = new TeamState(GAME_ID, "");
+      TeamState team = new TeamState(GAME_ID, "Trento2");
       List<String> members = new ArrayList<String>();
+      members.add("Class 1A");
+      members.add("Class 2A");
+      members.add("Class 34");
       playerSrv.add(team);
     }
-
+    {
+      TeamState team = new TeamState(GAME_ID, "Trento3");
+      List<String> members = new ArrayList<String>();
+      members.add("Class 1B");
+      members.add("Class 2B");
+      playerSrv.add(team);
+    }
 
   }
   @Override
   public void defineGame() {
-    //  qui prendi i dati dalla definzione del gioco 
+    //  add all the GameDefinition elements 
+    List<String> actions = new ArrayList<String>();
 
-
+    //  Add Game DataDriven Actions 
+    // ...... 
   }
 
   @Override
   public void analyzeResult() {
   }
-  @Override
-  public void defineExecData(List<GameTest.ExecData> list) {
-  }
+
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="00000000-0000-4000-5f02-5beb5f025beb/i:fe1d8f4(checkpoints/GsML.typesystem@descriptorclasses)">
+<model ref="00000000-0000-4000-5f02-5beb5f025beb/i:f44b5c5(checkpoints/GsML.typesystem@descriptorclasses)">
   <persistence version="9" />
   <attribute name="checkpoint" value="DescriptorClasses" />
   <attribute name="generation-plan" value="AspectCPS" />
   <languages />
   <imports>
-    <import index="4483" ref="r:6ebc6172-8679-49dd-addd-38639a6199af(GsML.typesystem)" />
+    <import index="lgsy" ref="r:8c2c213a-c488-4ecf-807f-1925ca079282(GsML.typesystem)" />
     <import index="qurh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.typesystem.runtime(MPS.Core/)" />
   </imports>
   <registry>

@@ -8,40 +8,56 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/1853575566389505234">
+  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/1853575566391257781">
     <file name="map_gameInstance.java">
-      <node id="1853575566389505234" at="13,0,14,0" concept="2" trace="playerSrv" />
-      <node id="1853575566389505234" at="14,0,15,0" concept="7" trace="GAME_ID" />
-      <node id="1853575566389505234" at="18,25,19,57" concept="5" />
-      <node id="1853575566389505234" at="19,57,20,0" concept="6" />
-      <node id="1853575566391171766" at="21,5,22,50" concept="4" />
-      <node id="1853575566391171766" at="22,50,23,53" concept="4" />
-      <node id="1853575566391171766" at="23,53,24,26" concept="1" />
-      <node id="1853575566389505234" at="25,5,26,0" concept="6" />
-      <node id="1853575566389505234" at="26,0,27,0" concept="6" />
-      <node id="1853575566389505234" at="30,28,31,53" concept="5" />
-      <node id="1853575566389505234" at="31,53,32,0" concept="6" />
-      <node id="1853575566389505234" at="32,0,33,0" concept="6" />
-      <node id="1853575566389505234" at="36,0,39,0" concept="3" trace="analyzeResult#()V" />
-      <node id="1853575566389505234" at="39,0,42,0" concept="3" trace="defineExecData#(Ljava/util/List;)V" />
-      <node id="1853575566391171766" at="20,0,25,5" concept="0" />
-      <node id="1853575566389505234" at="29,0,35,0" concept="3" trace="defineGame#()V" />
-      <node id="1853575566389505234" at="17,0,29,0" concept="3" trace="initEnv#()V" />
-      <scope id="1853575566389505234" at="37,31,37,31" />
-      <scope id="1853575566389505234" at="40,60,40,60" />
-      <scope id="1853575566391171766" at="21,5,24,26">
-        <var name="members" id="1853575566391171766" />
-        <var name="team" id="1853575566391171766" />
+      <node id="1853575566391257781" at="13,0,14,0" concept="2" trace="playerSrv" />
+      <node id="1853575566391257781" at="14,0,15,0" concept="7" trace="GAME_ID" />
+      <node id="1853575566391257781" at="21,25,22,57" concept="5" />
+      <node id="1853575566391257781" at="22,57,23,0" concept="6" />
+      <node id="1853575566391257783" at="24,5,25,57" concept="4" />
+      <node id="1853575566391257783" at="25,57,26,53" concept="4" />
+      <node id="1853575566391257804" at="26,53,27,30" concept="1" />
+      <node id="1853575566391274417" at="27,30,28,30" concept="1" />
+      <node id="1853575566391274422" at="28,30,29,30" concept="1" />
+      <node id="1853575566391257783" at="29,30,30,26" concept="1" />
+      <node id="1853575566391274459" at="32,5,33,57" concept="4" />
+      <node id="1853575566391274459" at="33,57,34,53" concept="4" />
+      <node id="1853575566391274475" at="34,53,35,30" concept="1" />
+      <node id="1853575566391274478" at="35,30,36,30" concept="1" />
+      <node id="1853575566391274459" at="36,30,37,26" concept="1" />
+      <node id="1853575566391257781" at="38,5,39,0" concept="6" />
+      <node id="1853575566391257781" at="42,28,43,44" concept="5" />
+      <node id="1853575566391257781" at="43,44,44,51" concept="4" />
+      <node id="1853575566391257781" at="44,51,45,0" concept="6" />
+      <node id="1853575566391257781" at="45,0,46,36" concept="5" />
+      <node id="1853575566391257781" at="46,36,47,14" concept="5" />
+      <node id="1853575566391257781" at="15,0,18,0" concept="3" trace="defineExecData#(Ljava/util/List;)V" />
+      <node id="1853575566391257781" at="50,0,53,0" concept="3" trace="analyzeResult#()V" />
+      <node id="1853575566391274459" at="31,5,38,5" concept="0" />
+      <node id="1853575566391257783" at="23,0,31,5" concept="0" />
+      <node id="1853575566391257781" at="41,0,49,0" concept="3" trace="defineGame#()V" />
+      <node id="1853575566391257781" at="20,0,41,0" concept="3" trace="initEnv#()V" />
+      <scope id="1853575566391257781" at="16,60,16,60" />
+      <scope id="1853575566391257781" at="51,31,51,31" />
+      <scope id="1853575566391257781" at="15,0,18,0">
+        <var name="list" id="1853575566391257781" />
       </scope>
-      <scope id="1853575566389505234" at="30,28,33,0" />
-      <scope id="1853575566389505234" at="36,0,39,0" />
-      <scope id="1853575566389505234" at="39,0,42,0">
-        <var name="list" id="1853575566389505234" />
+      <scope id="1853575566391257781" at="50,0,53,0" />
+      <scope id="1853575566391274459" at="32,5,37,26">
+        <var name="members" id="1853575566391274459" />
+        <var name="team" id="1853575566391274459" />
       </scope>
-      <scope id="1853575566389505234" at="29,0,35,0" />
-      <scope id="1853575566389505234" at="18,25,27,0" />
-      <scope id="1853575566389505234" at="17,0,29,0" />
-      <unit id="1853575566389505234" at="11,0,43,0" name="GiML.sandbox.map_gameInstance" />
+      <scope id="1853575566391257781" at="42,28,47,14">
+        <var name="actions" id="1853575566391257781" />
+      </scope>
+      <scope id="1853575566391257783" at="24,5,30,26">
+        <var name="members" id="1853575566391257783" />
+        <var name="team" id="1853575566391257783" />
+      </scope>
+      <scope id="1853575566391257781" at="41,0,49,0" />
+      <scope id="1853575566391257781" at="21,25,39,0" />
+      <scope id="1853575566391257781" at="20,0,41,0" />
+      <unit id="1853575566391257781" at="11,0,55,0" name="GiML.sandbox.map_gameInstance" />
     </file>
   </root>
 </debug-info>

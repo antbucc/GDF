@@ -22,7 +22,7 @@ public class Language extends LanguageRuntime {
   private final SLanguageId myId;
 
   public Language() {
-    myId = SLanguageId.deserialize("ccf661bc-5b13-4fdf-b6a9-b009db30480f");
+    myId = SLanguageId.deserialize("26aa16ac-edaa-4cf5-a912-305a69f850f0");
   }
 
   @Override

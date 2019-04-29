@@ -16,12 +16,12 @@ public final class LanguageConceptSwitch {
   public static final int eventDrivenActionInstance = 4;
 
   public LanguageConceptSwitch() {
-    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL);
-    builder.put(0x19b939282ec33ec9L, ChallengeInstance);
-    builder.put(0x19b939282eb4c146L, GameSimulation);
-    builder.put(0x19b939282ec33eb0L, SingleGameExecution);
-    builder.put(0x19b939282ec33ec0L, dataDrivenActionInstance);
-    builder.put(0x19b939282ec33f23L, eventDrivenActionInstance);
+    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x26aa16acedaa4cf5L, 0xa912305a69f850f0L);
+    builder.put(0x19b939282f67a0afL, ChallengeInstance);
+    builder.put(0x19b939282f55acbcL, GameSimulation);
+    builder.put(0x19b939282f55acd6L, SingleGameExecution);
+    builder.put(0x19b939282f55d09cL, dataDrivenActionInstance);
+    builder.put(0x19b939282f67a091L, eventDrivenActionInstance);
     myIndex = builder.seal();
   }
 

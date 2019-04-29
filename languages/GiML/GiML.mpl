@@ -23,6 +23,8 @@
       <dependencies>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">601ea67c-6c1a-48f6-aba0-130276016d55(GML.sandbox)</dependency>
+        <dependency reexport="false">1472546d-a964-48a0-a11e-4271b165a42c(GaML)</dependency>
+        <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
@@ -48,7 +50,9 @@
         <module reference="f8140935-e680-4f7f-94a5-24530ac2c9cc(ActionData)" version="0" />
         <module reference="014000bb-9a0c-4ae0-996d-12e6232d77ca(ActionData.sandbox)" version="0" />
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+        <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
         <module reference="601ea67c-6c1a-48f6-aba0-130276016d55(GML.sandbox)" version="0" />
+        <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
         <module reference="119e117f-1260-4f12-b46e-efd3d0e4c44f(GiML)" version="0" />
         <module reference="fb20cb40-4d51-4806-a3a0-b796e96fc370(GiML#01)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />

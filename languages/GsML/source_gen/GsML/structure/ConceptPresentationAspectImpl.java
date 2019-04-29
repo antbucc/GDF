@@ -23,7 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ChallengeInstance:
         if (props_ChallengeInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0xccf661bc5b134fdfL, 0xb6a9b009db30480fL, 0x19b939282ec33ec9L, 0x19b939282ec33ecdL, "challengeType", "", "");
+          cpb.presentationByReference(0x26aa16acedaa4cf5L, 0xa912305a69f850f0L, 0x19b939282f67a0afL, 0x19b939282f67a0c6L, "challengeType", "", "");
           props_ChallengeInstance = cpb.create();
         }
         return props_ChallengeInstance;
