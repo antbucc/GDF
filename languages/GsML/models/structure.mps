@@ -58,7 +58,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="gameInstance" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="2qee:2fEMsIDkGlg" resolve="GameDefinition" />
+      <ref role="20lvS9" to="2qee:2fEMsIDkGlg" resolve="DefinizioneGioco" />
     </node>
     <node concept="PrWs8" id="1ATeiwJlqNg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

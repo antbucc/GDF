@@ -179,7 +179,7 @@
               <ref role="3cqZAo" node="1ATeiwJyF_3" resolve="newChallenge" />
             </node>
             <node concept="liA8E" id="1ATeiwJyHkP" role="2OqNvi">
-              <ref role="37wK5l" to="qnb9:~ChallengeModel.setGameId(java.lang.String):void" resolve="setGameId" />
+              <ref role="37wK5l" to="qnb9:~ChallengeModel.setGameId(java.lang.String)" resolve="setGameId" />
               <node concept="Xl_RD" id="1ATeiwJyHm3" role="37wK5m">
                 <property role="Xl_RC" value="gameId" />
                 <node concept="17Uvod" id="1ATeiwJyRjv" role="lGtFl">
@@ -208,7 +208,7 @@
               <ref role="3cqZAo" node="1ATeiwJyF_3" resolve="newChallenge" />
             </node>
             <node concept="liA8E" id="1ATeiwJyIIO" role="2OqNvi">
-              <ref role="37wK5l" to="qnb9:~ChallengeModel.setName(java.lang.String):void" resolve="setName" />
+              <ref role="37wK5l" to="qnb9:~ChallengeModel.setName(java.lang.String)" resolve="setName" />
               <node concept="Xl_RD" id="1ATeiwJyIK4" role="37wK5m">
                 <property role="Xl_RC" value="challengeName" />
                 <node concept="17Uvod" id="1ATeiwJySLi" role="lGtFl">
@@ -264,7 +264,7 @@
                   <ref role="3cqZAo" node="1ATeiwJyZJY" resolve="challengeData" />
                 </node>
                 <node concept="liA8E" id="1ATeiwJzdGN" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+                  <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="Xl_RD" id="1ATeiwJzeJt" role="37wK5m">
                     <property role="Xl_RC" value="challengeData" />
                     <node concept="17Uvod" id="1ATeiwJzfnW" role="lGtFl">
@@ -309,7 +309,7 @@
               <ref role="3cqZAo" node="1ATeiwJyF_3" resolve="newChallenge" />
             </node>
             <node concept="liA8E" id="1ATeiwJyNta" role="2OqNvi">
-              <ref role="37wK5l" to="qnb9:~ChallengeModel.setVariables(java.util.List):void" resolve="setVariables" />
+              <ref role="37wK5l" to="qnb9:~ChallengeModel.setVariables(java.util.List)" resolve="setVariables" />
               <node concept="37vLTw" id="1ATeiwJzwnP" role="37wK5m">
                 <ref role="3cqZAo" node="1ATeiwJyZJY" resolve="challengeData" />
               </node>
@@ -322,7 +322,7 @@
               <ref role="3cqZAo" node="1ATeiwJyBy3" resolve="challengeApi" />
             </node>
             <node concept="liA8E" id="1ATeiwJyF68" role="2OqNvi">
-              <ref role="37wK5l" to="ekdy:~ChallengeModelControllerApi.saveGameUsingPOST(it.smartcommunitylab.model.ChallengeModel,java.lang.String):it.smartcommunitylab.model.ChallengeModel" resolve="saveGameUsingPOST" />
+              <ref role="37wK5l" to="ekdy:~ChallengeModelControllerApi.saveGameUsingPOST(it.smartcommunitylab.model.ChallengeModel,java.lang.String)" resolve="saveGameUsingPOST" />
               <node concept="37vLTw" id="1ATeiwJyQcL" role="37wK5m">
                 <ref role="3cqZAo" node="1ATeiwJyF_3" resolve="newChallenge" />
               </node>
