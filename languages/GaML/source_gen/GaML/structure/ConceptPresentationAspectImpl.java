@@ -13,9 +13,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ChallengeField;
   private ConceptPresentation props_ChallengeModel;
   private ConceptPresentation props_ChallengeRule;
-  private ConceptPresentation props_GameDefinition;
+  private ConceptPresentation props_Classe;
+  private ConceptPresentation props_DefinizioneGioco;
+  private ConceptPresentation props_Dominio;
+  private ConceptPresentation props_Istituto;
   private ConceptPresentation props_PlayerChallenge;
   private ConceptPresentation props_Rule;
+  private ConceptPresentation props_Scuola;
   private ConceptPresentation props_TeamChallenge;
   private ConceptPresentation props_ThenActionRule;
   private ConceptPresentation props_ThenChallengeRule;
@@ -59,13 +63,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ChallengeRule = cpb.create();
         }
         return props_ChallengeRule;
-      case LanguageConceptSwitch.GameDefinition:
-        if (props_GameDefinition == null) {
+      case LanguageConceptSwitch.Classe:
+        if (props_Classe == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_GameDefinition = cpb.create();
+          props_Classe = cpb.create();
         }
-        return props_GameDefinition;
+        return props_Classe;
+      case LanguageConceptSwitch.DefinizioneGioco:
+        if (props_DefinizioneGioco == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_DefinizioneGioco = cpb.create();
+        }
+        return props_DefinizioneGioco;
+      case LanguageConceptSwitch.Dominio:
+        if (props_Dominio == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Dominio = cpb.create();
+        }
+        return props_Dominio;
+      case LanguageConceptSwitch.Istituto:
+        if (props_Istituto == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Istituto = cpb.create();
+        }
+        return props_Istituto;
       case LanguageConceptSwitch.PlayerChallenge:
         if (props_PlayerChallenge == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -80,6 +105,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Rule = cpb.create();
         }
         return props_Rule;
+      case LanguageConceptSwitch.Scuola:
+        if (props_Scuola == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Scuola = cpb.create();
+        }
+        return props_Scuola;
       case LanguageConceptSwitch.TeamChallenge:
         if (props_TeamChallenge == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

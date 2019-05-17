@@ -10,7 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Environment;
-  private ConceptPresentation props_GameInstance;
+  private ConceptPresentation props_IstanzaGioco;
   private ConceptPresentation props_TeamInstance;
 
   @Override
@@ -25,13 +25,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Environment = cpb.create();
         }
         return props_Environment;
-      case LanguageConceptSwitch.GameInstance:
-        if (props_GameInstance == null) {
+      case LanguageConceptSwitch.IstanzaGioco:
+        if (props_IstanzaGioco == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_GameInstance = cpb.create();
+          props_IstanzaGioco = cpb.create();
         }
-        return props_GameInstance;
+        return props_IstanzaGioco;
       case LanguageConceptSwitch.TeamInstance:
         if (props_TeamInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

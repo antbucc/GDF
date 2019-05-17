@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ayo4346h8tq8g7ziqibw1ybrgq6taaz">
-  <files names="EditorAspectDescriptorImpl.java:Environment_Editor.java:Environment_EditorBuilder_a.java:GameInstance_Editor.java:GameInstance_EditorBuilder_a.java" />
+<product version="3" modelHash="cughagu90wao6a8pq9td4752me6ile2">
+  <files names="EditorAspectDescriptorImpl.java:Environment_Editor.java:Environment_EditorBuilder_a.java:IstanzaGioco_Editor.java:IstanzaGioco_EditorBuilder_a.java" />
 </product>
 

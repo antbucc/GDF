@@ -83,7 +83,7 @@
   </node>
   <node concept="1TIwiD" id="1ATeiwITn12">
     <property role="EcuMT" value="1853575566387933250" />
-    <property role="TrG5h" value="GameInstance" />
+    <property role="TrG5h" value="IstanzaGioco" />
     <property role="34LRSv" value="gameInstance" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -92,22 +92,15 @@
     </node>
     <node concept="1TJgyi" id="1ATeiwITn1p" role="1TKVEl">
       <property role="IQ2nx" value="1853575566387933273" />
-      <property role="TrG5h" value="gameInstanceId" />
+      <property role="TrG5h" value="giocoId" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="1ATeiwITn1s" role="1TKVEi">
-      <property role="IQ2ns" value="1853575566387933276" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="environment" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1ATeiwIT5Rt" resolve="Environment" />
     </node>
     <node concept="1TJgyj" id="1ATeiwITn1v" role="1TKVEi">
       <property role="IQ2ns" value="1853575566387933279" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="gameDefinition" />
+      <property role="20kJfa" value="definizioneGioco" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="2qee:2fEMsIDkGlg" resolve="GameDefinition" />
+      <ref role="20lvS9" to="2qee:2fEMsIDkGlg" resolve="DefinizioneGioco" />
     </node>
   </node>
 </model>

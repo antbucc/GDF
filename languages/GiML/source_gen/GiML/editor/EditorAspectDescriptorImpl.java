@@ -20,7 +20,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 0:
         return Collections.<ConceptEditor>singletonList(new Environment_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new GameInstance_Editor());
+        return Collections.<ConceptEditor>singletonList(new IstanzaGioco_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();

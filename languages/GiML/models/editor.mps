@@ -47,7 +47,6 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -55,85 +54,59 @@
     </language>
   </registry>
   <node concept="24kQdi" id="1ATeiwIYI83">
-    <ref role="1XX52x" to="k2kp:1ATeiwITn12" resolve="GameInstance" />
-    <node concept="3EZMnI" id="1ATeiwJ5LAv" role="2wV5jI">
-      <node concept="l2Vlx" id="1ATeiwJ5LAw" role="2iSdaV" />
-      <node concept="3F0ifn" id="1ATeiwJ5LAx" role="3EZMnx">
-        <property role="3F0ifm" value="game instance" />
+    <ref role="1XX52x" to="k2kp:1ATeiwITn12" resolve="IstanzaGioco" />
+    <node concept="3EZMnI" id="5BK7UENgjpg" role="2wV5jI">
+      <node concept="l2Vlx" id="5BK7UENgjph" role="2iSdaV" />
+      <node concept="3F0ifn" id="5BK7UENgjpi" role="3EZMnx">
+        <property role="3F0ifm" value="istanza gioco" />
       </node>
-      <node concept="3F0A7n" id="1ATeiwJ5LAy" role="3EZMnx">
+      <node concept="3F0A7n" id="5BK7UENgjpj" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="1ATeiwJ5LAz" role="3EZMnx">
+      <node concept="3F0ifn" id="5BK7UENgjpk" role="3EZMnx">
         <property role="3F0ifm" value="game definition" />
       </node>
-      <node concept="1iCGBv" id="1ATeiwJ5LA$" role="3EZMnx">
-        <ref role="1NtTu8" to="k2kp:1ATeiwITn1v" resolve="gameDefinition" />
-        <node concept="1sVBvm" id="1ATeiwJ5LAB" role="1sWHZn">
-          <node concept="3F0A7n" id="1ATeiwJ5LAD" role="2wV5jI">
+      <node concept="1iCGBv" id="5BK7UENgjpl" role="3EZMnx">
+        <ref role="1NtTu8" to="k2kp:1ATeiwITn1v" resolve="definizioneGioco" />
+        <node concept="1sVBvm" id="5BK7UENgjpo" role="1sWHZn">
+          <node concept="3F0A7n" id="5BK7UENgjpq" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="1ATeiwJ5LAE" role="3EZMnx">
+      <node concept="3F0ifn" id="5BK7UENgjpr" role="3EZMnx">
         <property role="3F0ifm" value="{" />
-        <node concept="3mYdg7" id="1ATeiwJ5LAF" role="3F10Kt">
+        <node concept="3mYdg7" id="5BK7UENgjps" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
-        <node concept="ljvvj" id="1ATeiwJ5LAG" role="3F10Kt">
+        <node concept="ljvvj" id="5BK7UENgjpt" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="1ATeiwJ5LAH" role="3EZMnx">
-        <node concept="l2Vlx" id="1ATeiwJ5LAI" role="2iSdaV" />
-        <node concept="lj46D" id="1ATeiwJ5LAJ" role="3F10Kt">
+      <node concept="3EZMnI" id="5BK7UENgjpu" role="3EZMnx">
+        <node concept="l2Vlx" id="5BK7UENgjpv" role="2iSdaV" />
+        <node concept="lj46D" id="5BK7UENgjpw" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3F0ifn" id="1ATeiwJ5LAK" role="3EZMnx">
+        <node concept="3F0ifn" id="5BK7UENgjpx" role="3EZMnx">
           <property role="3F0ifm" value="game instance id" />
         </node>
-        <node concept="3F0ifn" id="1ATeiwJ5LAL" role="3EZMnx">
+        <node concept="3F0ifn" id="5BK7UENgjpy" role="3EZMnx">
           <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="1ATeiwJ5LAM" role="3F10Kt">
+          <node concept="11L4FC" id="5BK7UENgjpz" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F0A7n" id="1ATeiwJ5LAN" role="3EZMnx">
-          <ref role="1NtTu8" to="k2kp:1ATeiwITn1p" resolve="gameInstanceId" />
-          <node concept="ljvvj" id="1ATeiwJ5LAO" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="1ATeiwJ5LAP" role="3EZMnx">
-          <node concept="ljvvj" id="1ATeiwJ5LAQ" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="1ATeiwJ5LAR" role="3EZMnx">
-          <property role="3F0ifm" value="environment" />
-        </node>
-        <node concept="3F0ifn" id="1ATeiwJ5LAS" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="1ATeiwJ5LAT" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="1ATeiwJ5LAU" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F1sOY" id="1ATeiwJ5LAV" role="3EZMnx">
-          <ref role="1NtTu8" to="k2kp:1ATeiwITn1s" resolve="environment" />
-          <node concept="lj46D" id="1ATeiwJ5LAW" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="ljvvj" id="1ATeiwJ5LAX" role="3F10Kt">
+        <node concept="3F0A7n" id="5BK7UENgjp$" role="3EZMnx">
+          <ref role="1NtTu8" to="k2kp:1ATeiwITn1p" resolve="giocoId" />
+          <node concept="ljvvj" id="5BK7UENgjp_" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="1ATeiwJ5LAY" role="3EZMnx">
+      <node concept="3F0ifn" id="5BK7UENgjpA" role="3EZMnx">
         <property role="3F0ifm" value="}" />
-        <node concept="3mYdg7" id="1ATeiwJ5LAZ" role="3F10Kt">
+        <node concept="3mYdg7" id="5BK7UENgjpB" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
       </node>

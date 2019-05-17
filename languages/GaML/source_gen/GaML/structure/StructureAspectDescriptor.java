@@ -18,9 +18,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptChallengeField = createDescriptorForChallengeField();
   /*package*/ final ConceptDescriptor myConceptChallengeModel = createDescriptorForChallengeModel();
   /*package*/ final ConceptDescriptor myConceptChallengeRule = createDescriptorForChallengeRule();
-  /*package*/ final ConceptDescriptor myConceptGameDefinition = createDescriptorForGameDefinition();
+  /*package*/ final ConceptDescriptor myConceptClasse = createDescriptorForClasse();
+  /*package*/ final ConceptDescriptor myConceptDefinizioneGioco = createDescriptorForDefinizioneGioco();
+  /*package*/ final ConceptDescriptor myConceptDominio = createDescriptorForDominio();
+  /*package*/ final ConceptDescriptor myConceptIstituto = createDescriptorForIstituto();
   /*package*/ final ConceptDescriptor myConceptPlayerChallenge = createDescriptorForPlayerChallenge();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
+  /*package*/ final ConceptDescriptor myConceptScuola = createDescriptorForScuola();
   /*package*/ final ConceptDescriptor myConceptTeamChallenge = createDescriptorForTeamChallenge();
   /*package*/ final ConceptDescriptor myConceptThenActionRule = createDescriptorForThenActionRule();
   /*package*/ final ConceptDescriptor myConceptThenChallengeRule = createDescriptorForThenChallengeRule();
@@ -38,7 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActionRule, myConceptChallengeField, myConceptChallengeModel, myConceptChallengeRule, myConceptGameDefinition, myConceptPlayerChallenge, myConceptRule, myConceptTeamChallenge, myConceptThenActionRule, myConceptThenChallengeRule, myConceptWhenActionRule, myConceptWhenChallengeRule, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
+    return Arrays.asList(myConceptActionRule, myConceptChallengeField, myConceptChallengeModel, myConceptChallengeRule, myConceptClasse, myConceptDefinizioneGioco, myConceptDominio, myConceptIstituto, myConceptPlayerChallenge, myConceptRule, myConceptScuola, myConceptTeamChallenge, myConceptThenActionRule, myConceptThenChallengeRule, myConceptWhenActionRule, myConceptWhenChallengeRule, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
   }
 
   @Override
@@ -53,12 +57,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptChallengeModel;
       case LanguageConceptSwitch.ChallengeRule:
         return myConceptChallengeRule;
-      case LanguageConceptSwitch.GameDefinition:
-        return myConceptGameDefinition;
+      case LanguageConceptSwitch.Classe:
+        return myConceptClasse;
+      case LanguageConceptSwitch.DefinizioneGioco:
+        return myConceptDefinizioneGioco;
+      case LanguageConceptSwitch.Dominio:
+        return myConceptDominio;
+      case LanguageConceptSwitch.Istituto:
+        return myConceptIstituto;
       case LanguageConceptSwitch.PlayerChallenge:
         return myConceptPlayerChallenge;
       case LanguageConceptSwitch.Rule:
         return myConceptRule;
+      case LanguageConceptSwitch.Scuola:
+        return myConceptScuola;
       case LanguageConceptSwitch.TeamChallenge:
         return myConceptTeamChallenge;
       case LanguageConceptSwitch.ThenActionRule:
@@ -135,19 +147,49 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("challengeRule");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForGameDefinition() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "GameDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L);
+  private static ConceptDescriptor createDescriptorForClasse() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classe", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d130dL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Team", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6480714681798169357");
+    b.version(2);
+    b.alias("classe");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDefinizioneGioco() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "DefinizioneGioco", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L);
     b.class_(false, false, true);
     b.super_("GML.structure.Game", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd03861a4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434089296");
     b.version(2);
-    b.aggregate("dataDrivenActions", 0x23eac9cba955f45bL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x5d61ef6eeb9c76c4L).optional(true).ordered(true).multiple(true).origin("2588102812434297947").done();
-    b.aggregate("eventDrivenActions", 0x23eac9cba955f45dL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7eL).optional(true).ordered(true).multiple(true).origin("2588102812434297949").done();
-    b.aggregate("skillPoints", 0x23eac9cba97fedf7L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d80L).optional(true).ordered(true).multiple(true).origin("2588102812437048823").done();
-    b.aggregate("experiencePoints", 0x23eac9cba97fedfeL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba9555d7fL).optional(true).ordered(true).multiple(true).origin("2588102812437048830").done();
-    b.aggregate("badgesCollection", 0x19b939282dd6bfddL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("1853575566370193373").done();
-    b.aggregate("challengeModels", 0x19b939282e254260L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x19b939282e25420aL).optional(true).ordered(true).multiple(true).origin("1853575566375338592").done();
+    b.aggregate("dominio", 0x59f01faab33d131aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L).optional(false).ordered(true).multiple(false).origin("6480714681798169370").done();
+    b.aggregate("istituto", 0x59f01faab33d1347L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1307L).optional(false).ordered(true).multiple(false).origin("6480714681798169415").done();
+    b.aggregate("scuola", 0x59f01faab33d134aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d130aL).optional(false).ordered(true).multiple(false).origin("6480714681798169418").done();
+    b.aggregate("classi", 0x59f01faab33d134eL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d130dL).optional(false).ordered(true).multiple(true).origin("6480714681798169422").done();
     b.alias("gameDefinition");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDominio() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Dominio", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Team", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6480714681798169348");
+    b.version(2);
+    b.aggregate("istituti", 0x59f01faab33d1312L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1307L).optional(true).ordered(true).multiple(true).origin("6480714681798169362").done();
+    b.alias("dominio");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIstituto() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Istituto", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1307L);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Team", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6480714681798169351");
+    b.version(2);
+    b.aggregate("scuole", 0x59f01faab33d1316L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d130aL).optional(true).ordered(true).multiple(true).origin("6480714681798169366").done();
+    b.alias("istituto");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPlayerChallenge() {
@@ -165,6 +207,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("gameId", 0x3eecc86bd037a724L).type(PrimitiveTypeId.STRING).origin("4534219290235610916").done();
     b.alias("rule");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForScuola() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Scuola", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d130aL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Team", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6480714681798169354");
+    b.version(2);
+    b.aggregate("classi", 0x59f01faab33d1318L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d130dL).optional(true).ordered(true).multiple(true).origin("6480714681798169368").done();
+    b.alias("scuola");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTeamChallenge() {

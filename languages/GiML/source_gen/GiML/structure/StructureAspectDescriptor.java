@@ -15,7 +15,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEnvironment = createDescriptorForEnvironment();
-  /*package*/ final ConceptDescriptor myConceptGameInstance = createDescriptorForGameInstance();
+  /*package*/ final ConceptDescriptor myConceptIstanzaGioco = createDescriptorForIstanzaGioco();
   /*package*/ final ConceptDescriptor myConceptTeamInstance = createDescriptorForTeamInstance();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -25,7 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptEnvironment, myConceptGameInstance, myConceptTeamInstance);
+    return Arrays.asList(myConceptEnvironment, myConceptIstanzaGioco, myConceptTeamInstance);
   }
 
   @Override
@@ -34,8 +34,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Environment:
         return myConceptEnvironment;
-      case LanguageConceptSwitch.GameInstance:
-        return myConceptGameInstance;
+      case LanguageConceptSwitch.IstanzaGioco:
+        return myConceptIstanzaGioco;
       case LanguageConceptSwitch.TeamInstance:
         return myConceptTeamInstance;
       default:
@@ -61,15 +61,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("environment");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForGameInstance() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GameInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L);
+  private static ConceptDescriptor createDescriptorForIstanzaGioco() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "IstanzaGioco", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933250");
     b.version(2);
-    b.property("gameInstanceId", 0x19b939282ee57059L).type(PrimitiveTypeId.STRING).origin("1853575566387933273").done();
-    b.associate("gameDefinition", 0x19b939282ee5705fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).origin("1853575566387933279").done();
-    b.aggregate("environment", 0x19b939282ee5705cL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee45dddL).optional(false).ordered(true).multiple(false).origin("1853575566387933276").done();
+    b.property("giocoId", 0x19b939282ee57059L).type(PrimitiveTypeId.STRING).origin("1853575566387933273").done();
+    b.associate("definizioneGioco", 0x19b939282ee5705fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).origin("1853575566387933279").done();
     b.alias("gameInstance");
     return b.create();
   }

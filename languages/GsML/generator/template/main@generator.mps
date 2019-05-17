@@ -2,6 +2,7 @@
 <model ref="r:ec1d4cc8-6f31-4354-8071-a992207bd009(main@generator)">
   <persistence version="9" />
   <languages>
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -383,7 +384,7 @@
             </node>
             <node concept="3SKdUt" id="1ATeiwJhr8x" role="3cqZAp">
               <node concept="3SKdUq" id="1ATeiwJhr8z" role="3SKWNk">
-                <property role="3SKdUp" value="take a player name randomly to assign a specific simulation action" />
+                <property role="3SKdUp" value="select a player randomly to assign a specific simulation action" />
               </node>
             </node>
             <node concept="3clFbF" id="1ATeiwJds6J" role="3cqZAp">
@@ -505,13 +506,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1ATeiwJaYW4" role="3cqZAp" />
-        <node concept="3clFbH" id="1ATeiwJaXht" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="1ATeiwJavWZ" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="2tJIrI" id="1ATeiwJ$NFf" role="jymVt" />
     <node concept="3clFb_" id="1ATeiwJavX0" role="jymVt">
       <property role="TrG5h" value="analyzeResult" />
       <node concept="3Tm1VV" id="1ATeiwJavX1" role="1B3o_S" />
