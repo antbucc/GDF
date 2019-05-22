@@ -212,11 +212,6 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="3VGM6Jge9XV" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235674491" />
-      <property role="TrG5h" value="domain" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="3VGM6Jge9XY" role="1TKVEl">
       <property role="IQ2nx" value="4534219290235674494" />
       <property role="TrG5h" value="owner" />

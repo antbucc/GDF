@@ -9,22 +9,13 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Environment;
   private ConceptPresentation props_IstanzaGioco;
-  private ConceptPresentation props_TeamInstance;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Environment:
-        if (props_Environment == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("environment");
-          props_Environment = cpb.create();
-        }
-        return props_Environment;
       case LanguageConceptSwitch.IstanzaGioco:
         if (props_IstanzaGioco == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -32,13 +23,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IstanzaGioco = cpb.create();
         }
         return props_IstanzaGioco;
-      case LanguageConceptSwitch.TeamInstance:
-        if (props_TeamInstance == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_TeamInstance = cpb.create();
-        }
-        return props_TeamInstance;
     }
     return null;
   }

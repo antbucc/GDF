@@ -30,6 +30,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     myIndexSwitch = new LanguageConceptSwitch();
   }
 
+
+  @Override
+  public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
+    deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+  }
+
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
     return Arrays.asList(myConceptAction, myConceptBadge, myConceptBadgeCollection, myConceptChallenge, myConceptGame, myConceptLevel, myConceptPeriod, myConceptPlayer, myConceptPoint, myConceptTeam);
@@ -117,7 +123,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235658660");
     b.version(2);
     b.property("id", 0x3eecc86bd0389f79L).type(PrimitiveTypeId.STRING).origin("4534219290235674489").done();
-    b.property("domain", 0x3eecc86bd0389f7bL).type(PrimitiveTypeId.STRING).origin("4534219290235674491").done();
     b.property("owner", 0x3eecc86bd0389f7eL).type(PrimitiveTypeId.STRING).origin("4534219290235674494").done();
     b.aggregate("actions", 0x3eecc86bd03886acL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0379cf3L).optional(true).ordered(true).multiple(true).origin("4534219290235668140").done();
     b.aggregate("badgeCollections", 0x3eecc86bd03886aaL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(true).ordered(true).multiple(true).origin("4534219290235668138").done();

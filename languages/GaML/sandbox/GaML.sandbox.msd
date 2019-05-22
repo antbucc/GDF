@@ -21,7 +21,6 @@
   <languageVersions>
     <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
     <language slang="l:1472546d-a964-48a0-a11e-4271b165a42c:GaML" version="0" />
-    <language slang="l:dc26d825-2883-4e88-933c-f0e9f65c69c4:GameData" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

@@ -2,6 +2,7 @@
 <model ref="r:8ec9c997-fdcb-4c63-827d-a0a5825bf77a(main@generator)">
   <persistence version="9" />
   <languages>
+    <use id="dbb8e023-c832-48db-a6c3-fe72f22d0621" name="GadML" version="-1" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -24,9 +25,6 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -167,8 +165,8 @@
               <ref role="3uigEE" to="qnb9:~ChallengeModel" resolve="ChallengeModel" />
             </node>
             <node concept="2ShNRf" id="1ATeiwJyFT1" role="33vP2m">
-              <node concept="HV5vD" id="1ATeiwJyG1d" role="2ShVmc">
-                <ref role="HV5vE" to="qnb9:~ChallengeModel" resolve="ChallengeModel" />
+              <node concept="1pGfFk" id="5Rgfimv8DBr" role="2ShVmc">
+                <ref role="37wK5l" to="qnb9:~ChallengeModel.&lt;init&gt;()" resolve="ChallengeModel" />
               </node>
             </node>
           </node>

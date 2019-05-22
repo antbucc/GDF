@@ -11,33 +11,33 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptEnvironment = createDescriptorForEnvironment();
   /*package*/ final ConceptDescriptor myConceptIstanzaGioco = createDescriptorForIstanzaGioco();
-  /*package*/ final ConceptDescriptor myConceptTeamInstance = createDescriptorForTeamInstance();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
     myIndexSwitch = new LanguageConceptSwitch();
   }
 
+
+  @Override
+  public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
+    deps.extendedLanguage(0x1472546da96448a0L, 0xa11e4271b165a42cL, "GaML");
+    deps.aggregatedLanguage(0x1472546da96448a0L, 0xa11e4271b165a42cL, "GaML");
+  }
+
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptEnvironment, myConceptIstanzaGioco, myConceptTeamInstance);
+    return Arrays.asList(myConceptIstanzaGioco);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Environment:
-        return myConceptEnvironment;
       case LanguageConceptSwitch.IstanzaGioco:
         return myConceptIstanzaGioco;
-      case LanguageConceptSwitch.TeamInstance:
-        return myConceptTeamInstance;
       default:
         return null;
     }
@@ -52,35 +52,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForEnvironment() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "Environment", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee45dddL);
-    b.class_(false, false, false);
-    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387863005");
-    b.version(2);
-    b.aggregate("teamInstances", 0x19b939282ee57028L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee5702bL).optional(false).ordered(true).multiple(true).origin("1853575566387933224").done();
-    b.alias("environment");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForIstanzaGioco() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "IstanzaGioco", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L);
     b.class_(false, false, true);
+    b.super_("GaML.structure.DefinizioneGioco", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933250");
     b.version(2);
-    b.property("giocoId", 0x19b939282ee57059L).type(PrimitiveTypeId.STRING).origin("1853575566387933273").done();
-    b.associate("definizioneGioco", 0x19b939282ee5705fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).origin("1853575566387933279").done();
-    b.alias("gameInstance");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTeamInstance() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "TeamInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee5702bL);
-    b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933227");
-    b.version(2);
-    b.aggregate("team", 0x19b939282ee68c70L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(false).ordered(true).multiple(false).origin("1853575566388006000").done();
-    b.aggregate("players", 0x19b939282ee68c73L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L).optional(true).ordered(true).multiple(true).origin("1853575566388006003").done();
-    b.alias("teamInstance");
+    b.aggregate("dominio", 0x113e1e4cb684a4feL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).ordered(true).multiple(false).origin("1242463862029329662").done();
+    b.aggregate("istituto", 0x113e1e4cb684a500L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).ordered(true).multiple(false).origin("1242463862029329664").done();
+    b.aggregate("classi", 0x113e1e4cb684a503L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("1242463862029329667").done();
+    b.alias("istanzaGioco");
     return b.create();
   }
 }

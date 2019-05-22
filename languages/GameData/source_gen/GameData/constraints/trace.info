@@ -1,70 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,29,0" name="GameData.constraints.ConstraintsAspectDescriptor" />
-    </file>
-  </root>
-  <root nodeRef="r:15943eb5-e32e-463c-866f-5c1a9e040a95(GameData.constraints)/3655794965912021786">
-    <file name="GameData_Constraints.java">
-      <node id="3655794965912021786" at="23,33,24,135" concept="9" />
-      <node id="3655794965912021786" at="31,127,32,128" concept="4" />
-      <node id="3655794965912021786" at="32,128,33,0" concept="6" />
-      <node id="3655794965912021786" at="34,55,35,71" concept="1" />
-      <node id="3655794965912021786" at="36,9,37,0" concept="6" />
-      <node id="3655794965912021786" at="37,0,38,22" concept="5" />
-      <node id="1853575566383393296" at="45,41,46,246" concept="5" />
-      <node id="1853575566383480930" at="48,9,49,58" concept="5" />
-      <node id="1853575566383345066" at="50,5,51,16" concept="5" />
-      <node id="3655794965912021786" at="53,0,54,0" concept="7" trace="canBeChildBreakingPoint" />
-      <node id="3655794965912021786" at="23,0,26,0" concept="0" trace="GameData_Constraints#()V" />
-      <node id="3655794965912021786" at="33,0,36,9" concept="2" />
-      <node id="1853575566383392472" at="45,0,48,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1853575566383346030" at="43,180,48,9" concept="4" />
-      <node id="1853575566383335928" at="42,134,50,5" concept="2" />
-      <node id="3655794965912021786" at="30,0,40,0" concept="3" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
-      <node id="3655794965912021786" at="42,0,53,0" concept="8" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
-      <node id="3655794965912021786" at="28,103,40,6" concept="5" />
-      <node id="3655794965912021786" at="27,0,42,0" concept="3" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
-      <scope id="3655794965912021786" at="23,33,24,135" />
-      <scope id="3655794965912021786" at="34,55,35,71" />
-      <scope id="1853575566383392473" at="45,41,46,246" />
-      <scope id="3655794965912021786" at="23,0,26,0" />
-      <scope id="1853575566383392472" at="45,0,48,0">
-        <var name="it" id="1853575566383392472" />
-      </scope>
-      <scope id="1853575566383335930" at="43,180,49,58">
-        <var name="dataList" id="1853575566383346033" />
-      </scope>
-      <scope id="3655794965912021786" at="31,127,38,22">
-        <var name="result" id="3655794965912021786" />
-      </scope>
-      <scope id="1853575566383335460" at="42,134,51,16" />
-      <scope id="3655794965912021786" at="30,0,40,0">
-        <var name="checkingNodeContext" id="3655794965912021786" />
-        <var name="context" id="3655794965912021786" />
-      </scope>
-      <scope id="3655794965912021786" at="42,0,53,0">
-        <var name="childConcept" id="3655794965912021786" />
-        <var name="link" id="3655794965912021786" />
-        <var name="node" id="3655794965912021786" />
-        <var name="parentNode" id="3655794965912021786" />
-      </scope>
-      <scope id="3655794965912021786" at="28,103,40,6" />
-      <scope id="3655794965912021786" at="27,0,42,0" />
-      <unit id="1853575566383392472" at="44,393,48,7" name="GameData.constraints.GameData_Constraints$2" />
-      <unit id="3655794965912021786" at="29,15,40,5" name="GameData.constraints.GameData_Constraints$1" />
-      <unit id="3655794965912021786" at="22,0,55,0" name="GameData.constraints.GameData_Constraints" />
+      <unit at="10,0,20,0" name="GameData.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
 </debug-info>

@@ -9,49 +9,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ActionRule = 0;
-  public static final int ChallengeField = 1;
-  public static final int ChallengeModel = 2;
-  public static final int ChallengeRule = 3;
-  public static final int Classe = 4;
-  public static final int DefinizioneGioco = 5;
-  public static final int Dominio = 6;
-  public static final int Istituto = 7;
-  public static final int PlayerChallenge = 8;
-  public static final int Rule = 9;
-  public static final int Scuola = 10;
-  public static final int TeamChallenge = 11;
-  public static final int ThenActionRule = 12;
-  public static final int ThenChallengeRule = 13;
-  public static final int WhenActionRule = 14;
-  public static final int WhenChallengeRule = 15;
-  public static final int dataDrivenAction = 16;
-  public static final int eventDrivenAction = 17;
-  public static final int experiencePoint = 18;
-  public static final int skillPoint = 19;
+  public static final int Alunno = 0;
+  public static final int Classe = 1;
+  public static final int ComplexTeam = 2;
+  public static final int DefinizioneGioco = 3;
+  public static final int Dominio = 4;
+  public static final int Istituto = 5;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
-    builder.put(0x23eac9cba9511f4dL, ActionRule);
-    builder.put(0x19b939282e254233L, ChallengeField);
-    builder.put(0x19b939282e25420aL, ChallengeModel);
-    builder.put(0x23eac9cba9511f57L, ChallengeRule);
-    builder.put(0x59f01faab33d130dL, Classe);
+    builder.put(0x113e1e4cb66fe31eL, Alunno);
+    builder.put(0x113e1e4cb66fe319L, Classe);
+    builder.put(0x59f01faab33d1304L, ComplexTeam);
     builder.put(0x23eac9cba952c550L, DefinizioneGioco);
-    builder.put(0x59f01faab33d1304L, Dominio);
-    builder.put(0x59f01faab33d1307L, Istituto);
-    builder.put(0x23eac9cba951fea9L, PlayerChallenge);
-    builder.put(0x3eecc86bd037a723L, Rule);
-    builder.put(0x59f01faab33d130aL, Scuola);
-    builder.put(0x23eac9cba951feaaL, TeamChallenge);
-    builder.put(0x23eac9cba9511f54L, ThenActionRule);
-    builder.put(0x23eac9cba9511f56L, ThenChallengeRule);
-    builder.put(0x23eac9cba9511f53L, WhenActionRule);
-    builder.put(0x23eac9cba9511f55L, WhenChallengeRule);
-    builder.put(0x5d61ef6eeb9c76c4L, dataDrivenAction);
-    builder.put(0x23eac9cba9555d7eL, eventDrivenAction);
-    builder.put(0x23eac9cba9555d7fL, experiencePoint);
-    builder.put(0x23eac9cba9555d80L, skillPoint);
+    builder.put(0x113e1e4cb66fe2d9L, Dominio);
+    builder.put(0x113e1e4cb66fe312L, Istituto);
     myIndex = builder.seal();
   }
 
