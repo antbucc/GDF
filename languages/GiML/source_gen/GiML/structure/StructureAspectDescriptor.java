@@ -13,6 +13,9 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptGamificationDashboard = createDescriptorForGamificationDashboard();
+  /*package*/ final ConceptDescriptor myConceptInstanzaDominio = createDescriptorForInstanzaDominio();
+  /*package*/ final ConceptDescriptor myConceptInstanzaDominioFieldReference = createDescriptorForInstanzaDominioFieldReference();
   /*package*/ final ConceptDescriptor myConceptIstanzaGioco = createDescriptorForIstanzaGioco();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -23,19 +26,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
+    deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     deps.extendedLanguage(0x1472546da96448a0L, 0xa11e4271b165a42cL, "GaML");
-    deps.aggregatedLanguage(0x1472546da96448a0L, 0xa11e4271b165a42cL, "GaML");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptIstanzaGioco);
+    return Arrays.asList(myConceptGamificationDashboard, myConceptInstanzaDominio, myConceptInstanzaDominioFieldReference, myConceptIstanzaGioco);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.GamificationDashboard:
+        return myConceptGamificationDashboard;
+      case LanguageConceptSwitch.InstanzaDominio:
+        return myConceptInstanzaDominio;
+      case LanguageConceptSwitch.InstanzaDominioFieldReference:
+        return myConceptInstanzaDominioFieldReference;
       case LanguageConceptSwitch.IstanzaGioco:
         return myConceptIstanzaGioco;
       default:
@@ -52,6 +61,34 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForGamificationDashboard() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GamificationDashboard", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa69266dL);
+    b.class_(false, false, true);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772262475373");
+    b.version(2);
+    b.aggregate("domini", 0x29c2332daa69266eL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L).optional(true).ordered(true).multiple(true).origin("3009023772262475374").done();
+    b.aggregate("istanzeGioco", 0x29c2332daa692671L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L).optional(true).ordered(true).multiple(true).origin("3009023772262475377").done();
+    b.alias("dashboard");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInstanzaDominio() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "InstanzaDominio", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L);
+    b.class_(false, false, true);
+    b.super_("GaML.structure.Dominio", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772258458929");
+    b.version(2);
+    b.alias("istanzaDominio");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInstanzaDominioFieldReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "InstanzaDominioFieldReference", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa623086L);
+    b.class_(false, false, false);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772262019206");
+    b.version(2);
+    b.associate("target", 0x29c2332daa623087L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L).optional(false).origin("3009023772262019207").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForIstanzaGioco() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "IstanzaGioco", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L);
     b.class_(false, false, true);
@@ -59,9 +96,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933250");
     b.version(2);
-    b.aggregate("dominio", 0x113e1e4cb684a4feL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).ordered(true).multiple(false).origin("1242463862029329662").done();
-    b.aggregate("istituto", 0x113e1e4cb684a500L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).ordered(true).multiple(false).origin("1242463862029329664").done();
-    b.aggregate("classi", 0x113e1e4cb684a503L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("1242463862029329667").done();
+    b.aggregate("dominio", 0x29c2332daa5eb230L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L).optional(false).ordered(true).multiple(false).origin("3009023772261790256").done();
     b.alias("istanzaGioco");
     return b.create();
   }

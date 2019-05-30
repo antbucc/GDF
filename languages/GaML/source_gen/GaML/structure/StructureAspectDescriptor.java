@@ -30,6 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, "GML");
+    deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     deps.aggregatedLanguage(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, "GML");
   }
 
@@ -116,11 +117,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDominio() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Dominio", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L);
     b.class_(false, false, false);
-    b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969241");
     b.version(2);
-    b.aggregate("istituti", 0x113e1e4cb66fe365L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).ordered(true).multiple(true).origin("1242463862027969381").done();
     b.alias("dominio");
     return b.create();
   }
@@ -132,6 +131,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969298");
     b.version(2);
     b.property("indirizzo", 0x113e1e4cb66fe315L).type(PrimitiveTypeId.STRING).origin("1242463862027969301").done();
+    b.aggregate("dominio", 0x113e1e4cb69f9c01L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).ordered(true).multiple(false).origin("1242463862031096833").done();
     b.aggregate("classi", 0x113e1e4cb66fe317L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("1242463862027969303").done();
     b.alias("istituto");
     return b.create();

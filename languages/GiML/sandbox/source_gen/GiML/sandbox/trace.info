@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/1242463862029480705">
-    <file name="map_instance.java">
-      <unit id="1242463862029480705" at="6,0,8,0" name="GiML.sandbox.map_instance" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 

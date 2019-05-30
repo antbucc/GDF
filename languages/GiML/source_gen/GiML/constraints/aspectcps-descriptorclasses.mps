@@ -6,7 +6,9 @@
   <languages />
   <imports>
     <import index="3vqe" ref="r:71630337-56c4-48d4-b9d4-99f81cd88d7d(GiML.constraints)" />
+    <import index="k2kp" ref="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)" />
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
+    <import index="2k9e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
     <import index="79pl" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime.base(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
   </imports>
@@ -22,6 +24,13 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -31,6 +40,9 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="4269842503726207156" name="jetbrains.mps.baseLanguage.structure.LongLiteral" flags="nn" index="1adDum">
+        <property id="4269842503726207157" name="value" index="1adDun" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="1181808852946" name="isFinal" index="DiZV1" />
@@ -66,18 +78,39 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
+      <concept id="7980339663309897032" name="jetbrains.mps.lang.generator.structure.OriginTrace" flags="ng" index="cd27G">
+        <child id="7980339663309897037" name="origin" index="cd27D" />
+      </concept>
       <concept id="3864140621129707969" name="jetbrains.mps.lang.generator.structure.GeneratorDebug_Mappings" flags="nn" index="39dXUE" />
+      <concept id="3637169702552512264" name="jetbrains.mps.lang.generator.structure.ElementaryNodeId" flags="ng" index="3u3nmq">
+        <property id="3637169702552512269" name="nodeId" index="3u3nmv" />
+      </concept>
+    </language>
+    <language id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal">
+      <concept id="1173996401517" name="jetbrains.mps.baseLanguageInternal.structure.InternalNewExpression" flags="nn" index="1nCR9W">
+        <property id="1173996588177" name="fqClassName" index="1nD$Q0" />
+        <child id="1179332974947" name="type" index="2lIhxL" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
+      <concept id="1154546950173" name="jetbrains.mps.lang.smodel.structure.ConceptReference" flags="ng" index="3gn64h">
+        <reference id="1154546997487" name="concept" index="3gnhBz" />
+      </concept>
+      <concept id="6039268229364358244" name="jetbrains.mps.lang.smodel.structure.ExactConceptCase" flags="ng" index="1pnPoh">
+        <child id="6039268229364358388" name="body" index="1pnPq1" />
+        <child id="6039268229364358387" name="concept" index="1pnPq6" />
+      </concept>
       <concept id="5944356402132808749" name="jetbrains.mps.lang.smodel.structure.ConceptSwitchStatement" flags="nn" index="1_3QMa">
         <child id="6039268229365417680" name="defaultBlock" index="1prKM_" />
+        <child id="5944356402132808753" name="case" index="1_3QMm" />
         <child id="5944356402132808752" name="expression" index="1_3QMn" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -117,13 +150,43 @@
           <node concept="37vLTw" id="h" role="1_3QMn">
             <ref role="3cqZAo" node="c" resolve="concept" />
           </node>
-          <node concept="3clFbS" id="i" role="1prKM_" />
+          <node concept="1pnPoh" id="i" role="1_3QMm">
+            <node concept="3clFbS" id="l" role="1pnPq1">
+              <node concept="3cpWs6" id="n" role="3cqZAp">
+                <node concept="1nCR9W" id="o" role="3cqZAk">
+                  <property role="1nD$Q0" value="GiML.constraints.GamificationDashboard_Constraints" />
+                  <node concept="3uibUv" id="p" role="2lIhxL">
+                    <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3gn64h" id="m" role="1pnPq6">
+              <ref role="3gnhBz" to="k2kp:2B2cMQEqipH" resolve="GamificationDashboard" />
+            </node>
+          </node>
+          <node concept="1pnPoh" id="j" role="1_3QMm">
+            <node concept="3clFbS" id="q" role="1pnPq1">
+              <node concept="3cpWs6" id="s" role="3cqZAp">
+                <node concept="1nCR9W" id="t" role="3cqZAk">
+                  <property role="1nD$Q0" value="GiML.constraints.IstanzaGioco_Constraints" />
+                  <node concept="3uibUv" id="u" role="2lIhxL">
+                    <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3gn64h" id="r" role="1pnPq6">
+              <ref role="3gnhBz" to="k2kp:1ATeiwITn12" resolve="IstanzaGioco" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="k" role="1prKM_" />
         </node>
         <node concept="3cpWs6" id="g" role="3cqZAp">
-          <node concept="2ShNRf" id="j" role="3cqZAk">
-            <node concept="1pGfFk" id="k" role="2ShVmc">
+          <node concept="2ShNRf" id="v" role="3cqZAk">
+            <node concept="1pGfFk" id="w" role="2ShVmc">
               <ref role="37wK5l" to="79pl:~BaseConstraintsDescriptor.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="BaseConstraintsDescriptor" />
-              <node concept="37vLTw" id="l" role="37wK5m">
+              <node concept="37vLTw" id="x" role="37wK5m">
                 <ref role="3cqZAo" node="c" resolve="concept" />
               </node>
             </node>
@@ -132,6 +195,220 @@
       </node>
     </node>
   </node>
-  <node concept="39dXUE" id="m" />
+  <node concept="312cEu" id="y">
+    <property role="TrG5h" value="GamificationDashboard_Constraints" />
+    <node concept="3Tm1VV" id="z" role="1B3o_S">
+      <node concept="cd27G" id="C" role="lGtFl">
+        <node concept="3u3nmq" id="D" role="cd27D">
+          <property role="3u3nmv" value="3009023772262869380" />
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="$" role="1zkMxy">
+      <ref role="3uigEE" to="79pl:~BaseConstraintsDescriptor" resolve="BaseConstraintsDescriptor" />
+      <node concept="cd27G" id="E" role="lGtFl">
+        <node concept="3u3nmq" id="F" role="cd27D">
+          <property role="3u3nmv" value="3009023772262869380" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbW" id="_" role="jymVt">
+      <node concept="3cqZAl" id="G" role="3clF45">
+        <node concept="cd27G" id="K" role="lGtFl">
+          <node concept="3u3nmq" id="L" role="cd27D">
+            <property role="3u3nmv" value="3009023772262869380" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="H" role="3clF47">
+        <node concept="XkiVB" id="M" role="3cqZAp">
+          <ref role="37wK5l" to="79pl:~BaseConstraintsDescriptor.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="BaseConstraintsDescriptor" />
+          <node concept="2YIFZM" id="O" role="37wK5m">
+            <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
+            <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getConcept(long,long,long,java.lang.String)" resolve="getConcept" />
+            <node concept="1adDum" id="Q" role="37wK5m">
+              <property role="1adDun" value="0x119e117f12604f12L" />
+              <node concept="cd27G" id="V" role="lGtFl">
+                <node concept="3u3nmq" id="W" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262869380" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adDum" id="R" role="37wK5m">
+              <property role="1adDun" value="0xb46eefd3d0e4c44fL" />
+              <node concept="cd27G" id="X" role="lGtFl">
+                <node concept="3u3nmq" id="Y" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262869380" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adDum" id="S" role="37wK5m">
+              <property role="1adDun" value="0x29c2332daa69266dL" />
+              <node concept="cd27G" id="Z" role="lGtFl">
+                <node concept="3u3nmq" id="10" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262869380" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="T" role="37wK5m">
+              <property role="Xl_RC" value="GiML.structure.GamificationDashboard" />
+              <node concept="cd27G" id="11" role="lGtFl">
+                <node concept="3u3nmq" id="12" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262869380" />
+                </node>
+              </node>
+            </node>
+            <node concept="cd27G" id="U" role="lGtFl">
+              <node concept="3u3nmq" id="13" role="cd27D">
+                <property role="3u3nmv" value="3009023772262869380" />
+              </node>
+            </node>
+          </node>
+          <node concept="cd27G" id="P" role="lGtFl">
+            <node concept="3u3nmq" id="14" role="cd27D">
+              <property role="3u3nmv" value="3009023772262869380" />
+            </node>
+          </node>
+        </node>
+        <node concept="cd27G" id="N" role="lGtFl">
+          <node concept="3u3nmq" id="15" role="cd27D">
+            <property role="3u3nmv" value="3009023772262869380" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="I" role="1B3o_S">
+        <node concept="cd27G" id="16" role="lGtFl">
+          <node concept="3u3nmq" id="17" role="cd27D">
+            <property role="3u3nmv" value="3009023772262869380" />
+          </node>
+        </node>
+      </node>
+      <node concept="cd27G" id="J" role="lGtFl">
+        <node concept="3u3nmq" id="18" role="cd27D">
+          <property role="3u3nmv" value="3009023772262869380" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="A" role="jymVt">
+      <node concept="cd27G" id="19" role="lGtFl">
+        <node concept="3u3nmq" id="1a" role="cd27D">
+          <property role="3u3nmv" value="3009023772262869380" />
+        </node>
+      </node>
+    </node>
+    <node concept="cd27G" id="B" role="lGtFl">
+      <node concept="3u3nmq" id="1b" role="cd27D">
+        <property role="3u3nmv" value="3009023772262869380" />
+      </node>
+    </node>
+  </node>
+  <node concept="39dXUE" id="1c" />
+  <node concept="312cEu" id="1d">
+    <property role="TrG5h" value="IstanzaGioco_Constraints" />
+    <node concept="3Tm1VV" id="1e" role="1B3o_S">
+      <node concept="cd27G" id="1j" role="lGtFl">
+        <node concept="3u3nmq" id="1k" role="cd27D">
+          <property role="3u3nmv" value="3009023772262903790" />
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="1f" role="1zkMxy">
+      <ref role="3uigEE" to="79pl:~BaseConstraintsDescriptor" resolve="BaseConstraintsDescriptor" />
+      <node concept="cd27G" id="1l" role="lGtFl">
+        <node concept="3u3nmq" id="1m" role="cd27D">
+          <property role="3u3nmv" value="3009023772262903790" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbW" id="1g" role="jymVt">
+      <node concept="3cqZAl" id="1n" role="3clF45">
+        <node concept="cd27G" id="1r" role="lGtFl">
+          <node concept="3u3nmq" id="1s" role="cd27D">
+            <property role="3u3nmv" value="3009023772262903790" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="1o" role="3clF47">
+        <node concept="XkiVB" id="1t" role="3cqZAp">
+          <ref role="37wK5l" to="79pl:~BaseConstraintsDescriptor.&lt;init&gt;(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="BaseConstraintsDescriptor" />
+          <node concept="2YIFZM" id="1v" role="37wK5m">
+            <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
+            <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getConcept(long,long,long,java.lang.String)" resolve="getConcept" />
+            <node concept="1adDum" id="1x" role="37wK5m">
+              <property role="1adDun" value="0x119e117f12604f12L" />
+              <node concept="cd27G" id="1A" role="lGtFl">
+                <node concept="3u3nmq" id="1B" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262903790" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adDum" id="1y" role="37wK5m">
+              <property role="1adDun" value="0xb46eefd3d0e4c44fL" />
+              <node concept="cd27G" id="1C" role="lGtFl">
+                <node concept="3u3nmq" id="1D" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262903790" />
+                </node>
+              </node>
+            </node>
+            <node concept="1adDum" id="1z" role="37wK5m">
+              <property role="1adDun" value="0x19b939282ee57042L" />
+              <node concept="cd27G" id="1E" role="lGtFl">
+                <node concept="3u3nmq" id="1F" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262903790" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="1$" role="37wK5m">
+              <property role="Xl_RC" value="GiML.structure.IstanzaGioco" />
+              <node concept="cd27G" id="1G" role="lGtFl">
+                <node concept="3u3nmq" id="1H" role="cd27D">
+                  <property role="3u3nmv" value="3009023772262903790" />
+                </node>
+              </node>
+            </node>
+            <node concept="cd27G" id="1_" role="lGtFl">
+              <node concept="3u3nmq" id="1I" role="cd27D">
+                <property role="3u3nmv" value="3009023772262903790" />
+              </node>
+            </node>
+          </node>
+          <node concept="cd27G" id="1w" role="lGtFl">
+            <node concept="3u3nmq" id="1J" role="cd27D">
+              <property role="3u3nmv" value="3009023772262903790" />
+            </node>
+          </node>
+        </node>
+        <node concept="cd27G" id="1u" role="lGtFl">
+          <node concept="3u3nmq" id="1K" role="cd27D">
+            <property role="3u3nmv" value="3009023772262903790" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1p" role="1B3o_S">
+        <node concept="cd27G" id="1L" role="lGtFl">
+          <node concept="3u3nmq" id="1M" role="cd27D">
+            <property role="3u3nmv" value="3009023772262903790" />
+          </node>
+        </node>
+      </node>
+      <node concept="cd27G" id="1q" role="lGtFl">
+        <node concept="3u3nmq" id="1N" role="cd27D">
+          <property role="3u3nmv" value="3009023772262903790" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1h" role="jymVt">
+      <node concept="cd27G" id="1O" role="lGtFl">
+        <node concept="3u3nmq" id="1P" role="cd27D">
+          <property role="3u3nmv" value="3009023772262903790" />
+        </node>
+      </node>
+    </node>
+    <node concept="cd27G" id="1i" role="lGtFl">
+      <node concept="3u3nmq" id="1Q" role="cd27D">
+        <property role="3u3nmv" value="3009023772262903790" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="GiML.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,31,0" name="GiML.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:71630337-56c4-48d4-b9d4-99f81cd88d7d(GiML.constraints)/3009023772262869380">
+    <file name="GamificationDashboard_Constraints.java">
+      <node id="3009023772262869380" at="9,46,10,144" concept="1" />
+      <node id="3009023772262869380" at="9,0,12,0" concept="0" trace="GamificationDashboard_Constraints#()V" />
+      <scope id="3009023772262869380" at="9,46,10,144" />
+      <scope id="3009023772262869380" at="9,0,12,0" />
+      <unit id="3009023772262869380" at="8,0,14,0" name="GiML.constraints.GamificationDashboard_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:71630337-56c4-48d4-b9d4-99f81cd88d7d(GiML.constraints)/3009023772262903790">
+    <file name="IstanzaGioco_Constraints.java">
+      <node id="3009023772262903790" at="9,37,10,135" concept="1" />
+      <node id="3009023772262903790" at="9,0,12,0" concept="0" trace="IstanzaGioco_Constraints#()V" />
+      <scope id="3009023772262903790" at="9,37,10,135" />
+      <scope id="3009023772262903790" at="9,0,12,0" />
+      <unit id="3009023772262903790" at="8,0,14,0" name="GiML.constraints.IstanzaGioco_Constraints" />
     </file>
   </root>
 </debug-info>

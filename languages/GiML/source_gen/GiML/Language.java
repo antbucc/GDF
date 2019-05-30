@@ -8,8 +8,11 @@ import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import GiML.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.smodel.runtime.MakeAspectDescriptor;
+import GiML.plugin.FacetAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import GiML.structure.ConceptPresentationAspectImpl;
@@ -37,13 +40,20 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("a4829704-6b1b-4b3f-8122-a4a2e6ac90ff"), "org.mar9000.mps.ecmascript"));
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("1472546d-a964-48a0-a11e-4271b165a42c"), "GaML"));
   }
 
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
+    if (aspectClass == ConstraintsAspectDescriptor.class) {
+      return aspectClass.cast(new GiML.constraints.ConstraintsAspectDescriptor());
+    }
     if (aspectClass == EditorAspectDescriptor.class) {
       return aspectClass.cast(new EditorAspectDescriptorImpl());
+    }
+    if (aspectClass == MakeAspectDescriptor.class) {
+      return aspectClass.cast(new FacetAspectDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new GiML.structure.StructureAspectDescriptor());

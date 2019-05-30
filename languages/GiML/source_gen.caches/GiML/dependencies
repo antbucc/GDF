@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="GiML.Language">
+    <classNode dependClassName="GiML.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="GiML.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="GiML.plugin.FacetAspectDescriptor" />
     <classNode dependClassName="GiML.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="GiML.structure.StructureAspectDescriptor" />
     <classNode dependClassName="java.lang.Class" />
@@ -12,7 +14,9 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.MakeAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
