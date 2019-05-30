@@ -47,9 +47,9 @@
     <node concept="PrWs8" id="1ATeiwITn1m" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="2B2cMQEnF8K" role="1TKVEi">
-      <property role="IQ2ns" value="3009023772261790256" />
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="2B2cMQEscNu" role="1TKVEi">
+      <property role="IQ2ns" value="3009023772262976734" />
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="dominio" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2B2cMQEaXOL" resolve="InstanzaDominio" />
@@ -63,39 +63,6 @@
     <ref role="1TJDcQ" to="2qee:14Y7$MQrYbp" resolve="Dominio" />
     <node concept="PrWs8" id="2B2cMQEpEEm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2B2cMQEoz26">
-    <property role="EcuMT" value="3009023772262019206" />
-    <property role="TrG5h" value="InstanzaDominioFieldReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2B2cMQEoz27" role="1TKVEi">
-      <property role="IQ2ns" value="3009023772262019207" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2B2cMQEaXOL" resolve="InstanzaDominio" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2B2cMQEqipH">
-    <property role="EcuMT" value="3009023772262475373" />
-    <property role="TrG5h" value="GamificationDashboard" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="dashboard" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2B2cMQEqipI" role="1TKVEi">
-      <property role="IQ2ns" value="3009023772262475374" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="domini" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2B2cMQEaXOL" resolve="InstanzaDominio" />
-    </node>
-    <node concept="1TJgyj" id="2B2cMQEqipL" role="1TKVEi">
-      <property role="IQ2ns" value="3009023772262475377" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="istanzeGioco" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1ATeiwITn12" resolve="IstanzaGioco" />
     </node>
   </node>
 </model>

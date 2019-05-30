@@ -15,9 +15,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1M2fIO" id="2B2cMQErMA4">
-    <ref role="1M2myG" to="k2kp:2B2cMQEqipH" resolve="GamificationDashboard" />
-  </node>
   <node concept="1M2fIO" id="2B2cMQErUZI">
     <ref role="1M2myG" to="k2kp:1ATeiwITn12" resolve="IstanzaGioco" />
   </node>

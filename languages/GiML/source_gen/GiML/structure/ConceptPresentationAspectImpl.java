@@ -9,9 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_GamificationDashboard;
   private ConceptPresentation props_InstanzaDominio;
-  private ConceptPresentation props_InstanzaDominioFieldReference;
   private ConceptPresentation props_IstanzaGioco;
 
   @Override
@@ -19,13 +17,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.GamificationDashboard:
-        if (props_GamificationDashboard == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("dashboard");
-          props_GamificationDashboard = cpb.create();
-        }
-        return props_GamificationDashboard;
       case LanguageConceptSwitch.InstanzaDominio:
         if (props_InstanzaDominio == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -33,13 +24,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_InstanzaDominio = cpb.create();
         }
         return props_InstanzaDominio;
-      case LanguageConceptSwitch.InstanzaDominioFieldReference:
-        if (props_InstanzaDominioFieldReference == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa623086L, 0x29c2332daa623087L, "target", "", "");
-          props_InstanzaDominioFieldReference = cpb.create();
-        }
-        return props_InstanzaDominioFieldReference;
       case LanguageConceptSwitch.IstanzaGioco:
         if (props_IstanzaGioco == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

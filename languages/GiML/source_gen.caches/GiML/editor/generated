@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="9ggh6w3qzgk8c9hqcmibai7lh94lmsp">
-  <files names="EditorAspectDescriptorImpl.java:GamificationDashboard_Editor.java:GamificationDashboard_EditorBuilder_a.java:InstanzaDominioFieldReference_Editor.java:InstanzaDominioFieldReference_EditorBuilder_a.java:InstanzaDominioFieldReference_SubstituteMenu.java:InstanzaDominio_Editor.java:InstanzaDominio_EditorBuilder_a.java:IstanzaGioco_Editor.java:IstanzaGioco_EditorBuilder_a.java:StileGioco_StyleSheet.java" />
+<product version="3" modelHash="-2z0jfoufw78ms7c5q17gsenjhwyqhu9">
+  <files names="EditorAspectDescriptorImpl.java:InstanzaDominio_Editor.java:InstanzaDominio_EditorBuilder_a.java:IstanzaGioco_Editor.java:IstanzaGioco_EditorBuilder_a.java:StileGioco_StyleSheet.java" />
 </product>
 

@@ -16,28 +16,18 @@
       </concept>
     </language>
     <language id="119e117f-1260-4f12-b46e-efd3d0e4c44f" name="GiML">
-      <concept id="3009023772262475373" name="GiML.structure.GamificationDashboard" flags="ng" index="23ELl0">
-        <child id="3009023772262475374" name="domini" index="23ELl3" />
-      </concept>
       <concept id="3009023772258458929" name="GiML.structure.InstanzaDominio" flags="ng" index="23UuSs" />
+      <concept id="1853575566387933250" name="GiML.structure.IstanzaGioco" flags="ng" index="Rn4_E">
+        <reference id="3009023772262976734" name="dominio" index="23GJZN" />
+      </concept>
     </language>
   </registry>
-  <node concept="23ELl0" id="2B2cMQErxs3">
-    <node concept="23UuSs" id="2B2cMQErM_B" role="23ELl3">
-      <property role="TrG5h" value="TRento" />
-    </node>
-    <node concept="23UuSs" id="2B2cMQErM_E" role="23ELl3">
-      <property role="TrG5h" value="Ferrara" />
-    </node>
-    <node concept="23UuSs" id="2B2cMQErM_J" role="23ELl3">
-      <property role="TrG5h" value="Roma" />
-    </node>
-    <node concept="23UuSs" id="2B2cMQErM_R" role="23ELl3">
-      <property role="TrG5h" value="Torino" />
-    </node>
-  </node>
   <node concept="23UuSs" id="2B2cMQEsbUl">
     <property role="TrG5h" value="Firenze" />
+  </node>
+  <node concept="Rn4_E" id="2B2cMQEslSc">
+    <property role="TrG5h" value="KGG" />
+    <ref role="23GJZN" node="2B2cMQEsbUl" resolve="Firenze" />
   </node>
 </model>
 
