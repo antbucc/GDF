@@ -368,8 +368,8 @@
       <node id="4534219290235668143" at="128,208,129,198" concept="0" />
       <node id="4534219290235674484" at="129,198,130,202" concept="0" />
       <node id="1853575566379922734" at="130,202,131,199" concept="0" />
-      <node id="1853575566379922745" at="131,199,132,196" concept="0" />
-      <node id="4534219290235658660" at="132,196,133,20" concept="0" />
+      <node id="1853575566379922745" at="131,199,132,197" concept="0" />
+      <node id="4534219290235658660" at="132,197,133,20" concept="0" />
       <node id="4534219290235658660" at="133,20,134,22" concept="4" />
       <node id="4534219290235658660" at="119,0,136,0" concept="6" trace="createDescriptorForGame#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4534219290235658660" at="56,38,57,29" />

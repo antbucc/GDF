@@ -8,6 +8,7 @@
   <imports>
     <import index="k2kp" ref="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -30,9 +31,13 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -60,41 +65,8 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="2B2cMQE5W1L">
-    <ref role="1XX52x" to="k2kp:1ATeiwITn12" resolve="IstanzaGioco" />
-    <node concept="3EZMnI" id="2B2cMQEnZI8" role="2wV5jI">
-      <node concept="3F0ifn" id="2B2cMQEnZIa" role="3EZMnx">
-        <property role="3F0ifm" value="ISTANZA GIOCO:" />
-        <node concept="pVoyu" id="2B2cMQEnZIi" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0A7n" id="2B2cMQEnZIs" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="2B2cMQEnZIK" role="3EZMnx" />
-      <node concept="3F0ifn" id="2B2cMQEnZJS" role="3EZMnx">
-        <node concept="pVoyu" id="2B2cMQEnZK4" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2B2cMQEnZKm" role="3EZMnx">
-        <property role="3F0ifm" value="DOMINIO:" />
-      </node>
-      <node concept="1iCGBv" id="2B2cMQEscO4" role="3EZMnx">
-        <ref role="1NtTu8" to="k2kp:2B2cMQEscNu" resolve="dominio" />
-        <node concept="1sVBvm" id="2B2cMQEscO6" role="1sWHZn">
-          <node concept="3F0A7n" id="2B2cMQEscOu" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="l2Vlx" id="2B2cMQEnZIb" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="2B2cMQEbkk4">
-    <ref role="1XX52x" to="k2kp:2B2cMQEaXOL" resolve="InstanzaDominio" />
+    <ref role="1XX52x" to="k2kp:2B2cMQEaXOL" resolve="IstanzaDominio" />
     <node concept="3EZMnI" id="2B2cMQErpEV" role="2wV5jI">
       <node concept="l2Vlx" id="2B2cMQErpEY" role="2iSdaV" />
       <node concept="3F0ifn" id="2B2cMQErpFl" role="3EZMnx">
@@ -123,6 +95,173 @@
       </node>
       <node concept="VechU" id="2B2cMQEeYmN" role="3F10Kt">
         <property role="Vb096" value="DARK_MAGENTA" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2B2cMQEGpiC">
+    <ref role="1XX52x" to="k2kp:1ATeiwITn12" resolve="IstanzaGioco" />
+    <node concept="3EZMnI" id="2B2cMQEGzlx" role="2wV5jI">
+      <node concept="3F0ifn" id="2B2cMQEGQ0$" role="3EZMnx">
+        <property role="3F0ifm" value="DATI GIOCO" />
+        <node concept="30gYXW" id="2B2cMQEGQ2e" role="3F10Kt">
+          <property role="Vb096" value="DARK_GREEN" />
+        </node>
+        <node concept="VechU" id="2B2cMQEGRb8" role="3F10Kt">
+          <property role="Vb096" value="WHITE" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEGPZF" role="3EZMnx">
+        <property role="3F0ifm" value="Nome Gioco" />
+        <node concept="pVoyu" id="2B2cMQEH1yn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2B2cMQEGQ05" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="2B2cMQEeYlY" resolve="Field" />
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEHtDn" role="3EZMnx">
+        <property role="3F0ifm" value="Descrizione" />
+        <node concept="pVoyu" id="2B2cMQEHtEh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2B2cMQEHtDX" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:14Y7$MQrYcz" resolve="descrizione" />
+        <ref role="1k5W1q" node="2B2cMQEeYlY" resolve="Field" />
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEGzlB" role="3EZMnx">
+        <property role="3F0ifm" value="Dominio" />
+        <node concept="pVoyu" id="2B2cMQEGQ0j" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2B2cMQEGzlL" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:2B2cMQEFO30" resolve="dominio" />
+        <node concept="1sVBvm" id="2B2cMQEGzlN" role="1sWHZn">
+          <node concept="3F0A7n" id="2B2cMQEGzlY" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="2B2cMQEeYmt" resolve="FieldReference" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEGzmo" role="3EZMnx">
+        <property role="3F0ifm" value="Istituto" />
+        <node concept="pVoyu" id="2B2cMQEGzmT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2B2cMQEGzmC" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:2B2cMQEFO32" resolve="istituto" />
+        <node concept="1sVBvm" id="2B2cMQEGzmE" role="1sWHZn">
+          <node concept="3F0A7n" id="2B2cMQEGzmQ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <ref role="1k5W1q" node="2B2cMQEeYmt" resolve="FieldReference" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2B2cMQEGzlz" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2B2cMQEHL1Q">
+    <ref role="1XX52x" to="k2kp:2B2cMQEweqd" resolve="IstanzaScuola" />
+    <node concept="3EZMnI" id="2B2cMQEHL1S" role="2wV5jI">
+      <node concept="3F0ifn" id="2B2cMQEJbFo" role="3EZMnx">
+        <property role="3F0ifm" value="DETTAGLI SCUOLA" />
+        <node concept="30gYXW" id="2B2cMQEJbFI" role="3F10Kt">
+          <property role="Vb096" value="darkGray" />
+        </node>
+        <node concept="VechU" id="2B2cMQEJbFN" role="3F10Kt">
+          <property role="Vb096" value="WHITE" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEI4Ei" role="3EZMnx">
+        <property role="3F0ifm" value="Nome Scuola" />
+        <node concept="pVoyu" id="2B2cMQEJbFG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2B2cMQEI4E$" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEI4DO" role="3EZMnx">
+        <property role="3F0ifm" value="Indirizzo" />
+        <node concept="pVoyu" id="2B2cMQEI4EI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2B2cMQEI4E2" role="3EZMnx">
+        <ref role="1NtTu8" to="k2kp:2B2cMQEHL1F" resolve="indirizzo" />
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEHL2M" role="3EZMnx">
+        <property role="3F0ifm" value="Istituto" />
+        <node concept="pVoyu" id="2B2cMQEI4EK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2B2cMQEHL2S" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+        <node concept="1sVBvm" id="2B2cMQEHL2U" role="1sWHZn">
+          <node concept="3F0A7n" id="2B2cMQEHL32" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEIhnV" role="3EZMnx">
+        <property role="3F0ifm" value="Dominio" />
+        <node concept="pVoyu" id="2B2cMQEIhoG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2B2cMQEMkYS" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:2B2cMQEEIUl" resolve="dominio" />
+        <node concept="1sVBvm" id="2B2cMQEMkYU" role="1sWHZn">
+          <node concept="3F0A7n" id="2B2cMQEMl06" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2B2cMQEHL1U" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2B2cMQEJw2m">
+    <ref role="1XX52x" to="k2kp:2B2cMQEtnKk" resolve="IstanzaIstituto" />
+    <node concept="3EZMnI" id="2B2cMQEJw2t" role="2wV5jI">
+      <node concept="3F0ifn" id="2B2cMQEJw2z" role="3EZMnx">
+        <property role="3F0ifm" value="Nome Istituto" />
+      </node>
+      <node concept="3F0A7n" id="2B2cMQEJw2D" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="2B2cMQEJw2v" role="2iSdaV" />
+      <node concept="3F0ifn" id="2B2cMQEJAOL" role="3EZMnx" />
+      <node concept="3F0ifn" id="2B2cMQEKi2Y" role="3EZMnx">
+        <property role="3F0ifm" value="Indirizzo" />
+        <node concept="pVoyu" id="2B2cMQEKENj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2B2cMQEKi3a" role="3EZMnx">
+        <ref role="1NtTu8" to="k2kp:2B2cMQEJw2L" resolve="indirizzo" />
+      </node>
+      <node concept="3F0ifn" id="2B2cMQEKENt" role="3EZMnx">
+        <property role="3F0ifm" value="Dominio" />
+        <node concept="pVoyu" id="2B2cMQEKEOO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2B2cMQEKENJ" role="3EZMnx">
+        <ref role="1NtTu8" to="2qee:2B2cMQEEIUq" resolve="dominio" />
+        <node concept="1sVBvm" id="2B2cMQEKENL" role="1sWHZn">
+          <node concept="3F0A7n" id="2B2cMQEKENZ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

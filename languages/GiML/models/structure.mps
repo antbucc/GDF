@@ -14,7 +14,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -24,12 +24,9 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
-      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
-        <property id="1071599776563" name="role" index="20kJfa" />
-        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
-        <property id="1071599937831" name="metaClass" index="20lmBu" />
-        <property id="241647608299431140" name="linkId" index="IQ2ns" />
-        <reference id="1071599976176" name="target" index="20lvS9" />
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -44,25 +41,75 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="istanzaGioco" />
     <ref role="1TJDcQ" to="2qee:2fEMsIDkGlg" resolve="DefinizioneGioco" />
+    <node concept="1TJgyi" id="14Y7$MQrYc_" role="1TKVEl">
+      <property role="IQ2nx" value="1242463862027969317" />
+      <property role="TrG5h" value="dataInizio" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="14Y7$MQrYcC" role="1TKVEl">
+      <property role="IQ2nx" value="1242463862027969320" />
+      <property role="TrG5h" value="dataFine" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="14Y7$MQrYcG" role="1TKVEl">
+      <property role="IQ2nx" value="1242463862027969324" />
+      <property role="TrG5h" value="linkBreve" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="1ATeiwITn1m" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2B2cMQEscNu" role="1TKVEi">
-      <property role="IQ2ns" value="3009023772262976734" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dominio" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2B2cMQEaXOL" resolve="InstanzaDominio" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEaXOL">
     <property role="EcuMT" value="3009023772258458929" />
-    <property role="TrG5h" value="InstanzaDominio" />
+    <property role="TrG5h" value="IstanzaDominio" />
     <property role="34LRSv" value="istanzaDominio" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="2qee:14Y7$MQrYbp" resolve="Dominio" />
     <node concept="PrWs8" id="2B2cMQEpEEm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2B2cMQEtnKk">
+    <property role="EcuMT" value="3009023772263283732" />
+    <property role="TrG5h" value="IstanzaIstituto" />
+    <property role="34LRSv" value="istanzaIstituto" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="2qee:14Y7$MQrYci" resolve="Istituto" />
+    <node concept="1TJgyi" id="2B2cMQEJw2L" role="1TKVEl">
+      <property role="IQ2nx" value="3009023772268036273" />
+      <property role="TrG5h" value="indirizzo" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2B2cMQEweqd">
+    <property role="EcuMT" value="3009023772264031885" />
+    <property role="TrG5h" value="IstanzaScuola" />
+    <property role="34LRSv" value="istanzaScuola" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="2qee:2B2cMQEw4EQ" resolve="Scuola" />
+    <node concept="PrWs8" id="2B2cMQEweqe" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="2B2cMQEHL1F" role="1TKVEl">
+      <property role="IQ2nx" value="3009023772267581547" />
+      <property role="TrG5h" value="indirizzo" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2B2cMQEOAFR">
+    <property role="EcuMT" value="3009023772269374199" />
+    <property role="TrG5h" value="IstanzaClasse" />
+    <property role="34LRSv" value="istanzaClasse" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="2qee:14Y7$MQrYcp" resolve="Classe" />
+    <node concept="PrWs8" id="2B2cMQEOAFS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="2B2cMQEPGgs" role="1TKVEl">
+      <property role="IQ2nx" value="3009023772269659164" />
+      <property role="TrG5h" value="nomeClasse" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

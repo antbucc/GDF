@@ -2989,7 +2989,7 @@
                         <node concept="liA8E" id="gX" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="gY" role="37wK5m">
-                            <property role="Xl_RC" value="team" />
+                            <property role="Xl_RC" value="teams" />
                           </node>
                           <node concept="1adDum" id="gZ" role="37wK5m">
                             <property role="1adDun" value="0x19b939282e6b3539L" />

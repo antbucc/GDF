@@ -15,6 +15,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_DefinizioneGioco;
   private ConceptPresentation props_Dominio;
   private ConceptPresentation props_Istituto;
+  private ConceptPresentation props_Scuola;
+  private ConceptPresentation props_Volontario;
 
   @Override
   @Nullable
@@ -63,6 +65,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Istituto = cpb.create();
         }
         return props_Istituto;
+      case LanguageConceptSwitch.Scuola:
+        if (props_Scuola == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Scuola = cpb.create();
+        }
+        return props_Scuola;
+      case LanguageConceptSwitch.Volontario:
+        if (props_Volontario == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Volontario = cpb.create();
+        }
+        return props_Volontario;
     }
     return null;
   }

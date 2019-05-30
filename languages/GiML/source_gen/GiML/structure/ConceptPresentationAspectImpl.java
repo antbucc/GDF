@@ -9,21 +9,31 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_InstanzaDominio;
+  private ConceptPresentation props_IstanzaClasse;
+  private ConceptPresentation props_IstanzaDominio;
   private ConceptPresentation props_IstanzaGioco;
+  private ConceptPresentation props_IstanzaIstituto;
+  private ConceptPresentation props_IstanzaScuola;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.InstanzaDominio:
-        if (props_InstanzaDominio == null) {
+      case LanguageConceptSwitch.IstanzaClasse:
+        if (props_IstanzaClasse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_InstanzaDominio = cpb.create();
+          props_IstanzaClasse = cpb.create();
         }
-        return props_InstanzaDominio;
+        return props_IstanzaClasse;
+      case LanguageConceptSwitch.IstanzaDominio:
+        if (props_IstanzaDominio == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_IstanzaDominio = cpb.create();
+        }
+        return props_IstanzaDominio;
       case LanguageConceptSwitch.IstanzaGioco:
         if (props_IstanzaGioco == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -31,6 +41,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IstanzaGioco = cpb.create();
         }
         return props_IstanzaGioco;
+      case LanguageConceptSwitch.IstanzaIstituto:
+        if (props_IstanzaIstituto == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_IstanzaIstituto = cpb.create();
+        }
+        return props_IstanzaIstituto;
+      case LanguageConceptSwitch.IstanzaScuola:
+        if (props_IstanzaScuola == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_IstanzaScuola = cpb.create();
+        }
+        return props_IstanzaScuola;
     }
     return null;
   }

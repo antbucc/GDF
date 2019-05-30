@@ -20,6 +20,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDefinizioneGioco = createDescriptorForDefinizioneGioco();
   /*package*/ final ConceptDescriptor myConceptDominio = createDescriptorForDominio();
   /*package*/ final ConceptDescriptor myConceptIstituto = createDescriptorForIstituto();
+  /*package*/ final ConceptDescriptor myConceptScuola = createDescriptorForScuola();
+  /*package*/ final ConceptDescriptor myConceptVolontario = createDescriptorForVolontario();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -36,7 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAlunno, myConceptClasse, myConceptComplexTeam, myConceptDefinizioneGioco, myConceptDominio, myConceptIstituto);
+    return Arrays.asList(myConceptAlunno, myConceptClasse, myConceptComplexTeam, myConceptDefinizioneGioco, myConceptDominio, myConceptIstituto, myConceptScuola, myConceptVolontario);
   }
 
   @Override
@@ -55,6 +57,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDominio;
       case LanguageConceptSwitch.Istituto:
         return myConceptIstituto;
+      case LanguageConceptSwitch.Scuola:
+        return myConceptScuola;
+      case LanguageConceptSwitch.Volontario:
+        return myConceptVolontario;
       default:
         return null;
     }
@@ -82,10 +88,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForClasse() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classe", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L);
     b.class_(false, false, false);
-    b.super_("GML.structure.Team", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L);
+    b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969305");
     b.version(2);
+    b.associate("istituto", 0x29c2332daa74ff5dL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).origin("3009023772263251805").done();
+    b.associate("scuola", 0x29c2332daad6c41eL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772269659166").done();
     b.aggregate("alunni", 0x113e1e4cb66fe321L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL).optional(false).ordered(true).multiple(true).origin("1242463862027969313").done();
     b.alias("classe");
     return b.create();
@@ -108,9 +116,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434089296");
     b.version(2);
     b.property("descrizione", 0x113e1e4cb66fe323L).type(PrimitiveTypeId.STRING).origin("1242463862027969315").done();
-    b.property("dataInizio", 0x113e1e4cb66fe325L).type(PrimitiveTypeId.STRING).origin("1242463862027969317").done();
-    b.property("dataFine", 0x113e1e4cb66fe328L).type(PrimitiveTypeId.STRING).origin("1242463862027969320").done();
-    b.property("linkBreve", 0x113e1e4cb66fe32cL).type(PrimitiveTypeId.STRING).origin("1242463862027969324").done();
+    b.associate("dominio", 0x29c2332daaaf40c0L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).origin("3009023772267069632").done();
+    b.associate("istituto", 0x29c2332daaaf40c2L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).origin("3009023772267069634").done();
     b.alias("definizioneGioco");
     return b.create();
   }
@@ -130,10 +137,34 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969298");
     b.version(2);
-    b.property("indirizzo", 0x113e1e4cb66fe315L).type(PrimitiveTypeId.STRING).origin("1242463862027969301").done();
-    b.aggregate("dominio", 0x113e1e4cb69f9c01L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).ordered(true).multiple(false).origin("1242463862031096833").done();
-    b.aggregate("classi", 0x113e1e4cb66fe317L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("1242463862027969303").done();
+    b.associate("dominio", 0x29c2332daaaaee9aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).origin("3009023772266786458").done();
+    b.aggregate("scuole", 0x29c2332daabd2eecL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(true).ordered(true).multiple(true).origin("3009023772267982572").done();
     b.alias("istituto");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForScuola() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Scuola", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L);
+    b.class_(false, false, false);
+    b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3009023772263991990");
+    b.version(2);
+    b.associate("dominio", 0x29c2332daaaaee95L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).origin("3009023772266786453").done();
+    b.associate("istituto", 0x29c2332daaaaee97L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).origin("3009023772266786455").done();
+    b.aggregate("classi", 0x29c2332daacc1750L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(true).ordered(true).multiple(true).origin("3009023772268959568").done();
+    b.aggregate("alunni", 0x29c2332daacc1754L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL).optional(true).ordered(true).multiple(true).origin("3009023772268959572").done();
+    b.aggregate("volontari", 0x29c2332daacc1759L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daacc174dL).optional(true).ordered(true).multiple(true).origin("3009023772268959577").done();
+    b.alias("scuola");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForVolontario() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Volontario", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daacc174dL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Player", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3009023772268959565");
+    b.version(2);
+    b.alias("volontario");
     return b.create();
   }
 }

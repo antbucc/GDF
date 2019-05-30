@@ -129,7 +129,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("points", 0x3eecc86bd03886afL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L).optional(true).ordered(true).multiple(true).origin("4534219290235668143").done();
     b.aggregate("challenges", 0x3eecc86bd0389f74L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037b7b3L).optional(true).ordered(true).multiple(true).origin("4534219290235674484").done();
     b.aggregate("players", 0x19b939282e6b352eL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L).optional(true).ordered(true).multiple(true).origin("1853575566379922734").done();
-    b.aggregate("team", 0x19b939282e6b3539L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(true).ordered(true).multiple(true).origin("1853575566379922745").done();
+    b.aggregate("teams", 0x19b939282e6b3539L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(true).ordered(true).multiple(true).origin("1853575566379922745").done();
     b.alias("game");
     return b.create();
   }

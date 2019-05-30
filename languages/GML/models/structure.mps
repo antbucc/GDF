@@ -200,7 +200,7 @@
     <node concept="1TJgyj" id="1ATeiwIqNkT" role="1TKVEi">
       <property role="IQ2ns" value="1853575566379922745" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="team" />
+      <property role="20kJfa" value="teams" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3VGM6JgdUsP" resolve="Team" />
     </node>

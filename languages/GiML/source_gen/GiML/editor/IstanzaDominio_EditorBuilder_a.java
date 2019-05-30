@@ -29,11 +29,11 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 
-/*package*/ class InstanzaDominio_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class IstanzaDominio_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public InstanzaDominio_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public IstanzaDominio_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -50,7 +50,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_e5ck18_a");
+    editorCell.setCellId("Collection_7qek8e_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createConstant_0());
@@ -59,7 +59,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "NomeDominio: ");
-    editorCell.setCellId("Constant_e5ck18_a0");
+    editorCell.setCellId("Constant_7qek8e_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
