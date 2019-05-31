@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="5pfxqm29vg13yo64b8o0ag5vodkigew">
-  <files names="EditorAspectDescriptorImpl.java:IstanzaDominio_Editor.java:IstanzaDominio_EditorBuilder_a.java:IstanzaGioco_Editor.java:IstanzaGioco_EditorBuilder_a.java:IstanzaIstituto_Editor.java:IstanzaIstituto_EditorBuilder_a.java:IstanzaScuola_Editor.java:IstanzaScuola_EditorBuilder_a.java:StileGioco_StyleSheet.java" />
+<product version="3" modelHash="-wxntbwo8gzc0dcgeo47i3qzo0h1c7i">
+  <files names="EditorAspectDescriptorImpl.java:IstanzaClasse_Editor.java:IstanzaClasse_EditorBuilder_a.java:IstanzaDominio_Editor.java:IstanzaDominio_EditorBuilder_a.java:IstanzaGioco_Editor.java:IstanzaGioco_EditorBuilder_a.java:IstanzaIstituto_Editor.java:IstanzaIstituto_EditorBuilder_a.java:IstanzaScuola_Editor.java:IstanzaScuola_EditorBuilder_a.java:StileGioco_StyleSheet.java" />
 </product>
 

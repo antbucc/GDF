@@ -71,7 +71,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772269374199");
     b.version(2);
-    b.property("nomeClasse", 0x29c2332daad6c41cL).type(PrimitiveTypeId.STRING).origin("3009023772269659164").done();
     b.alias("istanzaClasse");
     return b.create();
   }

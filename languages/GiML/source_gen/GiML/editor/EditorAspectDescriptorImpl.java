@@ -18,12 +18,14 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new IstanzaDominio_Editor());
+        return Collections.<ConceptEditor>singletonList(new IstanzaClasse_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new IstanzaGioco_Editor());
+        return Collections.<ConceptEditor>singletonList(new IstanzaDominio_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new IstanzaIstituto_Editor());
+        return Collections.<ConceptEditor>singletonList(new IstanzaGioco_Editor());
       case 3:
+        return Collections.<ConceptEditor>singletonList(new IstanzaIstituto_Editor());
+      case 4:
         return Collections.<ConceptEditor>singletonList(new IstanzaScuola_Editor());
       default:
     }
@@ -32,5 +34,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L), MetaIdFactory.conceptId(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL)).seal();
 }
