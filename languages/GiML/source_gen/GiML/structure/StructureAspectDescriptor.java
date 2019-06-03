@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIstanzaGioco = createDescriptorForIstanzaGioco();
   /*package*/ final ConceptDescriptor myConceptIstanzaIstituto = createDescriptorForIstanzaIstituto();
   /*package*/ final ConceptDescriptor myConceptIstanzaScuola = createDescriptorForIstanzaScuola();
+  /*package*/ final ConceptDescriptor myConceptistanzaDashboard = createDescriptorForistanzaDashboard();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -33,7 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptIstanzaClasse, myConceptIstanzaDominio, myConceptIstanzaGioco, myConceptIstanzaIstituto, myConceptIstanzaScuola);
+    return Arrays.asList(myConceptIstanzaClasse, myConceptIstanzaDominio, myConceptIstanzaGioco, myConceptIstanzaIstituto, myConceptIstanzaScuola, myConceptistanzaDashboard);
   }
 
   @Override
@@ -50,6 +51,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIstanzaIstituto;
       case LanguageConceptSwitch.IstanzaScuola:
         return myConceptIstanzaScuola;
+      case LanguageConceptSwitch.istanzaDashboard:
+        return myConceptistanzaDashboard;
       default:
         return null;
     }
@@ -116,6 +119,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("indirizzo", 0x29c2332daab7106bL).type(PrimitiveTypeId.STRING).origin("3009023772267581547").done();
     b.alias("istanzaScuola");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForistanzaDashboard() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "istanzaDashboard", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x3b9018d1b0e7cb07L);
+    b.class_(false, false, true);
+    b.super_("GaML.structure.Dashboard", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3b9018d1b0e7cb00L);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/4291957733779294983");
+    b.version(2);
+    b.alias("dashboard");
     return b.create();
   }
 }

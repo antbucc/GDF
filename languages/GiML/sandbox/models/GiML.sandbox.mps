@@ -8,7 +8,6 @@
     <import index="bxq6" ref="r:add2332b-81ce-4ddf-8f02-baa0b90ec72a(GaML.sandbox)" />
     <import index="v2de" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#d3fdabd1-c8a4-4685-a3d3-3e723e6e92cc(jetbrains.mps.lang.project.modules/module.GiML.sandbox@project_stub)" />
     <import index="n7pm" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#119e117f-1260-4f12-b46e-efd3d0e4c44f(jetbrains.mps.lang.project.modules/module.GiML@project_stub)" />
-    <import index="tfej" ref="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)" />
   </imports>
   <registry>
     <language id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML">
@@ -18,9 +17,11 @@
       <concept id="2588102812434089296" name="GaML.structure.DefinizioneGioco" flags="ng" index="2aI0Mr">
         <property id="1242463862027969315" name="descrizione" index="2BkvPJ" />
         <reference id="3009023772270935615" name="scuola" index="23a0Oi" />
-        <child id="3009023772271411221" name="partecipanti" index="23cVcS" />
+        <child id="742676989655975704" name="partecipanti" index="2d0Sfh" />
       </concept>
-      <concept id="1242463862027969305" name="GaML.structure.Classe" flags="ng" index="2BkvPl" />
+      <concept id="1242463862027969305" name="GaML.structure.Classe" flags="ng" index="2BkvPl">
+        <reference id="3009023772269659166" name="scuola" index="235fsN" />
+      </concept>
       <concept id="1242463862027969298" name="GaML.structure.Istituto" flags="ng" index="2BkvPu">
         <reference id="3009023772266786458" name="dominio" index="23qdQR" />
       </concept>
@@ -31,6 +32,7 @@
       </concept>
     </language>
     <language id="119e117f-1260-4f12-b46e-efd3d0e4c44f" name="GiML">
+      <concept id="3009023772269374199" name="GiML.structure.IstanzaClasse" flags="ng" index="2345Bq" />
       <concept id="3009023772264031885" name="GiML.structure.IstanzaScuola" flags="ng" index="23gHmw">
         <property id="3009023772267581547" name="indirizzo" index="23tid6" />
       </concept>
@@ -45,27 +47,42 @@
       </concept>
     </language>
   </registry>
-  <node concept="23UuSs" id="2B2cMQEK3eU">
+  <node concept="23UuSs" id="DexcA7hsSO">
     <property role="TrG5h" value="Trento" />
   </node>
-  <node concept="23HOWT" id="2B2cMQETCJo">
-    <property role="TrG5h" value="Istituto 1" />
-    <property role="23v3es" value="VIA ROMA 1" />
-    <ref role="23qdQR" node="2B2cMQEK3eU" resolve="Trento" />
-  </node>
-  <node concept="23gHmw" id="DexcA77GWt">
+  <node concept="23gHmw" id="DexcA7hPkO">
     <property role="TrG5h" value="Scuola1" />
-    <property role="23tid6" value="indirizzo Scuola1" />
-    <ref role="23qdQU" node="2B2cMQETCJo" resolve="Istituto 1" />
+    <property role="23tid6" value="ewrewr" />
+    <ref role="23qdQU" node="DexcA7hPkP" resolve="Istituto1" />
   </node>
-  <node concept="Rn4_E" id="DexcA78tkn">
-    <property role="TrG5h" value="werwr" />
-    <property role="2BkvPJ" value="werew" />
-    <property role="2BkvPD" value="ewrw" />
+  <node concept="23HOWT" id="DexcA7hPkP">
+    <property role="TrG5h" value="Istituto1" />
+    <property role="23v3es" value="via Istituto 1" />
+    <ref role="23qdQR" node="DexcA7hsSO" resolve="Trento" />
+  </node>
+  <node concept="Rn4_E" id="DexcA7kj$9">
+    <property role="TrG5h" value="KGG1" />
+    <property role="2BkvPJ" value="descrizione Gioco" />
+    <property role="2BkvPD" value="rwerewr" />
     <property role="2BkvP$" value="werew" />
+    <property role="2BkvPw" value="werwer" />
+    <ref role="23a0Oi" node="DexcA7hPkO" resolve="Scuola1" />
+    <node concept="2345Bq" id="DexcA7kj$b" role="2d0Sfh">
+      <property role="TrG5h" value="5A" />
+      <ref role="235fsN" node="DexcA7hPkO" resolve="Scuola1" />
+    </node>
+  </node>
+  <node concept="Rn4_E" id="3Ig6d6KTWEi">
+    <property role="TrG5h" value="KGG2" />
+    <property role="2BkvPJ" value="descrizione secondo gioco" />
+    <property role="2BkvPD" value="ewr" />
+    <property role="2BkvP$" value="wer" />
     <property role="2BkvPw" value="werew" />
-    <ref role="23a0Oi" node="DexcA77GWt" resolve="Scuola1" />
-    <node concept="2BkvPl" id="DexcA78tko" role="23cVcS" />
+    <ref role="23a0Oi" node="DexcA7hPkO" resolve="Scuola1" />
+    <node concept="2345Bq" id="3Ig6d6KTWFW" role="2d0Sfh">
+      <property role="TrG5h" value="5B" />
+      <ref role="235fsN" node="DexcA7hPkO" resolve="Scuola1" />
+    </node>
   </node>
 </model>
 

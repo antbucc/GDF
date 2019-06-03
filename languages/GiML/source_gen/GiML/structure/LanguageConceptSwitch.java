@@ -14,6 +14,7 @@ public final class LanguageConceptSwitch {
   public static final int IstanzaGioco = 2;
   public static final int IstanzaIstituto = 3;
   public static final int IstanzaScuola = 4;
+  public static final int istanzaDashboard = 5;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL);
@@ -22,6 +23,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x19b939282ee57042L, IstanzaGioco);
     builder.put(0x29c2332daa757c14L, IstanzaIstituto);
     builder.put(0x29c2332daa80e68dL, IstanzaScuola);
+    builder.put(0x3b9018d1b0e7cb07L, istanzaDashboard);
     myIndex = builder.seal();
   }
 

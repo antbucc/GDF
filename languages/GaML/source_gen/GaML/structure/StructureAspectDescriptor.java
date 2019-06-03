@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAlunno = createDescriptorForAlunno();
   /*package*/ final ConceptDescriptor myConceptClasse = createDescriptorForClasse();
   /*package*/ final ConceptDescriptor myConceptComplexTeam = createDescriptorForComplexTeam();
+  /*package*/ final ConceptDescriptor myConceptDashboard = createDescriptorForDashboard();
   /*package*/ final ConceptDescriptor myConceptDefinizioneGioco = createDescriptorForDefinizioneGioco();
   /*package*/ final ConceptDescriptor myConceptDominio = createDescriptorForDominio();
   /*package*/ final ConceptDescriptor myConceptIstituto = createDescriptorForIstituto();
@@ -38,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAlunno, myConceptClasse, myConceptComplexTeam, myConceptDefinizioneGioco, myConceptDominio, myConceptIstituto, myConceptScuola, myConceptVolontario);
+    return Arrays.asList(myConceptAlunno, myConceptClasse, myConceptComplexTeam, myConceptDashboard, myConceptDefinizioneGioco, myConceptDominio, myConceptIstituto, myConceptScuola, myConceptVolontario);
   }
 
   @Override
@@ -51,6 +52,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptClasse;
       case LanguageConceptSwitch.ComplexTeam:
         return myConceptComplexTeam;
+      case LanguageConceptSwitch.Dashboard:
+        return myConceptDashboard;
       case LanguageConceptSwitch.DefinizioneGioco:
         return myConceptDefinizioneGioco;
       case LanguageConceptSwitch.Dominio:
@@ -107,6 +110,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("complexTram");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForDashboard() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Dashboard", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3b9018d1b0e7cb00L);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/4291957733779294976");
+    b.version(2);
+    b.aggregate("istanze", 0x3b9018d1b0e7cb04L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).ordered(true).multiple(true).origin("4291957733779294980").done();
+    b.alias("dashboard");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForDefinizioneGioco() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "DefinizioneGioco", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L);
     b.class_(false, false, true);
@@ -114,7 +127,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434089296");
     b.version(2);
     b.property("descrizione", 0x113e1e4cb66fe323L).type(PrimitiveTypeId.STRING).origin("1242463862027969315").done();
-    b.aggregate("partecipanti", 0x29c2332daaf18015L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("3009023772271411221").done();
+    b.associate("scuola", 0x29c2332daaea3e3fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772270935615").done();
+    b.aggregate("partecipanti", 0xa4e84c9874d0718L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("742676989655975704").done();
     b.alias("definizioneGioco");
     return b.create();
   }

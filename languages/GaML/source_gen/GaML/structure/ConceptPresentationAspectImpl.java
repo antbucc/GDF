@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Alunno;
   private ConceptPresentation props_Classe;
   private ConceptPresentation props_ComplexTeam;
+  private ConceptPresentation props_Dashboard;
   private ConceptPresentation props_DefinizioneGioco;
   private ConceptPresentation props_Dominio;
   private ConceptPresentation props_Istituto;
@@ -44,6 +45,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ComplexTeam = cpb.create();
         }
         return props_ComplexTeam;
+      case LanguageConceptSwitch.Dashboard:
+        if (props_Dashboard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Dashboard = cpb.create();
+        }
+        return props_Dashboard;
       case LanguageConceptSwitch.DefinizioneGioco:
         if (props_DefinizioneGioco == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

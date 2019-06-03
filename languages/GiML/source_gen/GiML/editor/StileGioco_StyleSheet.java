@@ -33,6 +33,16 @@ public class StileGioco_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new StileGioco_StyleSheet.FieldReferenceStyleClass(editorContext, node).apply(style, editorCell);
   }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Table(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new StileGioco_StyleSheet.TableStyleClass(editorContext, node).apply(style, editorCell);
+  }
 
   public static class FieldStyleClass extends AbstractStyleClass {
     public FieldStyleClass(EditorContext editorContext, SNode node) {
@@ -55,6 +65,17 @@ public class StileGioco_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_MAGENTA));
+    }
+
+  }
+  public static class TableStyleClass extends AbstractStyleClass {
+    public TableStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.FONT_FAMILY, "arial,sans-serif;");
     }
 
   }

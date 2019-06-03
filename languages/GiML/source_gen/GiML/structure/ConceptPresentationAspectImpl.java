@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IstanzaGioco;
   private ConceptPresentation props_IstanzaIstituto;
   private ConceptPresentation props_IstanzaScuola;
+  private ConceptPresentation props_istanzaDashboard;
 
   @Override
   @Nullable
@@ -55,6 +56,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IstanzaScuola = cpb.create();
         }
         return props_IstanzaScuola;
+      case LanguageConceptSwitch.istanzaDashboard:
+        if (props_istanzaDashboard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_istanzaDashboard = cpb.create();
+        }
+        return props_istanzaDashboard;
     }
     return null;
   }

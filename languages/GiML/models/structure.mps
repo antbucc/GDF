@@ -6,7 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
+    <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -106,6 +106,13 @@
     <node concept="PrWs8" id="2B2cMQEOAFS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3Ig6d6KTWG7">
+    <property role="EcuMT" value="4291957733779294983" />
+    <property role="TrG5h" value="istanzaDashboard" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="dashboard" />
+    <ref role="1TJDcQ" to="2qee:3Ig6d6KTWG0" resolve="Dashboard" />
   </node>
 </model>
 
