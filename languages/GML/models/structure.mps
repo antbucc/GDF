@@ -160,50 +160,7 @@
     <property role="EcuMT" value="4534219290235658660" />
     <property role="TrG5h" value="Game" />
     <property role="34LRSv" value="game" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="3VGM6Jge8qG" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235668140" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdTNN" resolve="Action" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge8qE" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235668138" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="badgeCollections" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUrD" resolve="BadgeCollection" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge8qJ" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235668143" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="points" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUqL" resolve="Point" />
-    </node>
-    <node concept="1TJgyj" id="3VGM6Jge9XO" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235674484" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="challenges" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdVuN" resolve="Challenge" />
-    </node>
-    <node concept="1TJgyj" id="1ATeiwIqNkI" role="1TKVEi">
-      <property role="IQ2ns" value="1853575566379922734" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="players" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUsT" resolve="Player" />
-    </node>
-    <node concept="1TJgyj" id="1ATeiwIqNkT" role="1TKVEi">
-      <property role="IQ2ns" value="1853575566379922745" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="teams" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3VGM6JgdUsP" resolve="Team" />
-    </node>
     <node concept="PrWs8" id="3VGM6Jge8qV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

@@ -16,7 +16,6 @@
       <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
-        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -398,13 +397,16 @@
       <node concept="l2Vlx" id="2B2cMQEQo6R" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="3Ig6d6KTWGg">
+  <node concept="24kQdi" id="3Ig6d6KV73Z">
     <ref role="1XX52x" to="k2kp:3Ig6d6KTWG7" resolve="istanzaDashboard" />
-    <node concept="3F2HdR" id="3Ig6d6KUN0X" role="2wV5jI">
-      <ref role="1NtTu8" to="2qee:3Ig6d6KTWG4" resolve="istanze" />
-      <node concept="3F0A7n" id="3Ig6d6KUN11" role="2czzBI">
+    <node concept="3EZMnI" id="3Ig6d6KV748" role="2wV5jI">
+      <node concept="3F0ifn" id="3Ig6d6KV74h" role="3EZMnx">
+        <property role="3F0ifm" value="Istanze" />
+      </node>
+      <node concept="3F0A7n" id="3Ig6d6KWyGY" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="l2Vlx" id="3Ig6d6KV74a" role="2iSdaV" />
     </node>
   </node>
 </model>

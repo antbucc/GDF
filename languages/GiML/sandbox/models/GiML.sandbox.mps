@@ -19,6 +19,9 @@
         <reference id="3009023772270935615" name="scuola" index="23a0Oi" />
         <child id="742676989655975704" name="partecipanti" index="2d0Sfh" />
       </concept>
+      <concept id="4291957733779294976" name="GaML.structure.Dashboard" flags="ng" index="2btXfh">
+        <child id="4291957733779294980" name="istanze" index="2btXfl" />
+      </concept>
       <concept id="1242463862027969305" name="GaML.structure.Classe" flags="ng" index="2BkvPl">
         <reference id="3009023772269659166" name="scuola" index="235fsN" />
       </concept>
@@ -40,6 +43,7 @@
         <property id="3009023772268036273" name="indirizzo" index="23v3es" />
       </concept>
       <concept id="3009023772258458929" name="GiML.structure.IstanzaDominio" flags="ng" index="23UuSs" />
+      <concept id="4291957733779294983" name="GiML.structure.istanzaDashboard" flags="ng" index="2btXfm" />
       <concept id="1853575566387933250" name="GiML.structure.IstanzaGioco" flags="ng" index="Rn4_E">
         <property id="1242463862027969324" name="linkBreve" index="2BkvPw" />
         <property id="1242463862027969320" name="dataFine" index="2BkvP$" />
@@ -82,6 +86,12 @@
     <node concept="2345Bq" id="3Ig6d6KTWFW" role="2d0Sfh">
       <property role="TrG5h" value="5B" />
       <ref role="235fsN" node="DexcA7hPkO" resolve="Scuola1" />
+    </node>
+  </node>
+  <node concept="2btXfm" id="3Ig6d6KX42F">
+    <property role="TrG5h" value="Prova" />
+    <node concept="2aI0Mr" id="3Ig6d6KX42G" role="2btXfl">
+      <node concept="2BkvPl" id="3Ig6d6KX42H" role="2d0Sfh" />
     </node>
   </node>
 </model>
