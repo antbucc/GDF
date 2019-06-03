@@ -70,13 +70,13 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_2());
-    editorCell.addEditorCell(createProperty_1());
     editorCell.addEditorCell(createConstant_3());
-    editorCell.addEditorCell(createProperty_2());
+    editorCell.addEditorCell(createProperty_1());
     editorCell.addEditorCell(createConstant_4());
     editorCell.addEditorCell(createRefCell_0());
     editorCell.addEditorCell(createConstant_5());
     editorCell.addEditorCell(createRefCell_1());
+    editorCell.addEditorCell(createConstant_6());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -126,48 +126,21 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
     }
   }
   private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Descrizione Gioco");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_oz8cqv_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_1() {
-    getCellFactory().pushCellContext();
-    try {
-      final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x10d34f97574L, "shortDescription");
-      getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no shortDescription>");
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-      editorCell.setCellId("property_shortDescription");
-      editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
-      setCellContext(editorCell);
-      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));
-      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
-        }
-      });
-      if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
-        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-        return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
-      } else
-      return editorCell;
-    } finally {
-      getCellFactory().popCellContext();
-    }
-  }
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Indirizzo");
-    editorCell.setCellId("Constant_oz8cqv_f0");
+    editorCell.setCellId("Constant_oz8cqv_e0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_2() {
+  private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL, 0x29c2332daab7106bL, "indirizzo");
@@ -196,7 +169,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Istituto");
-    editorCell.setCellId("Constant_oz8cqv_h0");
+    editorCell.setCellId("Constant_oz8cqv_g0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
@@ -251,7 +224,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
     }
 
     /*package*/ EditorCell createCell() {
-      return createProperty_3();
+      return createProperty_2();
     }
 
     @NotNull
@@ -260,7 +233,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
       return myNode;
     }
 
-    private EditorCell createProperty_3() {
+    private EditorCell createProperty_2() {
       getCellFactory().pushCellContext();
       try {
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -293,7 +266,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
   }
   private EditorCell createConstant_5() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Dominio");
-    editorCell.setCellId("Constant_oz8cqv_j0");
+    editorCell.setCellId("Constant_oz8cqv_i0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
@@ -359,7 +332,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
 
     private EditorCell createCollection_1() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-      editorCell.setCellId("Collection_oz8cqv_a0k0");
+      editorCell.setCellId("Collection_oz8cqv_a0j0");
       editorCell.addEditorCell(createRefCell_2());
       return editorCell;
     }
@@ -411,7 +384,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
       }
 
       /*package*/ EditorCell createCell() {
-        return createProperty_4();
+        return createProperty_3();
       }
 
       @NotNull
@@ -420,7 +393,7 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
         return myNode;
       }
 
-      private EditorCell createProperty_4() {
+      private EditorCell createProperty_3() {
         getCellFactory().pushCellContext();
         try {
           final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
@@ -452,5 +425,11 @@ import GiML.editor.StileGioco_StyleSheet.FieldReferenceStyleClass;
         }
       }
     }
+  }
+  private EditorCell createConstant_6() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_oz8cqv_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }

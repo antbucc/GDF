@@ -125,13 +125,6 @@
     <node concept="PrWs8" id="14Y7$MQrYcq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="14Y7$MQrYcx" role="1TKVEi">
-      <property role="IQ2ns" value="1242463862027969313" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="alunni" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="14Y7$MQrYcu" resolve="Alunno" />
-    </node>
     <node concept="1TJgyj" id="2B2cMQEPGgu" role="1TKVEi">
       <property role="IQ2ns" value="3009023772269659166" />
       <property role="20lmBu" value="reference" />

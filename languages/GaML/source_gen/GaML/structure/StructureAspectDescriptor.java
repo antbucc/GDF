@@ -93,7 +93,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969305");
     b.version(2);
     b.associate("scuola", 0x29c2332daad6c41eL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772269659166").done();
-    b.aggregate("alunni", 0x113e1e4cb66fe321L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL).optional(false).ordered(true).multiple(true).origin("1242463862027969313").done();
     b.alias("classe");
     return b.create();
   }
@@ -115,7 +114,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/2588102812434089296");
     b.version(2);
     b.property("descrizione", 0x113e1e4cb66fe323L).type(PrimitiveTypeId.STRING).origin("1242463862027969315").done();
-    b.associate("scuola", 0x29c2332daaea3e3fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772270935615").done();
     b.aggregate("partecipanti", 0x29c2332daaf18015L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("3009023772271411221").done();
     b.alias("definizioneGioco");
     return b.create();
