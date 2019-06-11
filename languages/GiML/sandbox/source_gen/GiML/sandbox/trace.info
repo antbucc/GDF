@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/4291957733779294866">
-    <file name="KGG2.html.xml">
-      <unit id="4291957733779294866" at="1,0,38,7" name="GiML.sandbox.KGG2$html" />
-    </file>
-  </root>
-  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/742676989656250633">
-    <file name="KGG1.html.xml">
-      <unit id="742676989656250633" at="1,0,38,7" name="GiML.sandbox.KGG1$html" />
+  <root nodeRef="r:ac7891ea-1ce0-4b0f-bf16-4b500f9a628e(GiML.sandbox)/4291957733783511259">
+    <file name="KGG.html.xml">
+      <unit id="4291957733783511259" at="1,0,57,7" name="GiML.sandbox.KGG$html" />
     </file>
   </root>
 </debug-info>

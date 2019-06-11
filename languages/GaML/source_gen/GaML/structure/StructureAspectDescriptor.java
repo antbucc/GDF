@@ -116,7 +116,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/4291957733779294976");
     b.version(2);
-    b.aggregate("istanze", 0x3b9018d1b0e7cb04L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L).optional(false).ordered(true).multiple(true).origin("4291957733779294980").done();
     b.alias("dashboard");
     return b.create();
   }
@@ -128,7 +127,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("descrizione", 0x113e1e4cb66fe323L).type(PrimitiveTypeId.STRING).origin("1242463862027969315").done();
     b.associate("scuola", 0x29c2332daaea3e3fL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772270935615").done();
-    b.aggregate("partecipanti", 0xa4e84c9874d0718L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).ordered(true).multiple(true).origin("742676989655975704").done();
+    b.aggregate("partecipanti", 0xa4e84c9874d0718L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(true).ordered(true).multiple(true).origin("742676989655975704").done();
     b.alias("definizioneGioco");
     return b.create();
   }

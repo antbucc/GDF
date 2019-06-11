@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-3knduh72msiepj1sstzf82mpqxgb5vb">
-  <files names="ComplexTeam_Editor.java:ComplexTeam_EditorBuilder_a.java:EditorAspectDescriptorImpl.java" />
+<product version="3" modelHash="-27amjo2ds8z8klbfycu30zr5ck9faiu">
+  <files names="Classe_Editor.java:Classe_EditorBuilder_a.java:ComplexTeam_Editor.java:ComplexTeam_EditorBuilder_a.java:EditorAspectDescriptorImpl.java" />
 </product>
 

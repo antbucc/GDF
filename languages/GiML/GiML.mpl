@@ -23,8 +23,6 @@
       <dependencies>
         <dependency reexport="false">a4829704-6b1b-4b3f-8122-a4a2e6ac90ff(org.mar9000.mps.ecmascript)</dependency>
         <dependency reexport="false">8b4ab1de-2aad-4e60-8dee-350cb83d3086(org.mar9000.mps.ecmascript.runtime)</dependency>
-        <dependency reexport="false">2abf044e-2c9b-48b4-8c4b-79b7ac1df18d(CalculatorJS#2021265872597376002)</dependency>
-        <dependency reexport="false">73f4da51-0e3e-448c-a68b-428ef5388ac7(CalculatorJS)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />

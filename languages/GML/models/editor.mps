@@ -69,32 +69,5 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="14Y7$MQxaxF">
-    <ref role="1XX52x" to="mupf:3VGM6Jge66$" resolve="Game" />
-    <node concept="3EZMnI" id="14Y7$MQxayv" role="2wV5jI">
-      <node concept="l2Vlx" id="14Y7$MQxayw" role="2iSdaV" />
-      <node concept="3F0ifn" id="14Y7$MQxayx" role="3EZMnx">
-        <property role="3F0ifm" value="game" />
-      </node>
-      <node concept="3F0A7n" id="14Y7$MQxayy" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-      <node concept="3F0ifn" id="14Y7$MQxayz" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
-        <node concept="3mYdg7" id="14Y7$MQxay$" role="3F10Kt">
-          <property role="1413C4" value="body-brace" />
-        </node>
-        <node concept="ljvvj" id="14Y7$MQxay_" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="14Y7$MQxazP" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <node concept="3mYdg7" id="14Y7$MQxazQ" role="3F10Kt">
-          <property role="1413C4" value="body-brace" />
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 

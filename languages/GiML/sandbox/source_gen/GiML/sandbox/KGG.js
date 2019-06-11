@@ -1,5 +1,5 @@
 /**
-  KGG1
+  KGG
   Generated from a ECMAScript model by JetBrains MPS.
 */
 

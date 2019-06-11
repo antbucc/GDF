@@ -97,6 +97,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("dataInizio", 0x113e1e4cb66fe325L).type(PrimitiveTypeId.STRING).origin("1242463862027969317").done();
     b.property("dataFine", 0x113e1e4cb66fe328L).type(PrimitiveTypeId.STRING).origin("1242463862027969320").done();
     b.property("linkBreve", 0x113e1e4cb66fe32cL).type(PrimitiveTypeId.STRING).origin("1242463862027969324").done();
+    b.associate("refToDashboard", 0x3b9018d1b101db2eL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x3b9018d1b0e7cb07L).optional(false).origin("4291957733781003054").done();
+    b.aggregate("classi", 0x3b9018d1b1258c18L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L).optional(false).ordered(true).multiple(true).origin("4291957733783342104").done();
     b.alias("istanzaGioco");
     return b.create();
   }
@@ -127,6 +129,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("GaML.structure.Dashboard", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x3b9018d1b0e7cb00L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/4291957733779294983");
     b.version(2);
+    b.aggregate("istanze", 0x3b9018d1b0fa4204L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L).optional(false).ordered(true).multiple(true).origin("4291957733780505092").done();
     b.alias("dashboard");
     return b.create();
   }

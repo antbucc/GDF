@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="GaML.Language">
+    <classNode dependClassName="GaML.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="GaML.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="GaML.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="GaML.structure.StructureAspectDescriptor" />
@@ -12,6 +13,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />

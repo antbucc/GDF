@@ -15,7 +15,7 @@
       <unit at="10,0,38,0" name="GiML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,134,0" name="GiML.structure.StructureAspectDescriptor" />
+      <unit at="16,0,137,0" name="GiML.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933250">
@@ -47,14 +47,16 @@
       <node id="1242463862027969317" at="96,17,97,116" concept="0" />
       <node id="1242463862027969320" at="97,116,98,114" concept="0" />
       <node id="1242463862027969324" at="98,114,99,115" concept="0" />
-      <node id="1853575566387933250" at="99,115,100,28" concept="0" />
-      <node id="1853575566387933250" at="100,28,101,22" concept="4" />
-      <node id="1853575566387933250" at="90,0,103,0" concept="6" trace="createDescriptorForIstanzaGioco#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4291957733781003054" at="99,115,100,178" concept="0" />
+      <node id="4291957733783342104" at="100,178,101,199" concept="0" />
+      <node id="1853575566387933250" at="101,199,102,28" concept="0" />
+      <node id="1853575566387933250" at="102,28,103,22" concept="4" />
+      <node id="1853575566387933250" at="90,0,105,0" concept="6" trace="createDescriptorForIstanzaGioco#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1853575566387933250" at="48,46,49,37" />
-      <scope id="1853575566387933250" at="90,70,101,22">
+      <scope id="1853575566387933250" at="90,70,103,22">
         <var name="b" id="1853575566387933250" />
       </scope>
-      <scope id="1853575566387933250" at="90,0,103,0" />
+      <scope id="1853575566387933250" at="90,0,105,0" />
     </file>
   </root>
   <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772258458929">
@@ -113,20 +115,20 @@
     <file name="StructureAspectDescriptor.java">
       <node id="3009023772263283732" at="20,0,21,0" concept="1" trace="myConceptIstanzaIstituto" />
       <node id="3009023772263283732" at="50,49,51,40" concept="4" />
-      <node id="3009023772263283732" at="103,73,104,154" concept="3" />
-      <node id="3009023772263283732" at="104,154,105,33" concept="0" />
-      <node id="3009023772263283732" at="105,33,106,103" concept="0" />
-      <node id="3009023772263283732" at="106,103,107,91" concept="0" />
-      <node id="3009023772263283732" at="107,91,108,17" concept="0" />
-      <node id="3009023772268036273" at="108,17,109,115" concept="0" />
-      <node id="3009023772263283732" at="109,115,110,31" concept="0" />
-      <node id="3009023772263283732" at="110,31,111,22" concept="4" />
-      <node id="3009023772263283732" at="103,0,113,0" concept="6" trace="createDescriptorForIstanzaIstituto#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="3009023772263283732" at="105,73,106,154" concept="3" />
+      <node id="3009023772263283732" at="106,154,107,33" concept="0" />
+      <node id="3009023772263283732" at="107,33,108,103" concept="0" />
+      <node id="3009023772263283732" at="108,103,109,91" concept="0" />
+      <node id="3009023772263283732" at="109,91,110,17" concept="0" />
+      <node id="3009023772268036273" at="110,17,111,115" concept="0" />
+      <node id="3009023772263283732" at="111,115,112,31" concept="0" />
+      <node id="3009023772263283732" at="112,31,113,22" concept="4" />
+      <node id="3009023772263283732" at="105,0,115,0" concept="6" trace="createDescriptorForIstanzaIstituto#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3009023772263283732" at="50,49,51,40" />
-      <scope id="3009023772263283732" at="103,73,111,22">
+      <scope id="3009023772263283732" at="105,73,113,22">
         <var name="b" id="3009023772263283732" />
       </scope>
-      <scope id="3009023772263283732" at="103,0,113,0" />
+      <scope id="3009023772263283732" at="105,0,115,0" />
     </file>
   </root>
   <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772264031885">
@@ -149,21 +151,21 @@
     <file name="StructureAspectDescriptor.java">
       <node id="3009023772264031885" at="21,0,22,0" concept="1" trace="myConceptIstanzaScuola" />
       <node id="3009023772264031885" at="52,47,53,38" concept="4" />
-      <node id="3009023772264031885" at="113,71,114,152" concept="3" />
-      <node id="3009023772264031885" at="114,152,115,33" concept="0" />
-      <node id="3009023772264031885" at="115,33,116,101" concept="0" />
-      <node id="3009023772264031885" at="116,101,117,71" concept="0" />
-      <node id="3009023772264031885" at="117,71,118,91" concept="0" />
-      <node id="3009023772264031885" at="118,91,119,17" concept="0" />
-      <node id="3009023772267581547" at="119,17,120,115" concept="0" />
-      <node id="3009023772264031885" at="120,115,121,29" concept="0" />
-      <node id="3009023772264031885" at="121,29,122,22" concept="4" />
-      <node id="3009023772264031885" at="113,0,124,0" concept="6" trace="createDescriptorForIstanzaScuola#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="3009023772264031885" at="115,71,116,152" concept="3" />
+      <node id="3009023772264031885" at="116,152,117,33" concept="0" />
+      <node id="3009023772264031885" at="117,33,118,101" concept="0" />
+      <node id="3009023772264031885" at="118,101,119,71" concept="0" />
+      <node id="3009023772264031885" at="119,71,120,91" concept="0" />
+      <node id="3009023772264031885" at="120,91,121,17" concept="0" />
+      <node id="3009023772267581547" at="121,17,122,115" concept="0" />
+      <node id="3009023772264031885" at="122,115,123,29" concept="0" />
+      <node id="3009023772264031885" at="123,29,124,22" concept="4" />
+      <node id="3009023772264031885" at="115,0,126,0" concept="6" trace="createDescriptorForIstanzaScuola#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3009023772264031885" at="52,47,53,38" />
-      <scope id="3009023772264031885" at="113,71,122,22">
+      <scope id="3009023772264031885" at="115,71,124,22">
         <var name="b" id="3009023772264031885" />
       </scope>
-      <scope id="3009023772264031885" at="113,0,124,0" />
+      <scope id="3009023772264031885" at="115,0,126,0" />
     </file>
   </root>
   <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772269374199">
@@ -222,19 +224,20 @@
     <file name="StructureAspectDescriptor.java">
       <node id="4291957733779294983" at="22,0,23,0" concept="1" trace="myConceptistanzaDashboard" />
       <node id="4291957733779294983" at="54,50,55,41" concept="4" />
-      <node id="4291957733779294983" at="124,74,125,155" concept="3" />
-      <node id="4291957733779294983" at="125,155,126,33" concept="0" />
-      <node id="4291957733779294983" at="126,33,127,104" concept="0" />
-      <node id="4291957733779294983" at="127,104,128,91" concept="0" />
-      <node id="4291957733779294983" at="128,91,129,17" concept="0" />
-      <node id="4291957733779294983" at="129,17,130,25" concept="0" />
-      <node id="4291957733779294983" at="130,25,131,22" concept="4" />
-      <node id="4291957733779294983" at="124,0,133,0" concept="6" trace="createDescriptorForistanzaDashboard#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4291957733779294983" at="126,74,127,155" concept="3" />
+      <node id="4291957733779294983" at="127,155,128,33" concept="0" />
+      <node id="4291957733779294983" at="128,33,129,104" concept="0" />
+      <node id="4291957733779294983" at="129,104,130,91" concept="0" />
+      <node id="4291957733779294983" at="130,91,131,17" concept="0" />
+      <node id="4291957733780505092" at="131,17,132,200" concept="0" />
+      <node id="4291957733779294983" at="132,200,133,25" concept="0" />
+      <node id="4291957733779294983" at="133,25,134,22" concept="4" />
+      <node id="4291957733779294983" at="126,0,136,0" concept="6" trace="createDescriptorForistanzaDashboard#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="4291957733779294983" at="54,50,55,41" />
-      <scope id="4291957733779294983" at="124,74,131,22">
+      <scope id="4291957733779294983" at="126,74,134,22">
         <var name="b" id="4291957733779294983" />
       </scope>
-      <scope id="4291957733779294983" at="124,0,133,0" />
+      <scope id="4291957733779294983" at="126,0,136,0" />
     </file>
   </root>
 </debug-info>

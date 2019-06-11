@@ -65,7 +65,7 @@
       <property role="IQ2ns" value="742676989655975704" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="partecipanti" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="14Y7$MQrYcp" resolve="Classe" />
     </node>
   </node>
@@ -196,13 +196,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3Ig6d6KTWG1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3Ig6d6KTWG4" role="1TKVEi">
-      <property role="IQ2ns" value="4291957733779294980" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="istanze" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2fEMsIDkGlg" resolve="DefinizioneGioco" />
     </node>
   </node>
 </model>
