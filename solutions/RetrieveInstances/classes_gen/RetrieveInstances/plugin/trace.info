@@ -13,6 +13,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root nodeRef="r:1f888f3a-30ef-478e-8963-edc1d2f0027b(RetrieveInstances.plugin)/5729656636407562263">
     <file name="RetrieveInstances_ApplicationPlugin.java">
       <node id="5729656636407562263" at="10,0,11,0" concept="3" trace="myId" />
@@ -166,37 +167,74 @@
   </root>
   <root nodeRef="r:1f888f3a-30ef-478e-8963-edc1d2f0027b(RetrieveInstances.plugin)/5729656636409006829">
     <file name="RetrieveMethod.java">
-      <node id="5729656636409020025" at="14,71,15,29" concept="2" />
-      <node id="5729656636409038808" at="15,29,16,20" concept="2" />
-      <node id="5729656636409020039" at="18,21,19,52" concept="6" />
-      <node id="5729656636409041212" at="19,52,20,53" concept="2" />
-      <node id="5729656636409020055" at="20,53,21,56" concept="2" />
-      <node id="5729656636409020062" at="21,56,22,0" concept="9" />
-      <node id="5729656636409020020" at="24,0,25,0" concept="3" trace="myAdapter" />
-      <node id="5729656636409038804" at="25,0,26,0" concept="3" trace="myModel" />
-      <node id="5729656636409020042" at="27,59,28,63" concept="6" />
-      <node id="5729656636409020042" at="28,63,29,205" concept="6" />
-      <node id="5729656636409020042" at="29,205,30,142" concept="2" />
-      <node id="5729656636409020042" at="30,142,31,156" concept="2" />
-      <node id="5729656636409020042" at="31,156,32,14" concept="7" />
-      <node id="5729656636409020023" at="14,0,18,0" concept="1" trace="RetrieveMethod#(Ljetbrains/mps/progress/ProgressMonitorAdapter;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
-      <node id="5729656636409020036" at="18,0,24,0" concept="5" trace="run#()V" />
-      <node id="5729656636409020042" at="27,0,34,0" concept="11" trace="createIstanzaScuola_7rmalq_a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="5729656636409020024" at="14,71,16,20" />
-      <scope id="5729656636409020023" at="14,0,18,0">
+      <node id="5729656636409006829" at="22,0,23,0" concept="10" trace="LOG" />
+      <node id="5729656636409020025" at="23,71,24,29" concept="2" />
+      <node id="5729656636409038808" at="24,29,25,20" concept="2" />
+      <node id="5729656636409020039" at="27,21,28,53" concept="6" />
+      <node id="499293588395110373" at="29,9,30,57" concept="6" />
+      <node id="499293588394941471" at="30,57,31,121" concept="2" />
+      <node id="499293588394957209" at="31,121,32,0" concept="9" />
+      <node id="499293588394941217" at="34,5,35,0" concept="9" />
+      <node id="5729656636409041212" at="35,0,36,53" concept="2" />
+      <node id="5729656636409020055" at="36,53,37,56" concept="2" />
+      <node id="5729656636409020062" at="37,56,38,0" concept="9" />
+      <node id="5729656636409020020" at="40,0,41,0" concept="3" trace="myAdapter" />
+      <node id="5729656636409038804" at="41,0,42,0" concept="3" trace="myModel" />
+      <node id="499293588395249907" at="43,62,44,45" concept="6" />
+      <node id="5729656636409200956" at="44,45,45,0" concept="9" />
+      <node id="5729656636409585528" at="45,0,46,33" concept="6" />
+      <node id="5729656636409523532" at="46,33,47,81" concept="2" />
+      <node id="5729656636409522328" at="47,81,48,0" concept="9" />
+      <node id="5729656636409589890" at="48,0,49,20" concept="7" />
+      <node id="5729656636409131633" at="52,59,53,27" concept="6" />
+      <node id="5729656636409133338" at="53,27,54,45" concept="6" />
+      <node id="5729656636409149558" at="54,45,55,23" concept="7" />
+      <node id="5729656636409020042" at="58,60,59,63" concept="6" />
+      <node id="5729656636409020042" at="59,63,60,206" concept="6" />
+      <node id="5729656636409020042" at="60,206,61,146" concept="2" />
+      <node id="5729656636409020042" at="61,146,62,14" concept="7" />
+      <node id="5729656636409020023" at="23,0,27,0" concept="1" trace="RetrieveMethod#(Ljetbrains/mps/progress/ProgressMonitorAdapter;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="5729656636409111189" at="52,0,57,0" concept="5" trace="toJsonString#(Ljava/util/Map;)Ljava/lang/String;" />
+      <node id="499293588394956244" at="28,53,34,5" concept="13" />
+      <node id="5729656636409020042" at="58,0,64,0" concept="11" trace="createIstanzaDominio_7rmalq_a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5729656636409154618" at="43,0,51,0" concept="5" trace="doGetRequest#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="5729656636409020036" at="27,0,40,0" concept="5" trace="run#()V" />
+      <scope id="499293588394956240" at="33,0,33,29">
+        <var name="e" id="499293588394956242" />
+      </scope>
+      <scope id="499293588394956241" at="33,29,33,29" />
+      <scope id="5729656636409020024" at="23,71,25,20" />
+      <scope id="499293588394956245" at="29,9,32,0">
+        <var name="result" id="499293588395110374" />
+      </scope>
+      <scope id="5729656636409111192" at="52,59,55,23">
+        <var name="gson" id="5729656636409131634" />
+        <var name="jsonContent" id="5729656636409133339" />
+      </scope>
+      <scope id="5729656636409020023" at="23,0,27,0">
         <var name="adapter" id="5729656636409020033" />
         <var name="model" id="5729656636409035079" />
       </scope>
-      <scope id="5729656636409020037" at="18,21,22,0">
-        <var name="node" id="5729656636409020040" />
-      </scope>
-      <scope id="5729656636409020042" at="27,59,32,14">
+      <scope id="5729656636409020042" at="58,60,62,14">
         <var name="facade" id="5729656636409020042" />
         <var name="n1" id="5729656636409020042" />
       </scope>
-      <scope id="5729656636409020036" at="18,0,24,0" />
-      <scope id="5729656636409020042" at="27,0,34,0" />
-      <unit id="5729656636409006829" at="13,0,35,0" name="RetrieveInstances.plugin.RetrieveMethod" />
+      <scope id="5729656636409111189" at="52,0,57,0">
+        <var name="fields" id="5729656636409146492" />
+      </scope>
+      <scope id="5729656636409154621" at="43,62,49,20">
+        <var name="client" id="499293588395249908" />
+        <var name="response" id="5729656636409585531" />
+      </scope>
+      <scope id="5729656636409020042" at="58,0,64,0" />
+      <scope id="5729656636409154618" at="43,0,51,0">
+        <var name="url" id="5729656636409156717" />
+      </scope>
+      <scope id="5729656636409020037" at="27,21,38,0">
+        <var name="node" id="5729656636409020040" />
+      </scope>
+      <scope id="5729656636409020036" at="27,0,40,0" />
+      <unit id="5729656636409006829" at="21,0,65,0" name="RetrieveInstances.plugin.RetrieveMethod" />
     </file>
   </root>
 </debug-info>

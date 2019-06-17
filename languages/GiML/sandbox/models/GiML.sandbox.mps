@@ -117,17 +117,5 @@
       </node>
     </node>
   </node>
-  <node concept="23gHmw" id="4Y3P5Ei7$hL">
-    <property role="TrG5h" value="pippo" />
-    <property role="23tid6" value="test" />
-  </node>
-  <node concept="23gHmw" id="4Y3P5Ei7MHA">
-    <property role="TrG5h" value="pippo" />
-    <property role="23tid6" value="test" />
-  </node>
-  <node concept="23gHmw" id="4Y3P5Ei7MHV">
-    <property role="TrG5h" value="pippo" />
-    <property role="23tid6" value="test" />
-  </node>
 </model>
 

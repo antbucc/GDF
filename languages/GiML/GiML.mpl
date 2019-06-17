@@ -7,9 +7,6 @@
     <modelRoot contentPath="/Users/amministratore/Desktop/GameTest" type="java_classes">
       <sourceRoot location="game-engine.test-1.0.0-SNAPSHOT-jar-with-dependencies.jar" />
     </modelRoot>
-    <modelRoot contentPath="/Users/amministratore/Desktop/GamificationClient" type="java_classes">
-      <sourceRoot location="gamification-java-client-2.0.0.jar" />
-    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
