@@ -4,7 +4,14 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="/Users/amministratore/Downloads/json-20180813.jar!/" type="java_classes">
+      <sourceRoot location="." />
+      <sourceRoot location="org/json" />
+    </modelRoot>
   </models>
+  <stubModelEntries>
+    <stubModelEntry path="/Users/amministratore/Downloads/smart-carpooling-demo/collective-adaptation-engine/lib/java-json.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>

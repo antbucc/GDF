@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="RetrieveInstitutes.plugin.Istituto">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="RetrieveInstitutes.plugin.RetrieveActionGroup_ActionGroup">
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
@@ -34,19 +37,18 @@
     <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.RetrieveMethod">
+    <classNode dependClassName="RetrieveInstitutes.plugin.Istituto" />
+    <classNode dependClassName="com.google.gson.Gson" />
     <classNode dependClassName="com.squareup.okhttp.OkHttpClient" />
     <classNode dependClassName="com.squareup.okhttp.Request" />
     <classNode dependClassName="com.squareup.okhttp.Response" />
     <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
     <classNode dependClassName="jetbrains.mps.progress.ProgressMonitorAdapter" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.apache.log4j.Level" />
-    <classNode dependClassName="org.apache.log4j.LogManager" />
-    <classNode dependClassName="org.apache.log4j.Logger" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
