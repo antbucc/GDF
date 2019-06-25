@@ -4,9 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/amministratore/Desktop/GamificationClient" type="java_classes">
-      <sourceRoot location="gamification-java-client-2.0.0.jar" />
-    </modelRoot>
   </models>
   <accessoryModels />
   <generators>

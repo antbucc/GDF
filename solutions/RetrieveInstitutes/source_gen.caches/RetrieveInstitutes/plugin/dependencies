@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="RetrieveInstances.plugin.RetrieveActionGroup_ActionGroup">
+  <dependency className="RetrieveInstitutes.plugin.RetrieveActionGroup_ActionGroup">
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
   </dependency>
-  <dependency className="RetrieveInstances.plugin.RetrieveAction_Action">
-    <classNode dependClassName="RetrieveInstances.plugin.RetrieveMethod" />
+  <dependency className="RetrieveInstitutes.plugin.RetrieveAction_Action">
+    <classNode dependClassName="RetrieveInstitutes.plugin.RetrieveMethod" />
     <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
     <classNode dependClassName="com.intellij.openapi.application.ApplicationManager" />
     <classNode dependClassName="com.intellij.openapi.progress.PerformInBackgroundOption" />
@@ -26,24 +26,24 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
     <classNode extendsClassName="jetbrains.mps.workbench.action.BaseAction" />
   </dependency>
-  <dependency className="RetrieveInstances.plugin.RetrieveInstances_ApplicationPlugin">
-    <classNode dependClassName="RetrieveInstances.plugin.RetrieveActionGroup_ActionGroup" />
-    <classNode dependClassName="RetrieveInstances.plugin.RetrieveAction_Action" />
+  <dependency className="RetrieveInstitutes.plugin.RetrieveInstitutes_ApplicationPlugin">
+    <classNode dependClassName="RetrieveInstitutes.plugin.RetrieveActionGroup_ActionGroup" />
+    <classNode dependClassName="RetrieveInstitutes.plugin.RetrieveAction_Action" />
     <classNode dependClassName="com.intellij.openapi.extensions.PluginId" />
     <classNode dependClassName="jetbrains.mps.ide.actions.ModelActions_ActionGroup" />
     <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
   </dependency>
-  <dependency className="RetrieveInstances.plugin.RetrieveMethod">
-    <classNode dependClassName="com.google.gson.Gson" />
+  <dependency className="RetrieveInstitutes.plugin.RetrieveMethod">
+    <classNode dependClassName="com.squareup.okhttp.OkHttpClient" />
+    <classNode dependClassName="com.squareup.okhttp.Request" />
+    <classNode dependClassName="com.squareup.okhttp.Response" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Map" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
     <classNode dependClassName="jetbrains.mps.progress.ProgressMonitorAdapter" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="okhttp3.OkHttpClient" />
     <classNode dependClassName="org.apache.log4j.Level" />
     <classNode dependClassName="org.apache.log4j.LogManager" />
     <classNode dependClassName="org.apache.log4j.Logger" />

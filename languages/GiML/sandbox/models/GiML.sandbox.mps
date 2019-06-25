@@ -60,14 +60,6 @@
     <property role="23v3es" value="via Istituto 1" />
     <ref role="23qdQR" node="DexcA7hsSO" resolve="TEST" />
   </node>
-  <node concept="23gHmw" id="3Ig6d6L8Ai$">
-    <property role="TrG5h" value="Scuola1" />
-    <property role="23tid6" value="erwer" />
-    <ref role="23qdQU" node="DexcA7hPkP" resolve="Istituto1" />
-    <node concept="2345Bq" id="3Ig6d6L9ItP" role="233yhX">
-      <ref role="235fsN" node="3Ig6d6L8Ai$" resolve="Scuola1" />
-    </node>
-  </node>
   <node concept="2345Bq" id="3Ig6d6L9if2">
     <property role="TrG5h" value="5A" />
     <ref role="235fsN" node="3Ig6d6L8Ai$" resolve="Scuola1" />
@@ -116,6 +108,17 @@
         <ref role="235fsN" node="3Ig6d6L8Ai$" resolve="Scuola1" />
       </node>
     </node>
+  </node>
+  <node concept="23gHmw" id="3Ig6d6L8Ai$">
+    <property role="TrG5h" value="Scuola1" />
+    <property role="23tid6" value="erwer" />
+    <ref role="23qdQU" node="DexcA7hPkP" resolve="Istituto1" />
+    <node concept="2345Bq" id="3Ig6d6L9ItP" role="233yhX">
+      <ref role="235fsN" node="3Ig6d6L8Ai$" resolve="Scuola1" />
+    </node>
+  </node>
+  <node concept="23UuSs" id="1wHdSt9drGR">
+    <property role="TrG5h" value="prova2314" />
   </node>
 </model>
 

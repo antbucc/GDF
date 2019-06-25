@@ -9,7 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/GameData/GameData.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GiML/GiML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GiML/sandbox/GiML.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/RetrieveInstances/RetrieveInstances.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/RetrieveInstitutes/RetrieveInstitutes.msd" folder="" />
     </projectModules>
   </component>
 </project>

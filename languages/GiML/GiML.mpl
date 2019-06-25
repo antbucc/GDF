@@ -4,9 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/amministratore/Desktop/GameTest" type="java_classes">
-      <sourceRoot location="game-engine.test-1.0.0-SNAPSHOT-jar-with-dependencies.jar" />
-    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
