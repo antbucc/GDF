@@ -61,9 +61,9 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="3Ig6d6KYQCl">
-    <ref role="1M2myG" to="2qee:14Y7$MQrYcp" resolve="Classe" />
+    <ref role="1M2myG" to="2qee:14Y7$MQrYcp" resolve="Classroom" />
     <node concept="1N5Pfh" id="3Ig6d6KYQCm" role="1Mr941">
-      <ref role="1N5Vy1" to="2qee:2B2cMQEPGgu" resolve="scuola" />
+      <ref role="1N5Vy1" to="2qee:2B2cMQEPGgu" resolve="school" />
       <node concept="Bn3R3" id="3Ig6d6KYQCp" role="Bn3R6">
         <node concept="3clFbS" id="3Ig6d6KYQCq" role="2VODD2">
           <node concept="3clFbF" id="3Ig6d6KYQL3" role="3cqZAp">

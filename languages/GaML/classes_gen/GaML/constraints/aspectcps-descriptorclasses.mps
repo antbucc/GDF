@@ -178,7 +178,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="0">
-    <property role="TrG5h" value="Classe_Constraints" />
+    <property role="TrG5h" value="Classroom_Constraints" />
     <node concept="3Tm1VV" id="1" role="1B3o_S">
       <node concept="cd27G" id="7" role="lGtFl">
         <node concept="3u3nmq" id="8" role="cd27D">
@@ -233,7 +233,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="o" role="37wK5m">
-              <property role="Xl_RC" value="GaML.structure.Classe" />
+              <property role="Xl_RC" value="GaML.structure.Classroom" />
               <node concept="cd27G" id="w" role="lGtFl">
                 <node concept="3u3nmq" id="x" role="cd27D">
                   <property role="3u3nmv" value="4291957733780580885" />
@@ -432,7 +432,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="1_" role="37wK5m">
-                  <property role="Xl_RC" value="scuola" />
+                  <property role="Xl_RC" value="school" />
                   <node concept="cd27G" id="1J" role="lGtFl">
                     <node concept="3u3nmq" id="1K" role="cd27D">
                       <property role="3u3nmv" value="4291957733780580885" />
@@ -946,7 +946,7 @@
             <node concept="3clFbS" id="4J" role="1pnPq1">
               <node concept="3cpWs6" id="4L" role="3cqZAp">
                 <node concept="1nCR9W" id="4M" role="3cqZAk">
-                  <property role="1nD$Q0" value="GaML.constraints.Classe_Constraints" />
+                  <property role="1nD$Q0" value="GaML.constraints.Classroom_Constraints" />
                   <node concept="3uibUv" id="4N" role="2lIhxL">
                     <ref role="3uigEE" to="ze1i:~ConstraintsDescriptor" resolve="ConstraintsDescriptor" />
                   </node>
@@ -954,7 +954,7 @@
               </node>
             </node>
             <node concept="3gn64h" id="4K" role="1pnPq6">
-              <ref role="3gnhBz" to="2qee:14Y7$MQrYcp" resolve="Classe" />
+              <ref role="3gnhBz" to="2qee:14Y7$MQrYcp" resolve="Classroom" />
             </node>
           </node>
           <node concept="3clFbS" id="4I" role="1prKM_" />

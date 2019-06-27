@@ -59,14 +59,14 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="scuola" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="Scuola" />
+      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="School" />
     </node>
     <node concept="1TJgyj" id="DexcA7jgso" role="1TKVEi">
       <property role="IQ2ns" value="742676989655975704" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="partecipanti" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14Y7$MQrYcp" resolve="Classe" />
+      <ref role="20lvS9" node="14Y7$MQrYcp" resolve="Classroom" />
     </node>
   </node>
   <node concept="1TIwiD" id="5BK7UENfhc4">
@@ -96,8 +96,8 @@
   </node>
   <node concept="1TIwiD" id="14Y7$MQrYci">
     <property role="EcuMT" value="1242463862027969298" />
-    <property role="TrG5h" value="Istituto" />
-    <property role="34LRSv" value="istituto" />
+    <property role="TrG5h" value="Institute" />
+    <property role="34LRSv" value="institute" />
     <ref role="1TJDcQ" node="5BK7UENfhc4" resolve="ComplexTeam" />
     <node concept="PrWs8" id="14Y7$MQrYcj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -114,13 +114,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="scuole" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="Scuola" />
+      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="School" />
     </node>
   </node>
   <node concept="1TIwiD" id="14Y7$MQrYcp">
     <property role="EcuMT" value="1242463862027969305" />
-    <property role="TrG5h" value="Classe" />
-    <property role="34LRSv" value="classe" />
+    <property role="TrG5h" value="Classroom" />
+    <property role="34LRSv" value="classroom" />
     <ref role="1TJDcQ" node="5BK7UENfhc4" resolve="ComplexTeam" />
     <node concept="PrWs8" id="14Y7$MQrYcq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -128,9 +128,9 @@
     <node concept="1TJgyj" id="2B2cMQEPGgu" role="1TKVEi">
       <property role="IQ2ns" value="3009023772269659166" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="scuola" />
+      <property role="20kJfa" value="school" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="Scuola" />
+      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="School" />
     </node>
   </node>
   <node concept="1TIwiD" id="14Y7$MQrYcu">
@@ -144,8 +144,8 @@
   </node>
   <node concept="1TIwiD" id="2B2cMQEw4EQ">
     <property role="EcuMT" value="3009023772263991990" />
-    <property role="TrG5h" value="Scuola" />
-    <property role="34LRSv" value="scuola" />
+    <property role="TrG5h" value="School" />
+    <property role="34LRSv" value="school" />
     <ref role="1TJDcQ" node="5BK7UENfhc4" resolve="ComplexTeam" />
     <node concept="PrWs8" id="2B2cMQEw4FD" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -153,28 +153,28 @@
     <node concept="1TJgyj" id="2B2cMQEEIUn" role="1TKVEi">
       <property role="IQ2ns" value="3009023772266786455" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="istituto" />
+      <property role="20kJfa" value="institute" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="14Y7$MQrYci" resolve="Istituto" />
+      <ref role="20lvS9" node="14Y7$MQrYci" resolve="Institute" />
     </node>
     <node concept="1TJgyj" id="2B2cMQEN1tg" role="1TKVEi">
       <property role="IQ2ns" value="3009023772268959568" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="classi" />
+      <property role="20kJfa" value="classes" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14Y7$MQrYcp" resolve="Classe" />
+      <ref role="20lvS9" node="14Y7$MQrYcp" resolve="Classroom" />
     </node>
     <node concept="1TJgyj" id="2B2cMQEN1tk" role="1TKVEi">
       <property role="IQ2ns" value="3009023772268959572" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="alunni" />
+      <property role="20kJfa" value="alumni" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="14Y7$MQrYcu" resolve="Alunno" />
     </node>
     <node concept="1TJgyj" id="2B2cMQEN1tp" role="1TKVEi">
       <property role="IQ2ns" value="3009023772268959577" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="volontari" />
+      <property role="20kJfa" value="volounteers" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2B2cMQEN1td" resolve="Volontario" />
     </node>

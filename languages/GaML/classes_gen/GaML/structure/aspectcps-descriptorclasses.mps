@@ -211,7 +211,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_Classe" />
+      <property role="TrG5h" value="props_Classroom" />
       <node concept="3uibUv" id="g" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -261,7 +261,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_Istituto" />
+      <property role="TrG5h" value="props_Institute" />
       <node concept="3uibUv" id="q" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -271,7 +271,7 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="false" />
-      <property role="TrG5h" value="props_Scuola" />
+      <property role="TrG5h" value="props_School" />
       <node concept="3uibUv" id="s" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptPresentation" resolve="ConceptPresentation" />
       </node>
@@ -447,7 +447,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="1H" role="37vLTJ">
-                        <ref role="3cqZAo" node="3" resolve="props_Classe" />
+                        <ref role="3cqZAo" node="3" resolve="props_Classroom" />
                       </node>
                     </node>
                   </node>
@@ -455,19 +455,19 @@
                 <node concept="3clFbC" id="1u" role="3clFbw">
                   <node concept="10Nm6u" id="1K" role="3uHU7w" />
                   <node concept="37vLTw" id="1L" role="3uHU7B">
-                    <ref role="3cqZAo" node="3" resolve="props_Classe" />
+                    <ref role="3cqZAo" node="3" resolve="props_Classroom" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="1s" role="3cqZAp">
                 <node concept="37vLTw" id="1M" role="3cqZAk">
-                  <ref role="3cqZAo" node="3" resolve="props_Classe" />
+                  <ref role="3cqZAo" node="3" resolve="props_Classroom" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="1q" role="3Kbmr1">
               <ref role="1PxDUh" node="4L" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="4O" resolve="Classe" />
+              <ref role="3cqZAo" node="4O" resolve="Classroom" />
             </node>
           </node>
           <node concept="3KbdKl" id="P" role="3KbHQx">
@@ -777,7 +777,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="3J" role="37vLTJ">
-                        <ref role="3cqZAo" node="8" resolve="props_Istituto" />
+                        <ref role="3cqZAo" node="8" resolve="props_Institute" />
                       </node>
                     </node>
                   </node>
@@ -785,19 +785,19 @@
                 <node concept="3clFbC" id="3w" role="3clFbw">
                   <node concept="10Nm6u" id="3M" role="3uHU7w" />
                   <node concept="37vLTw" id="3N" role="3uHU7B">
-                    <ref role="3cqZAo" node="8" resolve="props_Istituto" />
+                    <ref role="3cqZAo" node="8" resolve="props_Institute" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="3u" role="3cqZAp">
                 <node concept="37vLTw" id="3O" role="3cqZAk">
-                  <ref role="3cqZAo" node="8" resolve="props_Istituto" />
+                  <ref role="3cqZAo" node="8" resolve="props_Institute" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="3s" role="3Kbmr1">
               <ref role="1PxDUh" node="4L" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="4T" resolve="Istituto" />
+              <ref role="3cqZAo" node="4T" resolve="Institute" />
             </node>
           </node>
           <node concept="3KbdKl" id="U" role="3KbHQx">
@@ -843,7 +843,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="49" role="37vLTJ">
-                        <ref role="3cqZAo" node="9" resolve="props_Scuola" />
+                        <ref role="3cqZAo" node="9" resolve="props_School" />
                       </node>
                     </node>
                   </node>
@@ -851,19 +851,19 @@
                 <node concept="3clFbC" id="3U" role="3clFbw">
                   <node concept="10Nm6u" id="4c" role="3uHU7w" />
                   <node concept="37vLTw" id="4d" role="3uHU7B">
-                    <ref role="3cqZAo" node="9" resolve="props_Scuola" />
+                    <ref role="3cqZAo" node="9" resolve="props_School" />
                   </node>
                 </node>
               </node>
               <node concept="3cpWs6" id="3S" role="3cqZAp">
                 <node concept="37vLTw" id="4e" role="3cqZAk">
-                  <ref role="3cqZAo" node="9" resolve="props_Scuola" />
+                  <ref role="3cqZAo" node="9" resolve="props_School" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="3Q" role="3Kbmr1">
               <ref role="1PxDUh" node="4L" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="4U" resolve="Scuola" />
+              <ref role="3cqZAo" node="4U" resolve="School" />
             </node>
           </node>
           <node concept="3KbdKl" id="V" role="3KbHQx">
@@ -996,7 +996,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="Classe" />
+      <property role="TrG5h" value="Classroom" />
       <node concept="3Tm1VV" id="58" role="1B3o_S" />
       <node concept="10Oyi0" id="59" role="1tU5fm" />
       <node concept="3cmrfG" id="5a" role="33vP2m">
@@ -1051,7 +1051,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="Istituto" />
+      <property role="TrG5h" value="Institute" />
       <node concept="3Tm1VV" id="5n" role="1B3o_S" />
       <node concept="10Oyi0" id="5o" role="1tU5fm" />
       <node concept="3cmrfG" id="5p" role="33vP2m">
@@ -1062,7 +1062,7 @@
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="Scuola" />
+      <property role="TrG5h" value="School" />
       <node concept="3Tm1VV" id="5q" role="1B3o_S" />
       <node concept="10Oyi0" id="5r" role="1tU5fm" />
       <node concept="3cmrfG" id="5s" role="33vP2m">
@@ -1131,7 +1131,7 @@
                 <property role="1adDun" value="0x113e1e4cb66fe319L" />
               </node>
               <node concept="37vLTw" id="5X" role="37wK5m">
-                <ref role="3cqZAo" node="4O" resolve="Classe" />
+                <ref role="3cqZAo" node="4O" resolve="Classroom" />
               </node>
             </node>
           </node>
@@ -1211,7 +1211,7 @@
                 <property role="1adDun" value="0x113e1e4cb66fe312L" />
               </node>
               <node concept="37vLTw" id="6m" role="37wK5m">
-                <ref role="3cqZAo" node="4T" resolve="Istituto" />
+                <ref role="3cqZAo" node="4T" resolve="Institute" />
               </node>
             </node>
           </node>
@@ -1227,7 +1227,7 @@
                 <property role="1adDun" value="0x29c2332daa804ab6L" />
               </node>
               <node concept="37vLTw" id="6r" role="37wK5m">
-                <ref role="3cqZAo" node="4U" resolve="Scuola" />
+                <ref role="3cqZAo" node="4U" resolve="School" />
               </node>
             </node>
           </node>
@@ -1341,12 +1341,12 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptClasse" />
+      <property role="TrG5h" value="myConceptClassroom" />
       <node concept="3uibUv" id="7v" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="7w" role="33vP2m">
-        <ref role="37wK5l" node="7l" resolve="createDescriptorForClasse" />
+        <ref role="37wK5l" node="7l" resolve="createDescriptorForClassroom" />
       </node>
     </node>
     <node concept="312cEg" id="6X" role="jymVt">
@@ -1401,24 +1401,24 @@
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptIstituto" />
+      <property role="TrG5h" value="myConceptInstitute" />
       <node concept="3uibUv" id="7D" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="7E" role="33vP2m">
-        <ref role="37wK5l" node="7q" resolve="createDescriptorForIstituto" />
+        <ref role="37wK5l" node="7q" resolve="createDescriptorForInstitute" />
       </node>
     </node>
     <node concept="312cEg" id="72" role="jymVt">
       <property role="eg7rD" value="false" />
       <property role="34CwA1" value="false" />
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="myConceptScuola" />
+      <property role="TrG5h" value="myConceptSchool" />
       <node concept="3uibUv" id="7F" role="1tU5fm">
         <ref role="3uigEE" to="ze1i:~ConceptDescriptor" resolve="ConceptDescriptor" />
       </node>
       <node concept="1rXfSq" id="7G" role="33vP2m">
-        <ref role="37wK5l" node="7r" resolve="createDescriptorForScuola" />
+        <ref role="37wK5l" node="7r" resolve="createDescriptorForSchool" />
       </node>
     </node>
     <node concept="312cEg" id="73" role="jymVt">
@@ -1551,7 +1551,7 @@
               <ref role="3cqZAo" node="6V" resolve="myConceptAlunno" />
             </node>
             <node concept="37vLTw" id="8r" role="37wK5m">
-              <ref role="3cqZAo" node="6W" resolve="myConceptClasse" />
+              <ref role="3cqZAo" node="6W" resolve="myConceptClassroom" />
             </node>
             <node concept="37vLTw" id="8s" role="37wK5m">
               <ref role="3cqZAo" node="6X" resolve="myConceptComplexTeam" />
@@ -1566,10 +1566,10 @@
               <ref role="3cqZAo" node="70" resolve="myConceptDominio" />
             </node>
             <node concept="37vLTw" id="8w" role="37wK5m">
-              <ref role="3cqZAo" node="71" resolve="myConceptIstituto" />
+              <ref role="3cqZAo" node="71" resolve="myConceptInstitute" />
             </node>
             <node concept="37vLTw" id="8x" role="37wK5m">
-              <ref role="3cqZAo" node="72" resolve="myConceptScuola" />
+              <ref role="3cqZAo" node="72" resolve="myConceptSchool" />
             </node>
             <node concept="37vLTw" id="8y" role="37wK5m">
               <ref role="3cqZAo" node="73" resolve="myConceptVolontario" />
@@ -1620,13 +1620,13 @@
             <node concept="3clFbS" id="8V" role="3Kbo56">
               <node concept="3cpWs6" id="8X" role="3cqZAp">
                 <node concept="37vLTw" id="8Y" role="3cqZAk">
-                  <ref role="3cqZAo" node="6W" resolve="myConceptClasse" />
+                  <ref role="3cqZAo" node="6W" resolve="myConceptClassroom" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="8W" role="3Kbmr1">
               <ref role="1PxDUh" node="4L" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="4O" resolve="Classe" />
+              <ref role="3cqZAo" node="4O" resolve="Classroom" />
             </node>
           </node>
           <node concept="3KbdKl" id="8I" role="3KbHQx">
@@ -1685,26 +1685,26 @@
             <node concept="3clFbS" id="9f" role="3Kbo56">
               <node concept="3cpWs6" id="9h" role="3cqZAp">
                 <node concept="37vLTw" id="9i" role="3cqZAk">
-                  <ref role="3cqZAo" node="71" resolve="myConceptIstituto" />
+                  <ref role="3cqZAo" node="71" resolve="myConceptInstitute" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="9g" role="3Kbmr1">
               <ref role="1PxDUh" node="4L" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="4T" resolve="Istituto" />
+              <ref role="3cqZAo" node="4T" resolve="Institute" />
             </node>
           </node>
           <node concept="3KbdKl" id="8N" role="3KbHQx">
             <node concept="3clFbS" id="9j" role="3Kbo56">
               <node concept="3cpWs6" id="9l" role="3cqZAp">
                 <node concept="37vLTw" id="9m" role="3cqZAk">
-                  <ref role="3cqZAo" node="72" resolve="myConceptScuola" />
+                  <ref role="3cqZAo" node="72" resolve="myConceptSchool" />
                 </node>
               </node>
             </node>
             <node concept="10M0yZ" id="9k" role="3Kbmr1">
               <ref role="1PxDUh" node="4L" resolve="LanguageConceptSwitch" />
-              <ref role="3cqZAo" node="4U" resolve="Scuola" />
+              <ref role="3cqZAo" node="4U" resolve="School" />
             </node>
           </node>
           <node concept="3KbdKl" id="8O" role="3KbHQx">
@@ -1944,7 +1944,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForClasse" />
+      <property role="TrG5h" value="createDescriptorForClassroom" />
       <node concept="3clFbS" id="aA" role="3clF47">
         <node concept="3cpWs8" id="aD" role="3cqZAp">
           <node concept="3cpWsn" id="aM" role="3cpWs9">
@@ -1959,7 +1959,7 @@
                   <property role="Xl_RC" value="GaML" />
                 </node>
                 <node concept="Xl_RD" id="aR" role="37wK5m">
-                  <property role="Xl_RC" value="Classe" />
+                  <property role="Xl_RC" value="Classroom" />
                 </node>
                 <node concept="1adDum" id="aS" role="37wK5m">
                   <property role="1adDun" value="0x1472546da96448a0L" />
@@ -2066,7 +2066,7 @@
                     <node concept="liA8E" id="bw" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.associate(java.lang.String,long)" resolve="associate" />
                       <node concept="Xl_RD" id="bx" role="37wK5m">
-                        <property role="Xl_RC" value="scuola" />
+                        <property role="Xl_RC" value="school" />
                       </node>
                       <node concept="1adDum" id="by" role="37wK5m">
                         <property role="1adDun" value="0x29c2332daad6c41eL" />
@@ -2111,7 +2111,7 @@
             <node concept="liA8E" id="bE" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String)" resolve="alias" />
               <node concept="Xl_RD" id="bF" role="37wK5m">
-                <property role="Xl_RC" value="classe" />
+                <property role="Xl_RC" value="classroom" />
               </node>
             </node>
           </node>
@@ -2870,7 +2870,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForIstituto" />
+      <property role="TrG5h" value="createDescriptorForInstitute" />
       <node concept="3clFbS" id="g3" role="3clF47">
         <node concept="3cpWs8" id="g6" role="3cqZAp">
           <node concept="3cpWsn" id="gg" role="3cpWs9">
@@ -2885,7 +2885,7 @@
                   <property role="Xl_RC" value="GaML" />
                 </node>
                 <node concept="Xl_RD" id="gl" role="37wK5m">
-                  <property role="Xl_RC" value="Istituto" />
+                  <property role="Xl_RC" value="Institute" />
                 </node>
                 <node concept="1adDum" id="gm" role="37wK5m">
                   <property role="1adDun" value="0x1472546da96448a0L" />
@@ -3104,7 +3104,7 @@
             <node concept="liA8E" id="hw" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String)" resolve="alias" />
               <node concept="Xl_RD" id="hx" role="37wK5m">
-                <property role="Xl_RC" value="istituto" />
+                <property role="Xl_RC" value="institute" />
               </node>
             </node>
           </node>
@@ -3129,7 +3129,7 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createDescriptorForScuola" />
+      <property role="TrG5h" value="createDescriptorForSchool" />
       <node concept="3clFbS" id="h_" role="3clF47">
         <node concept="3cpWs8" id="hC" role="3cqZAp">
           <node concept="3cpWsn" id="hO" role="3cpWs9">
@@ -3144,7 +3144,7 @@
                   <property role="Xl_RC" value="GaML" />
                 </node>
                 <node concept="Xl_RD" id="hT" role="37wK5m">
-                  <property role="Xl_RC" value="Scuola" />
+                  <property role="Xl_RC" value="School" />
                 </node>
                 <node concept="1adDum" id="hU" role="37wK5m">
                   <property role="1adDun" value="0x1472546da96448a0L" />
@@ -3251,7 +3251,7 @@
                     <node concept="liA8E" id="iy" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.associate(java.lang.String,long)" resolve="associate" />
                       <node concept="Xl_RD" id="iz" role="37wK5m">
-                        <property role="Xl_RC" value="istituto" />
+                        <property role="Xl_RC" value="institute" />
                       </node>
                       <node concept="1adDum" id="i$" role="37wK5m">
                         <property role="1adDun" value="0x29c2332daaaaee97L" />
@@ -3302,7 +3302,7 @@
                         <node concept="liA8E" id="iS" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="iT" role="37wK5m">
-                            <property role="Xl_RC" value="classi" />
+                            <property role="Xl_RC" value="classes" />
                           </node>
                           <node concept="1adDum" id="iU" role="37wK5m">
                             <property role="1adDun" value="0x29c2332daacc1750L" />
@@ -3369,7 +3369,7 @@
                         <node concept="liA8E" id="jg" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="jh" role="37wK5m">
-                            <property role="Xl_RC" value="alunni" />
+                            <property role="Xl_RC" value="alumni" />
                           </node>
                           <node concept="1adDum" id="ji" role="37wK5m">
                             <property role="1adDun" value="0x29c2332daacc1754L" />
@@ -3436,7 +3436,7 @@
                         <node concept="liA8E" id="jC" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long)" resolve="aggregate" />
                           <node concept="Xl_RD" id="jD" role="37wK5m">
-                            <property role="Xl_RC" value="volontari" />
+                            <property role="Xl_RC" value="volounteers" />
                           </node>
                           <node concept="1adDum" id="jE" role="37wK5m">
                             <property role="1adDun" value="0x29c2332daacc1759L" />
@@ -3497,7 +3497,7 @@
             <node concept="liA8E" id="jO" role="2OqNvi">
               <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.alias(java.lang.String)" resolve="alias" />
               <node concept="Xl_RD" id="jP" role="37wK5m">
-                <property role="Xl_RC" value="scuola" />
+                <property role="Xl_RC" value="school" />
               </node>
             </node>
           </node>

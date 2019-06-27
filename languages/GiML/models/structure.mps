@@ -79,14 +79,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="classi" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2B2cMQEOAFR" resolve="IstanzaClasse" />
+      <ref role="20lvS9" node="2B2cMQEOAFR" resolve="ClassroomInstance" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEaXOL">
     <property role="EcuMT" value="3009023772258458929" />
-    <property role="TrG5h" value="IstanzaDominio" />
-    <property role="34LRSv" value="istanzaDominio" />
+    <property role="TrG5h" value="DomainInstance" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="domainInstance" />
     <ref role="1TJDcQ" to="2qee:14Y7$MQrYbp" resolve="Dominio" />
     <node concept="PrWs8" id="2B2cMQEpEEm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -94,36 +94,51 @@
   </node>
   <node concept="1TIwiD" id="2B2cMQEtnKk">
     <property role="EcuMT" value="3009023772263283732" />
-    <property role="TrG5h" value="IstanzaIstituto" />
-    <property role="34LRSv" value="istanzaIstituto" />
+    <property role="TrG5h" value="InstituteInstance" />
+    <property role="34LRSv" value="instituteInstitute" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="2qee:14Y7$MQrYci" resolve="Istituto" />
+    <ref role="1TJDcQ" to="2qee:14Y7$MQrYci" resolve="Institute" />
     <node concept="1TJgyi" id="2B2cMQEJw2L" role="1TKVEl">
       <property role="IQ2nx" value="3009023772268036273" />
-      <property role="TrG5h" value="indirizzo" />
+      <property role="TrG5h" value="address" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1wHdSt9mRKF" role="1TKVEl">
+      <property role="IQ2nx" value="1742109685053094955" />
+      <property role="TrG5h" value="ownerId" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1wHdSt9nmL1" role="1TKVEl">
+      <property role="IQ2nx" value="1742109685053221953" />
+      <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEweqd">
     <property role="EcuMT" value="3009023772264031885" />
-    <property role="TrG5h" value="IstanzaScuola" />
-    <property role="34LRSv" value="istanzaScuola" />
+    <property role="TrG5h" value="SchoolInstance" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="2qee:2B2cMQEw4EQ" resolve="Scuola" />
+    <property role="34LRSv" value="schoolInstance" />
+    <ref role="1TJDcQ" to="2qee:2B2cMQEw4EQ" resolve="School" />
     <node concept="PrWs8" id="2B2cMQEweqe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyi" id="2B2cMQEHL1F" role="1TKVEl">
       <property role="IQ2nx" value="3009023772267581547" />
-      <property role="TrG5h" value="indirizzo" />
+      <property role="TrG5h" value="address" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5i3hV1ix6Lc" role="1TKVEl">
+      <property role="IQ2nx" value="6089789943759268940" />
+      <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEOAFR">
     <property role="EcuMT" value="3009023772269374199" />
-    <property role="TrG5h" value="IstanzaClasse" />
-    <property role="34LRSv" value="istanzaClasse" />
+    <property role="TrG5h" value="ClassroomInstance" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="classroomInstance" />
     <ref role="1TJDcQ" to="2qee:14Y7$MQrYcp" resolve="Classe" />
     <node concept="PrWs8" id="2B2cMQEOAFS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

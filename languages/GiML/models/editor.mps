@@ -75,11 +75,11 @@
     </language>
   </registry>
   <node concept="24kQdi" id="2B2cMQEbkk4">
-    <ref role="1XX52x" to="k2kp:2B2cMQEaXOL" resolve="IstanzaDominio" />
+    <ref role="1XX52x" to="k2kp:2B2cMQEaXOL" resolve="DomainInstance" />
     <node concept="3EZMnI" id="2B2cMQErpEV" role="2wV5jI">
       <node concept="l2Vlx" id="2B2cMQErpEY" role="2iSdaV" />
       <node concept="3F0ifn" id="2B2cMQErpFl" role="3EZMnx">
-        <property role="3F0ifm" value="NomeDominio: " />
+        <property role="3F0ifm" value="Domain Name " />
       </node>
       <node concept="3F0A7n" id="2B2cMQErxtj" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -156,7 +156,7 @@
         <ref role="1NtTu8" to="2qee:2B2cMQEUzSZ" resolve="scuola" />
         <node concept="1sVBvm" id="2B2cMQEUzVj" role="1sWHZn">
           <node concept="1iCGBv" id="2B2cMQEUzVL" role="2wV5jI">
-            <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+            <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="institute" />
             <node concept="1sVBvm" id="2B2cMQEUzVN" role="1sWHZn">
               <node concept="1iCGBv" id="2B2cMQEUzVU" role="2wV5jI">
                 <ref role="1NtTu8" to="2qee:2B2cMQEEIUq" resolve="dominio" />
@@ -181,7 +181,7 @@
         <ref role="1NtTu8" to="2qee:2B2cMQEUzSZ" resolve="scuola" />
         <node concept="1sVBvm" id="2B2cMQEUzY7" role="1sWHZn">
           <node concept="1iCGBv" id="2B2cMQEUzYD" role="2wV5jI">
-            <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+            <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="institute" />
             <node concept="1sVBvm" id="2B2cMQEUzYF" role="1sWHZn">
               <node concept="3F0A7n" id="2B2cMQEUzZB" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -252,7 +252,7 @@
           <ref role="1NtTu8" to="2qee:2B2cMQEUzSZ" resolve="scuola" />
           <node concept="1sVBvm" id="3Ig6d6L7PGP" role="1sWHZn">
             <node concept="3F2HdR" id="3Ig6d6L7PGX" role="2wV5jI">
-              <ref role="1NtTu8" to="2qee:2B2cMQEN1tg" resolve="classi" />
+              <ref role="1NtTu8" to="2qee:2B2cMQEN1tg" resolve="classes" />
               <node concept="3F0A7n" id="3Ig6d6L7PH1" role="2czzBI">
                 <property role="1Intyy" value="true" />
                 <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -286,10 +286,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="2B2cMQEHL1Q">
-    <ref role="1XX52x" to="k2kp:2B2cMQEweqd" resolve="IstanzaScuola" />
+    <ref role="1XX52x" to="k2kp:2B2cMQEweqd" resolve="SchoolInstance" />
     <node concept="3EZMnI" id="2B2cMQEHL1S" role="2wV5jI">
       <node concept="3F0ifn" id="2B2cMQEJbFo" role="3EZMnx">
-        <property role="3F0ifm" value="DETTAGLI SCUOLA" />
+        <property role="3F0ifm" value="SCHOOL DETAILS" />
         <node concept="30gYXW" id="2B2cMQEJbFI" role="3F10Kt">
           <property role="Vb096" value="darkGray" />
         </node>
@@ -298,7 +298,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="2B2cMQEI4Ei" role="3EZMnx">
-        <property role="3F0ifm" value="Nome Scuola" />
+        <property role="3F0ifm" value="Name" />
         <node concept="pVoyu" id="2B2cMQEJbFG" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -308,22 +308,22 @@
       </node>
       <node concept="3F0ifn" id="2B2cMQEUUiX" role="3EZMnx" />
       <node concept="3F0ifn" id="2B2cMQEI4DO" role="3EZMnx">
-        <property role="3F0ifm" value="Indirizzo" />
+        <property role="3F0ifm" value="Address" />
         <node concept="pVoyu" id="2B2cMQEI4EI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0A7n" id="2B2cMQEI4E2" role="3EZMnx">
-        <ref role="1NtTu8" to="k2kp:2B2cMQEHL1F" resolve="indirizzo" />
+        <ref role="1NtTu8" to="k2kp:2B2cMQEHL1F" resolve="address" />
       </node>
       <node concept="3F0ifn" id="2B2cMQEHL2M" role="3EZMnx">
-        <property role="3F0ifm" value="Istituto" />
+        <property role="3F0ifm" value="Institute" />
         <node concept="pVoyu" id="2B2cMQEI4EK" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="1iCGBv" id="2B2cMQEHL2S" role="3EZMnx">
-        <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+        <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="institute" />
         <node concept="1sVBvm" id="2B2cMQEHL2U" role="1sWHZn">
           <node concept="3F0A7n" id="2B2cMQEHL32" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -333,13 +333,13 @@
         </node>
       </node>
       <node concept="3F0ifn" id="2B2cMQEIhnV" role="3EZMnx">
-        <property role="3F0ifm" value="Dominio" />
+        <property role="3F0ifm" value="Domain" />
         <node concept="pVoyu" id="2B2cMQEIhoG" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="1iCGBv" id="2B2cMQESnCA" role="3EZMnx">
-        <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+        <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="institute" />
         <node concept="1sVBvm" id="2B2cMQESnCC" role="1sWHZn">
           <node concept="1iCGBv" id="2B2cMQESnCZ" role="2wV5jI">
             <ref role="1NtTu8" to="2qee:2B2cMQEEIUq" resolve="dominio" />
@@ -353,15 +353,23 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="2B2cMQEYKB9" role="3EZMnx" />
+      <node concept="3F0ifn" id="2B2cMQEYKB9" role="3EZMnx">
+        <property role="3F0ifm" value="Id" />
+        <node concept="pVoyu" id="5i3hV1i_CCU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5i3hV1i_CCW" role="3EZMnx">
+        <ref role="1NtTu8" to="k2kp:5i3hV1ix6Lc" resolve="id" />
+      </node>
       <node concept="l2Vlx" id="2B2cMQEHL1U" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="2B2cMQEJw2m">
-    <ref role="1XX52x" to="k2kp:2B2cMQEtnKk" resolve="IstanzaIstituto" />
+    <ref role="1XX52x" to="k2kp:2B2cMQEtnKk" resolve="InstituteInstance" />
     <node concept="3EZMnI" id="2B2cMQEJw2t" role="2wV5jI">
       <node concept="3F0ifn" id="2B2cMQEJw2z" role="3EZMnx">
-        <property role="3F0ifm" value="Nome Istituto" />
+        <property role="3F0ifm" value="Institute Name" />
       </node>
       <node concept="3F0A7n" id="2B2cMQEJw2D" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -370,48 +378,56 @@
       <node concept="l2Vlx" id="2B2cMQEJw2v" role="2iSdaV" />
       <node concept="3F0ifn" id="2B2cMQEJAOL" role="3EZMnx" />
       <node concept="3F0ifn" id="2B2cMQEKi2Y" role="3EZMnx">
-        <property role="3F0ifm" value="Indirizzo" />
+        <property role="3F0ifm" value="Address" />
         <node concept="pVoyu" id="2B2cMQEKENj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0A7n" id="2B2cMQEKi3a" role="3EZMnx">
-        <ref role="1NtTu8" to="k2kp:2B2cMQEJw2L" resolve="indirizzo" />
+        <ref role="1NtTu8" to="k2kp:2B2cMQEJw2L" resolve="address" />
         <ref role="1k5W1q" node="2B2cMQEeYlY" resolve="Field" />
       </node>
       <node concept="3F0ifn" id="2B2cMQEKENt" role="3EZMnx">
-        <property role="3F0ifm" value="Dominio" />
+        <property role="3F0ifm" value="Domain" />
         <node concept="pVoyu" id="2B2cMQEKEOO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="1iCGBv" id="2B2cMQEKENJ" role="3EZMnx">
+      <node concept="1iCGBv" id="5i3hV1iwyod" role="3EZMnx">
         <ref role="1NtTu8" to="2qee:2B2cMQEEIUq" resolve="dominio" />
-        <node concept="1sVBvm" id="2B2cMQEKENL" role="1sWHZn">
-          <node concept="3F0A7n" id="2B2cMQEKENZ" role="2wV5jI">
+        <node concept="1sVBvm" id="5i3hV1iwyof" role="1sWHZn">
+          <node concept="3F0A7n" id="5i3hV1iwyox" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="2B2cMQEeYmt" resolve="FieldReference" />
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="5i3hV1iuTCq" role="3EZMnx">
+        <property role="3F0ifm" value="Id" />
+        <node concept="pVoyu" id="5i3hV1iuViu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5i3hV1iuTCU" role="3EZMnx">
+        <ref role="1NtTu8" to="k2kp:1wHdSt9nmL1" resolve="id" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="2B2cMQEQo5X">
-    <ref role="1XX52x" to="k2kp:2B2cMQEOAFR" resolve="IstanzaClasse" />
+    <ref role="1XX52x" to="k2kp:2B2cMQEOAFR" resolve="ClassroomInstance" />
     <node concept="3EZMnI" id="2B2cMQEQo6O" role="2wV5jI">
       <node concept="3F0ifn" id="2B2cMQEQo6Q" role="3EZMnx">
-        <property role="3F0ifm" value="Nome Classe" />
+        <property role="3F0ifm" value="Classroom Name" />
       </node>
       <node concept="3F0A7n" id="2B2cMQEQo72" role="3EZMnx">
         <ref role="1k5W1q" node="2B2cMQEeYlY" resolve="Field" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="DexcA73Zlo" role="3EZMnx">
-        <property role="3F0ifm" value="Scuola" />
+        <property role="3F0ifm" value="School" />
       </node>
       <node concept="1iCGBv" id="DexcA73Zly" role="3EZMnx">
-        <ref role="1NtTu8" to="2qee:2B2cMQEPGgu" resolve="scuola" />
+        <ref role="1NtTu8" to="2qee:2B2cMQEPGgu" resolve="school" />
         <node concept="1sVBvm" id="DexcA73Zl$" role="1sWHZn">
           <node concept="3F0A7n" id="DexcA73ZlI" role="2wV5jI">
             <property role="1Intyy" value="true" />

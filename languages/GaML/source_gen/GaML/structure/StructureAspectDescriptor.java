@@ -15,13 +15,13 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAlunno = createDescriptorForAlunno();
-  /*package*/ final ConceptDescriptor myConceptClasse = createDescriptorForClasse();
+  /*package*/ final ConceptDescriptor myConceptClassroom = createDescriptorForClassroom();
   /*package*/ final ConceptDescriptor myConceptComplexTeam = createDescriptorForComplexTeam();
   /*package*/ final ConceptDescriptor myConceptDashboard = createDescriptorForDashboard();
   /*package*/ final ConceptDescriptor myConceptDefinizioneGioco = createDescriptorForDefinizioneGioco();
   /*package*/ final ConceptDescriptor myConceptDominio = createDescriptorForDominio();
-  /*package*/ final ConceptDescriptor myConceptIstituto = createDescriptorForIstituto();
-  /*package*/ final ConceptDescriptor myConceptScuola = createDescriptorForScuola();
+  /*package*/ final ConceptDescriptor myConceptInstitute = createDescriptorForInstitute();
+  /*package*/ final ConceptDescriptor myConceptSchool = createDescriptorForSchool();
   /*package*/ final ConceptDescriptor myConceptVolontario = createDescriptorForVolontario();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -39,7 +39,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAlunno, myConceptClasse, myConceptComplexTeam, myConceptDashboard, myConceptDefinizioneGioco, myConceptDominio, myConceptIstituto, myConceptScuola, myConceptVolontario);
+    return Arrays.asList(myConceptAlunno, myConceptClassroom, myConceptComplexTeam, myConceptDashboard, myConceptDefinizioneGioco, myConceptDominio, myConceptInstitute, myConceptSchool, myConceptVolontario);
   }
 
   @Override
@@ -48,8 +48,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.Alunno:
         return myConceptAlunno;
-      case LanguageConceptSwitch.Classe:
-        return myConceptClasse;
+      case LanguageConceptSwitch.Classroom:
+        return myConceptClassroom;
       case LanguageConceptSwitch.ComplexTeam:
         return myConceptComplexTeam;
       case LanguageConceptSwitch.Dashboard:
@@ -58,10 +58,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDefinizioneGioco;
       case LanguageConceptSwitch.Dominio:
         return myConceptDominio;
-      case LanguageConceptSwitch.Istituto:
-        return myConceptIstituto;
-      case LanguageConceptSwitch.Scuola:
-        return myConceptScuola;
+      case LanguageConceptSwitch.Institute:
+        return myConceptInstitute;
+      case LanguageConceptSwitch.School:
+        return myConceptSchool;
       case LanguageConceptSwitch.Volontario:
         return myConceptVolontario;
       default:
@@ -88,15 +88,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("alunno");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForClasse() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classe", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L);
+  private static ConceptDescriptor createDescriptorForClassroom() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classroom", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L);
     b.class_(false, false, false);
     b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969305");
     b.version(2);
-    b.associate("scuola", 0x29c2332daad6c41eL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772269659166").done();
-    b.alias("classe");
+    b.associate("school", 0x29c2332daad6c41eL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772269659166").done();
+    b.alias("classroom");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForComplexTeam() {
@@ -140,8 +140,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("dominio");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForIstituto() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Istituto", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L);
+  private static ConceptDescriptor createDescriptorForInstitute() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Institute", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L);
     b.class_(false, false, false);
     b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
@@ -149,21 +149,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("dominio", 0x29c2332daaaaee9aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).origin("3009023772266786458").done();
     b.aggregate("scuole", 0x29c2332daabd2eecL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(true).ordered(true).multiple(true).origin("3009023772267982572").done();
-    b.alias("istituto");
+    b.alias("institute");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForScuola() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Scuola", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L);
+  private static ConceptDescriptor createDescriptorForSchool() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "School", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L);
     b.class_(false, false, false);
     b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3009023772263991990");
     b.version(2);
-    b.associate("istituto", 0x29c2332daaaaee97L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).origin("3009023772266786455").done();
-    b.aggregate("classi", 0x29c2332daacc1750L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(true).ordered(true).multiple(true).origin("3009023772268959568").done();
-    b.aggregate("alunni", 0x29c2332daacc1754L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL).optional(true).ordered(true).multiple(true).origin("3009023772268959572").done();
-    b.aggregate("volontari", 0x29c2332daacc1759L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daacc174dL).optional(true).ordered(true).multiple(true).origin("3009023772268959577").done();
-    b.alias("scuola");
+    b.associate("institute", 0x29c2332daaaaee97L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L).optional(false).origin("3009023772266786455").done();
+    b.aggregate("classes", 0x29c2332daacc1750L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(true).ordered(true).multiple(true).origin("3009023772268959568").done();
+    b.aggregate("alumni", 0x29c2332daacc1754L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL).optional(true).ordered(true).multiple(true).origin("3009023772268959572").done();
+    b.aggregate("volounteers", 0x29c2332daacc1759L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daacc174dL).optional(true).ordered(true).multiple(true).origin("3009023772268959577").done();
+    b.alias("school");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVolontario() {

@@ -9,11 +9,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_IstanzaClasse;
-  private ConceptPresentation props_IstanzaDominio;
+  private ConceptPresentation props_ClassroomInstance;
+  private ConceptPresentation props_DomainInstance;
+  private ConceptPresentation props_InstituteInstance;
   private ConceptPresentation props_IstanzaGioco;
-  private ConceptPresentation props_IstanzaIstituto;
-  private ConceptPresentation props_IstanzaScuola;
+  private ConceptPresentation props_SchoolInstance;
   private ConceptPresentation props_istanzaDashboard;
 
   @Override
@@ -21,20 +21,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.IstanzaClasse:
-        if (props_IstanzaClasse == null) {
+      case LanguageConceptSwitch.ClassroomInstance:
+        if (props_ClassroomInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_IstanzaClasse = cpb.create();
+          props_ClassroomInstance = cpb.create();
         }
-        return props_IstanzaClasse;
-      case LanguageConceptSwitch.IstanzaDominio:
-        if (props_IstanzaDominio == null) {
+        return props_ClassroomInstance;
+      case LanguageConceptSwitch.DomainInstance:
+        if (props_DomainInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_IstanzaDominio = cpb.create();
+          props_DomainInstance = cpb.create();
         }
-        return props_IstanzaDominio;
+        return props_DomainInstance;
+      case LanguageConceptSwitch.InstituteInstance:
+        if (props_InstituteInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_InstituteInstance = cpb.create();
+        }
+        return props_InstituteInstance;
       case LanguageConceptSwitch.IstanzaGioco:
         if (props_IstanzaGioco == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -42,20 +49,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IstanzaGioco = cpb.create();
         }
         return props_IstanzaGioco;
-      case LanguageConceptSwitch.IstanzaIstituto:
-        if (props_IstanzaIstituto == null) {
+      case LanguageConceptSwitch.SchoolInstance:
+        if (props_SchoolInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_IstanzaIstituto = cpb.create();
+          props_SchoolInstance = cpb.create();
         }
-        return props_IstanzaIstituto;
-      case LanguageConceptSwitch.IstanzaScuola:
-        if (props_IstanzaScuola == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_IstanzaScuola = cpb.create();
-        }
-        return props_IstanzaScuola;
+        return props_SchoolInstance;
       case LanguageConceptSwitch.istanzaDashboard:
         if (props_istanzaDashboard == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

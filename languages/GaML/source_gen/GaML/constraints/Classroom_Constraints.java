@@ -18,15 +18,15 @@ import jetbrains.mps.smodel.runtime.ReferencePresentationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
-public class Classe_Constraints extends BaseConstraintsDescriptor {
-  public Classe_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, "GaML.structure.Classe"));
+public class Classroom_Constraints extends BaseConstraintsDescriptor {
+  public Classroom_Constraints() {
+    super(MetaAdapterFactory.getConcept(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, "GaML.structure.Classroom"));
   }
 
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
     Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
-    references.put(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL, "scuola"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL), this) {
+    references.put(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL, "school"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL), this) {
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {

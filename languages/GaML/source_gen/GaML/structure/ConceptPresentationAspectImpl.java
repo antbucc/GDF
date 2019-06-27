@@ -10,13 +10,13 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Alunno;
-  private ConceptPresentation props_Classe;
+  private ConceptPresentation props_Classroom;
   private ConceptPresentation props_ComplexTeam;
   private ConceptPresentation props_Dashboard;
   private ConceptPresentation props_DefinizioneGioco;
   private ConceptPresentation props_Dominio;
-  private ConceptPresentation props_Istituto;
-  private ConceptPresentation props_Scuola;
+  private ConceptPresentation props_Institute;
+  private ConceptPresentation props_School;
   private ConceptPresentation props_Volontario;
 
   @Override
@@ -31,13 +31,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Alunno = cpb.create();
         }
         return props_Alunno;
-      case LanguageConceptSwitch.Classe:
-        if (props_Classe == null) {
+      case LanguageConceptSwitch.Classroom:
+        if (props_Classroom == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Classe = cpb.create();
+          props_Classroom = cpb.create();
         }
-        return props_Classe;
+        return props_Classroom;
       case LanguageConceptSwitch.ComplexTeam:
         if (props_ComplexTeam == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -66,20 +66,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Dominio = cpb.create();
         }
         return props_Dominio;
-      case LanguageConceptSwitch.Istituto:
-        if (props_Istituto == null) {
+      case LanguageConceptSwitch.Institute:
+        if (props_Institute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Istituto = cpb.create();
+          props_Institute = cpb.create();
         }
-        return props_Istituto;
-      case LanguageConceptSwitch.Scuola:
-        if (props_Scuola == null) {
+        return props_Institute;
+      case LanguageConceptSwitch.School:
+        if (props_School == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Scuola = cpb.create();
+          props_School = cpb.create();
         }
-        return props_Scuola;
+        return props_School;
       case LanguageConceptSwitch.Volontario:
         if (props_Volontario == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

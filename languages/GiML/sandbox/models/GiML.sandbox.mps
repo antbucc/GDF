@@ -11,7 +11,10 @@
   </imports>
   <registry>
     <language id="1472546d-a964-48a0-a11e-4271b165a42c" name="GaML">
-      <concept id="1242463862027969298" name="GaML.structure.Istituto" flags="ng" index="2BkvPu">
+      <concept id="3009023772263991990" name="GaML.structure.School" flags="ng" index="23gBAr">
+        <reference id="3009023772266786455" name="institute" index="23qdQU" />
+      </concept>
+      <concept id="1242463862027969298" name="GaML.structure.Institute" flags="ng" index="2BkvPu">
         <reference id="3009023772266786458" name="dominio" index="23qdQR" />
       </concept>
     </language>
@@ -21,19 +24,49 @@
       </concept>
     </language>
     <language id="119e117f-1260-4f12-b46e-efd3d0e4c44f" name="GiML">
-      <concept id="3009023772263283732" name="GiML.structure.IstanzaIstituto" flags="ng" index="23HOWT">
-        <property id="3009023772268036273" name="indirizzo" index="23v3es" />
+      <concept id="3009023772264031885" name="GiML.structure.SchoolInstance" flags="ng" index="23gHmw">
+        <property id="3009023772267581547" name="address" index="23tid6" />
+        <property id="6089789943759268940" name="id" index="61MJW" />
       </concept>
-      <concept id="3009023772258458929" name="GiML.structure.IstanzaDominio" flags="ng" index="23UuSs" />
+      <concept id="3009023772263283732" name="GiML.structure.InstituteInstance" flags="ng" index="23HOWT">
+        <property id="3009023772268036273" name="address" index="23v3es" />
+        <property id="1742109685053221953" name="id" index="1hs5J6" />
+        <property id="1742109685053094955" name="ownerId" index="1ht$IG" />
+      </concept>
+      <concept id="3009023772258458929" name="GiML.structure.DomainInstance" flags="ng" index="23UuSs" />
     </language>
   </registry>
-  <node concept="23UuSs" id="1wHdSt9mr7t">
+  <node concept="23UuSs" id="5i3hV1iAYTS">
     <property role="TrG5h" value="TEST" />
   </node>
-  <node concept="23HOWT" id="1wHdSt9mr7u">
+  <node concept="23HOWT" id="5i3hV1iAYTT">
     <property role="23v3es" value="Via Santa Croce, 77 (TN)" />
     <property role="TrG5h" value="FONDAZIONE BRUNO KESSLER" />
-    <ref role="23qdQR" node="1wHdSt9mr7t" resolve="TEST" />
+    <property role="1ht$IG" value="TEST" />
+    <property role="1hs5J6" value="4b7a5184-142b-4bf1-8621-d7c514a300e9" />
+    <ref role="23qdQR" node="5i3hV1iAYTS" resolve="TEST" />
+  </node>
+  <node concept="23gHmw" id="5i3hV1iAYTU">
+    <property role="23tid6" value="Via Sommarive, 18 (TN)" />
+    <property role="TrG5h" value="FBK ICT" />
+    <property role="61MJW" value="842b4677-f285-4440-accf-20cdda76fd6c" />
+    <ref role="23qdQU" node="5i3hV1iAYTT" resolve="FONDAZIONE BRUNO KESSLER" />
+  </node>
+  <node concept="23UuSs" id="5i3hV1iB5VB">
+    <property role="TrG5h" value="TEST" />
+  </node>
+  <node concept="23HOWT" id="5i3hV1iB5VC">
+    <property role="23v3es" value="Via Santa Croce, 77 (TN)" />
+    <property role="TrG5h" value="FONDAZIONE BRUNO KESSLER" />
+    <property role="1ht$IG" value="TEST" />
+    <property role="1hs5J6" value="4b7a5184-142b-4bf1-8621-d7c514a300e9" />
+    <ref role="23qdQR" node="5i3hV1iB5VB" resolve="TEST" />
+  </node>
+  <node concept="23gHmw" id="5i3hV1iB5VD">
+    <property role="23tid6" value="Via Sommarive, 18 (TN)" />
+    <property role="TrG5h" value="FBK ICT" />
+    <property role="61MJW" value="842b4677-f285-4440-accf-20cdda76fd6c" />
+    <ref role="23qdQU" node="5i3hV1iB5VC" resolve="FONDAZIONE BRUNO KESSLER" />
   </node>
 </model>
 
