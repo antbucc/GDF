@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="RetrieveInstitutes.plugin.Classroom">
+  <dependency className="RetrieveInstitutes.plugin.Game">
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.Institute">
@@ -40,9 +40,10 @@
     <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.RetrieveMethod">
-    <classNode dependClassName="RetrieveInstitutes.plugin.Classroom" />
+    <classNode dependClassName="RetrieveInstitutes.plugin.Game" />
     <classNode dependClassName="RetrieveInstitutes.plugin.Institute" />
     <classNode dependClassName="RetrieveInstitutes.plugin.School" />
+    <classNode dependClassName="RetrieveInstitutes.plugin.Student" />
     <classNode dependClassName="com.google.gson.Gson" />
     <classNode dependClassName="com.squareup.okhttp.OkHttpClient" />
     <classNode dependClassName="com.squareup.okhttp.Request" />
@@ -52,6 +53,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.progress.ProgressMonitorAdapter" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -64,6 +66,9 @@
     <classNode extendsClassName="java.lang.Runnable" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.School">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstitutes.plugin.Student">
     <classNode dependClassName="java.lang.String" />
   </dependency>
 </dependenciesRoot>

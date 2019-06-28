@@ -14,7 +14,6 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptAlunno = createDescriptorForAlunno();
   /*package*/ final ConceptDescriptor myConceptClassroom = createDescriptorForClassroom();
   /*package*/ final ConceptDescriptor myConceptComplexTeam = createDescriptorForComplexTeam();
   /*package*/ final ConceptDescriptor myConceptDashboard = createDescriptorForDashboard();
@@ -22,6 +21,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDominio = createDescriptorForDominio();
   /*package*/ final ConceptDescriptor myConceptInstitute = createDescriptorForInstitute();
   /*package*/ final ConceptDescriptor myConceptSchool = createDescriptorForSchool();
+  /*package*/ final ConceptDescriptor myConceptStudent = createDescriptorForStudent();
   /*package*/ final ConceptDescriptor myConceptVolontario = createDescriptorForVolontario();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -39,15 +39,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAlunno, myConceptClassroom, myConceptComplexTeam, myConceptDashboard, myConceptDefinizioneGioco, myConceptDominio, myConceptInstitute, myConceptSchool, myConceptVolontario);
+    return Arrays.asList(myConceptClassroom, myConceptComplexTeam, myConceptDashboard, myConceptDefinizioneGioco, myConceptDominio, myConceptInstitute, myConceptSchool, myConceptStudent, myConceptVolontario);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Alunno:
-        return myConceptAlunno;
       case LanguageConceptSwitch.Classroom:
         return myConceptClassroom;
       case LanguageConceptSwitch.ComplexTeam:
@@ -62,6 +60,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptInstitute;
       case LanguageConceptSwitch.School:
         return myConceptSchool;
+      case LanguageConceptSwitch.Student:
+        return myConceptStudent;
       case LanguageConceptSwitch.Volontario:
         return myConceptVolontario;
       default:
@@ -78,16 +78,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForAlunno() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Alunno", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL);
-    b.class_(false, false, false);
-    b.super_("GML.structure.Player", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969310");
-    b.version(2);
-    b.alias("alunno");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForClassroom() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Classroom", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L);
     b.class_(false, false, false);
@@ -164,6 +154,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("alumni", 0x29c2332daacc1754L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL).optional(true).ordered(true).multiple(true).origin("3009023772268959572").done();
     b.aggregate("volounteers", 0x29c2332daacc1759L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daacc174dL).optional(true).ordered(true).multiple(true).origin("3009023772268959577").done();
     b.alias("school");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForStudent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Student", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL);
+    b.class_(false, false, true);
+    b.super_("GML.structure.Player", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a739L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969310");
+    b.version(2);
+    b.associate("classRoom", 0x548347b052b52557L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L).optional(false).origin("6089789943762462039").done();
+    b.alias("student");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVolontario() {

@@ -11,20 +11,23 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import java.io.IOException;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 import com.google.gson.Gson;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class RetrieveMethod implements Runnable {
   private static final Logger LOG = LogManager.getLogger(RetrieveMethod.class);
-  private static String Token = "473e1b27-3ddd-46e3-ac92-6a527575646e";
+  private static String Token = "53eaaf58-4e3c-4616-b61c-ad68fb7a141a";
   private static String apiIstituteUrl = "https://climbdev.smartcommunitylab.it/v2/api/institute/TEST";
   private static String apiSchoolUrl = "https://climbdev.smartcommunitylab.it/v2/api/school/TEST";
-  private static String apiClassroomsUrl = "https://climbdev.smartcommunitylab.it/v2/api/game/TEST";
+  private static String apiGameUrl = "https://climbdev.smartcommunitylab.it/v2/api/game/TEST";
+  private static String apiStudentsUrls = "https://climbdev.smartcommunitylab.it/v2/api/child/TEST";
+
   public RetrieveMethod(ProgressMonitorAdapter adapter, SModel model) {
     this.myAdapter = adapter;
     this.myModel = model;
@@ -33,36 +36,50 @@ public class RetrieveMethod implements Runnable {
 
   public void run() {
     // add main domain of KGG 
-    SNode dominio = createDomainInstance_7rmalq_a0b0h();
-    SModelOperations.addRootNode(this.myModel, dominio);
+    SNode domain = createDomainInstance_7rmalq_a0b0j();
+    SModelOperations.addRootNode(this.myModel, domain);
 
     try {
       // add the Institutes 
       Institute[] institutes = this.doGetInstitutes(apiIstituteUrl);
 
       for (int i = 0; i < institutes.length; i++) {
-        SNode institute = createInstituteInstance_7rmalq_a0a0d0e0h(dominio, institutes[i].address, institutes[i].name, institutes[i].ownerId, institutes[i].objectId);
-        SModelOperations.addRootNode(this.myModel, institute);
+
+        Institute institute = institutes[i];
+        SNode instituteNode = this.addInstituteNode(institute, domain);
 
         // add the respective schools  
-        School[] schools = this.doGetSchools(apiSchoolUrl, institutes[i].objectId);
-        LoggingRuntime.logMsgView(Level.INFO, "Number of Schools: " + schools.length, RetrieveMethod.class, null, null);
+        School[] schools = this.doGetSchools(apiSchoolUrl, institute.objectId);
+
         for (int j = 0; j < schools.length; j++) {
-          LoggingRuntime.logMsgView(Level.INFO, "ID scuola: " + schools[j].objectId, RetrieveMethod.class, null, null);
-          SNode school = createSchoolInstance_7rmalq_a0b0g0d0e0h(institute, schools[j].address, schools[j].name, schools[j].objectId);
-          SModelOperations.addRootNode(this.myModel, school);
+          School school = schools[j];
+          SNode schoolNode = this.addSchoolNode(school, instituteNode);
+
           //  for each school get the participating classrooms 
-          Classroom[] classrooms = this.doGetClassrooms(apiClassroomsUrl, institutes[i].objectId, schools[j].objectId);
+          String[] classrooms = this.doGetClassrooms(apiGameUrl, institute.objectId, school.objectId);
           LoggingRuntime.logMsgView(Level.INFO, "Number of classrooms: " + classrooms.length, RetrieveMethod.class, null, null);
 
           for (int k = 0; k < classrooms.length; k++) {
-            SNode classroom = createClassroomInstance_7rmalq_a0a0h0g0d0e0h(school, classrooms[k].name);
-            SModelOperations.addRootNode(this.myModel, classroom);
+            String classroom = classrooms[k];
+            SNode classroomNode = this.addClassRoomNode(classroom, schoolNode, instituteNode);
+
+            //  for each classroom get the relative students 
+            Student[] students = this.doGetStudents(apiStudentsUrls, institute.objectId, school.objectId);
+            LoggingRuntime.logMsgView(Level.INFO, "Number of students: " + students.length, RetrieveMethod.class, null, null);
+            for (int m = 0; m < students.length; m++) {
+              Student student = students[m];
+              this.addStudentNode(student, instituteNode, schoolNode, classroomNode);
+            }
+
+
           }
 
+          //  for each school get the active game instances 
+          Game[] games = this.doGetGames(apiGameUrl, institute.objectId, school.objectId);
+          LoggingRuntime.logMsgView(Level.INFO, "Number of games per school: " + games.length, RetrieveMethod.class, null, null);
+
+
         }
-
-
 
       }
 
@@ -77,6 +94,29 @@ public class RetrieveMethod implements Runnable {
 
   private final ProgressMonitorAdapter myAdapter;
   private SModel myModel;
+
+  private SNode addInstituteNode(Institute institute, SNode domain) {
+    SNode instituteNode = createInstituteInstance_7rmalq_a0a0o(domain, institute.address, institute.name, institute.ownerId, institute.objectId, institute.name);
+    SModelOperations.addRootNode(this.myModel, instituteNode);
+    return instituteNode;
+  }
+
+  private SNode addSchoolNode(School school, SNode instituteNode) {
+    SNode schoolNode = createSchoolInstance_7rmalq_a0a0q(instituteNode, school.address, school.name, school.objectId, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + school.name);
+    SModelOperations.addRootNode(this.myModel, schoolNode);
+    return schoolNode;
+  }
+  private SNode addClassRoomNode(String classroom, SNode schoolNode, SNode instituteNode) {
+    SNode classroomNode = createClassroomInstance_7rmalq_a0a0r(schoolNode, classroom, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + classroom);
+    SModelOperations.addRootNode(this.myModel, classroomNode);
+    return classroomNode;
+  }
+
+  private SNode addStudentNode(Student student, SNode instituteNode, SNode schoolNode, SNode classroomNode) {
+    SNode studentNode = createStudentInstance_7rmalq_a0a0t(classroomNode, student.name, student.surname, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + classroomNode);
+    SModelOperations.addRootNode(this.myModel, studentNode);
+    return studentNode;
+  }
 
   private Institute[] doGetInstitutes(String url) throws IOException {
     OkHttpClient client = new OkHttpClient();
@@ -95,32 +135,57 @@ public class RetrieveMethod implements Runnable {
     OkHttpClient client = new OkHttpClient();
 
     String urlFinal = url + "/" + instituteId;
-    LoggingRuntime.logMsgView(Level.INFO, "urlFinale: " + urlFinal, RetrieveMethod.class, null, null);
 
     Request request = new Request.Builder().header("Authorization", Token).url(urlFinal).build();
     Response response = client.newCall(request).execute();
     String result = response.body().string().toString();
-
     Gson gson = new Gson();
 
     School[] schools = gson.fromJson(result, School[].class);
     return schools;
 
   }
-  private Classroom[] doGetClassrooms(String url, String instituteId, String schoolId) throws IOException {
+  private String[] doGetClassrooms(String url, String instituteId, String schoolId) throws IOException {
     OkHttpClient client = new OkHttpClient();
 
     String urlFinal = url + "/" + instituteId + "/" + schoolId + "/classes";
-    LoggingRuntime.logMsgView(Level.INFO, "urlFinale: " + urlFinal, RetrieveMethod.class, null, null);
 
     Request request = new Request.Builder().header("Authorization", Token).url(urlFinal).build();
     Response response = client.newCall(request).execute();
     String result = response.body().string().toString();
 
     Gson gson = new Gson();
-
-    Classroom[] classrooms = gson.fromJson(result, Classroom[].class);
+    String[] classrooms = gson.fromJson(result, String[].class);
     return classrooms;
+  }
+
+  private Student[] doGetStudents(String url, String instituteId, String schoolId) throws IOException {
+    OkHttpClient client = new OkHttpClient();
+
+    String urlFinal = url + "/" + instituteId + "/" + schoolId;
+
+    Request request = new Request.Builder().header("Authorization", Token).url(urlFinal).build();
+    Response response = client.newCall(request).execute();
+    String result = response.body().string().toString();
+
+    Gson gson = new Gson();
+    Student[] students = gson.fromJson(result, Student[].class);
+    return students;
+
+  }
+
+  private Game[] doGetGames(String url, String instituteId, String schoolId) throws IOException {
+    OkHttpClient client = new OkHttpClient();
+
+    String urlFinal = url + "/" + instituteId + "/" + schoolId;
+
+    Request request = new Request.Builder().header("Authorization", Token).url(urlFinal).build();
+    Response response = client.newCall(request).execute();
+    String result = response.body().string().toString();
+
+    Gson gson = new Gson();
+    Game[] games = gson.fromJson(result, Game[].class);
+    return games;
   }
 
 
@@ -128,13 +193,15 @@ public class RetrieveMethod implements Runnable {
 
 
 
-  private static SNode createDomainInstance_7rmalq_a0b0h() {
+
+
+  private static SNode createDomainInstance_7rmalq_a0b0j() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L, "GiML.structure.DomainInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "TEST");
     return n1;
   }
-  private static SNode createInstituteInstance_7rmalq_a0a0d0e0h(SNode node0, Object p0, Object p1, Object p2, Object p3) {
+  private static SNode createInstituteInstance_7rmalq_a0a0o(SNode node0, Object p0, Object p1, Object p2, Object p3, Object p4) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, "GiML.structure.InstituteInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, 0x29c2332daabe00b1L, "address"), p0 + "");
@@ -142,22 +209,34 @@ public class RetrieveMethod implements Runnable {
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, 0x182d3787495b7c2bL, "ownerId"), p2 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, 0x182d3787495d6c41L, "id"), p3 + "");
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L, 0x29c2332daaaaee9aL, "dominio"), node0);
+    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p4 + "");
     return n1;
   }
-  private static SNode createSchoolInstance_7rmalq_a0b0g0d0e0h(SNode node0, Object p0, Object p1, Object p2) {
+  private static SNode createSchoolInstance_7rmalq_a0a0q(SNode node0, Object p0, Object p1, Object p2, Object p3) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL, "GiML.structure.SchoolInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL, 0x29c2332daab7106bL, "address"), p0 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p1 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL, 0x548347b052846c4cL, "id"), p2 + "");
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L, 0x29c2332daaaaee97L, "institute"), node0);
+    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p3 + "");
     return n1;
   }
-  private static SNode createClassroomInstance_7rmalq_a0a0h0g0d0e0h(SNode node0, Object p0) {
+  private static SNode createClassroomInstance_7rmalq_a0a0r(SNode node0, Object p0, Object p1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, "GiML.structure.ClassroomInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL, "school"), node0);
+    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p1 + "");
+    return n1;
+  }
+  private static SNode createStudentInstance_7rmalq_a0a0t(SNode node0, Object p0, Object p1, Object p2) {
+    PersistenceFacade facade = PersistenceFacade.getInstance();
+    SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x548347b052b52548L, "GiML.structure.StudentInstance"), null, null, false);
+    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
+    n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x548347b052b52548L, 0x548347b052b5254dL, "surname"), p1 + "");
+    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p2 + "");
+    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL, 0x548347b052b52557L, "classRoom"), node0);
     return n1;
   }
 }

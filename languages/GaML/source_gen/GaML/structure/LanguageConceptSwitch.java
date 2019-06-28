@@ -9,19 +9,18 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Alunno = 0;
-  public static final int Classroom = 1;
-  public static final int ComplexTeam = 2;
-  public static final int Dashboard = 3;
-  public static final int DefinizioneGioco = 4;
-  public static final int Dominio = 5;
-  public static final int Institute = 6;
-  public static final int School = 7;
+  public static final int Classroom = 0;
+  public static final int ComplexTeam = 1;
+  public static final int Dashboard = 2;
+  public static final int DefinizioneGioco = 3;
+  public static final int Dominio = 4;
+  public static final int Institute = 5;
+  public static final int School = 6;
+  public static final int Student = 7;
   public static final int Volontario = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
-    builder.put(0x113e1e4cb66fe31eL, Alunno);
     builder.put(0x113e1e4cb66fe319L, Classroom);
     builder.put(0x59f01faab33d1304L, ComplexTeam);
     builder.put(0x3b9018d1b0e7cb00L, Dashboard);
@@ -29,6 +28,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x113e1e4cb66fe2d9L, Dominio);
     builder.put(0x113e1e4cb66fe312L, Institute);
     builder.put(0x29c2332daa804ab6L, School);
+    builder.put(0x113e1e4cb66fe31eL, Student);
     builder.put(0x29c2332daacc174dL, Volontario);
     myIndex = builder.seal();
   }

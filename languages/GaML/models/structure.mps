@@ -135,11 +135,19 @@
   </node>
   <node concept="1TIwiD" id="14Y7$MQrYcu">
     <property role="EcuMT" value="1242463862027969310" />
-    <property role="TrG5h" value="Alunno" />
-    <property role="34LRSv" value="alunno" />
+    <property role="TrG5h" value="Student" />
+    <property role="34LRSv" value="student" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUsT" resolve="Player" />
     <node concept="PrWs8" id="14Y7$MQrYcv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="5i3hV1iHiln" role="1TKVEi">
+      <property role="IQ2ns" value="6089789943762462039" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classRoom" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="14Y7$MQrYcp" resolve="Classroom" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEw4EQ">
@@ -169,7 +177,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="alumni" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14Y7$MQrYcu" resolve="Alunno" />
+      <ref role="20lvS9" node="14Y7$MQrYcu" resolve="Student" />
     </node>
     <node concept="1TJgyj" id="2B2cMQEN1tp" role="1TKVEi">
       <property role="IQ2ns" value="3009023772268959577" />

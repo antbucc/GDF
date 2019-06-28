@@ -9,7 +9,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Alunno;
   private ConceptPresentation props_Classroom;
   private ConceptPresentation props_ComplexTeam;
   private ConceptPresentation props_Dashboard;
@@ -17,6 +16,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Dominio;
   private ConceptPresentation props_Institute;
   private ConceptPresentation props_School;
+  private ConceptPresentation props_Student;
   private ConceptPresentation props_Volontario;
 
   @Override
@@ -24,13 +24,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Alunno:
-        if (props_Alunno == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Alunno = cpb.create();
-        }
-        return props_Alunno;
       case LanguageConceptSwitch.Classroom:
         if (props_Classroom == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -80,6 +73,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_School = cpb.create();
         }
         return props_School;
+      case LanguageConceptSwitch.Student:
+        if (props_Student == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Student = cpb.create();
+        }
+        return props_Student;
       case LanguageConceptSwitch.Volontario:
         if (props_Volontario == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

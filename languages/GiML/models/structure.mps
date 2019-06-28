@@ -45,25 +45,10 @@
   </registry>
   <node concept="1TIwiD" id="1ATeiwITn12">
     <property role="EcuMT" value="1853575566387933250" />
-    <property role="TrG5h" value="IstanzaGioco" />
+    <property role="TrG5h" value="GameInstance" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="istanzaGioco" />
+    <property role="34LRSv" value="gameInstance" />
     <ref role="1TJDcQ" to="2qee:2fEMsIDkGlg" resolve="DefinizioneGioco" />
-    <node concept="1TJgyi" id="14Y7$MQrYc_" role="1TKVEl">
-      <property role="IQ2nx" value="1242463862027969317" />
-      <property role="TrG5h" value="dataInizio" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="14Y7$MQrYcC" role="1TKVEl">
-      <property role="IQ2nx" value="1242463862027969320" />
-      <property role="TrG5h" value="dataFine" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="14Y7$MQrYcG" role="1TKVEl">
-      <property role="IQ2nx" value="1242463862027969324" />
-      <property role="TrG5h" value="linkBreve" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="1ATeiwITn1m" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -80,6 +65,11 @@
       <property role="20kJfa" value="classi" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="2B2cMQEOAFR" resolve="ClassroomInstance" />
+    </node>
+    <node concept="1TJgyi" id="5i3hV1iSEXX" role="1TKVEl">
+      <property role="IQ2nx" value="6089789943765446525" />
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEaXOL">
@@ -139,7 +129,7 @@
     <property role="TrG5h" value="ClassroomInstance" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="classroomInstance" />
-    <ref role="1TJDcQ" to="2qee:14Y7$MQrYcp" resolve="Classe" />
+    <ref role="1TJDcQ" to="2qee:14Y7$MQrYcp" resolve="Classroom" />
     <node concept="PrWs8" id="2B2cMQEOAFS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -155,7 +145,22 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="istanze" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="1ATeiwITn12" resolve="IstanzaGioco" />
+      <ref role="20lvS9" node="1ATeiwITn12" resolve="GameInstance" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5i3hV1iHil8">
+    <property role="EcuMT" value="6089789943762462024" />
+    <property role="TrG5h" value="StudentInstance" />
+    <property role="34LRSv" value="studentInstance" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="2qee:14Y7$MQrYcu" resolve="Student" />
+    <node concept="PrWs8" id="5i3hV1iHil9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="5i3hV1iHild" role="1TKVEl">
+      <property role="IQ2nx" value="6089789943762462029" />
+      <property role="TrG5h" value="surname" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

@@ -154,7 +154,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return MetaAdapterFactory.getContainmentLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x3b9018d1b0e7cb07L, 0x3b9018d1b0fa4204L, "istanze");
     }
     public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, "GiML.structure.IstanzaGioco");
+      return MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, "GiML.structure.GameInstance");
     }
 
     public EditorCell createNodeCell(SNode elementNode) {

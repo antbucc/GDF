@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="dy9pnxjvpaw5xsgoz1guw7ff37qeyjm">
-  <files names="Classroom.java:Institute.java:RetrieveActionGroup_ActionGroup.java:RetrieveAction_Action.java:RetrieveInstitutes_ApplicationPlugin.java:RetrieveMethod.java:School.java" />
+<product version="3" modelHash="-ehzbeiihgq7bcq7t4ddz1ax0m33qsgh">
+  <files names="Game.java:Institute.java:RetrieveActionGroup_ActionGroup.java:RetrieveAction_Action.java:RetrieveInstitutes_ApplicationPlugin.java:RetrieveMethod.java:School.java:Student.java" />
 </product>
 
