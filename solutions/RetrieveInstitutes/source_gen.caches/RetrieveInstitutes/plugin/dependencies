@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="RetrieveInstitutes.plugin.BadgeCollection">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstitutes.plugin.Challenge">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="RetrieveInstitutes.plugin.Game">
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.Institute">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstitutes.plugin.Point">
     <classNode dependClassName="java.lang.String" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.RetrieveActionGroup_ActionGroup">
@@ -40,19 +49,27 @@
     <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
   </dependency>
   <dependency className="RetrieveInstitutes.plugin.RetrieveMethod">
+    <classNode dependClassName="RetrieveInstitutes.plugin.BadgeCollection" />
+    <classNode dependClassName="RetrieveInstitutes.plugin.Challenge" />
     <classNode dependClassName="RetrieveInstitutes.plugin.Game" />
     <classNode dependClassName="RetrieveInstitutes.plugin.Institute" />
+    <classNode dependClassName="RetrieveInstitutes.plugin.Point" />
     <classNode dependClassName="RetrieveInstitutes.plugin.School" />
     <classNode dependClassName="RetrieveInstitutes.plugin.Student" />
     <classNode dependClassName="com.google.gson.Gson" />
+    <classNode dependClassName="com.squareup.okhttp.Credentials" />
     <classNode dependClassName="com.squareup.okhttp.OkHttpClient" />
     <classNode dependClassName="com.squareup.okhttp.Request" />
     <classNode dependClassName="com.squareup.okhttp.Response" />
     <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.progress.ProgressMonitorAdapter" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />

@@ -9,19 +9,33 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_BadgeCollectionInstance;
   private ConceptPresentation props_ClassroomInstance;
   private ConceptPresentation props_DomainInstance;
   private ConceptPresentation props_GameInstance;
   private ConceptPresentation props_InstituteInstance;
   private ConceptPresentation props_SchoolInstance;
+  private ConceptPresentation props_SinglePlayerChallengeInstance;
   private ConceptPresentation props_StudentInstance;
+  private ConceptPresentation props_challengeVariable;
+  private ConceptPresentation props_dataDrivenActionInstance;
+  private ConceptPresentation props_eventDrivenActionInstance;
+  private ConceptPresentation props_experiencePointInstance;
   private ConceptPresentation props_istanzaDashboard;
+  private ConceptPresentation props_skillPointInstance;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.BadgeCollectionInstance:
+        if (props_BadgeCollectionInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_BadgeCollectionInstance = cpb.create();
+        }
+        return props_BadgeCollectionInstance;
       case LanguageConceptSwitch.ClassroomInstance:
         if (props_ClassroomInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -57,6 +71,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SchoolInstance = cpb.create();
         }
         return props_SchoolInstance;
+      case LanguageConceptSwitch.SinglePlayerChallengeInstance:
+        if (props_SinglePlayerChallengeInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SinglePlayerChallengeInstance = cpb.create();
+        }
+        return props_SinglePlayerChallengeInstance;
       case LanguageConceptSwitch.StudentInstance:
         if (props_StudentInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -64,6 +85,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_StudentInstance = cpb.create();
         }
         return props_StudentInstance;
+      case LanguageConceptSwitch.challengeVariable:
+        if (props_challengeVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_challengeVariable = cpb.create();
+        }
+        return props_challengeVariable;
+      case LanguageConceptSwitch.dataDrivenActionInstance:
+        if (props_dataDrivenActionInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_dataDrivenActionInstance = cpb.create();
+        }
+        return props_dataDrivenActionInstance;
+      case LanguageConceptSwitch.eventDrivenActionInstance:
+        if (props_eventDrivenActionInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_eventDrivenActionInstance = cpb.create();
+        }
+        return props_eventDrivenActionInstance;
+      case LanguageConceptSwitch.experiencePointInstance:
+        if (props_experiencePointInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_experiencePointInstance = cpb.create();
+        }
+        return props_experiencePointInstance;
       case LanguageConceptSwitch.istanzaDashboard:
         if (props_istanzaDashboard == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -71,6 +120,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_istanzaDashboard = cpb.create();
         }
         return props_istanzaDashboard;
+      case LanguageConceptSwitch.skillPointInstance:
+        if (props_skillPointInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_skillPointInstance = cpb.create();
+        }
+        return props_skillPointInstance;
     }
     return null;
   }

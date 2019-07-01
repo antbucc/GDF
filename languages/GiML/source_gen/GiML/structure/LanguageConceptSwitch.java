@@ -9,23 +9,37 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ClassroomInstance = 0;
-  public static final int DomainInstance = 1;
-  public static final int GameInstance = 2;
-  public static final int InstituteInstance = 3;
-  public static final int SchoolInstance = 4;
-  public static final int StudentInstance = 5;
-  public static final int istanzaDashboard = 6;
+  public static final int BadgeCollectionInstance = 0;
+  public static final int ClassroomInstance = 1;
+  public static final int DomainInstance = 2;
+  public static final int GameInstance = 3;
+  public static final int InstituteInstance = 4;
+  public static final int SchoolInstance = 5;
+  public static final int SinglePlayerChallengeInstance = 6;
+  public static final int StudentInstance = 7;
+  public static final int challengeVariable = 8;
+  public static final int dataDrivenActionInstance = 9;
+  public static final int eventDrivenActionInstance = 10;
+  public static final int experiencePointInstance = 11;
+  public static final int istanzaDashboard = 12;
+  public static final int skillPointInstance = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL);
+    builder.put(0x687da624477a6c9aL, BadgeCollectionInstance);
     builder.put(0x29c2332daad26af7L, ClassroomInstance);
     builder.put(0x29c2332daa2bdd31L, DomainInstance);
     builder.put(0x19b939282ee57042L, GameInstance);
     builder.put(0x29c2332daa757c14L, InstituteInstance);
     builder.put(0x29c2332daa80e68dL, SchoolInstance);
+    builder.put(0x687da6244782caa1L, SinglePlayerChallengeInstance);
     builder.put(0x548347b052b52548L, StudentInstance);
+    builder.put(0x687da6244782eef7L, challengeVariable);
+    builder.put(0x687da624474faca0L, dataDrivenActionInstance);
+    builder.put(0x687da624474faca3L, eventDrivenActionInstance);
+    builder.put(0x687da6244723bd21L, experiencePointInstance);
     builder.put(0x3b9018d1b0e7cb07L, istanzaDashboard);
+    builder.put(0x687da62447474ed3L, skillPointInstance);
     myIndex = builder.seal();
   }
 

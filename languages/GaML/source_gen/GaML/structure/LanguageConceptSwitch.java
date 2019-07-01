@@ -12,24 +12,34 @@ public final class LanguageConceptSwitch {
   public static final int Classroom = 0;
   public static final int ComplexTeam = 1;
   public static final int Dashboard = 2;
-  public static final int DefinizioneGioco = 3;
-  public static final int Dominio = 4;
+  public static final int Domain = 3;
+  public static final int GameDefinition = 4;
   public static final int Institute = 5;
   public static final int School = 6;
-  public static final int Student = 7;
-  public static final int Volontario = 8;
+  public static final int SinglePlayerChallenge = 7;
+  public static final int Student = 8;
+  public static final int Volontario = 9;
+  public static final int dataDrivenAction = 10;
+  public static final int eventDrivenAction = 11;
+  public static final int experiencePoint = 12;
+  public static final int skillPoint = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
     builder.put(0x113e1e4cb66fe319L, Classroom);
     builder.put(0x59f01faab33d1304L, ComplexTeam);
     builder.put(0x3b9018d1b0e7cb00L, Dashboard);
-    builder.put(0x23eac9cba952c550L, DefinizioneGioco);
-    builder.put(0x113e1e4cb66fe2d9L, Dominio);
+    builder.put(0x113e1e4cb66fe2d9L, Domain);
+    builder.put(0x23eac9cba952c550L, GameDefinition);
     builder.put(0x113e1e4cb66fe312L, Institute);
     builder.put(0x29c2332daa804ab6L, School);
+    builder.put(0x687da6244782ca9eL, SinglePlayerChallenge);
     builder.put(0x113e1e4cb66fe31eL, Student);
     builder.put(0x29c2332daacc174dL, Volontario);
+    builder.put(0x687da624474fac98L, dataDrivenAction);
+    builder.put(0x687da624474fac9bL, eventDrivenAction);
+    builder.put(0x687da6244723bd22L, experiencePoint);
+    builder.put(0x687da6244723bd23L, skillPoint);
     myIndex = builder.seal();
   }
 

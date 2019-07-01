@@ -5,12 +5,18 @@ package RetrieveInstitutes.plugin;
 
 public class Game {
   public String gameId;
-  public String name;
-  public String description;
+  public String gameName;
+  public String gameDescription;
+  public String[] classRooms;
+  public String from;
+  public String to;
 
-  public Game(String gameId, String name, String description) {
+  public Game(String gameId, String name, String description, String[] classrooms, String from, String to) {
     this.gameId = gameId;
-    this.name = name;
-    this.description = description;
+    this.gameName = name;
+    this.gameDescription = description;
+    this.classRooms = classrooms;
+    this.from = from;
+    this.to = to;
   }
 }

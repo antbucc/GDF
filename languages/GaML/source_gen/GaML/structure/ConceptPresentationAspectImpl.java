@@ -12,12 +12,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Classroom;
   private ConceptPresentation props_ComplexTeam;
   private ConceptPresentation props_Dashboard;
-  private ConceptPresentation props_DefinizioneGioco;
-  private ConceptPresentation props_Dominio;
+  private ConceptPresentation props_Domain;
+  private ConceptPresentation props_GameDefinition;
   private ConceptPresentation props_Institute;
   private ConceptPresentation props_School;
+  private ConceptPresentation props_SinglePlayerChallenge;
   private ConceptPresentation props_Student;
   private ConceptPresentation props_Volontario;
+  private ConceptPresentation props_dataDrivenAction;
+  private ConceptPresentation props_eventDrivenAction;
+  private ConceptPresentation props_experiencePoint;
+  private ConceptPresentation props_skillPoint;
 
   @Override
   @Nullable
@@ -45,20 +50,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Dashboard = cpb.create();
         }
         return props_Dashboard;
-      case LanguageConceptSwitch.DefinizioneGioco:
-        if (props_DefinizioneGioco == null) {
+      case LanguageConceptSwitch.Domain:
+        if (props_Domain == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_DefinizioneGioco = cpb.create();
+          props_Domain = cpb.create();
         }
-        return props_DefinizioneGioco;
-      case LanguageConceptSwitch.Dominio:
-        if (props_Dominio == null) {
+        return props_Domain;
+      case LanguageConceptSwitch.GameDefinition:
+        if (props_GameDefinition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_Dominio = cpb.create();
+          props_GameDefinition = cpb.create();
         }
-        return props_Dominio;
+        return props_GameDefinition;
       case LanguageConceptSwitch.Institute:
         if (props_Institute == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -73,6 +78,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_School = cpb.create();
         }
         return props_School;
+      case LanguageConceptSwitch.SinglePlayerChallenge:
+        if (props_SinglePlayerChallenge == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SinglePlayerChallenge = cpb.create();
+        }
+        return props_SinglePlayerChallenge;
       case LanguageConceptSwitch.Student:
         if (props_Student == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -87,6 +99,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Volontario = cpb.create();
         }
         return props_Volontario;
+      case LanguageConceptSwitch.dataDrivenAction:
+        if (props_dataDrivenAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_dataDrivenAction = cpb.create();
+        }
+        return props_dataDrivenAction;
+      case LanguageConceptSwitch.eventDrivenAction:
+        if (props_eventDrivenAction == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_eventDrivenAction = cpb.create();
+        }
+        return props_eventDrivenAction;
+      case LanguageConceptSwitch.experiencePoint:
+        if (props_experiencePoint == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_experiencePoint = cpb.create();
+        }
+        return props_experiencePoint;
+      case LanguageConceptSwitch.skillPoint:
+        if (props_skillPoint == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_skillPoint = cpb.create();
+        }
+        return props_skillPoint;
     }
     return null;
   }

@@ -46,12 +46,8 @@
     <property role="EcuMT" value="4534219290235608307" />
     <property role="TrG5h" value="Action" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3VGM6JgdTO2" role="1TKVEl">
-      <property role="IQ2nx" value="4534219290235608322" />
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="3VGM6JgdTNO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -60,6 +56,7 @@
     <property role="EcuMT" value="4534219290235610801" />
     <property role="TrG5h" value="Point" />
     <property role="34LRSv" value="point" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3VGM6JgdY6D" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

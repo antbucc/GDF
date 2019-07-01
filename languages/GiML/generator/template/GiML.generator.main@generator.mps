@@ -174,7 +174,7 @@
     <node concept="2rT7sh" id="7bUFh0GdNmi" role="2rTMjI">
       <property role="TrG5h" value="elementiGioco" />
       <ref role="2rZz_L" to="rh3e:bcrrPfbui4" resolve="JSVariableDeclaration" />
-      <ref role="2rTdP9" to="k2kp:1ATeiwITn12" resolve="IstanzaGioco" />
+      <ref role="2rTdP9" to="k2kp:1ATeiwITn12" resolve="GameInstance" />
     </node>
   </node>
   <node concept="2pMbU2" id="7bUFh0GcdIL">
@@ -300,15 +300,15 @@
                                   <node concept="2OqwBi" id="3Ig6d6KO8IQ" role="2Oq$k0">
                                     <node concept="30H73N" id="3Ig6d6KO8vi" role="2Oq$k0" />
                                     <node concept="3TrEf2" id="3Ig6d6L5rho" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="2qee:2B2cMQEUzSZ" resolve="scuola" />
+                                      <ref role="3Tt5mk" to="2qee:2B2cMQEUzSZ" resolve="school" />
                                     </node>
                                   </node>
                                   <node concept="3TrEf2" id="3Ig6d6L5$l8" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+                                    <ref role="3Tt5mk" to="2qee:2B2cMQEEIUn" resolve="institute" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="3Ig6d6L5PbW" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="2qee:2B2cMQEEIUq" resolve="dominio" />
+                                  <ref role="3Tt5mk" to="2qee:2B2cMQEEIUq" resolve="domain" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="3Ig6d6L65sj" role="2OqNvi">
@@ -358,11 +358,11 @@
                                 <node concept="2OqwBi" id="3Ig6d6KOhNh" role="2Oq$k0">
                                   <node concept="30H73N" id="3Ig6d6KOhzH" role="2Oq$k0" />
                                   <node concept="3TrEf2" id="3Ig6d6L67LT" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="2qee:2B2cMQEUzSZ" resolve="scuola" />
+                                    <ref role="3Tt5mk" to="2qee:2B2cMQEUzSZ" resolve="school" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="3Ig6d6L6ok8" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="2qee:2B2cMQEEIUn" resolve="istituto" />
+                                  <ref role="3Tt5mk" to="2qee:2B2cMQEEIUn" resolve="institute" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="3Ig6d6L6CEr" role="2OqNvi">
@@ -389,50 +389,11 @@
                               <node concept="2OqwBi" id="3Ig6d6KOmPk" role="2Oq$k0">
                                 <node concept="30H73N" id="3Ig6d6KOm_K" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="3Ig6d6L6DRH" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="2qee:2B2cMQEUzSZ" resolve="scuola" />
+                                  <ref role="3Tt5mk" to="2qee:2B2cMQEUzSZ" resolve="school" />
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="3Ig6d6L6U1J" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2pNNFK" id="3Ig6d6KO8mt" role="3o6s8t">
-                  <property role="2pNNFO" value="td" />
-                  <node concept="2pNNFK" id="3Ig6d6L8WsX" role="3o6s8t">
-                    <property role="2pNNFO" value="div" />
-                    <node concept="3o6iSG" id="3Ig6d6L8Wt0" role="3o6s8t">
-                      <property role="3o6i5n" value="Classi" />
-                      <node concept="17Uvod" id="3Ig6d6L8WNP" role="lGtFl">
-                        <property role="2qtEX9" value="value" />
-                        <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339/1622293396948953704" />
-                        <node concept="3zFVjK" id="3Ig6d6L8WNQ" role="3zH0cK">
-                          <node concept="3clFbS" id="3Ig6d6L8WNR" role="2VODD2">
-                            <node concept="3clFbF" id="3Ig6d6L8WWy" role="3cqZAp">
-                              <node concept="2OqwBi" id="3Ig6d6L8XcL" role="3clFbG">
-                                <node concept="30H73N" id="3Ig6d6L8WWx" role="2Oq$k0" />
-                                <node concept="3TrcHB" id="3Ig6d6L8XRB" role="2OqNvi">
-                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1WS0z7" id="3Ig6d6L8WyS" role="lGtFl">
-                      <node concept="3JmXsc" id="3Ig6d6L8WyV" role="3Jn$fo">
-                        <node concept="3clFbS" id="3Ig6d6L8WyW" role="2VODD2">
-                          <node concept="3clFbF" id="3Ig6d6L8Wz2" role="3cqZAp">
-                            <node concept="2OqwBi" id="3Ig6d6L8WyX" role="3clFbG">
-                              <node concept="30H73N" id="3Ig6d6L8Wz1" role="2Oq$k0" />
-                              <node concept="3Tsc0h" id="3Ig6d6LaF5H" role="2OqNvi">
-                                <ref role="3TtcxE" to="k2kp:3Ig6d6L9oKo" resolve="classi" />
                               </node>
                             </node>
                           </node>

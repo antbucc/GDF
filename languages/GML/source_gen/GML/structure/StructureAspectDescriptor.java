@@ -85,7 +85,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235608307");
     b.version(2);
-    b.property("id", 0x3eecc86bd0379d02L).type(PrimitiveTypeId.STRING).origin("4534219290235608322").done();
+    b.alias("action");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBadge() {
@@ -159,7 +159,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForPoint() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GML", "Point", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6b1L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235610801");
     b.version(2);

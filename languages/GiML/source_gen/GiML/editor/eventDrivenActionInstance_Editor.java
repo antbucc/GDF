@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class IstanzaGioco_Editor extends DefaultNodeEditor {
+public class eventDrivenActionInstance_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new IstanzaGioco_EditorBuilder_a(editorContext, node).createCell();
+    return new eventDrivenActionInstance_EditorBuilder_a(editorContext, node).createCell();
   }
 }
