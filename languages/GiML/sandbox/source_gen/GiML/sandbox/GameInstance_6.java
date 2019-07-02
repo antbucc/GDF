@@ -21,6 +21,7 @@ public class GameInstance_6 {
   private static String credentials = Credentials.basic("long-rovereto", "long_RoVg@me");
   public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 
+
   public static void run() throws IOException {
     GameDTO game = new GameDTO();
 

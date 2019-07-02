@@ -12,10 +12,6 @@
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
         </modelRoot>
-        <modelRoot contentPath="/Users/amministratore/Desktop/GamificationClient" type="java_classes">
-          <sourceRoot location="gamification-java-client-2.0.0.jar" />
-          <sourceRoot location="." />
-        </modelRoot>
       </models>
       <external-templates />
       <dependencies>
@@ -48,6 +44,7 @@
         <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
         <module reference="8c85542c-661e-4f7c-9ff6-b812a78ad2b3(GaML#01)" version="0" />
         <module reference="dc26d825-2883-4e88-933c-f0e9f65c69c4(GameData)" version="0" />
+        <module reference="0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da(GamificationRuntime)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
@@ -113,6 +110,9 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da(GamificationRuntime)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)</extendedLanguage>
   </extendedLanguages>

@@ -2,7 +2,6 @@
 <model ref="r:deeb0a0b-8388-47a5-8d46-a4a59f643409(GaML.generator.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />

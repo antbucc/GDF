@@ -4,16 +4,13 @@
   <languages>
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff" name="org.mar9000.mps.ecmascript" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
     <import index="k2kp" ref="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)" />
-    <import index="qnb9" ref="8c85542c-661e-4f7c-9ff6-b812a78ad2b3/java:it.smartcommunitylab.model(GaML#01/)" />
-    <import index="pkj1" ref="8c85542c-661e-4f7c-9ff6-b812a78ad2b3/java:com.squareup.okhttp(GaML#01/)" />
-    <import index="3x92" ref="r:a117a5b8-31e9-4eb5-8486-a593a17ef088(RetrieveInstitutes.plugin)" />
-    <import index="wy2b" ref="8c85542c-661e-4f7c-9ff6-b812a78ad2b3/java:com.google.gson(GaML#01/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="pkj1" ref="0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da/java:com.squareup.okhttp(GamificationRuntime/)" />
+    <import index="qnb9" ref="0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da/java:it.smartcommunitylab.model(GamificationRuntime/)" />
     <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
@@ -649,8 +646,8 @@
       <node concept="3Tm6S6" id="6xXDyh75QoC" role="1B3o_S" />
       <node concept="17QB3L" id="6xXDyh765Kk" role="1tU5fm" />
       <node concept="2YIFZM" id="6xXDyh75YyN" role="33vP2m">
-        <ref role="1Pybhc" to="pkj1:~Credentials" resolve="Credentials" />
         <ref role="37wK5l" to="pkj1:~Credentials.basic(java.lang.String,java.lang.String)" resolve="basic" />
+        <ref role="1Pybhc" to="pkj1:~Credentials" resolve="Credentials" />
         <node concept="Xl_RD" id="6xXDyh75Zxg" role="37wK5m">
           <property role="Xl_RC" value="long-rovereto" />
         </node>
@@ -667,14 +664,15 @@
         <ref role="3uigEE" to="pkj1:~MediaType" resolve="MediaType" />
       </node>
       <node concept="2YIFZM" id="4lKDqTvz_0L" role="33vP2m">
-        <ref role="37wK5l" to="pkj1:~MediaType.parse(java.lang.String)" resolve="parse" />
         <ref role="1Pybhc" to="pkj1:~MediaType" resolve="MediaType" />
+        <ref role="37wK5l" to="pkj1:~MediaType.parse(java.lang.String)" resolve="parse" />
         <node concept="Xl_RD" id="4lKDqTvz_33" role="37wK5m">
           <property role="Xl_RC" value="application/json; charset=utf-8" />
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="4lKDqTvzr68" role="jymVt" />
+    <node concept="2tJIrI" id="94DXkK7Eqn" role="jymVt" />
+    <node concept="2tJIrI" id="40e8f3IXMen" role="jymVt" />
     <node concept="2YIFZL" id="4lKDqTvz8XZ" role="jymVt">
       <property role="TrG5h" value="run" />
       <node concept="3clFbS" id="4lKDqTvz8Y2" role="3clF47">

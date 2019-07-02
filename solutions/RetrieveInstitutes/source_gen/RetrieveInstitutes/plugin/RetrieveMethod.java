@@ -23,6 +23,7 @@ import com.google.gson.JsonObject;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import com.squareup.okhttp.RequestBody;
+import java.util.UUID;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -372,8 +373,12 @@ public class RetrieveMethod implements Runnable {
   private void doPostNewGame() throws IOException {
     OkHttpClient client = new OkHttpClient();
     JsonObject obj = new JsonObject();
-    obj.addProperty("name", "Gioco_MODELS2019");
-    obj.addProperty("id", "id");
+    obj.addProperty("name", "NewGame_MODELS2019");
+
+    // unique ID 
+    String uniqueID = UUID.randomUUID().toString();
+    obj.addProperty("id", uniqueID);
+
     String json = obj.toString();
     String urlFinal = apiGamificationEngine + "/model/game/";
     RequestBody body = RequestBody.create(JSON, json);

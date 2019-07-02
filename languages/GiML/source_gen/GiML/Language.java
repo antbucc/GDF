@@ -39,10 +39,8 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
-    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("f3061a53-9226-4cc5-a443-f952ceaf5816"), "jetbrains.mps.baseLanguage"));
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("4caf0310-491e-41f5-8a9b-2006b3a94898"), "jetbrains.mps.execution.util"));
     extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("1472546d-a964-48a0-a11e-4271b165a42c"), "GaML"));
-    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("a4829704-6b1b-4b3f-8122-a4a2e6ac90ff"), "org.mar9000.mps.ecmascript"));
   }
 
   @Override
