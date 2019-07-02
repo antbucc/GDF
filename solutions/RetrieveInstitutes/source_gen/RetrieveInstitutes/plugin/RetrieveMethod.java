@@ -26,7 +26,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class RetrieveMethod implements Runnable {
   private static final Logger LOG = LogManager.getLogger(RetrieveMethod.class);
-  private static String Token = "b9af8631-af93-4868-a5f6-a53c056b9949";
+  private static String Token = "2562613f-c04b-492f-8de0-3587e1434790";
   private static String apiIstituteUrl = "https://climbdev.smartcommunitylab.it/v2/api/institute/TEST";
   private static String apiSchoolUrl = "https://climbdev.smartcommunitylab.it/v2/api/school/TEST";
   private static String apiGameUrl = "https://climbdev.smartcommunitylab.it/v2/api/game/TEST";
@@ -236,6 +236,7 @@ public class RetrieveMethod implements Runnable {
     Gson gson = new Gson();
 
     Institute[] istituti = gson.fromJson(result, Institute[].class);
+    LoggingRuntime.logMsgView(Level.ERROR, "qui: " + istituti, RetrieveMethod.class, null, null);
     return istituti;
 
   }
