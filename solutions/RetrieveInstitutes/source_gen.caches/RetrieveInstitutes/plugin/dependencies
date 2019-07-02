@@ -57,9 +57,12 @@
     <classNode dependClassName="RetrieveInstitutes.plugin.School" />
     <classNode dependClassName="RetrieveInstitutes.plugin.Student" />
     <classNode dependClassName="com.google.gson.Gson" />
+    <classNode dependClassName="com.google.gson.JsonObject" />
     <classNode dependClassName="com.squareup.okhttp.Credentials" />
+    <classNode dependClassName="com.squareup.okhttp.MediaType" />
     <classNode dependClassName="com.squareup.okhttp.OkHttpClient" />
     <classNode dependClassName="com.squareup.okhttp.Request" />
+    <classNode dependClassName="com.squareup.okhttp.RequestBody" />
     <classNode dependClassName="com.squareup.okhttp.Response" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Iterable" />

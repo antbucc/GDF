@@ -9,6 +9,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.module.SModuleReference;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import GiML.generator.main.QueriesGenerated;
+import jetbrains.mps.generator.runtime.TemplateModuleBase;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -31,12 +32,18 @@ public class Generator extends TemplateModuleInterpreted2 {
     models.templates("r:ed42babf-69e3-482a-bf4a-b98d2230f291", QueriesGenerated.class);
   }
 
+  @Override
+  protected void fillReferencedGenerators(TemplateModuleBase.ReferencedGenerators referencedGenerators) {
+    referencedGenerators.employed("8c85542c-661e-4f7c-9ff6-b812a78ad2b3(GaML#01)");
+  }
 
   @Override
   public Collection<SLanguage> getTargetLanguages() {
-    SLanguage[] rv = new SLanguage[2];
-    rv[0] = MetaAdapterFactory.getLanguage(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, "jetbrains.mps.core.xml");
-    rv[1] = MetaAdapterFactory.getLanguage(0xa48297046b1b4b3fL, 0x8122a4a2e6ac90ffL, "org.mar9000.mps.ecmascript");
+    SLanguage[] rv = new SLanguage[4];
+    rv[0] = MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
+    rv[1] = MetaAdapterFactory.getLanguage(0x760a0a8ceabb4521L, 0x8bfd65db761a9ba3L, "jetbrains.mps.baseLanguage.logging");
+    rv[2] = MetaAdapterFactory.getLanguage(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, "jetbrains.mps.core.xml");
+    rv[3] = MetaAdapterFactory.getLanguage(0xa48297046b1b4b3fL, 0x8122a4a2e6ac90ffL, "org.mar9000.mps.ecmascript");
     return Arrays.asList(rv);
   }
 

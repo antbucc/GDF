@@ -128,6 +128,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.super_("GaML.structure.GameDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x23eac9cba952c550L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/1853575566387933250");
     b.version(2);
     b.property("from", 0x687da624470c3fddL).type(PrimitiveTypeId.STRING).origin("7529356826774355933").done();

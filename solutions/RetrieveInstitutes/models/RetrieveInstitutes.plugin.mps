@@ -36,6 +36,7 @@
     <import index="7x0h" ref="8c85542c-661e-4f7c-9ff6-b812a78ad2b3/java:com.fasterxml.jackson.core.type(GaML#01/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="2kc8" ref="r:d9f70ad8-7ff2-45f8-b800-65156a39d64d(GameData.structure)" />
+    <import index="1eof" ref="8c85542c-661e-4f7c-9ff6-b812a78ad2b3/java:com.fasterxml.jackson.core.json(GaML#01/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
     <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
@@ -787,6 +788,23 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4lKDqTvEsDH" role="jymVt" />
+    <node concept="Wx3nA" id="4lKDqTvz$Im" role="jymVt">
+      <property role="TrG5h" value="JSON" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="4lKDqTvz$r3" role="1B3o_S" />
+      <node concept="3uibUv" id="4lKDqTvz$Gr" role="1tU5fm">
+        <ref role="3uigEE" to="pkj1:~MediaType" resolve="MediaType" />
+      </node>
+      <node concept="2YIFZM" id="4lKDqTvz_0L" role="33vP2m">
+        <ref role="37wK5l" to="pkj1:~MediaType.parse(java.lang.String)" resolve="parse" />
+        <ref role="1Pybhc" to="pkj1:~MediaType" resolve="MediaType" />
+        <node concept="Xl_RD" id="4lKDqTvz_33" role="37wK5m">
+          <property role="Xl_RC" value="application/json; charset=utf-8" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4lKDqTvEt8A" role="jymVt" />
     <node concept="2tJIrI" id="5i3hV1iN3r8" role="jymVt" />
     <node concept="3clFbW" id="4Y3P5Ei7BTR" role="jymVt">
       <node concept="3clFbS" id="4Y3P5Ei7BTS" role="3clF47">
@@ -840,7 +858,28 @@
             <property role="3SKdUp" value="add main domain of KGG" />
           </node>
         </node>
-        <node concept="3clFbH" id="6xXDyh75g0x" role="3cqZAp" />
+        <node concept="3clFbH" id="4lKDqTvD_PS" role="3cqZAp" />
+        <node concept="SfApY" id="4lKDqTvE2qQ" role="3cqZAp">
+          <node concept="3clFbS" id="4lKDqTvE2qR" role="SfCbr">
+            <node concept="3clFbF" id="4lKDqTvDZvs" role="3cqZAp">
+              <node concept="2OqwBi" id="4lKDqTvE00P" role="3clFbG">
+                <node concept="Xjq3P" id="4lKDqTvDZvq" role="2Oq$k0" />
+                <node concept="liA8E" id="4lKDqTvKVyE" role="2OqNvi">
+                  <ref role="37wK5l" node="4lKDqTvKw3E" resolve="doPostNewGame" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="4lKDqTvE2qM" role="TEbGg">
+            <node concept="3clFbS" id="4lKDqTvE2qN" role="TDEfX" />
+            <node concept="3cpWsn" id="4lKDqTvE2qO" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="4lKDqTvE2qP" role="1tU5fm">
+                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3SKdUt" id="6xXDyh75hlF" role="3cqZAp">
           <node concept="3SKdUq" id="6xXDyh75hlH" role="3SKWNk">
             <property role="3SKdUp" value=" prendi i dati dalla Gamification Engine" />
@@ -2881,17 +2920,21 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="6xXDyh7tfFg" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
-          <node concept="3cpWs3" id="6xXDyh7tj3E" role="9lYJi">
-            <node concept="2OqwBi" id="6xXDyh7tjsn" role="3uHU7w">
-              <node concept="37vLTw" id="6xXDyh7tj5j" role="2Oq$k0">
-                <ref role="3cqZAo" node="6xXDyh7t400" resolve="collections" />
+        <node concept="1X3_iC" id="4lKDqTvIRpM" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="6xXDyh7tfFg" role="8Wnug">
+            <property role="2xdLsb" value="info" />
+            <node concept="3cpWs3" id="6xXDyh7tj3E" role="9lYJi">
+              <node concept="2OqwBi" id="6xXDyh7tjsn" role="3uHU7w">
+                <node concept="37vLTw" id="6xXDyh7tj5j" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6xXDyh7t400" resolve="collections" />
+                </node>
+                <node concept="1Rwk04" id="6xXDyh7tory" role="2OqNvi" />
               </node>
-              <node concept="1Rwk04" id="6xXDyh7tory" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="6xXDyh7tfFi" role="3uHU7B">
-              <property role="Xl_RC" value="BADGE COLLECTIONS: " />
+              <node concept="Xl_RD" id="6xXDyh7tfFi" role="3uHU7B">
+                <property role="Xl_RC" value="BADGE COLLECTIONS: " />
+              </node>
             </node>
           </node>
         </node>
@@ -3066,17 +3109,21 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="6xXDyh7_II6" role="3cqZAp">
-          <property role="2xdLsb" value="info" />
-          <node concept="3cpWs3" id="6xXDyh7_PvT" role="9lYJi">
-            <node concept="2OqwBi" id="6xXDyh7_QOL" role="3uHU7w">
-              <node concept="37vLTw" id="6xXDyh7_QDz" role="2Oq$k0">
-                <ref role="3cqZAo" node="6xXDyh7xveK" resolve="challenges" />
+        <node concept="1X3_iC" id="4lKDqTvJsma" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="6xXDyh7_II6" role="8Wnug">
+            <property role="2xdLsb" value="info" />
+            <node concept="3cpWs3" id="6xXDyh7_PvT" role="9lYJi">
+              <node concept="2OqwBi" id="6xXDyh7_QOL" role="3uHU7w">
+                <node concept="37vLTw" id="6xXDyh7_QDz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6xXDyh7xveK" resolve="challenges" />
+                </node>
+                <node concept="1Rwk04" id="6xXDyh7_VSo" role="2OqNvi" />
               </node>
-              <node concept="1Rwk04" id="6xXDyh7_VSo" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="6xXDyh7_O0H" role="3uHU7B">
-              <property role="Xl_RC" value="challenges: " />
+              <node concept="Xl_RD" id="6xXDyh7_O0H" role="3uHU7B">
+                <property role="Xl_RC" value="challenges: " />
+              </node>
             </node>
           </node>
         </node>
@@ -5301,6 +5348,481 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1wHdSt9cNji" role="jymVt" />
+    <node concept="3clFb_" id="4lKDqTvDH6s" role="jymVt">
+      <property role="TrG5h" value="doPostExample" />
+      <node concept="3clFbS" id="4lKDqTvDH6v" role="3clF47">
+        <node concept="3cpWs8" id="4lKDqTvDLdG" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvDLdH" role="3cpWs9">
+            <property role="TrG5h" value="client" />
+            <node concept="3uibUv" id="4lKDqTvDLdI" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~OkHttpClient" resolve="OkHttpClient" />
+            </node>
+            <node concept="2ShNRf" id="4lKDqTvDLdJ" role="33vP2m">
+              <node concept="1pGfFk" id="4lKDqTvDLdK" role="2ShVmc">
+                <ref role="37wK5l" to="pkj1:~OkHttpClient.&lt;init&gt;()" resolve="OkHttpClient" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvAaDM" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvAaDP" role="3cpWs9">
+            <property role="TrG5h" value="gameID" />
+            <node concept="17QB3L" id="4lKDqTvAaDK" role="1tU5fm" />
+            <node concept="Xl_RD" id="4lKDqTvAaVX" role="33vP2m">
+              <property role="Xl_RC" value="5c13746ce4b018bc28780398" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvHTVd" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvHTVe" role="3cpWs9">
+            <property role="TrG5h" value="obj" />
+            <node concept="3uibUv" id="4lKDqTvHTVf" role="1tU5fm">
+              <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
+            </node>
+            <node concept="2ShNRf" id="4lKDqTvHV9S" role="33vP2m">
+              <node concept="1pGfFk" id="4lKDqTvHXbK" role="2ShVmc">
+                <ref role="37wK5l" to="wy2b:~JsonObject.&lt;init&gt;()" resolve="JsonObject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4lKDqTvI4hl" role="3cqZAp">
+          <node concept="2OqwBi" id="4lKDqTvI4Fv" role="3clFbG">
+            <node concept="37vLTw" id="4lKDqTvI4hj" role="2Oq$k0">
+              <ref role="3cqZAo" node="4lKDqTvHTVe" resolve="obj" />
+            </node>
+            <node concept="liA8E" id="4lKDqTvI64$" role="2OqNvi">
+              <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
+              <node concept="Xl_RD" id="4lKDqTvI6tg" role="37wK5m">
+                <property role="Xl_RC" value="id" />
+              </node>
+              <node concept="37vLTw" id="4lKDqTvI7iL" role="37wK5m">
+                <ref role="3cqZAo" node="4lKDqTvAaDP" resolve="gameID" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4lKDqTvI9eZ" role="3cqZAp">
+          <node concept="2OqwBi" id="4lKDqTvI9z5" role="3clFbG">
+            <node concept="37vLTw" id="4lKDqTvI9eX" role="2Oq$k0">
+              <ref role="3cqZAo" node="4lKDqTvHTVe" resolve="obj" />
+            </node>
+            <node concept="liA8E" id="4lKDqTvIaTS" role="2OqNvi">
+              <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
+              <node concept="Xl_RD" id="4lKDqTvIbjZ" role="37wK5m">
+                <property role="Xl_RC" value="name" />
+              </node>
+              <node concept="Xl_RD" id="4lKDqTvIcsh" role="37wK5m">
+                <property role="Xl_RC" value="PuntoModels" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvInBz" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvInBA" role="3cpWs9">
+            <property role="TrG5h" value="json" />
+            <node concept="17QB3L" id="4lKDqTvInBx" role="1tU5fm" />
+            <node concept="2OqwBi" id="4lKDqTvIpmi" role="33vP2m">
+              <node concept="37vLTw" id="4lKDqTvIp97" role="2Oq$k0">
+                <ref role="3cqZAo" node="4lKDqTvHTVe" resolve="obj" />
+              </node>
+              <node concept="liA8E" id="4lKDqTvIqpF" role="2OqNvi">
+                <ref role="37wK5l" to="wy2b:~JsonElement.toString()" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="4lKDqTvIKrU" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="3cpWs3" id="4lKDqTvILx0" role="9lYJi">
+            <node concept="37vLTw" id="4lKDqTvILyJ" role="3uHU7w">
+              <ref role="3cqZAo" node="4lKDqTvInBA" resolve="json" />
+            </node>
+            <node concept="Xl_RD" id="4lKDqTvIKrW" role="3uHU7B">
+              <property role="Xl_RC" value="stringa: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvDLdM" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvDLdN" role="3cpWs9">
+            <property role="TrG5h" value="urlFinal" />
+            <node concept="17QB3L" id="4lKDqTvDLdO" role="1tU5fm" />
+            <node concept="3cpWs3" id="4lKDqTvDLdP" role="33vP2m">
+              <node concept="Xl_RD" id="4lKDqTvDLdQ" role="3uHU7w">
+                <property role="Xl_RC" value="/point" />
+              </node>
+              <node concept="3cpWs3" id="4lKDqTvDLdR" role="3uHU7B">
+                <node concept="3cpWs3" id="4lKDqTvDLdS" role="3uHU7B">
+                  <node concept="Xl_RD" id="4lKDqTvDLdT" role="3uHU7w">
+                    <property role="Xl_RC" value="/model/game/" />
+                  </node>
+                  <node concept="37vLTw" id="4lKDqTvGqXR" role="3uHU7B">
+                    <ref role="3cqZAo" node="6xXDyh74L7H" resolve="apiGamificationEngine" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4lKDqTvAbeg" role="3uHU7w">
+                  <ref role="3cqZAo" node="4lKDqTvAaDP" resolve="gameID" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvz$eV" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvz$eW" role="3cpWs9">
+            <property role="TrG5h" value="body" />
+            <node concept="3uibUv" id="4lKDqTvz$eX" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~RequestBody" resolve="RequestBody" />
+            </node>
+            <node concept="2YIFZM" id="4lKDqTvz$o6" role="33vP2m">
+              <ref role="1Pybhc" to="pkj1:~RequestBody" resolve="RequestBody" />
+              <ref role="37wK5l" to="pkj1:~RequestBody.create(com.squareup.okhttp.MediaType,java.lang.String)" resolve="create" />
+              <node concept="37vLTw" id="4lKDqTvE$3T" role="37wK5m">
+                <ref role="3cqZAo" node="4lKDqTvz$Im" resolve="JSON" />
+              </node>
+              <node concept="37vLTw" id="4lKDqTvIsp7" role="37wK5m">
+                <ref role="3cqZAo" node="4lKDqTvInBA" resolve="json" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvDLeS" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvDLeT" role="3cpWs9">
+            <property role="TrG5h" value="request" />
+            <node concept="3uibUv" id="4lKDqTvDLeU" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~Request" resolve="Request" />
+            </node>
+            <node concept="2OqwBi" id="4lKDqTvzG7d" role="33vP2m">
+              <node concept="2OqwBi" id="4lKDqTvDLeV" role="2Oq$k0">
+                <node concept="2OqwBi" id="4lKDqTvDLeW" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4lKDqTvDLeX" role="2Oq$k0">
+                    <node concept="2ShNRf" id="4lKDqTvDLeY" role="2Oq$k0">
+                      <node concept="1pGfFk" id="4lKDqTvDLeZ" role="2ShVmc">
+                        <ref role="37wK5l" to="pkj1:~Request$Builder.&lt;init&gt;()" resolve="Request.Builder" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4lKDqTvDLf0" role="2OqNvi">
+                      <ref role="37wK5l" to="pkj1:~Request$Builder.header(java.lang.String,java.lang.String)" resolve="header" />
+                      <node concept="Xl_RD" id="4lKDqTvDLf1" role="37wK5m">
+                        <property role="Xl_RC" value="Authorization" />
+                      </node>
+                      <node concept="37vLTw" id="4lKDqTvDU5E" role="37wK5m">
+                        <ref role="3cqZAo" node="6xXDyh75UqY" resolve="credentials" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4lKDqTvDLf2" role="2OqNvi">
+                    <ref role="37wK5l" to="pkj1:~Request$Builder.url(java.lang.String)" resolve="url" />
+                    <node concept="37vLTw" id="4lKDqTvDLf3" role="37wK5m">
+                      <ref role="3cqZAo" node="4lKDqTvDLdN" resolve="urlFinal" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="4lKDqTvzFRZ" role="2OqNvi">
+                  <ref role="37wK5l" to="pkj1:~Request$Builder.post(com.squareup.okhttp.RequestBody)" resolve="post" />
+                  <node concept="37vLTw" id="4lKDqTvzFWU" role="37wK5m">
+                    <ref role="3cqZAo" node="4lKDqTvz$eW" resolve="body" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4lKDqTv$3rw" role="2OqNvi">
+                <ref role="37wK5l" to="pkj1:~Request$Builder.build()" resolve="build" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTv$3DR" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTv$3DS" role="3cpWs9">
+            <property role="TrG5h" value="response" />
+            <node concept="3uibUv" id="4lKDqTv$3DT" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~Response" resolve="Response" />
+            </node>
+            <node concept="2OqwBi" id="4lKDqTv$64U" role="33vP2m">
+              <node concept="2OqwBi" id="4lKDqTv$44m" role="2Oq$k0">
+                <node concept="37vLTw" id="4lKDqTv$3Uy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4lKDqTvDLdH" resolve="client" />
+                </node>
+                <node concept="liA8E" id="4lKDqTv$4HP" role="2OqNvi">
+                  <ref role="37wK5l" to="pkj1:~OkHttpClient.newCall(com.squareup.okhttp.Request)" resolve="newCall" />
+                  <node concept="37vLTw" id="4lKDqTv$5VY" role="37wK5m">
+                    <ref role="3cqZAo" node="4lKDqTvDLeT" resolve="request" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4lKDqTv$uMv" role="2OqNvi">
+                <ref role="37wK5l" to="pkj1:~Call.execute()" resolve="execute" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="4lKDqTv_j7m" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="3cpWs3" id="4lKDqTv_jAA" role="9lYJi">
+            <node concept="2OqwBi" id="4lKDqTv_Htd" role="3uHU7w">
+              <node concept="2OqwBi" id="4lKDqTv_jVG" role="2Oq$k0">
+                <node concept="37vLTw" id="4lKDqTv_jJz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4lKDqTv$3DS" resolve="response" />
+                </node>
+                <node concept="liA8E" id="4lKDqTv_Hbn" role="2OqNvi">
+                  <ref role="37wK5l" to="pkj1:~Response.body()" resolve="body" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4lKDqTvA75q" role="2OqNvi">
+                <ref role="37wK5l" to="pkj1:~ResponseBody.string()" resolve="string" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4lKDqTv_j7o" role="3uHU7B">
+              <property role="Xl_RC" value="Result: " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4lKDqTvDDyA" role="1B3o_S" />
+      <node concept="3cqZAl" id="4lKDqTvDGJX" role="3clF45" />
+      <node concept="3uibUv" id="4lKDqTvDVGr" role="Sfmx6">
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4lKDqTvKw3E" role="jymVt">
+      <property role="TrG5h" value="doPostNewGame" />
+      <node concept="3clFbS" id="4lKDqTvKw3H" role="3clF47">
+        <node concept="3cpWs8" id="4lKDqTvKClF" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKClG" role="3cpWs9">
+            <property role="TrG5h" value="client" />
+            <node concept="3uibUv" id="4lKDqTvKClH" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~OkHttpClient" resolve="OkHttpClient" />
+            </node>
+            <node concept="2ShNRf" id="4lKDqTvKClI" role="33vP2m">
+              <node concept="1pGfFk" id="4lKDqTvKClJ" role="2ShVmc">
+                <ref role="37wK5l" to="pkj1:~OkHttpClient.&lt;init&gt;()" resolve="OkHttpClient" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvKClO" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKClP" role="3cpWs9">
+            <property role="TrG5h" value="obj" />
+            <node concept="3uibUv" id="4lKDqTvKClQ" role="1tU5fm">
+              <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
+            </node>
+            <node concept="2ShNRf" id="4lKDqTvKClR" role="33vP2m">
+              <node concept="1pGfFk" id="4lKDqTvKClS" role="2ShVmc">
+                <ref role="37wK5l" to="wy2b:~JsonObject.&lt;init&gt;()" resolve="JsonObject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4lKDqTvKClT" role="3cqZAp">
+          <node concept="2OqwBi" id="4lKDqTvKClU" role="3clFbG">
+            <node concept="37vLTw" id="4lKDqTvKClV" role="2Oq$k0">
+              <ref role="3cqZAo" node="4lKDqTvKClP" resolve="obj" />
+            </node>
+            <node concept="liA8E" id="4lKDqTvKClW" role="2OqNvi">
+              <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
+              <node concept="Xl_RD" id="4lKDqTvKClX" role="37wK5m">
+                <property role="Xl_RC" value="name" />
+              </node>
+              <node concept="Xl_RD" id="4lKDqTvKGC2" role="37wK5m">
+                <property role="Xl_RC" value="NewGame_MODELS2019" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4lKDqTvLdLW" role="3cqZAp" />
+        <node concept="3SKdUt" id="4lKDqTvLdTi" role="3cqZAp">
+          <node concept="3SKdUq" id="4lKDqTvLdTk" role="3SKWNk">
+            <property role="3SKdUp" value="unique ID" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvLfVt" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvLfVw" role="3cpWs9">
+            <property role="TrG5h" value="uniqueID" />
+            <node concept="17QB3L" id="4lKDqTvLfVr" role="1tU5fm" />
+            <node concept="2OqwBi" id="4lKDqTvLjuJ" role="33vP2m">
+              <node concept="2YIFZM" id="4lKDqTvLiLY" role="2Oq$k0">
+                <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
+                <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+              </node>
+              <node concept="liA8E" id="4lKDqTvLkpZ" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~UUID.toString()" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4lKDqTvKClZ" role="3cqZAp">
+          <node concept="2OqwBi" id="4lKDqTvKCm0" role="3clFbG">
+            <node concept="37vLTw" id="4lKDqTvKCm1" role="2Oq$k0">
+              <ref role="3cqZAo" node="4lKDqTvKClP" resolve="obj" />
+            </node>
+            <node concept="liA8E" id="4lKDqTvKCm2" role="2OqNvi">
+              <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
+              <node concept="Xl_RD" id="4lKDqTvLoFW" role="37wK5m">
+                <property role="Xl_RC" value="id" />
+              </node>
+              <node concept="37vLTw" id="4lKDqTvLpPz" role="37wK5m">
+                <ref role="3cqZAo" node="4lKDqTvLfVw" resolve="uniqueID" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4lKDqTvLqki" role="3cqZAp" />
+        <node concept="3cpWs8" id="4lKDqTvKCm5" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKCm6" role="3cpWs9">
+            <property role="TrG5h" value="json" />
+            <node concept="17QB3L" id="4lKDqTvKCm7" role="1tU5fm" />
+            <node concept="2OqwBi" id="4lKDqTvKCm8" role="33vP2m">
+              <node concept="37vLTw" id="4lKDqTvKCm9" role="2Oq$k0">
+                <ref role="3cqZAo" node="4lKDqTvKClP" resolve="obj" />
+              </node>
+              <node concept="liA8E" id="4lKDqTvKCma" role="2OqNvi">
+                <ref role="37wK5l" to="wy2b:~JsonElement.toString()" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4lKDqTvKKk1" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="4lKDqTvKCmb" role="8Wnug">
+            <property role="2xdLsb" value="info" />
+            <node concept="3cpWs3" id="4lKDqTvKCmc" role="9lYJi">
+              <node concept="37vLTw" id="4lKDqTvKCmd" role="3uHU7w">
+                <ref role="3cqZAo" node="4lKDqTvKCm6" resolve="json" />
+              </node>
+              <node concept="Xl_RD" id="4lKDqTvKCme" role="3uHU7B">
+                <property role="Xl_RC" value="stringa: " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvKCmf" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKCmg" role="3cpWs9">
+            <property role="TrG5h" value="urlFinal" />
+            <node concept="17QB3L" id="4lKDqTvKCmh" role="1tU5fm" />
+            <node concept="3cpWs3" id="4lKDqTvKCml" role="33vP2m">
+              <node concept="Xl_RD" id="4lKDqTvKCmm" role="3uHU7w">
+                <property role="Xl_RC" value="/model/game/" />
+              </node>
+              <node concept="37vLTw" id="4lKDqTvKCmR" role="3uHU7B">
+                <ref role="3cqZAo" node="6xXDyh74L7H" resolve="apiGamificationEngine" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvKCmT" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKCmU" role="3cpWs9">
+            <property role="TrG5h" value="body" />
+            <node concept="3uibUv" id="4lKDqTvKCmV" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~RequestBody" resolve="RequestBody" />
+            </node>
+            <node concept="2YIFZM" id="4lKDqTvKCmW" role="33vP2m">
+              <ref role="1Pybhc" to="pkj1:~RequestBody" resolve="RequestBody" />
+              <ref role="37wK5l" to="pkj1:~RequestBody.create(com.squareup.okhttp.MediaType,java.lang.String)" resolve="create" />
+              <node concept="37vLTw" id="4lKDqTvKCnt" role="37wK5m">
+                <ref role="3cqZAo" node="4lKDqTvz$Im" resolve="JSON" />
+              </node>
+              <node concept="37vLTw" id="4lKDqTvKCmX" role="37wK5m">
+                <ref role="3cqZAo" node="4lKDqTvKCm6" resolve="json" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvKCnv" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKCnw" role="3cpWs9">
+            <property role="TrG5h" value="request" />
+            <node concept="3uibUv" id="4lKDqTvKCnx" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~Request" resolve="Request" />
+            </node>
+            <node concept="2OqwBi" id="4lKDqTvKCny" role="33vP2m">
+              <node concept="2OqwBi" id="4lKDqTvKCnz" role="2Oq$k0">
+                <node concept="2OqwBi" id="4lKDqTvKCn$" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4lKDqTvKCn_" role="2Oq$k0">
+                    <node concept="2ShNRf" id="4lKDqTvKCnA" role="2Oq$k0">
+                      <node concept="1pGfFk" id="4lKDqTvKCnB" role="2ShVmc">
+                        <ref role="37wK5l" to="pkj1:~Request$Builder.&lt;init&gt;()" resolve="Request.Builder" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4lKDqTvKCnC" role="2OqNvi">
+                      <ref role="37wK5l" to="pkj1:~Request$Builder.header(java.lang.String,java.lang.String)" resolve="header" />
+                      <node concept="Xl_RD" id="4lKDqTvKCnD" role="37wK5m">
+                        <property role="Xl_RC" value="Authorization" />
+                      </node>
+                      <node concept="37vLTw" id="4lKDqTvKCoe" role="37wK5m">
+                        <ref role="3cqZAo" node="6xXDyh75UqY" resolve="credentials" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4lKDqTvKCnE" role="2OqNvi">
+                    <ref role="37wK5l" to="pkj1:~Request$Builder.url(java.lang.String)" resolve="url" />
+                    <node concept="37vLTw" id="4lKDqTvKCnF" role="37wK5m">
+                      <ref role="3cqZAo" node="4lKDqTvKCmg" resolve="urlFinal" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="4lKDqTvKCnG" role="2OqNvi">
+                  <ref role="37wK5l" to="pkj1:~Request$Builder.post(com.squareup.okhttp.RequestBody)" resolve="post" />
+                  <node concept="37vLTw" id="4lKDqTvKCnH" role="37wK5m">
+                    <ref role="3cqZAo" node="4lKDqTvKCmU" resolve="body" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4lKDqTvKCnI" role="2OqNvi">
+                <ref role="37wK5l" to="pkj1:~Request$Builder.build()" resolve="build" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4lKDqTvKCog" role="3cqZAp">
+          <node concept="3cpWsn" id="4lKDqTvKCoh" role="3cpWs9">
+            <property role="TrG5h" value="response" />
+            <node concept="3uibUv" id="4lKDqTvKCoi" role="1tU5fm">
+              <ref role="3uigEE" to="pkj1:~Response" resolve="Response" />
+            </node>
+            <node concept="2OqwBi" id="4lKDqTvKCoj" role="33vP2m">
+              <node concept="2OqwBi" id="4lKDqTvKCok" role="2Oq$k0">
+                <node concept="37vLTw" id="4lKDqTvKCol" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4lKDqTvKClG" resolve="client" />
+                </node>
+                <node concept="liA8E" id="4lKDqTvKCom" role="2OqNvi">
+                  <ref role="37wK5l" to="pkj1:~OkHttpClient.newCall(com.squareup.okhttp.Request)" resolve="newCall" />
+                  <node concept="37vLTw" id="4lKDqTvKCon" role="37wK5m">
+                    <ref role="3cqZAo" node="4lKDqTvKCnw" resolve="request" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4lKDqTvKCoo" role="2OqNvi">
+                <ref role="37wK5l" to="pkj1:~Call.execute()" resolve="execute" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="4lKDqTvKCop" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="3cpWs3" id="4lKDqTvKCoq" role="9lYJi">
+            <node concept="2OqwBi" id="4lKDqTvKCor" role="3uHU7w">
+              <node concept="2OqwBi" id="4lKDqTvKCos" role="2Oq$k0">
+                <node concept="37vLTw" id="4lKDqTvKCot" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4lKDqTvKCoh" resolve="response" />
+                </node>
+                <node concept="liA8E" id="4lKDqTvKCou" role="2OqNvi">
+                  <ref role="37wK5l" to="pkj1:~Response.body()" resolve="body" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4lKDqTvKCov" role="2OqNvi">
+                <ref role="37wK5l" to="pkj1:~ResponseBody.string()" resolve="string" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4lKDqTvKCow" role="3uHU7B">
+              <property role="Xl_RC" value="Game Creation Result: " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4lKDqTvKtBk" role="1B3o_S" />
+      <node concept="3cqZAl" id="4lKDqTvK$u2" role="3clF45" />
+      <node concept="3uibUv" id="4lKDqTvKO6Z" role="Sfmx6">
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="1wHdSt9cMWi" role="jymVt" />
     <node concept="2tJIrI" id="1wHdSt9cMNO" role="jymVt" />
     <node concept="2tJIrI" id="1wHdSt9cMJj" role="jymVt" />
