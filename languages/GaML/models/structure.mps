@@ -118,13 +118,6 @@
     <node concept="PrWs8" id="14Y7$MQrYcq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="2B2cMQEPGgu" role="1TKVEi">
-      <property role="IQ2ns" value="3009023772269659166" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="school" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2B2cMQEw4EQ" resolve="School" />
-    </node>
   </node>
   <node concept="1TIwiD" id="14Y7$MQrYcu">
     <property role="EcuMT" value="1242463862027969310" />
@@ -246,6 +239,22 @@
     <property role="34LRSv" value="challengeModel" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdVuN" resolve="Challenge" />
     <node concept="PrWs8" id="6xXDyh7wGEv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ujvJshfyVE">
+    <property role="EcuMT" value="8616370111701200618" />
+    <property role="TrG5h" value="SkillLevelDefinition" />
+    <ref role="1TJDcQ" to="mupf:3VGM6Jge1dg" resolve="Level" />
+    <node concept="PrWs8" id="7ujvJshfz0e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ujvJshfzkj">
+    <property role="EcuMT" value="8616370111701202195" />
+    <property role="TrG5h" value="ExperienceLevelDefinition" />
+    <ref role="1TJDcQ" to="mupf:3VGM6Jge1dg" resolve="Level" />
+    <node concept="PrWs8" id="7ujvJshfznV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>

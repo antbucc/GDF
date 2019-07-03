@@ -1744,14 +1744,6 @@
                     <ref role="3cqZAo" node="5i3hV1iPjDq" resolve="classroom" />
                   </node>
                 </node>
-                <node concept="2pIpSj" id="5i3hV1iPtPX" role="2pJxcM">
-                  <ref role="2pIpSl" to="2qee:2B2cMQEPGgu" resolve="school" />
-                  <node concept="36biLy" id="5i3hV1iPtPY" role="2pJxcZ">
-                    <node concept="37vLTw" id="5i3hV1iPuN3" role="36biLW">
-                      <ref role="3cqZAo" node="5i3hV1iPmkg" resolve="schoolNode" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="2pJxcG" id="5i3hV1iPtQ0" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:hnGE5uv" resolve="virtualPackage" />
                   <node concept="3cpWs3" id="5i3hV1iPtQ1" role="2pJxcZ">
@@ -1785,6 +1777,14 @@
                       <node concept="Xl_RD" id="5i3hV1iPtQd" role="3uHU7w">
                         <property role="Xl_RC" value="." />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pIpSj" id="7ujvJsgKoai" role="2pJxcM">
+                  <ref role="2pIpSl" to="k2kp:7ujvJsgIW8T" resolve="relatedSchool" />
+                  <node concept="36biLy" id="7ujvJsgKsaG" role="2pJxcZ">
+                    <node concept="37vLTw" id="7ujvJsgKsxb" role="36biLW">
+                      <ref role="3cqZAo" node="5i3hV1iPmkg" resolve="schoolNode" />
                     </node>
                   </node>
                 </node>
@@ -2026,10 +2026,10 @@
                         <ref role="3cqZAo" node="6xXDyh72f32" resolve="current" />
                       </node>
                     </node>
-                    <node concept="2pIpSj" id="6xXDyh72nLa" role="2pJxcM">
-                      <ref role="2pIpSl" to="2qee:2B2cMQEPGgu" resolve="school" />
-                      <node concept="36biLy" id="6xXDyh72o67" role="2pJxcZ">
-                        <node concept="37vLTw" id="6xXDyh72orQ" role="36biLW">
+                    <node concept="2pIpSj" id="7ujvJsgKG3V" role="2pJxcM">
+                      <ref role="2pIpSl" to="k2kp:7ujvJsgIW8T" resolve="relatedSchool" />
+                      <node concept="36biLy" id="7ujvJsgKGu0" role="2pJxcZ">
+                        <node concept="37vLTw" id="7ujvJsgKGPO" role="36biLW">
                           <ref role="3cqZAo" node="6xXDyh6Tu0o" resolve="schoolNode" />
                         </node>
                       </node>
@@ -3256,7 +3256,7 @@
                       </node>
                     </node>
                     <node concept="2pJxcG" id="6xXDyh7AXgF" role="2pJxcM">
-                      <ref role="2pJxcJ" to="k2kp:6xXDyh7wGE$" resolve="id" />
+                      <ref role="2pJxcJ" to="k2kp:7ujvJsh3Qxa" resolve="id" />
                       <node concept="2OqwBi" id="6xXDyh7AXP5" role="2pJxcZ">
                         <node concept="2GrUjf" id="6xXDyh7AXIg" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="6xXDyh7yvWn" resolve="challenge" />
@@ -3537,6 +3537,22 @@
                   <node concept="36biLy" id="6xXDyh7_j8r" role="2pJxcZ">
                     <node concept="37vLTw" id="6xXDyh7_l2H" role="36biLW">
                       <ref role="3cqZAo" node="6xXDyh7zQMv" resolve="challengeNodes" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pIpSj" id="7ujvJshBJUE" role="2pJxcM">
+                  <ref role="2pIpSl" to="k2kp:7ujvJshBgCy" resolve="instituteInstance" />
+                  <node concept="36biLy" id="7ujvJshBNVh" role="2pJxcZ">
+                    <node concept="37vLTw" id="7ujvJshBOkW" role="36biLW">
+                      <ref role="3cqZAo" node="6xXDyh6Tq9b" resolve="instituteNode" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pIpSj" id="7ujvJshIwF8" role="2pJxcM">
+                  <ref role="2pIpSl" to="k2kp:7ujvJshI93G" resolve="schoolInstance" />
+                  <node concept="36biLy" id="7ujvJshI$Gv" role="2pJxcZ">
+                    <node concept="37vLTw" id="7ujvJshI_6a" role="36biLW">
+                      <ref role="3cqZAo" node="6xXDyh6Tu0o" resolve="schoolNode" />
                     </node>
                   </node>
                 </node>

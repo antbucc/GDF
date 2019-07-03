@@ -17,10 +17,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBadgeCollectionInstance = createDescriptorForBadgeCollectionInstance();
   /*package*/ final ConceptDescriptor myConceptClassroomInstance = createDescriptorForClassroomInstance();
   /*package*/ final ConceptDescriptor myConceptDomainInstance = createDescriptorForDomainInstance();
+  /*package*/ final ConceptDescriptor myConceptExperienceLevelInstance = createDescriptorForExperienceLevelInstance();
   /*package*/ final ConceptDescriptor myConceptGameInstance = createDescriptorForGameInstance();
   /*package*/ final ConceptDescriptor myConceptInstituteInstance = createDescriptorForInstituteInstance();
+  /*package*/ final ConceptDescriptor myConceptLevelTresholds = createDescriptorForLevelTresholds();
   /*package*/ final ConceptDescriptor myConceptSchoolInstance = createDescriptorForSchoolInstance();
   /*package*/ final ConceptDescriptor myConceptSinglePlayerChallengeInstance = createDescriptorForSinglePlayerChallengeInstance();
+  /*package*/ final ConceptDescriptor myConceptSkillLevelInstance = createDescriptorForSkillLevelInstance();
   /*package*/ final ConceptDescriptor myConceptStudentInstance = createDescriptorForStudentInstance();
   /*package*/ final ConceptDescriptor myConceptchallengeVariable = createDescriptorForchallengeVariable();
   /*package*/ final ConceptDescriptor myConceptdataDrivenActionInstance = createDescriptorFordataDrivenActionInstance();
@@ -44,7 +47,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBadgeCollectionInstance, myConceptClassroomInstance, myConceptDomainInstance, myConceptGameInstance, myConceptInstituteInstance, myConceptSchoolInstance, myConceptSinglePlayerChallengeInstance, myConceptStudentInstance, myConceptchallengeVariable, myConceptdataDrivenActionInstance, myConcepteventDrivenActionInstance, myConceptexperiencePointInstance, myConceptistanzaDashboard, myConceptskillPointInstance);
+    return Arrays.asList(myConceptBadgeCollectionInstance, myConceptClassroomInstance, myConceptDomainInstance, myConceptExperienceLevelInstance, myConceptGameInstance, myConceptInstituteInstance, myConceptLevelTresholds, myConceptSchoolInstance, myConceptSinglePlayerChallengeInstance, myConceptSkillLevelInstance, myConceptStudentInstance, myConceptchallengeVariable, myConceptdataDrivenActionInstance, myConcepteventDrivenActionInstance, myConceptexperiencePointInstance, myConceptistanzaDashboard, myConceptskillPointInstance);
   }
 
   @Override
@@ -57,14 +60,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptClassroomInstance;
       case LanguageConceptSwitch.DomainInstance:
         return myConceptDomainInstance;
+      case LanguageConceptSwitch.ExperienceLevelInstance:
+        return myConceptExperienceLevelInstance;
       case LanguageConceptSwitch.GameInstance:
         return myConceptGameInstance;
       case LanguageConceptSwitch.InstituteInstance:
         return myConceptInstituteInstance;
+      case LanguageConceptSwitch.LevelTresholds:
+        return myConceptLevelTresholds;
       case LanguageConceptSwitch.SchoolInstance:
         return myConceptSchoolInstance;
       case LanguageConceptSwitch.SinglePlayerChallengeInstance:
         return myConceptSinglePlayerChallengeInstance;
+      case LanguageConceptSwitch.SkillLevelInstance:
+        return myConceptSkillLevelInstance;
       case LanguageConceptSwitch.StudentInstance:
         return myConceptStudentInstance;
       case LanguageConceptSwitch.challengeVariable:
@@ -100,6 +109,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826781576346");
     b.version(2);
+    b.property("id", 0x77937ef710fad07dL).type(PrimitiveTypeId.STRING).origin("8616370111696785533").done();
     b.alias("badgeCollection");
     return b.create();
   }
@@ -110,6 +120,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772269374199");
     b.version(2);
+    b.associate("relatedSchool", 0x77937ef710bbc239L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL).optional(false).origin("8616370111692653113").done();
     b.alias("classroomInstance");
     return b.create();
   }
@@ -123,6 +134,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("domainInstance");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForExperienceLevelInstance() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "ExperienceLevelInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7113e39b8L);
+    b.class_(false, false, false);
+    b.super_("GaML.structure.ExperienceLevelDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x77937ef7113e3513L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/8616370111701203384");
+    b.version(2);
+    b.associate("relatedPointInstance", 0x77937ef711415c39L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L).optional(false).origin("8616370111701408825").done();
+    b.aggregate("trasholds", 0x77937ef7115c56e3L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7115c539fL).optional(false).ordered(true).multiple(true).origin("8616370111703176931").done();
+    b.alias("experienceLevel");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForGameInstance() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "GameInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L);
     b.class_(false, false, true);
@@ -133,6 +156,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("from", 0x687da624470c3fddL).type(PrimitiveTypeId.STRING).origin("7529356826774355933").done();
     b.property("to", 0x687da624470c3fdfL).type(PrimitiveTypeId.STRING).origin("7529356826774355935").done();
+    b.associate("instituteInstance", 0x77937ef7119d0a22L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L).optional(false).origin("8616370111707417122").done();
+    b.associate("schoolInstance", 0x77937ef711b890ecL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL).optional(false).origin("8616370111709221100").done();
     b.aggregate("classrooms", 0x687da62446f82c62L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L).optional(false).ordered(true).multiple(true).origin("7529356826773040226").done();
     b.aggregate("experiencePoints", 0x687da6244723bd1eL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L).optional(true).ordered(true).multiple(true).origin("7529356826775895326").done();
     b.aggregate("skillPoints", 0x687da624474a49b4L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da62447474ed3L).optional(true).ordered(true).multiple(true).origin("7529356826778421684").done();
@@ -140,6 +165,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("eventDrivenActions", 0x687da624474fd7b5L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624474faca3L).optional(true).ordered(true).multiple(true).origin("7529356826778785717").done();
     b.aggregate("badgeCollections", 0x687da624477f388bL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624477a6c9aL).optional(true).ordered(true).multiple(true).origin("7529356826781890699").done();
     b.aggregate("singlePlayerChallenges", 0x687da6244782cab0L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L).optional(true).ordered(true).multiple(true).origin("7529356826782124720").done();
+    b.aggregate("skillLevels", 0x77937ef7113e3de2L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7113e3165L).optional(true).ordered(true).multiple(true).origin("8616370111701204450").done();
+    b.aggregate("experiencelevels", 0x77937ef7113e3e81L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7113e39b8L).optional(true).ordered(true).multiple(true).origin("8616370111701204609").done();
     b.alias("gameInstance");
     return b.create();
   }
@@ -153,6 +180,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("ownerId", 0x182d3787495b7c2bL).type(PrimitiveTypeId.STRING).origin("1742109685053094955").done();
     b.property("id", 0x182d3787495d6c41L).type(PrimitiveTypeId.STRING).origin("1742109685053221953").done();
     b.alias("instituteInstitute");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLevelTresholds() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "LevelTresholds", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7115c539fL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/8616370111703176095");
+    b.version(2);
+    b.property("value", 0x77937ef7115c546bL).type(PrimitiveTypeId.INTEGER).origin("8616370111703176299").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSchoolInstance() {
@@ -174,9 +210,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826782124705");
     b.version(2);
-    b.property("id", 0x687da6244782caa4L).type(PrimitiveTypeId.STRING).origin("7529356826782124708").done();
+    b.property("id", 0x77937ef7110f684aL).type(PrimitiveTypeId.STRING).origin("8616370111698135114").done();
     b.aggregate("variables", 0x687da6244782eefaL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782eef7L).optional(false).ordered(true).multiple(true).origin("7529356826782134010").done();
     b.alias("singlePlayerChallengeInstance");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSkillLevelInstance() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "SkillLevelInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7113e3165L);
+    b.class_(false, false, false);
+    b.super_("GaML.structure.SkillLevelDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x77937ef7113e2eeaL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/8616370111701201253");
+    b.version(2);
+    b.associate("relatedPointInstance", 0x77937ef711415b60L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da62447474ed3L).optional(false).origin("8616370111701408608").done();
+    b.aggregate("tresholds", 0x77937ef7115c52d0L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7115c539fL).optional(false).ordered(true).multiple(true).origin("8616370111703175888").done();
+    b.alias("levelInstance");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStudentInstance() {
@@ -224,6 +272,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("GaML.structure.experiencePoint", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da6244723bd22L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826775895329");
     b.version(2);
+    b.property("id", 0x77937ef710f02a84L).type(PrimitiveTypeId.STRING).origin("8616370111696087684").done();
     b.property("score", 0x687da624472c89a6L).type(PrimitiveTypeId.INTEGER).origin("7529356826776471974").done();
     b.alias("experiencePoint");
     return b.create();
@@ -245,6 +294,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826778226387");
     b.version(2);
+    b.property("id", 0x77937ef710f02973L).type(PrimitiveTypeId.STRING).origin("8616370111696087411").done();
     b.property("score", 0x687da62447474ed6L).type(PrimitiveTypeId.INTEGER).origin("7529356826778226390").done();
     b.alias("skillPoint");
     return b.create();

@@ -18,10 +18,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptComplexTeam = createDescriptorForComplexTeam();
   /*package*/ final ConceptDescriptor myConceptDashboard = createDescriptorForDashboard();
   /*package*/ final ConceptDescriptor myConceptDomain = createDescriptorForDomain();
+  /*package*/ final ConceptDescriptor myConceptExperienceLevelDefinition = createDescriptorForExperienceLevelDefinition();
   /*package*/ final ConceptDescriptor myConceptGameDefinition = createDescriptorForGameDefinition();
   /*package*/ final ConceptDescriptor myConceptInstitute = createDescriptorForInstitute();
   /*package*/ final ConceptDescriptor myConceptSchool = createDescriptorForSchool();
   /*package*/ final ConceptDescriptor myConceptSinglePlayerChallenge = createDescriptorForSinglePlayerChallenge();
+  /*package*/ final ConceptDescriptor myConceptSkillLevelDefinition = createDescriptorForSkillLevelDefinition();
   /*package*/ final ConceptDescriptor myConceptStudent = createDescriptorForStudent();
   /*package*/ final ConceptDescriptor myConceptVolontario = createDescriptorForVolontario();
   /*package*/ final ConceptDescriptor myConceptdataDrivenAction = createDescriptorFordataDrivenAction();
@@ -44,7 +46,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClassroom, myConceptComplexTeam, myConceptDashboard, myConceptDomain, myConceptGameDefinition, myConceptInstitute, myConceptSchool, myConceptSinglePlayerChallenge, myConceptStudent, myConceptVolontario, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
+    return Arrays.asList(myConceptClassroom, myConceptComplexTeam, myConceptDashboard, myConceptDomain, myConceptExperienceLevelDefinition, myConceptGameDefinition, myConceptInstitute, myConceptSchool, myConceptSinglePlayerChallenge, myConceptSkillLevelDefinition, myConceptStudent, myConceptVolontario, myConceptdataDrivenAction, myConcepteventDrivenAction, myConceptexperiencePoint, myConceptskillPoint);
   }
 
   @Override
@@ -59,6 +61,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDashboard;
       case LanguageConceptSwitch.Domain:
         return myConceptDomain;
+      case LanguageConceptSwitch.ExperienceLevelDefinition:
+        return myConceptExperienceLevelDefinition;
       case LanguageConceptSwitch.GameDefinition:
         return myConceptGameDefinition;
       case LanguageConceptSwitch.Institute:
@@ -67,6 +71,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSchool;
       case LanguageConceptSwitch.SinglePlayerChallenge:
         return myConceptSinglePlayerChallenge;
+      case LanguageConceptSwitch.SkillLevelDefinition:
+        return myConceptSkillLevelDefinition;
       case LanguageConceptSwitch.Student:
         return myConceptStudent;
       case LanguageConceptSwitch.Volontario:
@@ -100,7 +106,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969305");
     b.version(2);
-    b.associate("school", 0x29c2332daad6c41eL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(false).origin("3009023772269659166").done();
     b.alias("classroom");
     return b.create();
   }
@@ -131,6 +136,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969241");
     b.version(2);
     b.alias("domain");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExperienceLevelDefinition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ExperienceLevelDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x77937ef7113e3513L);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Level", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0381350L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/8616370111701202195");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGameDefinition() {
@@ -178,6 +192,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/7529356826782124702");
     b.version(2);
     b.alias("challengeModel");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSkillLevelDefinition() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "SkillLevelDefinition", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x77937ef7113e2eeaL);
+    b.class_(false, false, false);
+    b.super_("GML.structure.Level", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0381350L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/8616370111701200618");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStudent() {

@@ -12,10 +12,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_BadgeCollectionInstance;
   private ConceptPresentation props_ClassroomInstance;
   private ConceptPresentation props_DomainInstance;
+  private ConceptPresentation props_ExperienceLevelInstance;
   private ConceptPresentation props_GameInstance;
   private ConceptPresentation props_InstituteInstance;
+  private ConceptPresentation props_LevelTresholds;
   private ConceptPresentation props_SchoolInstance;
   private ConceptPresentation props_SinglePlayerChallengeInstance;
+  private ConceptPresentation props_SkillLevelInstance;
   private ConceptPresentation props_StudentInstance;
   private ConceptPresentation props_challengeVariable;
   private ConceptPresentation props_dataDrivenActionInstance;
@@ -50,6 +53,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DomainInstance = cpb.create();
         }
         return props_DomainInstance;
+      case LanguageConceptSwitch.ExperienceLevelInstance:
+        if (props_ExperienceLevelInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ExperienceLevelInstance = cpb.create();
+        }
+        return props_ExperienceLevelInstance;
       case LanguageConceptSwitch.GameInstance:
         if (props_GameInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -64,6 +74,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_InstituteInstance = cpb.create();
         }
         return props_InstituteInstance;
+      case LanguageConceptSwitch.LevelTresholds:
+        if (props_LevelTresholds == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_LevelTresholds = cpb.create();
+        }
+        return props_LevelTresholds;
       case LanguageConceptSwitch.SchoolInstance:
         if (props_SchoolInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -78,6 +95,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SinglePlayerChallengeInstance = cpb.create();
         }
         return props_SinglePlayerChallengeInstance;
+      case LanguageConceptSwitch.SkillLevelInstance:
+        if (props_SkillLevelInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_SkillLevelInstance = cpb.create();
+        }
+        return props_SkillLevelInstance;
       case LanguageConceptSwitch.StudentInstance:
         if (props_StudentInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -3,13 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
-    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
+    <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -103,6 +102,20 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6xXDyh7wGEx" resolve="SinglePlayerChallengeInstance" />
     </node>
+    <node concept="1TJgyj" id="7ujvJshfzRy" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111701204450" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="skillLevels" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7ujvJshfz5_" resolve="SkillLevelInstance" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshfzU1" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111701204609" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="experiencelevels" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7ujvJshfzAS" resolve="ExperienceLevelInstance" />
+    </node>
     <node concept="1TJgyi" id="6xXDyh733Zt" role="1TKVEl">
       <property role="IQ2nx" value="7529356826774355933" />
       <property role="TrG5h" value="from" />
@@ -115,6 +128,20 @@
     </node>
     <node concept="PrWs8" id="4lKDqTvy6e6" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshBgCy" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111707417122" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="instituteInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2B2cMQEtnKk" resolve="InstituteInstance" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshI93G" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111709221100" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="schoolInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2B2cMQEweqd" resolve="SchoolInstance" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEaXOL">
@@ -178,6 +205,13 @@
     <node concept="PrWs8" id="2B2cMQEOAFS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="7ujvJsgIW8T" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111692653113" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="relatedSchool" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2B2cMQEweqd" resolve="SchoolInstance" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3Ig6d6KTWG7">
     <property role="EcuMT" value="4291957733779294983" />
@@ -214,6 +248,11 @@
     <property role="34LRSv" value="experiencePoint" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="2qee:6xXDyh78VOy" resolve="experiencePoint" />
+    <node concept="1TJgyi" id="7ujvJsgW2E4" role="1TKVEl">
+      <property role="IQ2nx" value="8616370111696087684" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="6xXDyh7b8AA" role="1TKVEl">
       <property role="IQ2nx" value="7529356826776471974" />
       <property role="TrG5h" value="score" />
@@ -226,6 +265,11 @@
     <property role="34LRSv" value="skillPoint" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="2qee:6xXDyh78VOz" resolve="skillPoint" />
+    <node concept="1TJgyi" id="7ujvJsgW2_N" role="1TKVEl">
+      <property role="IQ2nx" value="8616370111696087411" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="PrWs8" id="6xXDyh7hOVk" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -261,6 +305,11 @@
     <node concept="PrWs8" id="6xXDyh7uAMr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="7ujvJsgYH1X" role="1TKVEl">
+      <property role="IQ2nx" value="8616370111696785533" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6xXDyh7wGEx">
     <property role="EcuMT" value="7529356826782124705" />
@@ -271,17 +320,17 @@
     <node concept="PrWs8" id="6xXDyh7wGEy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="6xXDyh7wGE$" role="1TKVEl">
-      <property role="IQ2nx" value="7529356826782124708" />
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="6xXDyh7wIVU" role="1TKVEi">
       <property role="IQ2ns" value="7529356826782134010" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variables" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="6xXDyh7wIVR" resolve="challengeVariable" />
+    </node>
+    <node concept="1TJgyi" id="7ujvJsh3Qxa" role="1TKVEl">
+      <property role="IQ2nx" value="8616370111698135114" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="6xXDyh7wIVR">
@@ -292,6 +341,65 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6xXDyh7wIVS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ujvJshfz5_">
+    <property role="EcuMT" value="8616370111701201253" />
+    <property role="TrG5h" value="SkillLevelInstance" />
+    <property role="34LRSv" value="levelInstance" />
+    <ref role="1TJDcQ" to="2qee:7ujvJshfyVE" resolve="SkillLevelDefinition" />
+    <node concept="PrWs8" id="7ujvJshfz8J" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshglHw" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111701408608" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="relatedPointInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6xXDyh7hOVj" resolve="skillPointInstance" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshn5bg" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111703175888" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tresholds" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7ujvJshn5ev" resolve="LevelTresholds" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ujvJshfzAS">
+    <property role="EcuMT" value="8616370111701203384" />
+    <property role="TrG5h" value="ExperienceLevelInstance" />
+    <property role="34LRSv" value="experienceLevel" />
+    <ref role="1TJDcQ" to="2qee:7ujvJshfzkj" resolve="ExperienceLevelDefinition" />
+    <node concept="PrWs8" id="7ujvJshfzHm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshglKT" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111701408825" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="relatedPointInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6xXDyh78VOx" resolve="experiencePointInstance" />
+    </node>
+    <node concept="1TJgyj" id="7ujvJshn5rz" role="1TKVEi">
+      <property role="IQ2ns" value="8616370111703176931" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trasholds" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7ujvJshn5ev" resolve="LevelTresholds" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ujvJshn5ev">
+    <property role="EcuMT" value="8616370111703176095" />
+    <property role="TrG5h" value="LevelTresholds" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7ujvJshn5gK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7ujvJshn5hF" role="1TKVEl">
+      <property role="IQ2nx" value="8616370111703176299" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

@@ -13,16 +13,18 @@ public final class LanguageConceptSwitch {
   public static final int ComplexTeam = 1;
   public static final int Dashboard = 2;
   public static final int Domain = 3;
-  public static final int GameDefinition = 4;
-  public static final int Institute = 5;
-  public static final int School = 6;
-  public static final int SinglePlayerChallenge = 7;
-  public static final int Student = 8;
-  public static final int Volontario = 9;
-  public static final int dataDrivenAction = 10;
-  public static final int eventDrivenAction = 11;
-  public static final int experiencePoint = 12;
-  public static final int skillPoint = 13;
+  public static final int ExperienceLevelDefinition = 4;
+  public static final int GameDefinition = 5;
+  public static final int Institute = 6;
+  public static final int School = 7;
+  public static final int SinglePlayerChallenge = 8;
+  public static final int SkillLevelDefinition = 9;
+  public static final int Student = 10;
+  public static final int Volontario = 11;
+  public static final int dataDrivenAction = 12;
+  public static final int eventDrivenAction = 13;
+  public static final int experiencePoint = 14;
+  public static final int skillPoint = 15;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
@@ -30,10 +32,12 @@ public final class LanguageConceptSwitch {
     builder.put(0x59f01faab33d1304L, ComplexTeam);
     builder.put(0x3b9018d1b0e7cb00L, Dashboard);
     builder.put(0x113e1e4cb66fe2d9L, Domain);
+    builder.put(0x77937ef7113e3513L, ExperienceLevelDefinition);
     builder.put(0x23eac9cba952c550L, GameDefinition);
     builder.put(0x113e1e4cb66fe312L, Institute);
     builder.put(0x29c2332daa804ab6L, School);
     builder.put(0x687da6244782ca9eL, SinglePlayerChallenge);
+    builder.put(0x77937ef7113e2eeaL, SkillLevelDefinition);
     builder.put(0x113e1e4cb66fe31eL, Student);
     builder.put(0x29c2332daacc174dL, Volontario);
     builder.put(0x687da624474fac98L, dataDrivenAction);

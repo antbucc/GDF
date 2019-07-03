@@ -5,6 +5,7 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <sourcePath />
   <languageVersions>
     <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
     <language slang="l:1472546d-a964-48a0-a11e-4271b165a42c:GaML" version="0" />

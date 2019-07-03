@@ -228,7 +228,7 @@ public class RetrieveMethod implements Runnable {
 
     }
 
-    SNode gameNode = createGameInstance_7rmalq_a0db0bb(schoolNode, classInstances, experiencePointInstances, skillPointInstances, dataActions, eventActions, collectionsNodes, challengeNodes, game.gameName, game.gameId, game.gameDescription, game.from, game.to, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName);
+    SNode gameNode = createGameInstance_7rmalq_a0db0bb(schoolNode, instituteNode, schoolNode, classInstances, experiencePointInstances, skillPointInstances, dataActions, eventActions, collectionsNodes, challengeNodes, game.gameName, game.gameId, game.gameDescription, game.from, game.to, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName);
     SModelOperations.addRootNode(this.myModel, gameNode);
 
 
@@ -420,8 +420,8 @@ public class RetrieveMethod implements Runnable {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, "GiML.structure.ClassroomInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
-    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL, "school"), node0);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p1 + "");
+    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, 0x77937ef710bbc239L, "relatedSchool"), node0);
     return n1;
   }
   private static SNode createStudentInstance_7rmalq_a0a0z(SNode node0, Object p0, Object p1, Object p2) {
@@ -437,7 +437,7 @@ public class RetrieveMethod implements Runnable {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, "GiML.structure.ClassroomInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
-    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L, 0x29c2332daad6c41eL, "school"), node0);
+    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, 0x77937ef710bbc239L, "relatedSchool"), node0);
     return n1;
   }
   private static SNode createexperiencePointInstance_7rmalq_a0b0b0j0bb(Object p0, Object p1, Object p2) {
@@ -481,14 +481,14 @@ public class RetrieveMethod implements Runnable {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L, "GiML.structure.SinglePlayerChallengeInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
-    n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L, 0x687da6244782caa4L, "id"), p1 + "");
+    n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L, 0x77937ef7110f684aL, "id"), p1 + "");
     for (SNode n : seq0) {
       n1.addChild(MetaAdapterFactory.getContainmentLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L, 0x687da6244782eefaL, "variables"), SNodeOperations.copyIfNecessary(SNodeOperations.cast(n, MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782eef7L, "GiML.structure.challengeVariable"))));
     }
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p2 + "");
     return n1;
   }
-  private static SNode createGameInstance_7rmalq_a0db0bb(SNode node0, Iterable<? extends SNode> seq0, Iterable<? extends SNode> seq1, Iterable<? extends SNode> seq2, Iterable<? extends SNode> seq3, Iterable<? extends SNode> seq4, Iterable<? extends SNode> seq5, Iterable<? extends SNode> seq6, Object p0, Object p1, Object p2, Object p3, Object p4, Object p5) {
+  private static SNode createGameInstance_7rmalq_a0db0bb(SNode node0, SNode node1, SNode node2, Iterable<? extends SNode> seq0, Iterable<? extends SNode> seq1, Iterable<? extends SNode> seq2, Iterable<? extends SNode> seq3, Iterable<? extends SNode> seq4, Iterable<? extends SNode> seq5, Iterable<? extends SNode> seq6, Object p0, Object p1, Object p2, Object p3, Object p4, Object p5) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, "GiML.structure.GameInstance"), null, null, false);
     for (SNode n : seq0) {
@@ -519,6 +519,8 @@ public class RetrieveMethod implements Runnable {
     for (SNode n : seq6) {
       n1.addChild(MetaAdapterFactory.getContainmentLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, 0x687da6244782cab0L, "singlePlayerChallenges"), SNodeOperations.copyIfNecessary(SNodeOperations.cast(n, MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L, "GiML.structure.SinglePlayerChallengeInstance"))));
     }
+    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, 0x77937ef7119d0a22L, "instituteInstance"), node1);
+    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, 0x77937ef711b890ecL, "schoolInstance"), node2);
     return n1;
   }
 }

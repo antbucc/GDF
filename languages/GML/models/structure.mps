@@ -145,13 +145,6 @@
     <node concept="PrWs8" id="3VGM6Jge1dh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3VGM6Jge1dn" role="1TKVEi">
-      <property role="IQ2ns" value="4534219290235638615" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="pointConcept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3VGM6JgdUqL" resolve="Point" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3VGM6Jge66$">
     <property role="EcuMT" value="4534219290235658660" />
