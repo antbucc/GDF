@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-e6oodk2xdly62qozgczw2f7k7rzbjh5" />
+<product version="3" modelHash="95bt17bt6vgsimetsw6ug6jfn37nv2e">
+  <files names="EditorAspectDescriptorImpl.java:newChallenge_Editor.java:newChallenge_EditorBuilder_a.java" />
+</product>
 

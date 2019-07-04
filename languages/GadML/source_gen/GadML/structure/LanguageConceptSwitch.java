@@ -13,9 +13,9 @@ public final class LanguageConceptSwitch {
   public static final int newChallenge = 1;
 
   public LanguageConceptSwitch() {
-    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xdbb8e023c83248dbL, 0xa6c3fe72f22d0621L);
-    builder.put(0x19b939282eb4c714L, GameAdaptation);
-    builder.put(0x19b939282f83abbfL, newChallenge);
+    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x572858ef200044deL, 0x91d5b23c6fdd03a3L);
+    builder.put(0x13722978f4c3b45bL, GameAdaptation);
+    builder.put(0x13722978f4c3b4eeL, newChallenge);
     myIndex = builder.seal();
   }
 

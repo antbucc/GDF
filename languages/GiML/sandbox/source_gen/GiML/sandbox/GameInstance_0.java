@@ -17,7 +17,7 @@ public class GameInstance_0 {
   private static String apiChallengeUrl = "https://dev.smartcommunitylab.it/gamification/model/game/";
   private static String apiIstituteUrl = "https://climbdev.smartcommunitylab.it/v2/api/institute/";
   private static String apiSchoolUrl = "https://climbdev.smartcommunitylab.it/v2/api/school/";
-  private static String Token = "190125ce-8f24-4fd0-bf23-3ed133f667dc";
+  private static String Token = "47094e8e-40f4-450e-abe6-44755558626f";
 
 
 
@@ -214,6 +214,7 @@ public class GameInstance_0 {
     String urlFinal = apiChallengeUrl + gameID + "/challenge";
     Request request = new Request.Builder().header("Authorization", credentials).url(urlFinal).post(body).build();
     Response response = client.newCall(request).execute();
+    System.out.println("Challenges created: " + response.body().string());
 
   }
 

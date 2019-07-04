@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="00000000-0000-4000-5f02-5beb5f025beb/i:f1e3880(checkpoints/GadML.typesystem@descriptorclasses)">
+<model ref="00000000-0000-4000-5f02-5beb5f025beb/i:ffceab0(checkpoints/GadML.typesystem@descriptorclasses)">
   <persistence version="9" />
   <attribute name="checkpoint" value="DescriptorClasses" />
   <attribute name="generation-plan" value="AspectCPS" />
   <languages />
   <imports>
-    <import index="nk0n" ref="r:013be795-f17f-48d5-b6d9-466ac51b803d(GadML.typesystem)" />
+    <import index="jorr" ref="r:196b4906-c1af-481e-aa1e-cb5150be716e(GadML.typesystem)" />
     <import index="qurh" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.typesystem.runtime(MPS.Core/)" />
   </imports>
   <registry>

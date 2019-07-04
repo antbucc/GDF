@@ -15,82 +15,81 @@
       <unit at="10,0,30,0" name="GadML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="16,0,84,0" name="GadML.structure.StructureAspectDescriptor" />
+      <unit at="15,0,81,0" name="GadML.structure.StructureAspectDescriptor" />
     </file>
   </root>
-  <root nodeRef="r:1b5dcde8-3e50-483a-8eec-9a6e618de92b(GadML.structure)/1853575566384744212">
+  <root nodeRef="r:81a15a54-0e5b-47b0-85ef-23fcbab23d25(GadML.structure)/1401228033544926299">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="1853575566384744212" at="12,0,13,0" concept="1" trace="props_GameAdaptation" />
-      <node id="1853575566384744212" at="21,43,22,76" concept="3" />
-      <node id="1853575566384744212" at="22,76,23,35" concept="0" />
-      <node id="1853575566384744212" at="23,35,24,46" concept="0" />
-      <node id="1853575566384744212" at="25,9,26,36" concept="4" />
-      <node id="1853575566384744212" at="20,48,25,9" concept="2" />
-      <scope id="1853575566384744212" at="21,43,24,46">
-        <var name="cpb" id="1853575566384744212" />
+      <node id="1401228033544926299" at="12,0,13,0" concept="1" trace="props_GameAdaptation" />
+      <node id="1401228033544926299" at="21,43,22,76" concept="3" />
+      <node id="1401228033544926299" at="22,76,23,35" concept="0" />
+      <node id="1401228033544926299" at="23,35,24,46" concept="0" />
+      <node id="1401228033544926299" at="25,9,26,36" concept="4" />
+      <node id="1401228033544926299" at="20,48,25,9" concept="2" />
+      <scope id="1401228033544926299" at="21,43,24,46">
+        <var name="cpb" id="1401228033544926299" />
       </scope>
-      <scope id="1853575566384744212" at="20,48,26,36" />
+      <scope id="1401228033544926299" at="20,48,26,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1853575566384744212" at="12,0,13,0" concept="5" trace="GameAdaptation" />
-      <node id="1853575566384744212" at="16,116,17,53" concept="0" />
+      <node id="1401228033544926299" at="12,0,13,0" concept="5" trace="GameAdaptation" />
+      <node id="1401228033544926299" at="16,116,17,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="1853575566384744212" at="17,0,18,0" concept="1" trace="myConceptGameAdaptation" />
-      <node id="1853575566384744212" at="42,48,43,39" concept="4" />
-      <node id="1853575566384744212" at="60,72,61,154" concept="3" />
-      <node id="1853575566384744212" at="61,154,62,33" concept="0" />
-      <node id="1853575566384744212" at="62,33,63,71" concept="0" />
-      <node id="1853575566384744212" at="63,71,64,92" concept="0" />
-      <node id="1853575566384744212" at="64,92,65,17" concept="0" />
-      <node id="1853575566398275553" at="65,17,66,112" concept="0" />
-      <node id="1853575566398275555" at="66,112,67,114" concept="0" />
-      <node id="1853575566384744212" at="67,114,68,26" concept="0" />
-      <node id="1853575566384744212" at="68,26,69,22" concept="4" />
-      <node id="1853575566384744212" at="60,0,71,0" concept="6" trace="createDescriptorForGameAdaptation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="1853575566384744212" at="42,48,43,39" />
-      <scope id="1853575566384744212" at="60,72,69,22">
-        <var name="b" id="1853575566384744212" />
+      <node id="1401228033544926299" at="16,0,17,0" concept="1" trace="myConceptGameAdaptation" />
+      <node id="1401228033544926299" at="40,48,41,39" concept="4" />
+      <node id="1401228033544926299" at="58,72,59,154" concept="3" />
+      <node id="1401228033544926299" at="59,154,60,34" concept="0" />
+      <node id="1401228033544926299" at="60,34,61,71" concept="0" />
+      <node id="1401228033544926299" at="61,71,62,92" concept="0" />
+      <node id="1401228033544926299" at="62,92,63,17" concept="0" />
+      <node id="1401228033544955145" at="63,17,64,176" concept="0" />
+      <node id="1401228033544926299" at="64,176,65,30" concept="0" />
+      <node id="1401228033544926299" at="65,30,66,22" concept="4" />
+      <node id="1401228033544926299" at="58,0,68,0" concept="6" trace="createDescriptorForGameAdaptation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1401228033544926299" at="40,48,41,39" />
+      <scope id="1401228033544926299" at="58,72,66,22">
+        <var name="b" id="1401228033544926299" />
       </scope>
-      <scope id="1853575566384744212" at="60,0,71,0" />
+      <scope id="1401228033544926299" at="58,0,68,0" />
     </file>
   </root>
-  <root nodeRef="r:1b5dcde8-3e50-483a-8eec-9a6e618de92b(GadML.structure)/1853575566398303167">
+  <root nodeRef="r:81a15a54-0e5b-47b0-85ef-23fcbab23d25(GadML.structure)/1401228033544926446">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="1853575566398303167" at="13,0,14,0" concept="1" trace="props_newChallenge" />
-      <node id="1853575566398303167" at="28,41,29,76" concept="3" />
-      <node id="1853575566398303167" at="29,76,30,35" concept="0" />
-      <node id="1853575566398303167" at="30,35,31,44" concept="0" />
-      <node id="1853575566398303167" at="32,9,33,34" concept="4" />
-      <node id="1853575566398303167" at="27,46,32,9" concept="2" />
-      <scope id="1853575566398303167" at="28,41,31,44">
-        <var name="cpb" id="1853575566398303167" />
+      <node id="1401228033544926446" at="13,0,14,0" concept="1" trace="props_newChallenge" />
+      <node id="1401228033544926446" at="28,41,29,76" concept="3" />
+      <node id="1401228033544926446" at="29,76,30,35" concept="0" />
+      <node id="1401228033544926446" at="30,35,31,44" concept="0" />
+      <node id="1401228033544926446" at="32,9,33,34" concept="4" />
+      <node id="1401228033544926446" at="27,46,32,9" concept="2" />
+      <scope id="1401228033544926446" at="28,41,31,44">
+        <var name="cpb" id="1401228033544926446" />
       </scope>
-      <scope id="1853575566398303167" at="27,46,33,34" />
+      <scope id="1401228033544926446" at="27,46,33,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1853575566398303167" at="13,0,14,0" concept="5" trace="newChallenge" />
-      <node id="1853575566398303167" at="17,53,18,51" concept="0" />
+      <node id="1401228033544926446" at="13,0,14,0" concept="5" trace="newChallenge" />
+      <node id="1401228033544926446" at="17,53,18,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="1853575566398303167" at="18,0,19,0" concept="1" trace="myConceptnewChallenge" />
-      <node id="1853575566398303167" at="44,46,45,37" concept="4" />
-      <node id="1853575566398303167" at="71,70,72,152" concept="3" />
-      <node id="1853575566398303167" at="72,152,73,33" concept="0" />
-      <node id="1853575566398303167" at="73,33,74,110" concept="0" />
-      <node id="1853575566398303167" at="74,110,75,92" concept="0" />
-      <node id="1853575566398303167" at="75,92,76,17" concept="0" />
-      <node id="1853575566398303187" at="76,17,77,208" concept="0" />
-      <node id="1853575566398303188" at="77,208,78,208" concept="0" />
-      <node id="1853575566398303189" at="78,208,79,207" concept="0" />
-      <node id="1853575566398303167" at="79,207,80,28" concept="0" />
-      <node id="1853575566398303167" at="80,28,81,22" concept="4" />
-      <node id="1853575566398303167" at="71,0,83,0" concept="6" trace="createDescriptorFornewChallenge#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="1853575566398303167" at="44,46,45,37" />
-      <scope id="1853575566398303167" at="71,70,81,22">
-        <var name="b" id="1853575566398303167" />
+      <node id="1401228033544926446" at="17,0,18,0" concept="1" trace="myConceptnewChallenge" />
+      <node id="1401228033544926446" at="42,46,43,37" concept="4" />
+      <node id="1401228033544926446" at="68,70,69,152" concept="3" />
+      <node id="1401228033544926446" at="69,152,70,33" concept="0" />
+      <node id="1401228033544926446" at="70,33,71,110" concept="0" />
+      <node id="1401228033544926446" at="71,110,72,71" concept="0" />
+      <node id="1401228033544926446" at="72,71,73,76" concept="0" />
+      <node id="1401228033544926446" at="73,76,74,92" concept="0" />
+      <node id="1401228033544926446" at="74,92,75,17" concept="0" />
+      <node id="1401228033544926591" at="75,17,76,211" concept="0" />
+      <node id="1401228033544926446" at="76,211,77,28" concept="0" />
+      <node id="1401228033544926446" at="77,28,78,22" concept="4" />
+      <node id="1401228033544926446" at="68,0,80,0" concept="6" trace="createDescriptorFornewChallenge#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1401228033544926446" at="42,46,43,37" />
+      <scope id="1401228033544926446" at="68,70,78,22">
+        <var name="b" id="1401228033544926446" />
       </scope>
-      <scope id="1853575566398303167" at="71,0,83,0" />
+      <scope id="1401228033544926446" at="68,0,80,0" />
     </file>
   </root>
 </debug-info>

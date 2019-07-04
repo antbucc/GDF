@@ -24,17 +24,17 @@ public class Generator extends TemplateModuleInterpreted2 {
   @NotNull
   @Override
   public SModuleReference getModuleReference() {
-    return PersistenceFacade.getInstance().createModuleReference("ee8a78ac-6dbe-4f17-96dd-2c7c4788af73(GadML#01)");
+    return PersistenceFacade.getInstance().createModuleReference("cb8d9d5d-83f9-405e-8f42-0ba0637415c1(GadML#01)");
   }
 
   @Override
   protected void fillTemplateModels(TemplateModuleInterpreted2.TemplateModels models) {
-    models.templates("r:8ec9c997-fdcb-4c63-827d-a0a5825bf77a", QueriesGenerated.class);
+    models.templates("r:70968e09-aa74-4207-b1dd-870137868f1c", QueriesGenerated.class);
   }
 
   @Override
   protected void fillReferencedGenerators(TemplateModuleBase.ReferencedGenerators referencedGenerators) {
-    referencedGenerators.employed("8c85542c-661e-4f7c-9ff6-b812a78ad2b3(GaML#01)");
+    referencedGenerators.employed("fb20cb40-4d51-4806-a3a0-b796e96fc370(GiML#01)");
   }
 
   @Override

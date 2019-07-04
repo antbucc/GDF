@@ -6,9 +6,13 @@
       <modulePath path="$PROJECT_DIR$/languages/GML/sandbox/GML.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GaML/GaML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GaML/sandbox/GaML.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GadML/GadML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GadML/sandbox/GadML.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GameData/GameData.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GiML/GiML.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GiML/sandbox/GiML.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GsML/GsML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GsML/sandbox/GsML.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/GamificationRuntime/GamificationRuntime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/RetrieveInstitutes/RetrieveInstitutes.msd" folder="" />
     </projectModules>

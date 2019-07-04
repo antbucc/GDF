@@ -18,6 +18,9 @@
         <property id="1242463862027969315" name="description" index="2BkvPJ" />
         <reference id="3009023772270935615" name="school" index="23a0Oi" />
       </concept>
+      <concept id="1242463862027969310" name="GaML.structure.Student" flags="ng" index="2BkvPi">
+        <reference id="6089789943762462039" name="classRoom" index="6dAbB" />
+      </concept>
       <concept id="1242463862027969298" name="GaML.structure.Institute" flags="ng" index="2BkvPu">
         <reference id="3009023772266786458" name="domain" index="23qdQR" />
       </concept>
@@ -40,6 +43,9 @@
         <property id="1742109685053221953" name="id" index="1hs5J6" />
       </concept>
       <concept id="3009023772258458929" name="GiML.structure.DomainInstance" flags="ng" index="23UuSs" />
+      <concept id="6089789943762462024" name="GiML.structure.StudentInstance" flags="ng" index="6dAbS">
+        <property id="6089789943762462029" name="surname" index="6dAbX" />
+      </concept>
       <concept id="7529356826781576346" name="GiML.structure.BadgeCollectionInstance" flags="ng" index="J1WEY">
         <property id="8616370111696785533" name="id" index="1BqqUa" />
       </concept>
@@ -179,6 +185,11 @@
   <node concept="2345Bq" id="633VN0ieZr5">
     <property role="TrG5h" value="1A" />
     <ref role="1BabNe" node="7ujvJsgLv8n" resolve="School-Models2019" />
+  </node>
+  <node concept="6dAbS" id="633VN0iooCC">
+    <property role="TrG5h" value="Antonio" />
+    <property role="6dAbX" value="Bucchiarone" />
+    <ref role="6dAbB" node="633VN0ieZmQ" resolve="1A" />
   </node>
 </model>
 
