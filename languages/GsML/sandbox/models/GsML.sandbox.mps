@@ -10,6 +10,7 @@
   <registry>
     <language id="e0fa7306-98c0-4625-a0e1-147e7b18cdbd" name="GsML">
       <concept id="6972679637844280240" name="GsML.structure.SingleGameExecution" flags="ng" index="1MziM0">
+        <reference id="6972679637844282476" name="eventActionInstance" index="1Mzids" />
         <reference id="6972679637844281344" name="dataActionInstance" index="1MzisK" />
         <reference id="6972679637844280894" name="player" index="1Mzi$e" />
         <reference id="6972679637844280706" name="classroom" index="1MziEM" />
@@ -25,13 +26,14 @@
       </concept>
     </language>
   </registry>
-  <node concept="1MziU$" id="633VN0iok0r">
-    <property role="TrG5h" value="TestGame" />
-    <ref role="1Mzi6k" to="tfej:633VN0ieZmP" resolve="GAME-MODELS2019" />
-    <node concept="1MziM0" id="633VN0iok0s" role="1Mzi8a">
-      <ref role="1MziEM" to="tfej:633VN0ieZmQ" resolve="1A" />
-      <ref role="1Mzi$e" to="tfej:633VN0iooCC" resolve="Antonio" />
-      <ref role="1MzisK" to="tfej:633VN0ieZrw" resolve="classWalkTrip" />
+  <node concept="1MziU$" id="6fe4Nqd2PcF">
+    <property role="TrG5h" value="SimulationModels2019" />
+    <ref role="1Mzi6k" to="tfej:6fe4Nqd2Fbc" resolve="Game-Models2019" />
+    <node concept="1MziM0" id="6fe4Nqd2PcG" role="1Mzi8a">
+      <ref role="1MziEM" to="tfej:6fe4Nqd2Fba" resolve="1A" />
+      <ref role="1Mzi$e" to="tfej:6fe4Nqd2Fbb" resolve="Antonio" />
+      <ref role="1MzisK" to="tfej:6fe4Nqd2Fbi" resolve="pedibusKidTrip" />
+      <ref role="1Mzids" to="tfej:6fe4Nqd2Fbk" resolve="calendarDayFilled" />
     </node>
   </node>
 </model>

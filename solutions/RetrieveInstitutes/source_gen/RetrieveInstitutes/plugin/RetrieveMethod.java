@@ -8,9 +8,9 @@ import com.squareup.okhttp.Credentials;
 import com.squareup.okhttp.MediaType;
 import jetbrains.mps.progress.ProgressMonitorAdapter;
 import org.jetbrains.mps.openapi.model.SModel;
-import java.io.IOException;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import java.io.IOException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.ArrayList;
@@ -19,9 +19,9 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
+import com.google.gson.JsonObject;
 import com.squareup.okhttp.RequestBody;
 import java.util.UUID;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
@@ -30,11 +30,11 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class RetrieveMethod implements Runnable {
   private static final Logger LOG = LogManager.getLogger(RetrieveMethod.class);
-  private static String Token = "2562613f-c04b-492f-8de0-3587e1434790";
-  private static String apiIstituteUrl = "https://climbdev.smartcommunitylab.it/v2/api/institute/TEST";
-  private static String apiSchoolUrl = "https://climbdev.smartcommunitylab.it/v2/api/school/TEST";
-  private static String apiGameUrl = "https://climbdev.smartcommunitylab.it/v2/api/game/TEST";
-  private static String apiStudentsUrls = "https://climbdev.smartcommunitylab.it/v2/api/child/TEST";
+  private static String Token = "c5fdc0bf-7ccd-4c37-914d-8f87bacb37fb";
+  private static String apiIstituteUrl = "https://climb.smartcommunitylab.it/v2/api/institute/TEST";
+  private static String apiSchoolUrl = "https://climb.smartcommunitylab.it/v2/api/school/TEST";
+  private static String apiGameUrl = "https://climb.smartcommunitylab.it/v2/api/game/TEST";
+  private static String apiStudentsUrls = "https://climb.smartcommunitylab.it/v2/api/child/TEST";
 
   private static String apiGamificationEngine = "https://dev.smartcommunitylab.it/gamification/";
   private static String credentials = Credentials.basic("long-rovereto", "long_RoVg@me");
@@ -51,12 +51,7 @@ public class RetrieveMethod implements Runnable {
   public void run() {
     // add main domain of KGG 
 
-    try {
-      this.doPostNewGame();
-    } catch (IOException e) {
-    }
-    //  prendi i dati dalla Gamification Engine 
-    SNode domain = createDomainInstance_7rmalq_a0e0p();
+    SNode domain = createDomainInstance_7rmalq_a0c0p();
     SModelOperations.addRootNode(this.myModel, domain);
 
     try {
@@ -68,40 +63,31 @@ public class RetrieveMethod implements Runnable {
 
         Institute institute = institutes[i];
         SNode instituteNode = this.addInstituteNode(institute, domain);
+        SModelOperations.addRootNode(this.myModel, instituteNode);
 
-        // add the respective schools  
+        //  add all the schools for each institute 
         School[] schools = this.doGetSchools(apiSchoolUrl, institute.objectId);
-
         for (int j = 0; j < schools.length; j++) {
           School school = schools[j];
-          SNode schoolNode = this.addSchoolNode(school, instituteNode);
+          SNode schoolNode = this.addSchoolNode(school, instituteNode, domain);
+          SModelOperations.addRootNode(this.myModel, schoolNode);
 
-          //  for each school get the participating classrooms 
+          //  for each school get the participating class rooms 
           String[] classrooms = this.doGetClassrooms(apiGameUrl, institute.objectId, school.objectId);
-
           for (int k = 0; k < classrooms.length; k++) {
             String classroom = classrooms[k];
-            SNode classroomNode = this.addClassRoomNode(classroom, schoolNode, instituteNode);
+            SNode classroomNode = this.addClassRoomNode(classroom, school, instituteNode, domain, schoolNode);
+            SModelOperations.addRootNode(this.myModel, classroomNode);
 
-            //  for each classroom get the relative students 
+            //  add students part of each classroom 
             Student[] students = this.doGetStudents(apiStudentsUrls, institute.objectId, school.objectId);
             for (int m = 0; m < students.length; m++) {
-              Student student = students[m];
-              this.addStudentNode(student, instituteNode, schoolNode, classroomNode);
+              Student current = students[m];
+              SNode studentNode = this.addStudentNode(current, instituteNode, school, classroomNode, domain);
+              SModelOperations.addRootNode(this.myModel, studentNode);
+
             }
-
-
           }
-
-          //  for each school get the active game instances 
-          Game[] games = this.doGetGames(apiGameUrl, institute.objectId, school.objectId);
-          for (int n = 0; n < games.length; n++) {
-            Game game = games[n];
-            this.addGameNode(game, instituteNode, schoolNode);
-
-          }
-
-
 
         }
 
@@ -120,33 +106,35 @@ public class RetrieveMethod implements Runnable {
   private SModel myModel;
 
   private SNode addInstituteNode(Institute institute, SNode domain) {
-    SNode instituteNode = createInstituteInstance_7rmalq_a0a0u(domain, institute.address, institute.name, institute.ownerId, institute.objectId, institute.name);
-    SModelOperations.addRootNode(this.myModel, instituteNode);
+
+    SNode instituteNode = createInstituteInstance_7rmalq_a0b0u(domain, institute.address, institute.name, institute.ownerId, institute.objectId, SPropertyOperations.getString(domain, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + institute.name);
     return instituteNode;
   }
 
-  private SNode addSchoolNode(School school, SNode instituteNode) {
-    SNode schoolNode = createSchoolInstance_7rmalq_a0a0w(instituteNode, school.address, school.name, school.objectId, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + school.name);
-    SModelOperations.addRootNode(this.myModel, schoolNode);
+  private SNode addSchoolNode(School school, SNode instituteNode, SNode domain) {
+    SNode schoolNode = createSchoolInstance_7rmalq_a0a0w(instituteNode, school.address, school.name, school.objectId, SPropertyOperations.getString(domain, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + school.name);
     return schoolNode;
   }
-  private SNode addClassRoomNode(String classroom, SNode schoolNode, SNode instituteNode) {
-    SNode classroomNode = createClassroomInstance_7rmalq_a0a0x(schoolNode, classroom, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + classroom);
-    SModelOperations.addRootNode(this.myModel, classroomNode);
+  private SNode addClassRoomNode(String classroom, School school, SNode instituteNode, SNode domain, SNode schoolInstance) {
+    SNode classroomNode = createClassroomInstance_7rmalq_a0a0x(schoolInstance, classroom, SPropertyOperations.getString(domain, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + school.name + "." + classroom);
     return classroomNode;
   }
 
-  private SNode addStudentNode(Student student, SNode instituteNode, SNode schoolNode, SNode classroomNode) {
-    SNode studentNode = createStudentInstance_7rmalq_a0a0z(classroomNode, student.name, student.surname, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + classroomNode);
+  private SNode addStudentNode(Student student, SNode instituteNode, School school, SNode classroomNode, SNode domain) {
+    SNode studentNode = createStudentInstance_7rmalq_a0a0z(classroomNode, student.name, student.surname, SPropertyOperations.getString(domain, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + school.name + "." + SPropertyOperations.getString(classroomNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + student);
+
+
     SModelOperations.addRootNode(this.myModel, studentNode);
     return studentNode;
   }
+
+
 
   private SNode addGameNode(Game game, SNode instituteNode, SNode schoolNode) throws IOException {
     ArrayList<SNode> classInstances = new ArrayList<SNode>();
     for (int i = 0; i < game.classRooms.length; i++) {
       String current = game.classRooms[i];
-      SNode current1 = createClassroomInstance_7rmalq_a0b0b0bb(schoolNode, current);
+      SNode current1 = createClassroomInstance_7rmalq_a0b0b0db(schoolNode, current);
       classInstances.add(current1);
     }
 
@@ -160,14 +148,14 @@ public class RetrieveMethod implements Runnable {
       Point current = points[l];
       if (current.name.contains("count")) {
         // experience 
-        SNode pointNode = createexperiencePointInstance_7rmalq_a0b0b0j0bb(current.name, current.score, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "Experience Points");
+        SNode pointNode = createexperiencePointInstance_7rmalq_a0b0b0j0db(current.name, current.score, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "Experience Points");
         experiencePointInstances.add(pointNode);
         SModelOperations.addRootNode(this.myModel, pointNode);
 
       }
       if (current.name.contains("trips") || current.name.contains("distance")) {
         // skills 
-        SNode pointNode = createskillPointInstance_7rmalq_a0b0c0j0bb(current.name, current.score, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "Skill Points");
+        SNode pointNode = createskillPointInstance_7rmalq_a0b0c0j0db(current.name, current.score, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "Skill Points");
         skillPointInstances.add(pointNode);
         SModelOperations.addRootNode(this.myModel, pointNode);
 
@@ -185,7 +173,7 @@ public class RetrieveMethod implements Runnable {
     for (int h = 0; h < actions.length; h++) {
       String current = actions[h];
       if (current.contains("Trip")) {
-        SNode actionNode = createdataDrivenActionInstance_7rmalq_a0a0b0q0bb(current, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "DataDriven Actions");
+        SNode actionNode = createdataDrivenActionInstance_7rmalq_a0a0b0q0db(current, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "DataDriven Actions");
         dataActions.add(actionNode);
         SModelOperations.addRootNode(this.myModel, actionNode);
 
@@ -193,7 +181,7 @@ public class RetrieveMethod implements Runnable {
       }
       if (current.contains("Filled")) {
 
-        SNode actionNode = createeventDrivenActionInstance_7rmalq_a0b0c0q0bb(current, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "EventDriven Actions");
+        SNode actionNode = createeventDrivenActionInstance_7rmalq_a0b0c0q0db(current, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "EventDriven Actions");
         eventActions.add(actionNode);
         SModelOperations.addRootNode(this.myModel, actionNode);
 
@@ -204,7 +192,7 @@ public class RetrieveMethod implements Runnable {
     BadgeCollection[] collections = this.doGetGameBadgeCollections(apiGamificationEngine, game.gameId);
     ArrayList<SNode> collectionsNodes = new ArrayList<SNode>();
     for (BadgeCollection collection : collections) {
-      SNode collectionNode = createBadgeCollectionInstance_7rmalq_a0a0v0bb(collection.name, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "BadgeCollections");
+      SNode collectionNode = createBadgeCollectionInstance_7rmalq_a0a0v0db(collection.name, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "BadgeCollections");
       collectionsNodes.add(collectionNode);
       SModelOperations.addRootNode(this.myModel, collectionNode);
 
@@ -222,13 +210,13 @@ public class RetrieveMethod implements Runnable {
         SPropertyOperations.assign(challengeVariable, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), var);
         variables.add(challengeVariable);
       }
-      SNode challengeNode = createSinglePlayerChallengeInstance_7rmalq_a0d0bb0bb(variables, challenge.name, challenge.id, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "SinglePlayerChallenges");
+      SNode challengeNode = createSinglePlayerChallengeInstance_7rmalq_a0d0bb0db(variables, challenge.name, challenge.id, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName + "." + "SinglePlayerChallenges");
       challengeNodes.add(challengeNode);
       SModelOperations.addRootNode(this.myModel, challengeNode);
 
     }
 
-    SNode gameNode = createGameInstance_7rmalq_a0db0bb(schoolNode, instituteNode, schoolNode, classInstances, experiencePointInstances, skillPointInstances, dataActions, eventActions, collectionsNodes, challengeNodes, game.gameName, game.gameId, game.gameDescription, game.from, game.to, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName);
+    SNode gameNode = createGameInstance_7rmalq_a0db0db(schoolNode, instituteNode, schoolNode, classInstances, experiencePointInstances, skillPointInstances, dataActions, eventActions, collectionsNodes, challengeNodes, game.gameName, game.gameId, game.gameDescription, game.from, game.to, SPropertyOperations.getString(instituteNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + SPropertyOperations.getString(schoolNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "." + "[GameInstance]-" + game.gameName);
     SModelOperations.addRootNode(this.myModel, gameNode);
 
 
@@ -245,6 +233,9 @@ public class RetrieveMethod implements Runnable {
     Gson gson = new Gson();
 
     Institute[] istituti = gson.fromJson(result, Institute[].class);
+    LoggingRuntime.logMsgView(Level.INFO, "numero di istituti: " + istituti.length, RetrieveMethod.class, null, null);
+
+
     return istituti;
 
   }
@@ -259,6 +250,7 @@ public class RetrieveMethod implements Runnable {
     Gson gson = new Gson();
 
     School[] schools = gson.fromJson(result, School[].class);
+    LoggingRuntime.logMsgView(Level.INFO, "numedo di scuole" + schools.length, RetrieveMethod.class, null, null);
     return schools;
 
   }
@@ -389,13 +381,14 @@ public class RetrieveMethod implements Runnable {
 
 
 
-  private static SNode createDomainInstance_7rmalq_a0e0p() {
+  private static SNode createDomainInstance_7rmalq_a0c0p() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L, "GiML.structure.DomainInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "TEST");
+    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), "TEST");
     return n1;
   }
-  private static SNode createInstituteInstance_7rmalq_a0a0u(SNode node0, Object p0, Object p1, Object p2, Object p3, Object p4) {
+  private static SNode createInstituteInstance_7rmalq_a0b0u(SNode node0, Object p0, Object p1, Object p2, Object p3, Object p4) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, "GiML.structure.InstituteInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, 0x29c2332daabe00b1L, "address"), p0 + "");
@@ -433,14 +426,14 @@ public class RetrieveMethod implements Runnable {
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL, 0x548347b052b52557L, "classRoom"), node0);
     return n1;
   }
-  private static SNode createClassroomInstance_7rmalq_a0b0b0bb(SNode node0, Object p0) {
+  private static SNode createClassroomInstance_7rmalq_a0b0b0db(SNode node0, Object p0) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, "GiML.structure.ClassroomInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L, 0x77937ef710bbc239L, "relatedSchool"), node0);
     return n1;
   }
-  private static SNode createexperiencePointInstance_7rmalq_a0b0b0j0bb(Object p0, Object p1, Object p2) {
+  private static SNode createexperiencePointInstance_7rmalq_a0b0b0j0db(Object p0, Object p1, Object p2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L, "GiML.structure.experiencePointInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
@@ -448,7 +441,7 @@ public class RetrieveMethod implements Runnable {
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p2 + "");
     return n1;
   }
-  private static SNode createskillPointInstance_7rmalq_a0b0c0j0bb(Object p0, Object p1, Object p2) {
+  private static SNode createskillPointInstance_7rmalq_a0b0c0j0db(Object p0, Object p1, Object p2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da62447474ed3L, "GiML.structure.skillPointInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
@@ -456,28 +449,28 @@ public class RetrieveMethod implements Runnable {
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p2 + "");
     return n1;
   }
-  private static SNode createdataDrivenActionInstance_7rmalq_a0a0b0q0bb(Object p0, Object p1) {
+  private static SNode createdataDrivenActionInstance_7rmalq_a0a0b0q0db(Object p0, Object p1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624474faca0L, "GiML.structure.dataDrivenActionInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p1 + "");
     return n1;
   }
-  private static SNode createeventDrivenActionInstance_7rmalq_a0b0c0q0bb(Object p0, Object p1) {
+  private static SNode createeventDrivenActionInstance_7rmalq_a0b0c0q0db(Object p0, Object p1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624474faca3L, "GiML.structure.eventDrivenActionInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p1 + "");
     return n1;
   }
-  private static SNode createBadgeCollectionInstance_7rmalq_a0a0v0bb(Object p0, Object p1) {
+  private static SNode createBadgeCollectionInstance_7rmalq_a0a0v0db(Object p0, Object p1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624477a6c9aL, "GiML.structure.BadgeCollectionInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p1 + "");
     return n1;
   }
-  private static SNode createSinglePlayerChallengeInstance_7rmalq_a0d0bb0bb(Iterable<? extends SNode> seq0, Object p0, Object p1, Object p2) {
+  private static SNode createSinglePlayerChallengeInstance_7rmalq_a0d0bb0db(Iterable<? extends SNode> seq0, Object p0, Object p1, Object p2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L, "GiML.structure.SinglePlayerChallengeInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
@@ -488,7 +481,7 @@ public class RetrieveMethod implements Runnable {
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p2 + "");
     return n1;
   }
-  private static SNode createGameInstance_7rmalq_a0db0bb(SNode node0, SNode node1, SNode node2, Iterable<? extends SNode> seq0, Iterable<? extends SNode> seq1, Iterable<? extends SNode> seq2, Iterable<? extends SNode> seq3, Iterable<? extends SNode> seq4, Iterable<? extends SNode> seq5, Iterable<? extends SNode> seq6, Object p0, Object p1, Object p2, Object p3, Object p4, Object p5) {
+  private static SNode createGameInstance_7rmalq_a0db0db(SNode node0, SNode node1, SNode node2, Iterable<? extends SNode> seq0, Iterable<? extends SNode> seq1, Iterable<? extends SNode> seq2, Iterable<? extends SNode> seq3, Iterable<? extends SNode> seq4, Iterable<? extends SNode> seq5, Iterable<? extends SNode> seq6, Object p0, Object p1, Object p2, Object p3, Object p4, Object p5) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x19b939282ee57042L, "GiML.structure.GameInstance"), null, null, false);
     for (SNode n : seq0) {

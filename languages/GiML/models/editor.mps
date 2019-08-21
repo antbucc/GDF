@@ -153,6 +153,9 @@
       </node>
       <node concept="3F0ifn" id="2B2cMQEHtDn" role="3EZMnx">
         <property role="3F0ifm" value="Description" />
+        <node concept="pVoyu" id="6fe4Nqd2UDa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2B2cMQEHtDX" role="3EZMnx">
         <ref role="1NtTu8" to="2qee:14Y7$MQrYcz" resolve="description" />

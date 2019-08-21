@@ -24,18 +24,19 @@ public class newChallenge_0 {
   public void run() throws IOException {
     // here we execute a post call to the Game Engine 
     JsonObject challenge = new JsonObject();
-    challenge.addProperty("gameId", "models_2019_1");
-    challenge.addProperty("id", "challenge2");
-    challenge.addProperty("name", "TESTCHALLENGE");
+    challenge.addProperty("gameId", "game_1");
+    challenge.addProperty("id", "new1");
+    challenge.addProperty("name", "DailyTrips");
     JsonArray variables = new JsonArray();
-    variables.add("prova1");
-    variables.add("prova1");
-    variables.add("prova3");
+    variables.add("bonusScore");
+    variables.add("legName");
+    variables.add("virtualPrize");
+    variables.add("prizeWon");
     challenge.add("variables", variables);
     String challengeJson = challenge.toString();
     RequestBody body = RequestBody.create(JSON, challengeJson);
     // execute POST call to save the gamification Instance 
-    doPostChallenge(body, "models_2019_1");
+    doPostChallenge(body, "game_1");
     System.out.println("CHALLENGES ADDED");
 
   }

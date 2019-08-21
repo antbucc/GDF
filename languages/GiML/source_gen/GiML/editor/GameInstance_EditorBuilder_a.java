@@ -213,6 +213,9 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Description");
     editorCell.setCellId("Constant_yyot1e_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

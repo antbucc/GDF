@@ -29,20 +29,23 @@
       </concept>
     </language>
   </registry>
-  <node concept="3BGpQm" id="6fe4NqcZHat">
-    <property role="TrG5h" value="TESTCHALLENGE" />
-    <ref role="3BHwLL" to="tfej:633VN0ieZmP" resolve="GAME-MODELS2019" />
-    <node concept="JZQM5" id="6fe4NqcZHau" role="3BGpK7">
-      <property role="TrG5h" value="TESTCHALLENGE" />
-      <property role="1AB1qX" value="challenge2" />
-      <node concept="JZOzj" id="6fe4NqcZHav" role="JZOzu">
-        <property role="TrG5h" value="prova1" />
+  <node concept="3BGpQm" id="6fe4Nqd2LjL">
+    <property role="TrG5h" value="DailyTrips" />
+    <ref role="3BHwLL" to="tfej:6fe4Nqd2Fbc" resolve="Game-Models2019" />
+    <node concept="JZQM5" id="6fe4Nqd2LjM" role="3BGpK7">
+      <property role="TrG5h" value="DailyTrips" />
+      <property role="1AB1qX" value="new1" />
+      <node concept="JZOzj" id="6fe4Nqd2LjN" role="JZOzu">
+        <property role="TrG5h" value="bonusScore" />
       </node>
-      <node concept="JZOzj" id="6fe4NqcZHcB" role="JZOzu">
-        <property role="TrG5h" value="prova1" />
+      <node concept="JZOzj" id="6fe4Nqd2Lo2" role="JZOzu">
+        <property role="TrG5h" value="legName" />
       </node>
-      <node concept="JZOzj" id="6fe4NqcZHd5" role="JZOzu">
-        <property role="TrG5h" value="prova3" />
+      <node concept="JZOzj" id="6fe4Nqd2Loz" role="JZOzu">
+        <property role="TrG5h" value="virtualPrize" />
+      </node>
+      <node concept="JZOzj" id="6fe4Nqd2Lp5" role="JZOzu">
+        <property role="TrG5h" value="prizeWon" />
       </node>
     </node>
   </node>
