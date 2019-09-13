@@ -96,6 +96,19 @@
       <concept id="6089789943762462024" name="GiML.structure.StudentInstance" flags="ng" index="6dAbS">
         <property id="6089789943762462029" name="surname" index="6dAbX" />
       </concept>
+      <concept id="7529356826781576346" name="GiML.structure.BadgeCollectionInstance" flags="ng" index="J1WEY">
+        <property id="8616370111696785533" name="id" index="1BqqUa" />
+      </concept>
+      <concept id="7529356826778774688" name="GiML.structure.dataDrivenActionInstance" flags="ng" index="JcwE4" />
+      <concept id="7529356826778774691" name="GiML.structure.eventDrivenActionInstance" flags="ng" index="JcwE7" />
+      <concept id="7529356826778226387" name="GiML.structure.skillPointInstance" flags="ng" index="JeIzR">
+        <property id="7529356826778226390" name="score" index="JeIzM" />
+        <property id="8616370111696087411" name="id" index="1BoPu4" />
+      </concept>
+      <concept id="7529356826775895329" name="GiML.structure.experiencePointInstance" flags="ng" index="JnxG5">
+        <property id="7529356826776471974" name="score" index="JkiY2" />
+        <property id="8616370111696087684" name="id" index="1BoPhN" />
+      </concept>
       <concept id="7529356826782134007" name="GiML.structure.challengeVariable" flags="ng" index="JZOzj" />
       <concept id="7529356826782124705" name="GiML.structure.SinglePlayerChallengeInstance" flags="ng" index="JZQM5">
         <property id="8616370111698135114" name="id" index="1AB1qX" />
@@ -106,6 +119,11 @@
         <property id="7529356826774355935" name="to" index="JspBV" />
         <reference id="8616370111707417122" name="instituteInstance" index="1A3Bjl" />
         <reference id="8616370111709221100" name="schoolInstance" index="1AaYSr" />
+        <child id="7529356826781890699" name="badgeCollections" index="J0DUJ" />
+        <child id="7529356826778785717" name="eventDrivenActions" index="JcB6h" />
+        <child id="7529356826778785712" name="dataDrivenActions" index="JcB6k" />
+        <child id="7529356826778421684" name="skillPoints" index="JdYYg" />
+        <child id="7529356826775895326" name="experiencePoints" index="JnxGU" />
         <child id="7529356826782124720" name="singlePlayerChallenges" index="JZQMk" />
       </concept>
     </language>
@@ -113,6 +131,10 @@
       <concept id="4534219290235658660" name="GML.structure.Game" flags="ng" index="3IPaBf">
         <property id="4534219290235674489" name="id" index="3IP5si" />
       </concept>
+      <concept id="4534219290235610857" name="GML.structure.BadgeCollection" flags="ng" index="3IQQU2">
+        <child id="4534219290235610861" name="badgesEarned" index="3IQQU6" />
+      </concept>
+      <concept id="4534219290235610850" name="GML.structure.Badge" flags="ng" index="3IQQU9" />
     </language>
   </registry>
   <node concept="23UuSs" id="7G8vwhxArfH">
@@ -41104,7 +41126,7 @@
   </node>
   <node concept="Rn4_E" id="7G8vwhxAviG">
     <property role="TrG5h" value="EDUCA 2019" />
-    <property role="3IP5si" value="null" />
+    <property role="3IP5si" value="newGameID" />
     <property role="2BkvPJ" value="&lt;p&gt;Giro d'Italia&lt;/p&gt;" />
     <property role="JspBT" value="1551913200000" />
     <property role="JspBV" value="1558735199999" />
@@ -45796,6 +45818,52 @@
     <property role="1hs5J6" value="2665fe7c-666c-4991-9332-b17f43e58878" />
     <property role="3GE5qa" value="TEST.test istituto" />
     <ref role="23qdQR" node="7G8vwhxArfH" resolve="TEST" />
+  </node>
+  <node concept="Rn4_E" id="62GV8nPSCo3">
+    <property role="TrG5h" value="TestModels2019" />
+    <property role="3IP5si" value="settembre1" />
+    <property role="JspBT" value="53453453545" />
+    <property role="JspBV" value="534543534543" />
+    <property role="2BkvPJ" value="new age at Models 2019" />
+    <ref role="1A3Bjl" node="7G8vwhxAviC" resolve="FONDAZIONE BRUNO KESSLER" />
+    <ref role="1AaYSr" node="7G8vwhxAviD" resolve="FBK ICT" />
+    <ref role="23a0Oi" node="7G8vwhxAviD" resolve="FBK ICT" />
+    <node concept="J1WEY" id="62GV8nPWNmB" role="J0DUJ">
+      <property role="TrG5h" value="erewr" />
+      <property role="1BqqUa" value="werew" />
+      <node concept="3IQQU9" id="62GV8nPWNsR" role="3IQQU6">
+        <property role="TrG5h" value="werew" />
+      </node>
+      <node concept="3IQQU9" id="62GV8nPWNvV" role="3IQQU6">
+        <property role="TrG5h" value="werew" />
+      </node>
+    </node>
+    <node concept="JZQM5" id="62GV8nPWJvs" role="JZQMk">
+      <property role="TrG5h" value="eqwewqe" />
+      <property role="1AB1qX" value="qwewq" />
+      <node concept="JZOzj" id="62GV8nPWJvt" role="JZOzu">
+        <property role="TrG5h" value="qweqwe" />
+      </node>
+    </node>
+    <node concept="JcwE7" id="62GV8nPWJiP" role="JcB6h">
+      <property role="TrG5h" value="qewqe" />
+    </node>
+    <node concept="JcwE7" id="62GV8nPWJlT" role="JcB6h">
+      <property role="TrG5h" value="qwewqe" />
+    </node>
+    <node concept="JcwE4" id="62GV8nPWJd0" role="JcB6k">
+      <property role="TrG5h" value="wewe" />
+    </node>
+    <node concept="JnxG5" id="62GV8nPWIXH" role="JnxGU">
+      <property role="TrG5h" value="sss" />
+      <property role="1BoPhN" value="sss" />
+      <property role="JkiY2" value="0" />
+    </node>
+    <node concept="JeIzR" id="62GV8nPWIHZ" role="JdYYg">
+      <property role="TrG5h" value="skp1" />
+      <property role="1BoPu4" value="skp1" />
+      <property role="JeIzM" value="0" />
+    </node>
   </node>
 </model>
 
