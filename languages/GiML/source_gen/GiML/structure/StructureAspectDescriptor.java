@@ -158,7 +158,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("to", 0x687da624470c3fdfL).type(PrimitiveTypeId.STRING).origin("7529356826774355935").done();
     b.associate("instituteInstance", 0x77937ef7119d0a22L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L).optional(false).origin("8616370111707417122").done();
     b.associate("schoolInstance", 0x77937ef711b890ecL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa80e68dL).optional(false).origin("8616370111709221100").done();
-    b.aggregate("classrooms", 0x687da62446f82c62L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L).optional(false).ordered(true).multiple(true).origin("7529356826773040226").done();
     b.aggregate("experiencePoints", 0x687da6244723bd1eL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L).optional(true).ordered(true).multiple(true).origin("7529356826775895326").done();
     b.aggregate("skillPoints", 0x687da624474a49b4L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da62447474ed3L).optional(true).ordered(true).multiple(true).origin("7529356826778421684").done();
     b.aggregate("dataDrivenActions", 0x687da624474fd7b0L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624474faca0L).optional(true).ordered(true).multiple(true).origin("7529356826778785712").done();

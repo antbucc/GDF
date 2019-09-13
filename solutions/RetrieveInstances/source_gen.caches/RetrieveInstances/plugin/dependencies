@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="RetrieveInstances.plugin.BadgeCollection">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.BadgeCollectionConceptState">
+    <classNode dependClassName="RetrieveInstances.plugin.BadgeState" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.BadgeState">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.Challenge">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.ChallengeConceptState">
+    <classNode dependClassName="RetrieveInstances.plugin.ChallengeField" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.ChallengeField">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.DailyPeriod">
+    <classNode dependClassName="com.google.gson.JsonObject" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.Game">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.GameContent">
+    <classNode dependClassName="RetrieveInstances.plugin.PlayerState" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.GameModel">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.Institute">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.PlayerState">
+    <classNode dependClassName="RetrieveInstances.plugin.State" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.PointConceptState">
+    <classNode dependClassName="RetrieveInstances.plugin.PointPeriodState" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.PointPeriodState">
+    <classNode dependClassName="RetrieveInstances.plugin.DailyPeriod" />
+    <classNode dependClassName="RetrieveInstances.plugin.WeeklyPeriod" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.RetrieveActionGroup_ActionGroup">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.plugins.actions.GeneratedActionGroup" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.RetrieveAction_Action">
+    <classNode dependClassName="RetrieveInstances.plugin.RetrieveMethod" />
+    <classNode dependClassName="com.intellij.openapi.actionSystem.AnActionEvent" />
+    <classNode dependClassName="com.intellij.openapi.application.ApplicationManager" />
+    <classNode dependClassName="com.intellij.openapi.progress.PerformInBackgroundOption" />
+    <classNode dependClassName="com.intellij.openapi.progress.ProgressIndicator" />
+    <classNode dependClassName="com.intellij.openapi.progress.ProgressManager" />
+    <classNode dependClassName="com.intellij.openapi.progress.Task" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="javax.swing.Icon" />
+    <classNode dependClassName="jetbrains.mps.ide.actions.MPSCommonDataKeys" />
+    <classNode dependClassName="jetbrains.mps.progress.ProgressMonitorAdapter" />
+    <classNode dependClassName="jetbrains.mps.project.MPSProject" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.module.SRepository" />
+    <classNode extendsClassName="jetbrains.mps.workbench.action.BaseAction" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.RetrieveInstances_ApplicationPlugin">
+    <classNode dependClassName="RetrieveInstances.plugin.RetrieveActionGroup_ActionGroup" />
+    <classNode dependClassName="RetrieveInstances.plugin.RetrieveAction_Action" />
+    <classNode dependClassName="com.intellij.openapi.extensions.PluginId" />
+    <classNode dependClassName="jetbrains.mps.ide.actions.ModelActions_ActionGroup" />
+    <classNode extendsClassName="jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.RetrieveMethod">
+    <classNode dependClassName="RetrieveInstances.plugin.BadgeCollection" />
+    <classNode dependClassName="RetrieveInstances.plugin.Challenge" />
+    <classNode dependClassName="RetrieveInstances.plugin.ChallengeConceptState" />
+    <classNode dependClassName="RetrieveInstances.plugin.Game" />
+    <classNode dependClassName="RetrieveInstances.plugin.GameContent" />
+    <classNode dependClassName="RetrieveInstances.plugin.GameModel" />
+    <classNode dependClassName="RetrieveInstances.plugin.Institute" />
+    <classNode dependClassName="RetrieveInstances.plugin.PlayerState" />
+    <classNode dependClassName="RetrieveInstances.plugin.PointConceptState" />
+    <classNode dependClassName="RetrieveInstances.plugin.School" />
+    <classNode dependClassName="RetrieveInstances.plugin.Student" />
+    <classNode dependClassName="com.google.gson.Gson" />
+    <classNode dependClassName="com.google.gson.JsonObject" />
+    <classNode dependClassName="com.squareup.okhttp.Credentials" />
+    <classNode dependClassName="com.squareup.okhttp.MediaType" />
+    <classNode dependClassName="com.squareup.okhttp.OkHttpClient" />
+    <classNode dependClassName="com.squareup.okhttp.Request" />
+    <classNode dependClassName="com.squareup.okhttp.RequestBody" />
+    <classNode dependClassName="com.squareup.okhttp.Response" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.UUID" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.progress.ProgressMonitorAdapter" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="java.lang.Runnable" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.School">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.State">
+    <classNode dependClassName="RetrieveInstances.plugin.ChallengeConceptState" />
+    <classNode dependClassName="RetrieveInstances.plugin.PointConceptState" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.Student">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="RetrieveInstances.plugin.WeeklyPeriod">
+    <classNode dependClassName="com.google.gson.JsonObject" />
+  </dependency>
+</dependenciesRoot>
+

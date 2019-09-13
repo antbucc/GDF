@@ -53,13 +53,6 @@
     <node concept="PrWs8" id="1ATeiwITn1m" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="6xXDyh6Y2Ly" role="1TKVEi">
-      <property role="IQ2ns" value="7529356826773040226" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="classrooms" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="2B2cMQEOAFR" resolve="ClassroomInstance" />
-    </node>
     <node concept="1TJgyj" id="6xXDyh78VOu" role="1TKVEi">
       <property role="IQ2ns" value="7529356826775895326" />
       <property role="20lmBu" value="aggregation" />

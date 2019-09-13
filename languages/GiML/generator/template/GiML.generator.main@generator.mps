@@ -12,7 +12,7 @@
     <import index="pkj1" ref="0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da/java:com.squareup.okhttp(GamificationRuntime/)" />
     <import index="wy2b" ref="0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da/java:com.google.gson(GamificationRuntime/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="3x92" ref="r:a117a5b8-31e9-4eb5-8486-a593a17ef088(RetrieveInstitutes.plugin)" />
+    <import index="3x92" ref="r:a117a5b8-31e9-4eb5-8486-a593a17ef088(RetrieveInstances.plugin)" />
     <import index="rh3e" ref="r:33c6cc84-4a64-455a-8222-df658e689ef1(org.mar9000.mps.ecmascript.structure)" implicit="true" />
     <import index="2qee" ref="r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)" implicit="true" />
     <import index="mupf" ref="r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)" implicit="true" />
@@ -689,12 +689,10 @@
       <node concept="3Tm6S6" id="1wHdSt9cWQR" role="1B3o_S" />
       <node concept="17QB3L" id="1wHdSt9cXb1" role="1tU5fm" />
       <node concept="Xl_RD" id="1wHdSt9cXqm" role="33vP2m">
-        <property role="Xl_RC" value="6491b57e-4023-425e-82ef-42aa35939e0a" />
+        <property role="Xl_RC" value="cce6a49b-0bea-4013-a38e-5e4a2e5e58ee" />
       </node>
     </node>
     <node concept="2tJIrI" id="7ujvJshxxkK" role="jymVt" />
-    <node concept="2tJIrI" id="7SUPI8EOhKR" role="jymVt" />
-    <node concept="2tJIrI" id="7ujvJshwK8r" role="jymVt" />
     <node concept="2tJIrI" id="7ujvJsh9_q0" role="jymVt" />
     <node concept="Wx3nA" id="6xXDyh75UqY" role="jymVt">
       <property role="TrG5h" value="credentials" />

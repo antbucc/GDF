@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-9c4iim9pvk5v0phnk34xlwgvoxjvjhy">
+<product version="3" modelHash="2zdm0tr8sn6gncy8xr3jgic8nst3juv">
   <files names="ClassroomInstance_Editor.java:ClassroomInstance_EditorBuilder_a.java:DomainInstance_Editor.java:DomainInstance_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:GameInstance_Editor.java:GameInstance_EditorBuilder_a.java:InstituteInstance_Editor.java:InstituteInstance_EditorBuilder_a.java:SchoolInstance_Editor.java:SchoolInstance_EditorBuilder_a.java:StileGioco_StyleSheet.java:StudentInstance_Editor.java:StudentInstance_EditorBuilder_a.java:dataDrivenActionInstance_Editor.java:dataDrivenActionInstance_EditorBuilder_a.java:eventDrivenActionInstance_Editor.java:eventDrivenActionInstance_EditorBuilder_a.java:experiencePointInstance_Editor.java:experiencePointInstance_EditorBuilder_a.java:istanzaDashboard_Editor.java:istanzaDashboard_EditorBuilder_a.java:skillPointInstance_Editor.java:skillPointInstance_EditorBuilder_a.java" />
 </product>
 

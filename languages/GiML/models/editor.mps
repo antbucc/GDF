@@ -23,7 +23,6 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -249,27 +248,11 @@
       <node concept="3F0ifn" id="6xXDyh7fEqp" role="3EZMnx">
         <property role="3F0ifm" value=" " />
       </node>
-      <node concept="3F0ifn" id="6xXDyh6Yo6i" role="3EZMnx">
-        <property role="3F0ifm" value="Classrooms" />
-      </node>
-      <node concept="3EZMnI" id="6xXDyh72BtM" role="3EZMnx">
-        <node concept="3F2HdR" id="6xXDyh72Buw" role="3EZMnx">
-          <ref role="1NtTu8" to="k2kp:6xXDyh6Y2Ly" resolve="classrooms" />
-          <node concept="3F0A7n" id="6xXDyh72Bvf" role="2czzBI">
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="pj6Ft" id="6xXDyh7fEtI" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="l2Vlx" id="6xXDyh7fEtJ" role="2czzBx" />
-          <node concept="ljvvj" id="6xXDyh7fEtK" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="6xXDyh7fEtL" role="2iSdaV" />
-      </node>
       <node concept="3F0ifn" id="6xXDyh7k4FZ" role="3EZMnx">
         <property role="3F0ifm" value="Skill Points" />
+        <node concept="pVoyu" id="7G8vwhxAWRh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3EZMnI" id="6xXDyh7k4D0" role="3EZMnx">
         <node concept="2iRkQZ" id="6xXDyh7k4D1" role="2iSdaV" />
