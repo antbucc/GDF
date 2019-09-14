@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="cteom78p7jzz2l1e898bjygn5e1b66t">
+<product version="3" modelHash="mg8935waklbnrln021ssnor2ec6a9e">
   <files names="BadgeCollection.java:BadgeCollectionConceptState.java:BadgeState.java:Challenge.java:ChallengeConceptState.java:ChallengeField.java:DailyPeriod.java:Game.java:GameContent.java:GameModel.java:Institute.java:PlayerState.java:PointConceptState.java:PointPeriodState.java:RetrieveActionGroup_ActionGroup.java:RetrieveAction_Action.java:RetrieveInstances_ApplicationPlugin.java:RetrieveMethod.java:School.java:State.java:Student.java:WeeklyPeriod.java" />
 </product>
 

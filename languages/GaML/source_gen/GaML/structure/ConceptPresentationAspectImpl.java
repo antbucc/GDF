@@ -16,11 +16,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ExperienceLevelDefinition;
   private ConceptPresentation props_GameDefinition;
   private ConceptPresentation props_Institute;
+  private ConceptPresentation props_KGGBadgeCollection;
   private ConceptPresentation props_School;
   private ConceptPresentation props_SinglePlayerChallenge;
   private ConceptPresentation props_SkillLevelDefinition;
   private ConceptPresentation props_Student;
   private ConceptPresentation props_Volontario;
+  private ConceptPresentation props_badgeType;
   private ConceptPresentation props_dataDrivenAction;
   private ConceptPresentation props_eventDrivenAction;
   private ConceptPresentation props_experiencePoint;
@@ -80,6 +82,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Institute = cpb.create();
         }
         return props_Institute;
+      case LanguageConceptSwitch.KGGBadgeCollection:
+        if (props_KGGBadgeCollection == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_KGGBadgeCollection = cpb.create();
+        }
+        return props_KGGBadgeCollection;
       case LanguageConceptSwitch.School:
         if (props_School == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -115,6 +124,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Volontario = cpb.create();
         }
         return props_Volontario;
+      case LanguageConceptSwitch.badgeType:
+        if (props_badgeType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_badgeType = cpb.create();
+        }
+        return props_badgeType;
       case LanguageConceptSwitch.dataDrivenAction:
         if (props_dataDrivenAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

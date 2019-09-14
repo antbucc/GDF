@@ -98,20 +98,28 @@
       </concept>
       <concept id="7529356826781576346" name="GiML.structure.BadgeCollectionInstance" flags="ng" index="J1WEY">
         <property id="8616370111696785533" name="id" index="1BqqUa" />
+        <reference id="6966202783740063469" name="type" index="2mxg9C" />
       </concept>
-      <concept id="7529356826778774688" name="GiML.structure.dataDrivenActionInstance" flags="ng" index="JcwE4" />
-      <concept id="7529356826778774691" name="GiML.structure.eventDrivenActionInstance" flags="ng" index="JcwE7" />
+      <concept id="7529356826778774688" name="GiML.structure.dataDrivenActionInstance" flags="ng" index="JcwE4">
+        <reference id="6966202783737772373" name="type" index="2mExng" />
+      </concept>
+      <concept id="7529356826778774691" name="GiML.structure.eventDrivenActionInstance" flags="ng" index="JcwE7">
+        <reference id="6966202783737765969" name="type" index="2mEwNk" />
+      </concept>
       <concept id="7529356826778226387" name="GiML.structure.skillPointInstance" flags="ng" index="JeIzR">
         <property id="7529356826778226390" name="score" index="JeIzM" />
         <property id="8616370111696087411" name="id" index="1BoPu4" />
+        <reference id="6966202783737269219" name="type" index="2lkUtA" />
       </concept>
       <concept id="7529356826775895329" name="GiML.structure.experiencePointInstance" flags="ng" index="JnxG5">
         <property id="7529356826776471974" name="score" index="JkiY2" />
         <property id="8616370111696087684" name="id" index="1BoPhN" />
+        <reference id="6966202783737515251" name="type" index="2mFY1Q" />
       </concept>
       <concept id="7529356826782134007" name="GiML.structure.challengeVariable" flags="ng" index="JZOzj" />
       <concept id="7529356826782124705" name="GiML.structure.SinglePlayerChallengeInstance" flags="ng" index="JZQM5">
         <property id="8616370111698135114" name="id" index="1AB1qX" />
+        <reference id="6966202783738249624" name="type" index="2mCEOt" />
         <child id="7529356826782134010" name="variables" index="JZOzu" />
       </concept>
       <concept id="1853575566387933250" name="GiML.structure.GameInstance" flags="ng" index="Rn4_E">
@@ -41106,8 +41114,8 @@
     <property role="TrG5h" value="test" />
     <property role="3IP5si" value="11111111111111111111111111" />
     <property role="2BkvPJ" value="&lt;p&gt;wefwegrweg&lt;br/&gt;&lt;/p&gt;" />
-    <property role="JspBT" value="1506845757968" />
-    <property role="JspBV" value="1509441357968" />
+    <property role="JspBT" value="23423444" />
+    <property role="JspBV" value="42342344" />
     <property role="3GE5qa" value="TEST.FONDAZIONE BRUNO KESSLER.FBK ICT.GameInstances" />
     <ref role="1A3Bjl" node="7G8vwhxAviC" resolve="FONDAZIONE BRUNO KESSLER" />
     <ref role="23a0Oi" node="7G8vwhxAviD" resolve="FBK ICT" />
@@ -41137,6 +41145,7 @@
     <node concept="JZQM5" id="7G8vwhxBYML" role="JZQMk">
       <property role="1AB1qX" value="ch2" />
       <property role="TrG5h" value="ch1" />
+      <ref role="2mCEOt" node="7G8vwhxBYML" resolve="ch1" />
       <node concept="JZOzj" id="7G8vwhxBYMM" role="JZOzu">
         <property role="TrG5h" value="v1" />
       </node>
@@ -45820,49 +45829,66 @@
     <ref role="23qdQR" node="7G8vwhxArfH" resolve="TEST" />
   </node>
   <node concept="Rn4_E" id="62GV8nPSCo3">
-    <property role="TrG5h" value="TestModels2019" />
-    <property role="3IP5si" value="settembre1" />
-    <property role="JspBT" value="53453453545" />
-    <property role="JspBV" value="534543534543" />
-    <property role="2BkvPJ" value="new age at Models 2019" />
+    <property role="TrG5h" value="Demo-Models2019" />
+    <property role="JspBV" value="24234244" />
+    <property role="2BkvPJ" value="new demo at Models 2019" />
+    <property role="3IP5si" value="idModels2019" />
+    <property role="JspBT" value="42342434" />
     <ref role="1A3Bjl" node="7G8vwhxAviC" resolve="FONDAZIONE BRUNO KESSLER" />
     <ref role="1AaYSr" node="7G8vwhxAviD" resolve="FBK ICT" />
     <ref role="23a0Oi" node="7G8vwhxAviD" resolve="FBK ICT" />
     <node concept="J1WEY" id="62GV8nPWNmB" role="J0DUJ">
-      <property role="TrG5h" value="erewr" />
+      <property role="TrG5h" value="dfsdfds" />
       <property role="1BqqUa" value="werew" />
+      <ref role="2mxg9C" node="62GV8nPWNmB" resolve="dfsdfds" />
       <node concept="3IQQU9" id="62GV8nPWNsR" role="3IQQU6">
-        <property role="TrG5h" value="werew" />
+        <property role="TrG5h" value="werewqeew" />
       </node>
       <node concept="3IQQU9" id="62GV8nPWNvV" role="3IQQU6">
-        <property role="TrG5h" value="werew" />
+        <property role="TrG5h" value="wereqwew" />
       </node>
     </node>
     <node concept="JZQM5" id="62GV8nPWJvs" role="JZQMk">
       <property role="TrG5h" value="eqwewqe" />
       <property role="1AB1qX" value="qwewq" />
+      <ref role="2mCEOt" node="7G8vwhxBYML" resolve="ch1" />
       <node concept="JZOzj" id="62GV8nPWJvt" role="JZOzu">
         <property role="TrG5h" value="qweqwe" />
       </node>
     </node>
     <node concept="JcwE7" id="62GV8nPWJiP" role="JcB6h">
       <property role="TrG5h" value="qewqe" />
+      <ref role="2mEwNk" node="62GV8nPWJiP" resolve="qewqe" />
     </node>
     <node concept="JcwE7" id="62GV8nPWJlT" role="JcB6h">
       <property role="TrG5h" value="qwewqe" />
+      <ref role="2mEwNk" node="62GV8nPWJiP" resolve="qewqe" />
+    </node>
+    <node concept="JcwE7" id="62GV8nQ3xPb" role="JcB6h">
+      <property role="TrG5h" value="werwrewr" />
+      <ref role="2mEwNk" node="62GV8nPWJiP" resolve="qewqe" />
     </node>
     <node concept="JcwE4" id="62GV8nPWJd0" role="JcB6k">
       <property role="TrG5h" value="wewe" />
+      <ref role="2mExng" node="62GV8nPWJd0" resolve="wewe" />
     </node>
     <node concept="JnxG5" id="62GV8nPWIXH" role="JnxGU">
       <property role="TrG5h" value="sss" />
       <property role="1BoPhN" value="sss" />
       <property role="JkiY2" value="0" />
+      <ref role="2mFY1Q" node="62GV8nPWIXH" resolve="sss" />
+    </node>
+    <node concept="JnxG5" id="62GV8nQ38zV" role="JnxGU">
+      <property role="TrG5h" value="ertre" />
+      <property role="1BoPhN" value="gdasds" />
+      <property role="JkiY2" value="0" />
+      <ref role="2mFY1Q" to="bxq6:62GV8nQ3a7C" resolve="exp1" />
     </node>
     <node concept="JeIzR" id="62GV8nPWIHZ" role="JdYYg">
-      <property role="TrG5h" value="skp1" />
+      <property role="TrG5h" value="test" />
       <property role="1BoPu4" value="skp1" />
       <property role="JeIzM" value="0" />
+      <ref role="2lkUtA" to="bxq6:62GV8nPYXAV" resolve="SP1" />
     </node>
   </node>
 </model>

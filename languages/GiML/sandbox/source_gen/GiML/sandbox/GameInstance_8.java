@@ -17,7 +17,7 @@ public class GameInstance_8 {
   private static String apiChallengeUrl = "https://dev.smartcommunitylab.it/gamification/model/game/";
   private static String apiIstituteUrl = "https://climbdev.smartcommunitylab.it/v2/api/institute/";
   private static String apiSchoolUrl = "https://climbdev.smartcommunitylab.it/v2/api/school/";
-  private static String Token = "cce6a49b-0bea-4013-a38e-5e4a2e5e58ee";
+  private static String Token = "4f513a2b-9669-4c6b-b9c4-60c227920fb0";
 
 
   private static String credentials = Credentials.basic("long-rovereto", "long_RoVg@me");
@@ -55,10 +55,10 @@ public class GameInstance_8 {
 
     // execute POST call to save the gamification Instance 
     JsonObject obj = new JsonObject();
-    String gameID = "settembre1";
+    String gameID = "idModels2019";
     // 1. Creation of the body call - json object 
-    obj.addProperty("id", "settembre1");
-    obj.addProperty("name", "TestModels2019");
+    obj.addProperty("id", "idModels2019");
+    obj.addProperty("name", "Demo-Models2019");
     obj.addProperty("domain", "TEST");
 
 
@@ -72,11 +72,18 @@ public class GameInstance_8 {
       point.addProperty("score", 0);
       points.add(point);
     }
+    {
+      JsonObject point = new JsonObject();
+      point.addProperty("id", "gdasds");
+      point.addProperty("name", "ertre");
+      point.addProperty("score", 0);
+      points.add(point);
+    }
     // Skill Points 
     {
       JsonObject point = new JsonObject();
       point.addProperty("id", "skp1");
-      point.addProperty("name", "skp1");
+      point.addProperty("name", "test");
       point.addProperty("score", 0);
       points.add(point);
     }
@@ -93,6 +100,7 @@ public class GameInstance_8 {
     // event driven actions 
     actions.add("qewqe");
     actions.add("qwewqe");
+    actions.add("werwrewr");
 
     obj.add("actions", actions);
     System.out.println("3. ACTIONS ADDED");
@@ -104,11 +112,11 @@ public class GameInstance_8 {
     {
       JsonObject badgeCollection = new JsonObject();
       badgeCollection.addProperty("id", "werew");
-      badgeCollection.addProperty("name", "erewr");
+      badgeCollection.addProperty("name", "dfsdfds");
       JsonArray badgesEarned = new JsonArray();
-      badgesEarned.add("werew");
+      badgesEarned.add("werewqeew");
       badgeCollection.add("badgeEarned", badgesEarned);
-      badgesEarned.add("werew");
+      badgesEarned.add("wereqwew");
       badgeCollection.add("badgeEarned", badgesEarned);
 
       badgesEarned.add("badgeName");

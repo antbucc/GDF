@@ -236,7 +236,7 @@
     <property role="EcuMT" value="7529356826782124702" />
     <property role="TrG5h" value="SinglePlayerChallenge" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="challengeModel" />
+    <property role="34LRSv" value="singlePlayerChallenge" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdVuN" resolve="Challenge" />
     <node concept="PrWs8" id="6xXDyh7wGEv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -255,6 +255,33 @@
     <property role="TrG5h" value="ExperienceLevelDefinition" />
     <ref role="1TJDcQ" to="mupf:3VGM6Jge1dg" resolve="Level" />
     <node concept="PrWs8" id="7ujvJshfznV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nQbD0a">
+    <property role="EcuMT" value="6966202783740366858" />
+    <property role="TrG5h" value="KGGBadgeCollection" />
+    <property role="34LRSv" value="specificBadgeCollection" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdUrD" resolve="BadgeCollection" />
+    <node concept="PrWs8" id="62GV8nQbDFB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="62GV8nQcim8" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783740536200" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="badgeTypes" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="62GV8nQc7th" resolve="badgeType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nQc7th">
+    <property role="EcuMT" value="6966202783740491601" />
+    <property role="TrG5h" value="badgeType" />
+    <property role="34LRSv" value="badgeType" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="mupf:3VGM6JgdUry" resolve="Badge" />
+    <node concept="PrWs8" id="62GV8nQc7R4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>

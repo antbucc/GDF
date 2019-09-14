@@ -28,7 +28,7 @@ import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class RetrieveMethod implements Runnable {
-  private static String Token = "cce6a49b-0bea-4013-a38e-5e4a2e5e58ee";
+  private static String Token = "4f513a2b-9669-4c6b-b9c4-60c227920fb0";
   private static String apiIstituteUrl = "https://climb.smartcommunitylab.it/v2/api/institute/TEST";
   private static String apiSchoolUrl = "https://climb.smartcommunitylab.it/v2/api/school/TEST";
   private static String apiGameUrl = "https://climb.smartcommunitylab.it/v2/api/game/TEST";
@@ -258,9 +258,6 @@ public class RetrieveMethod implements Runnable {
     for (PointConceptState point : points) {
       if (point.getName().contains("count")) {
         //  experience point 
-        SNode pointNode = createexperiencePointInstance_7rmalq_a0b0a0d0ec(point.name, point.score);
-        experiencePointInstances.add(pointNode);
-        SModelOperations.addRootNode(this.myModel, pointNode);
 
 
       }
@@ -583,13 +580,6 @@ public class RetrieveMethod implements Runnable {
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x548347b052b52548L, 0x548347b052b5254dL, "surname"), p1 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p2 + "");
     n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe31eL, 0x548347b052b52557L, "classRoom"), node0);
-    return n1;
-  }
-  private static SNode createexperiencePointInstance_7rmalq_a0b0a0d0ec(Object p0, Object p1) {
-    PersistenceFacade facade = PersistenceFacade.getInstance();
-    SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L, "GiML.structure.experiencePointInstance"), null, null, false);
-    n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p0 + "");
-    n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L, 0x687da624472c89a6L, "score"), p1 + "");
     return n1;
   }
   private static SNode createGameInstance_7rmalq_a0h0ec(SNode node0, SNode node1, SNode node2, Object p0, Object p1, Object p2, Object p3, Object p4, Object p5) {

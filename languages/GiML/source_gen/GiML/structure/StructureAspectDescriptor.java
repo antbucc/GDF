@@ -110,6 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826781576346");
     b.version(2);
     b.property("id", 0x77937ef710fad07dL).type(PrimitiveTypeId.STRING).origin("8616370111696785533").done();
+    b.associate("type", 0x60acec85f629eeedL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e9L).optional(false).origin("6966202783740063469").done();
     b.alias("badgeCollection");
     return b.create();
   }
@@ -210,6 +211,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826782124705");
     b.version(2);
     b.property("id", 0x77937ef7110f684aL).type(PrimitiveTypeId.STRING).origin("8616370111698135114").done();
+    b.associate("type", 0x60acec85f60e4198L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da6244782ca9eL).optional(false).origin("6966202783738249624").done();
     b.aggregate("variables", 0x687da6244782eefaL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782eef7L).optional(false).ordered(true).multiple(true).origin("7529356826782134010").done();
     b.alias("singlePlayerChallengeInstance");
     return b.create();
@@ -253,6 +255,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826778774688");
     b.version(2);
+    b.associate("type", 0x60acec85f606f955L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da624474fac98L).optional(false).origin("6966202783737772373").done();
     b.alias("dataDrivenAction");
     return b.create();
   }
@@ -262,6 +265,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("GaML.structure.eventDrivenAction", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da624474fac9bL);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826778774691");
     b.version(2);
+    b.associate("type", 0x60acec85f606e051L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da624474fac9bL).optional(false).origin("6966202783737765969").done();
     b.alias("eventDrivenAction");
     return b.create();
   }
@@ -273,6 +277,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("id", 0x77937ef710f02a84L).type(PrimitiveTypeId.STRING).origin("8616370111696087684").done();
     b.property("score", 0x687da624472c89a6L).type(PrimitiveTypeId.INTEGER).origin("7529356826776471974").done();
+    b.associate("type", 0x60acec85f6030cf3L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da6244723bd22L).optional(false).origin("6966202783737515251").done();
     b.alias("experiencePoint");
     return b.create();
   }
@@ -295,6 +300,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("id", 0x77937ef710f02973L).type(PrimitiveTypeId.STRING).origin("8616370111696087411").done();
     b.property("score", 0x687da62447474ed6L).type(PrimitiveTypeId.INTEGER).origin("7529356826778226390").done();
+    b.associate("type", 0x60acec85f5ff4be3L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da6244723bd23L).optional(false).origin("6966202783737269219").done();
     b.alias("skillPoint");
     return b.create();
   }

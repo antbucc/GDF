@@ -16,15 +16,17 @@ public final class LanguageConceptSwitch {
   public static final int ExperienceLevelDefinition = 4;
   public static final int GameDefinition = 5;
   public static final int Institute = 6;
-  public static final int School = 7;
-  public static final int SinglePlayerChallenge = 8;
-  public static final int SkillLevelDefinition = 9;
-  public static final int Student = 10;
-  public static final int Volontario = 11;
-  public static final int dataDrivenAction = 12;
-  public static final int eventDrivenAction = 13;
-  public static final int experiencePoint = 14;
-  public static final int skillPoint = 15;
+  public static final int KGGBadgeCollection = 7;
+  public static final int School = 8;
+  public static final int SinglePlayerChallenge = 9;
+  public static final int SkillLevelDefinition = 10;
+  public static final int Student = 11;
+  public static final int Volontario = 12;
+  public static final int badgeType = 13;
+  public static final int dataDrivenAction = 14;
+  public static final int eventDrivenAction = 15;
+  public static final int experiencePoint = 16;
+  public static final int skillPoint = 17;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x1472546da96448a0L, 0xa11e4271b165a42cL);
@@ -35,11 +37,13 @@ public final class LanguageConceptSwitch {
     builder.put(0x77937ef7113e3513L, ExperienceLevelDefinition);
     builder.put(0x23eac9cba952c550L, GameDefinition);
     builder.put(0x113e1e4cb66fe312L, Institute);
+    builder.put(0x60acec85f62e900aL, KGGBadgeCollection);
     builder.put(0x29c2332daa804ab6L, School);
     builder.put(0x687da6244782ca9eL, SinglePlayerChallenge);
     builder.put(0x77937ef7113e2eeaL, SkillLevelDefinition);
     builder.put(0x113e1e4cb66fe31eL, Student);
     builder.put(0x29c2332daacc174dL, Volontario);
+    builder.put(0x60acec85f6307751L, badgeType);
     builder.put(0x687da624474fac98L, dataDrivenAction);
     builder.put(0x687da624474fac9bL, eventDrivenAction);
     builder.put(0x687da6244723bd22L, experiencePoint);
