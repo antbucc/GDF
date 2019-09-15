@@ -16,6 +16,7 @@
   <languageVersions>
     <language slang="l:bc08d5ab-032d-46dc-9964-46504a89c9c8:GML" version="0" />
     <language slang="l:1472546d-a964-48a0-a11e-4271b165a42c:GaML" version="0" />
+    <language slang="l:dc26d825-2883-4e88-933c-f0e9f65c69c4:GameData" version="0" />
     <language slang="l:119e117f-1260-4f12-b46e-efd3d0e4c44f:GiML" version="0" />
     <language slang="l:ae7671b2-08ec-4cb3-bda2-147e5e095aea:GmML" version="0" />
     <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />

@@ -696,7 +696,7 @@
       <node concept="3Tm6S6" id="1wHdSt9cWQR" role="1B3o_S" />
       <node concept="17QB3L" id="1wHdSt9cXb1" role="1tU5fm" />
       <node concept="Xl_RD" id="1wHdSt9cXqm" role="33vP2m">
-        <property role="Xl_RC" value="4f513a2b-9669-4c6b-b9c4-60c227920fb0" />
+        <property role="Xl_RC" value="954ec938-17b7-4477-ae70-64c43b27712f" />
       </node>
     </node>
     <node concept="2tJIrI" id="7ujvJshxxkK" role="jymVt" />
@@ -2107,10 +2107,10 @@
                             <node concept="3clFbS" id="7ujvJsgZtq7" role="2VODD2">
                               <node concept="3clFbF" id="7ujvJsgZtqd" role="3cqZAp">
                                 <node concept="2OqwBi" id="7ujvJsgZtq8" role="3clFbG">
-                                  <node concept="3TrcHB" id="7ujvJsgZtqb" role="2OqNvi">
+                                  <node concept="30H73N" id="7ujvJsgZtqc" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="62GV8nQkYNG" role="2OqNvi">
                                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                                   </node>
-                                  <node concept="30H73N" id="7ujvJsgZtqc" role="2Oq$k0" />
                                 </node>
                               </node>
                             </node>
@@ -2143,8 +2143,8 @@
                     <node concept="3clFbF" id="7ujvJsgZcZg" role="3cqZAp">
                       <node concept="2OqwBi" id="7ujvJsgZcZh" role="3clFbG">
                         <node concept="30H73N" id="7ujvJsgZcZi" role="2Oq$k0" />
-                        <node concept="3Tsc0h" id="7ujvJsgZsHf" role="2OqNvi">
-                          <ref role="3TtcxE" to="mupf:3VGM6JgdUrH" resolve="badgesEarned" />
+                        <node concept="3Tsc0h" id="62GV8nQtcS9" role="2OqNvi">
+                          <ref role="3TtcxE" to="k2kp:62GV8nQscr_" resolve="badgesEarned" />
                         </node>
                       </node>
                     </node>
@@ -2359,49 +2359,67 @@
                 </node>
               </node>
             </node>
-            <node concept="9aQIb" id="7ujvJsh30Xg" role="3cqZAp">
-              <node concept="3clFbS" id="7ujvJsh30Xh" role="9aQI4">
-                <node concept="3clFbF" id="7ujvJsh30Xi" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ujvJsh30Xj" role="3clFbG">
-                    <node concept="37vLTw" id="7ujvJsh30Xk" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ujvJsh30Xc" resolve="variables" />
-                    </node>
-                    <node concept="liA8E" id="7ujvJsh30Xl" role="2OqNvi">
-                      <ref role="37wK5l" to="wy2b:~JsonArray.add(java.lang.String)" resolve="add" />
-                      <node concept="Xl_RD" id="7ujvJsh30Xm" role="37wK5m">
-                        <property role="Xl_RC" value="variableName" />
-                        <node concept="17Uvod" id="7ujvJsh30Xn" role="lGtFl">
-                          <property role="2qtEX9" value="value" />
-                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                          <node concept="3zFVjK" id="7ujvJsh30Xo" role="3zH0cK">
-                            <node concept="3clFbS" id="7ujvJsh30Xp" role="2VODD2">
-                              <node concept="3clFbF" id="7ujvJsh30Xq" role="3cqZAp">
-                                <node concept="2OqwBi" id="7ujvJsh30Xr" role="3clFbG">
-                                  <node concept="3TrcHB" id="7ujvJsh30Xs" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                  <node concept="30H73N" id="7ujvJsh30Xt" role="2Oq$k0" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+            <node concept="3clFbF" id="62GV8nR2NDG" role="3cqZAp">
+              <node concept="2OqwBi" id="62GV8nR2OrX" role="3clFbG">
+                <node concept="37vLTw" id="62GV8nR2NDE" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7ujvJsh30Xc" resolve="variables" />
+                </node>
+                <node concept="liA8E" id="62GV8nR2P7C" role="2OqNvi">
+                  <ref role="37wK5l" to="wy2b:~JsonArray.add(java.lang.String)" resolve="add" />
+                  <node concept="Xl_RD" id="62GV8nR2Pj9" role="37wK5m">
+                    <property role="Xl_RC" value="bonusScore" />
                   </node>
                 </node>
               </node>
-              <node concept="1WS0z7" id="7ujvJsh30X$" role="lGtFl">
-                <node concept="3JmXsc" id="7ujvJsh30X_" role="3Jn$fo">
-                  <node concept="3clFbS" id="7ujvJsh30XA" role="2VODD2">
-                    <node concept="3clFbF" id="7ujvJsh30XB" role="3cqZAp">
-                      <node concept="2OqwBi" id="7ujvJsh30XC" role="3clFbG">
-                        <node concept="30H73N" id="7ujvJsh30XD" role="2Oq$k0" />
-                        <node concept="3Tsc0h" id="7ujvJsh3bAl" role="2OqNvi">
-                          <ref role="3TtcxE" to="k2kp:6xXDyh7wIVU" resolve="variables" />
-                        </node>
-                      </node>
-                    </node>
+            </node>
+            <node concept="3clFbF" id="62GV8nR2RI_" role="3cqZAp">
+              <node concept="2OqwBi" id="62GV8nR2Sk4" role="3clFbG">
+                <node concept="37vLTw" id="62GV8nR2RIz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7ujvJsh30Xc" resolve="variables" />
+                </node>
+                <node concept="liA8E" id="62GV8nR2T4e" role="2OqNvi">
+                  <ref role="37wK5l" to="wy2b:~JsonArray.add(java.lang.String)" resolve="add" />
+                  <node concept="Xl_RD" id="62GV8nR2Tg0" role="37wK5m">
+                    <property role="Xl_RC" value="bonusPointType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="62GV8nR2UBV" role="3cqZAp">
+              <node concept="2OqwBi" id="62GV8nR2V41" role="3clFbG">
+                <node concept="37vLTw" id="62GV8nR2UBT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7ujvJsh30Xc" resolve="variables" />
+                </node>
+                <node concept="liA8E" id="62GV8nR2VLm" role="2OqNvi">
+                  <ref role="37wK5l" to="wy2b:~JsonArray.add(java.lang.String)" resolve="add" />
+                  <node concept="Xl_RD" id="62GV8nR2VSY" role="37wK5m">
+                    <property role="Xl_RC" value="virtualPrice" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="62GV8nR2Y5J" role="3cqZAp">
+              <node concept="2OqwBi" id="62GV8nR2Y5K" role="3clFbG">
+                <node concept="37vLTw" id="62GV8nR2Y5L" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7ujvJsh30Xc" resolve="variables" />
+                </node>
+                <node concept="liA8E" id="62GV8nR2Y5M" role="2OqNvi">
+                  <ref role="37wK5l" to="wy2b:~JsonArray.add(java.lang.String)" resolve="add" />
+                  <node concept="Xl_RD" id="62GV8nR2YJC" role="37wK5m">
+                    <property role="Xl_RC" value="priceWon" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="62GV8nR2Zx2" role="3cqZAp">
+              <node concept="2OqwBi" id="62GV8nR2Zx3" role="3clFbG">
+                <node concept="37vLTw" id="62GV8nR2Zx4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7ujvJsh30Xc" resolve="variables" />
+                </node>
+                <node concept="liA8E" id="62GV8nR2Zx5" role="2OqNvi">
+                  <ref role="37wK5l" to="wy2b:~JsonArray.add(java.lang.String)" resolve="add" />
+                  <node concept="Xl_RD" id="62GV8nR2Zx6" role="37wK5m">
+                    <property role="Xl_RC" value="legName" />
                   </node>
                 </node>
               </node>
@@ -2471,9 +2489,9 @@
             <node concept="3JmXsc" id="7ujvJsh30XX" role="3Jn$fo">
               <node concept="3clFbS" id="7ujvJsh30XY" role="2VODD2">
                 <node concept="3clFbF" id="7ujvJsh30XZ" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ujvJsh30Y0" role="3clFbG">
+                  <node concept="2OqwBi" id="62GV8nQQwjs" role="3clFbG">
                     <node concept="30H73N" id="7ujvJsh30Y1" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7ujvJsh374x" role="2OqNvi">
+                    <node concept="3Tsc0h" id="62GV8nQQxfh" role="2OqNvi">
                       <ref role="3TtcxE" to="k2kp:6xXDyh7wGEK" resolve="singlePlayerChallenges" />
                     </node>
                   </node>
@@ -2498,291 +2516,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7ujvJshiSbv" role="3cqZAp" />
-        <node concept="3SKdUt" id="7ujvJshiW9u" role="3cqZAp">
-          <node concept="3SKdUq" id="7ujvJshiW9w" role="3SKWNk">
-            <property role="3SKdUp" value=" skill Level" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7ujvJshkqmt" role="3cqZAp">
-          <node concept="3cpWsn" id="7ujvJshkqmu" role="3cpWs9">
-            <property role="TrG5h" value="skillLevels" />
-            <node concept="3uibUv" id="7ujvJshkqmv" role="1tU5fm">
-              <ref role="3uigEE" to="wy2b:~JsonArray" resolve="JsonArray" />
-            </node>
-            <node concept="2ShNRf" id="7ujvJshkqmw" role="33vP2m">
-              <node concept="1pGfFk" id="7ujvJshkqmx" role="2ShVmc">
-                <ref role="37wK5l" to="wy2b:~JsonArray.&lt;init&gt;()" resolve="JsonArray" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7ujvJshkoc4" role="3cqZAp" />
-        <node concept="9aQIb" id="7ujvJshj34h" role="3cqZAp">
-          <node concept="3clFbS" id="7ujvJshj34i" role="9aQI4">
-            <node concept="3cpWs8" id="7ujvJshj34j" role="3cqZAp">
-              <node concept="3cpWsn" id="7ujvJshj34k" role="3cpWs9">
-                <property role="TrG5h" value="skillLevel" />
-                <node concept="3uibUv" id="7ujvJshj34l" role="1tU5fm">
-                  <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
-                </node>
-                <node concept="2ShNRf" id="7ujvJshj34m" role="33vP2m">
-                  <node concept="1pGfFk" id="7ujvJshj34n" role="2ShVmc">
-                    <ref role="37wK5l" to="wy2b:~JsonObject.&lt;init&gt;()" resolve="JsonObject" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7ujvJshj34o" role="3cqZAp">
-              <node concept="2OqwBi" id="7ujvJshj34p" role="3clFbG">
-                <node concept="37vLTw" id="7ujvJshj34q" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7ujvJshj34k" resolve="skillLevel" />
-                </node>
-                <node concept="liA8E" id="7ujvJshj34r" role="2OqNvi">
-                  <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
-                  <node concept="Xl_RD" id="7ujvJshj34s" role="37wK5m">
-                    <property role="Xl_RC" value="name" />
-                  </node>
-                  <node concept="Xl_RD" id="7ujvJshjd61" role="37wK5m">
-                    <property role="Xl_RC" value="levelName" />
-                    <node concept="17Uvod" id="7ujvJshjdsC" role="lGtFl">
-                      <property role="2qtEX9" value="value" />
-                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                      <node concept="3zFVjK" id="7ujvJshjdsD" role="3zH0cK">
-                        <node concept="3clFbS" id="7ujvJshjdsE" role="2VODD2">
-                          <node concept="3clFbF" id="7ujvJshjeTx" role="3cqZAp">
-                            <node concept="2OqwBi" id="7ujvJshjfb5" role="3clFbG">
-                              <node concept="30H73N" id="7ujvJshjeTw" role="2Oq$k0" />
-                              <node concept="3TrcHB" id="7ujvJshjiMf" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7ujvJshj34u" role="3cqZAp">
-              <node concept="2OqwBi" id="7ujvJshj34v" role="3clFbG">
-                <node concept="37vLTw" id="7ujvJshj34w" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7ujvJshj34k" resolve="skillLevel" />
-                </node>
-                <node concept="liA8E" id="7ujvJshj34x" role="2OqNvi">
-                  <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
-                  <node concept="Xl_RD" id="7ujvJshj34y" role="37wK5m">
-                    <property role="Xl_RC" value="pointConcept" />
-                  </node>
-                  <node concept="Xl_RD" id="7ujvJshjcuI" role="37wK5m">
-                    <property role="Xl_RC" value="pointConcept" />
-                    <node concept="17Uvod" id="7ujvJshjjou" role="lGtFl">
-                      <property role="2qtEX9" value="value" />
-                      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                      <node concept="3zFVjK" id="7ujvJshjjov" role="3zH0cK">
-                        <node concept="3clFbS" id="7ujvJshjjow" role="2VODD2">
-                          <node concept="3clFbF" id="7ujvJshjjMN" role="3cqZAp">
-                            <node concept="2OqwBi" id="7ujvJshjvqf" role="3clFbG">
-                              <node concept="2OqwBi" id="7ujvJshjk4n" role="2Oq$k0">
-                                <node concept="30H73N" id="7ujvJshjjMM" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="7ujvJshjkH6" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="k2kp:7ujvJshglHw" resolve="relatedPointInstance" />
-                                </node>
-                              </node>
-                              <node concept="3TrcHB" id="7ujvJshjw3q" role="2OqNvi">
-                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="7ujvJshlPjn" role="3cqZAp">
-              <node concept="3cpWsn" id="7ujvJshlPjo" role="3cpWs9">
-                <property role="TrG5h" value="tresholds" />
-                <node concept="3uibUv" id="7ujvJshlPjp" role="1tU5fm">
-                  <ref role="3uigEE" to="wy2b:~JsonArray" resolve="JsonArray" />
-                </node>
-                <node concept="2ShNRf" id="7ujvJshlPjq" role="33vP2m">
-                  <node concept="HV5vD" id="7ujvJshlPjr" role="2ShVmc">
-                    <ref role="HV5vE" to="wy2b:~JsonArray" resolve="JsonArray" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="9aQIb" id="7ujvJshlQco" role="3cqZAp">
-              <node concept="3clFbS" id="7ujvJshlQcp" role="9aQI4">
-                <node concept="3cpWs8" id="7ujvJshlS5o" role="3cqZAp">
-                  <node concept="3cpWsn" id="7ujvJshlS5p" role="3cpWs9">
-                    <property role="TrG5h" value="trashold" />
-                    <node concept="3uibUv" id="7ujvJshlS5q" role="1tU5fm">
-                      <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
-                    </node>
-                    <node concept="2ShNRf" id="7ujvJshlS5r" role="33vP2m">
-                      <node concept="1pGfFk" id="7ujvJshlS5s" role="2ShVmc">
-                        <ref role="37wK5l" to="wy2b:~JsonObject.&lt;init&gt;()" resolve="JsonObject" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7ujvJshlTy2" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ujvJshlTHi" role="3clFbG">
-                    <node concept="37vLTw" id="7ujvJshlTy0" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ujvJshlS5p" resolve="trashold" />
-                    </node>
-                    <node concept="liA8E" id="7ujvJshlTSl" role="2OqNvi">
-                      <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.String)" resolve="addProperty" />
-                      <node concept="Xl_RD" id="7ujvJshlUt_" role="37wK5m">
-                        <property role="Xl_RC" value="name" />
-                      </node>
-                      <node concept="Xl_RD" id="7ujvJshlUAZ" role="37wK5m">
-                        <property role="Xl_RC" value="trasholdName" />
-                        <node concept="17Uvod" id="7ujvJshnp17" role="lGtFl">
-                          <property role="2qtEX9" value="value" />
-                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
-                          <node concept="3zFVjK" id="7ujvJshnp18" role="3zH0cK">
-                            <node concept="3clFbS" id="7ujvJshnp19" role="2VODD2">
-                              <node concept="3clFbF" id="7ujvJshnple" role="3cqZAp">
-                                <node concept="2OqwBi" id="7ujvJshnp_0" role="3clFbG">
-                                  <node concept="30H73N" id="7ujvJshnpld" role="2Oq$k0" />
-                                  <node concept="3TrcHB" id="7ujvJshnCwV" role="2OqNvi">
-                                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7ujvJshlVh6" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ujvJshlVui" role="3clFbG">
-                    <node concept="37vLTw" id="7ujvJshlVh4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ujvJshlS5p" resolve="trashold" />
-                    </node>
-                    <node concept="liA8E" id="7ujvJshlYGh" role="2OqNvi">
-                      <ref role="37wK5l" to="wy2b:~JsonObject.addProperty(java.lang.String,java.lang.Number)" resolve="addProperty" />
-                      <node concept="Xl_RD" id="7ujvJshlZhV" role="37wK5m">
-                        <property role="Xl_RC" value="value" />
-                      </node>
-                      <node concept="3cmrfG" id="7ujvJshnUFk" role="37wK5m">
-                        <property role="3cmrfH" value="0" />
-                        <node concept="17Uvod" id="7ujvJshnViN" role="lGtFl">
-                          <property role="2qtEX9" value="value" />
-                          <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580320020/1068580320021" />
-                          <node concept="3zFVjK" id="7ujvJshnViO" role="3zH0cK">
-                            <node concept="3clFbS" id="7ujvJshnViP" role="2VODD2">
-                              <node concept="3clFbF" id="7ujvJshnWNq" role="3cqZAp">
-                                <node concept="2OqwBi" id="7ujvJshnX7B" role="3clFbG">
-                                  <node concept="30H73N" id="7ujvJshnWNp" role="2Oq$k0" />
-                                  <node concept="3TrcHB" id="7ujvJshobTQ" role="2OqNvi">
-                                    <ref role="3TsBF5" to="k2kp:7ujvJshn5hF" resolve="value" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="7ujvJshm1$h" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ujvJshm2FP" role="3clFbG">
-                    <node concept="37vLTw" id="7ujvJshm2qj" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ujvJshlPjo" resolve="tresholds" />
-                    </node>
-                    <node concept="liA8E" id="7ujvJshm3kO" role="2OqNvi">
-                      <ref role="37wK5l" to="wy2b:~JsonArray.add(com.google.gson.JsonElement)" resolve="add" />
-                      <node concept="37vLTw" id="7ujvJshm3t9" role="37wK5m">
-                        <ref role="3cqZAo" node="7ujvJshlS5p" resolve="trashold" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1WS0z7" id="7ujvJshlQcG" role="lGtFl">
-                <node concept="3JmXsc" id="7ujvJshlQcH" role="3Jn$fo">
-                  <node concept="3clFbS" id="7ujvJshlQcI" role="2VODD2">
-                    <node concept="3clFbF" id="7ujvJshlQcJ" role="3cqZAp">
-                      <node concept="2OqwBi" id="7ujvJshlQcK" role="3clFbG">
-                        <node concept="30H73N" id="7ujvJshlQcL" role="2Oq$k0" />
-                        <node concept="3Tsc0h" id="7ujvJshnooq" role="2OqNvi">
-                          <ref role="3TtcxE" to="k2kp:7ujvJshn5bg" resolve="tresholds" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7ujvJshqUoR" role="3cqZAp">
-              <node concept="2OqwBi" id="7ujvJshqUW9" role="3clFbG">
-                <node concept="37vLTw" id="7ujvJshqUoP" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7ujvJshj34k" resolve="skillLevel" />
-                </node>
-                <node concept="liA8E" id="7ujvJshqWpi" role="2OqNvi">
-                  <ref role="37wK5l" to="wy2b:~JsonObject.add(java.lang.String,com.google.gson.JsonElement)" resolve="add" />
-                  <node concept="Xl_RD" id="7ujvJshqX85" role="37wK5m">
-                    <property role="Xl_RC" value="thresholds" />
-                  </node>
-                  <node concept="37vLTw" id="7ujvJshqXwr" role="37wK5m">
-                    <ref role="3cqZAo" node="7ujvJshlPjo" resolve="tresholds" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7ujvJshku3R" role="3cqZAp">
-              <node concept="2OqwBi" id="7ujvJshkuS3" role="3clFbG">
-                <node concept="37vLTw" id="7ujvJshku$5" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7ujvJshkqmu" resolve="skillLevels" />
-                </node>
-                <node concept="liA8E" id="7ujvJshkvzL" role="2OqNvi">
-                  <ref role="37wK5l" to="wy2b:~JsonArray.add(com.google.gson.JsonElement)" resolve="add" />
-                  <node concept="37vLTw" id="7ujvJshkvFu" role="37wK5m">
-                    <ref role="3cqZAo" node="7ujvJshj34k" resolve="skillLevel" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="7ujvJshj35p" role="3cqZAp">
-              <node concept="3cpWsn" id="7ujvJshj35q" role="3cpWs9">
-                <property role="TrG5h" value="skillLevelJson" />
-                <node concept="17QB3L" id="7ujvJshj35r" role="1tU5fm" />
-                <node concept="2OqwBi" id="7ujvJshj35s" role="33vP2m">
-                  <node concept="37vLTw" id="7ujvJshj35t" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7ujvJshj34k" resolve="skillLevel" />
-                  </node>
-                  <node concept="liA8E" id="7ujvJshj35u" role="2OqNvi">
-                    <ref role="37wK5l" to="wy2b:~JsonElement.toString()" resolve="toString" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="7ujvJshj35C" role="3cqZAp" />
-          </node>
-          <node concept="1WS0z7" id="7ujvJshj35D" role="lGtFl">
-            <node concept="3JmXsc" id="7ujvJshj35E" role="3Jn$fo">
-              <node concept="3clFbS" id="7ujvJshj35F" role="2VODD2">
-                <node concept="3clFbF" id="7ujvJshj35G" role="3cqZAp">
-                  <node concept="2OqwBi" id="7ujvJshmXom" role="3clFbG">
-                    <node concept="30H73N" id="7ujvJshj35I" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7ujvJshn3ZK" role="2OqNvi">
-                      <ref role="3TtcxE" to="k2kp:7ujvJshfzRy" resolve="skillLevels" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7ujvJshj0gP" role="3cqZAp" />
         <node concept="3clFbH" id="7ujvJsht$0_" role="3cqZAp" />
         <node concept="3SKdUt" id="7ujvJsht_yp" role="3cqZAp">
           <node concept="3SKdUq" id="7ujvJsht_yq" role="3SKWNk">
@@ -2867,15 +2600,15 @@
                       <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
                       <node concept="3zFVjK" id="7ujvJsht_yW" role="3zH0cK">
                         <node concept="3clFbS" id="7ujvJsht_yX" role="2VODD2">
-                          <node concept="3clFbF" id="7ujvJsht_yY" role="3cqZAp">
-                            <node concept="2OqwBi" id="7ujvJsht_yZ" role="3clFbG">
-                              <node concept="2OqwBi" id="7ujvJsht_z0" role="2Oq$k0">
-                                <node concept="30H73N" id="7ujvJsht_z1" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="7ujvJsht_z2" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="k2kp:7ujvJshglHw" resolve="relatedPointInstance" />
+                          <node concept="3clFbF" id="62GV8nR9DkX" role="3cqZAp">
+                            <node concept="2OqwBi" id="62GV8nR9MXj" role="3clFbG">
+                              <node concept="2OqwBi" id="62GV8nR9DAx" role="2Oq$k0">
+                                <node concept="30H73N" id="62GV8nR9DkW" role="2Oq$k0" />
+                                <node concept="3TrEf2" id="62GV8nR9Eha" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="k2kp:7ujvJshglKT" resolve="relatedPointInstance" />
                                 </node>
                               </node>
-                              <node concept="3TrcHB" id="7ujvJsht_z3" role="2OqNvi">
+                              <node concept="3TrcHB" id="62GV8nR9Vz5" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
@@ -2926,7 +2659,7 @@
                         <property role="Xl_RC" value="name" />
                       </node>
                       <node concept="Xl_RD" id="7ujvJsht_zl" role="37wK5m">
-                        <property role="Xl_RC" value="trasholdName" />
+                        <property role="Xl_RC" value="tresholdName" />
                         <node concept="17Uvod" id="7ujvJsht_zm" role="lGtFl">
                           <property role="2qtEX9" value="value" />
                           <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
@@ -2996,11 +2729,11 @@
               <node concept="1WS0z7" id="7ujvJsht_zJ" role="lGtFl">
                 <node concept="3JmXsc" id="7ujvJsht_zK" role="3Jn$fo">
                   <node concept="3clFbS" id="7ujvJsht_zL" role="2VODD2">
-                    <node concept="3clFbF" id="7ujvJsht_zM" role="3cqZAp">
-                      <node concept="2OqwBi" id="7ujvJsht_zN" role="3clFbG">
-                        <node concept="30H73N" id="7ujvJsht_zO" role="2Oq$k0" />
-                        <node concept="3Tsc0h" id="7ujvJsht_zP" role="2OqNvi">
-                          <ref role="3TtcxE" to="k2kp:7ujvJshn5bg" resolve="tresholds" />
+                    <node concept="3clFbF" id="62GV8nR7kVH" role="3cqZAp">
+                      <node concept="2OqwBi" id="62GV8nR7mX4" role="3clFbG">
+                        <node concept="30H73N" id="62GV8nR7kVG" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="62GV8nR7qrs" role="2OqNvi">
+                          <ref role="3TtcxE" to="k2kp:7ujvJshn5rz" resolve="thresholds" />
                         </node>
                       </node>
                     </node>
@@ -3059,8 +2792,8 @@
                 <node concept="3clFbF" id="7ujvJsht_$i" role="3cqZAp">
                   <node concept="2OqwBi" id="7ujvJsht_$j" role="3clFbG">
                     <node concept="30H73N" id="7ujvJsht_$k" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="7ujvJsht_$l" role="2OqNvi">
-                      <ref role="3TtcxE" to="k2kp:7ujvJshfzRy" resolve="skillLevels" />
+                    <node concept="3Tsc0h" id="62GV8nR6NKL" role="2OqNvi">
+                      <ref role="3TtcxE" to="k2kp:7ujvJshfzU1" resolve="experiencelevels" />
                     </node>
                   </node>
                 </node>
@@ -3078,19 +2811,6 @@
             <node concept="2ShNRf" id="7ujvJshunj$" role="33vP2m">
               <node concept="1pGfFk" id="7ujvJshunxM" role="2ShVmc">
                 <ref role="37wK5l" to="wy2b:~JsonArray.&lt;init&gt;()" resolve="JsonArray" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7ujvJshupdu" role="3cqZAp">
-          <node concept="2OqwBi" id="7ujvJshuxmY" role="3clFbG">
-            <node concept="37vLTw" id="7ujvJshupds" role="2Oq$k0">
-              <ref role="3cqZAo" node="7ujvJshujOd" resolve="result" />
-            </node>
-            <node concept="liA8E" id="7ujvJshu$Vg" role="2OqNvi">
-              <ref role="37wK5l" to="wy2b:~JsonArray.addAll(com.google.gson.JsonArray)" resolve="addAll" />
-              <node concept="37vLTw" id="7ujvJshu_4I" role="37wK5m">
-                <ref role="3cqZAo" node="7ujvJshkqmu" resolve="skillLevels" />
               </node>
             </node>
           </node>
@@ -3133,7 +2853,7 @@
             <node concept="liA8E" id="7ujvJshtK2Z" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="7ujvJshtK30" role="37wK5m">
-                <property role="Xl_RC" value="6. SKILL and EXPERIENCE LEVELS ADDED" />
+                <property role="Xl_RC" value="6. EXPERIENCE LEVELS ADDED" />
               </node>
             </node>
           </node>

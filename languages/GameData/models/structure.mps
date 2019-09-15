@@ -183,6 +183,7 @@
   <node concept="1TIwiD" id="5PxVQVFAGm_">
     <property role="EcuMT" value="6728922577946461605" />
     <property role="TrG5h" value="BonusPointType" />
+    <property role="34LRSv" value="bonusPointType" />
     <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGmA" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461606" />
@@ -194,6 +195,7 @@
     <property role="EcuMT" value="6728922577946461609" />
     <property role="TrG5h" value="ChallengeData" />
     <property role="34LRSv" value="challengeData" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5PxVQVFAGmE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -202,36 +204,42 @@
       <property role="IQ2ns" value="6728922577946461613" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="bonusScore" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5PxVQVFAGmK" resolve="bonusScore" />
     </node>
     <node concept="1TJgyj" id="5PxVQVFAGn2" role="1TKVEi">
       <property role="IQ2ns" value="6728922577946461634" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="bonusPointType" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5PxVQVFAGm_" resolve="BonusPointType" />
     </node>
     <node concept="1TJgyj" id="5PxVQVFAGn7" role="1TKVEi">
       <property role="IQ2ns" value="6728922577946461639" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="virtualPrice" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5PxVQVFAGmu" resolve="virtualPriceType" />
     </node>
     <node concept="1TJgyj" id="5PxVQVFAGne" role="1TKVEi">
       <property role="IQ2ns" value="6728922577946461646" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="prizeWon" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5PxVQVFAGmj" resolve="prizeWon" />
     </node>
     <node concept="1TJgyj" id="5PxVQVFAGnI" role="1TKVEi">
       <property role="IQ2ns" value="6728922577946461678" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="legName" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5PxVQVFAGnE" resolve="legNameType" />
     </node>
   </node>
   <node concept="1TIwiD" id="5PxVQVFAGmK">
     <property role="EcuMT" value="6728922577946461616" />
     <property role="TrG5h" value="bonusScore" />
+    <property role="34LRSv" value="bonusScore" />
     <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGmL" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461617" />
@@ -242,6 +250,7 @@
   <node concept="1TIwiD" id="5PxVQVFAGnE">
     <property role="EcuMT" value="6728922577946461674" />
     <property role="TrG5h" value="legNameType" />
+    <property role="34LRSv" value="legName" />
     <ref role="1TJDcQ" node="2fEMsICX2Mt" resolve="GameDataType" />
     <node concept="1TJgyi" id="5PxVQVFAGnF" role="1TKVEl">
       <property role="IQ2nx" value="6728922577946461675" />

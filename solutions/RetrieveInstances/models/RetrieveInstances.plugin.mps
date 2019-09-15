@@ -738,7 +738,7 @@
       <node concept="3Tm6S6" id="1wHdSt9cWQR" role="1B3o_S" />
       <node concept="17QB3L" id="1wHdSt9cXb1" role="1tU5fm" />
       <node concept="Xl_RD" id="1wHdSt9cXqm" role="33vP2m">
-        <property role="Xl_RC" value="4f513a2b-9669-4c6b-b9c4-60c227920fb0" />
+        <property role="Xl_RC" value="954ec938-17b7-4477-ae70-64c43b27712f" />
       </node>
     </node>
     <node concept="Wx3nA" id="1wHdSt9dpYE" role="jymVt">
@@ -925,6 +925,21 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="62GV8nRhckz" role="3cqZAp">
+          <node concept="3cpWsn" id="62GV8nRhckA" role="3cpWs9">
+            <property role="TrG5h" value="count" />
+            <node concept="10Oyi0" id="62GV8nRhckx" role="1tU5fm" />
+            <node concept="3cmrfG" id="62GV8nRhfBX" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="62GV8nRgVKr" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="Xl_RD" id="62GV8nRgVKt" role="9lYJi">
+            <property role="Xl_RC" value="------INSTANCES RETRIEVING STARTED-----" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="4Y3P5Ei7BU7" role="3cqZAp">
           <node concept="3cpWsn" id="4Y3P5Ei7BU8" role="3cpWs9">
             <property role="TrG5h" value="domain" />
@@ -1089,6 +1104,13 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="62GV8nRhhXX" role="3cqZAp">
+                  <node concept="3uNrnE" id="62GV8nRhjLg" role="3clFbG">
+                    <node concept="37vLTw" id="62GV8nRhjLi" role="2$L3a6">
+                      <ref role="3cqZAo" node="62GV8nRhckA" resolve="count" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbH" id="7G8vwhw6nz7" role="3cqZAp" />
               </node>
               <node concept="3cpWsn" id="7G8vwhw4gkG" role="1Duv9x">
@@ -1103,6 +1125,17 @@
                 </node>
                 <node concept="liA8E" id="7G8vwhw4u4O" role="2OqNvi">
                   <ref role="37wK5l" node="7G8vwhw2vzK" resolve="getContent" />
+                </node>
+              </node>
+            </node>
+            <node concept="2xdQw9" id="62GV8nRhncs" role="3cqZAp">
+              <property role="2xdLsb" value="info" />
+              <node concept="3cpWs3" id="62GV8nRhtKJ" role="9lYJi">
+                <node concept="37vLTw" id="62GV8nRhuG7" role="3uHU7w">
+                  <ref role="3cqZAo" node="62GV8nRhckA" resolve="count" />
+                </node>
+                <node concept="Xl_RD" id="62GV8nRhncu" role="3uHU7B">
+                  <property role="Xl_RC" value="NUMBER OF INSTANCES: " />
                 </node>
               </node>
             </node>
@@ -2002,7 +2035,7 @@
             <property role="TrG5h" value="neededDays" />
             <node concept="10Oyi0" id="3i8R4mWrec$" role="1tU5fm" />
             <node concept="3cmrfG" id="3i8R4mWrk8g" role="33vP2m">
-              <property role="3cmrfH" value="0" />
+              <property role="3cmrfH" value="14" />
             </node>
           </node>
         </node>
@@ -2011,7 +2044,7 @@
             <property role="TrG5h" value="delay" />
             <node concept="10Oyi0" id="3i8R4mWrtEG" role="1tU5fm" />
             <node concept="3cmrfG" id="3i8R4mWrxc1" role="33vP2m">
-              <property role="3cmrfH" value="0" />
+              <property role="3cmrfH" value="2" />
             </node>
           </node>
         </node>
@@ -2029,7 +2062,7 @@
             <property role="TrG5h" value="completitionPercentage" />
             <node concept="10Oyi0" id="3i8R4mWrEqZ" role="1tU5fm" />
             <node concept="3cmrfG" id="3i8R4mWrL2N" role="33vP2m">
-              <property role="3cmrfH" value="0" />
+              <property role="3cmrfH" value="40" />
             </node>
           </node>
         </node>

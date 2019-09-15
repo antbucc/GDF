@@ -63,6 +63,7 @@
   </runtime>
   <extendedLanguages>
     <extendedLanguage>bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)</extendedLanguage>
+    <extendedLanguage>dc26d825-2883-4e88-933c-f0e9f65c69c4(GameData)</extendedLanguage>
   </extendedLanguages>
 </language>
 

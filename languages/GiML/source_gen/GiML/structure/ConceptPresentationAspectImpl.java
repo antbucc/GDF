@@ -10,6 +10,8 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BadgeCollectionInstance;
+  private ConceptPresentation props_BadgeInstance;
+  private ConceptPresentation props_ChallengeVariable;
   private ConceptPresentation props_ClassroomInstance;
   private ConceptPresentation props_DomainInstance;
   private ConceptPresentation props_ExperienceLevelInstance;
@@ -18,9 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_LevelTresholds;
   private ConceptPresentation props_SchoolInstance;
   private ConceptPresentation props_SinglePlayerChallengeInstance;
-  private ConceptPresentation props_SkillLevelInstance;
   private ConceptPresentation props_StudentInstance;
-  private ConceptPresentation props_challengeVariable;
   private ConceptPresentation props_dataDrivenActionInstance;
   private ConceptPresentation props_eventDrivenActionInstance;
   private ConceptPresentation props_experiencePointInstance;
@@ -39,6 +39,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BadgeCollectionInstance = cpb.create();
         }
         return props_BadgeCollectionInstance;
+      case LanguageConceptSwitch.BadgeInstance:
+        if (props_BadgeInstance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_BadgeInstance = cpb.create();
+        }
+        return props_BadgeInstance;
+      case LanguageConceptSwitch.ChallengeVariable:
+        if (props_ChallengeVariable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ChallengeVariable = cpb.create();
+        }
+        return props_ChallengeVariable;
       case LanguageConceptSwitch.ClassroomInstance:
         if (props_ClassroomInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -95,13 +109,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SinglePlayerChallengeInstance = cpb.create();
         }
         return props_SinglePlayerChallengeInstance;
-      case LanguageConceptSwitch.SkillLevelInstance:
-        if (props_SkillLevelInstance == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_SkillLevelInstance = cpb.create();
-        }
-        return props_SkillLevelInstance;
       case LanguageConceptSwitch.StudentInstance:
         if (props_StudentInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -109,13 +116,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_StudentInstance = cpb.create();
         }
         return props_StudentInstance;
-      case LanguageConceptSwitch.challengeVariable:
-        if (props_challengeVariable == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_challengeVariable = cpb.create();
-        }
-        return props_challengeVariable;
       case LanguageConceptSwitch.dataDrivenActionInstance:
         if (props_dataDrivenActionInstance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

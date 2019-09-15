@@ -406,23 +406,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="7ujvJshf$ep" role="3EZMnx">
-        <property role="3F0ifm" value=" Skill Levels" />
-        <node concept="pVoyu" id="7ujvJshf$gz" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="7ujvJshf$_c" role="3EZMnx" />
-      <node concept="3EZMnI" id="7ujvJshf$sU" role="3EZMnx">
-        <node concept="2iRkQZ" id="7ujvJshf$sV" role="2iSdaV" />
-        <node concept="3F2HdR" id="7ujvJshf$yp" role="3EZMnx">
-          <ref role="1NtTu8" to="k2kp:7ujvJshfzRy" resolve="skillLevels" />
-          <node concept="2iRkQZ" id="7ujvJshf$yr" role="2czzBx" />
-        </node>
-        <node concept="pVoyu" id="7ujvJshf$GA" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="7ujvJshf$O_" role="3EZMnx">
         <property role="3F0ifm" value="Experience Level" />
         <node concept="pVoyu" id="7ujvJshf$Rm" role="3F10Kt">
@@ -1160,7 +1143,7 @@
           <property role="3F0ifm" value="type" />
         </node>
         <node concept="1iCGBv" id="62GV8nQb3s1" role="3EZMnx">
-          <ref role="1NtTu8" to="k2kp:62GV8nQauVH" resolve="type" />
+          <ref role="1NtTu8" to="k2kp:62GV8nQkh1f" resolve="type" />
           <node concept="1sVBvm" id="62GV8nQb3s3" role="1sWHZn">
             <node concept="3F0A7n" id="62GV8nQb3Rh" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -1204,7 +1187,7 @@
           </node>
         </node>
         <node concept="3F2HdR" id="62GV8nQb21t" role="3EZMnx">
-          <ref role="1NtTu8" to="mupf:3VGM6JgdUrH" resolve="badgesEarned" />
+          <ref role="1NtTu8" to="k2kp:62GV8nQscr_" resolve="badgesEarned" />
           <node concept="l2Vlx" id="62GV8nQb21u" role="2czzBx" />
           <node concept="pj6Ft" id="62GV8nQb21v" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -1223,9 +1206,55 @@
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
-      <node concept="3F0ifn" id="62GV8nQb4Lg" role="3EZMnx">
-        <property role="3F0ifm" value="------------------------------------" />
-        <node concept="pVoyu" id="62GV8nQb4Lh" role="3F10Kt">
+      <node concept="3F0ifn" id="62GV8nQx9mN" role="3EZMnx">
+        <node concept="pVoyu" id="62GV8nQx9E8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="62GV8nQnGAm">
+    <ref role="1XX52x" to="k2kp:62GV8nQn7Zy" resolve="BadgeInstance" />
+    <node concept="3EZMnI" id="62GV8nQnGOG" role="2wV5jI">
+      <node concept="l2Vlx" id="62GV8nQnGOH" role="2iSdaV" />
+      <node concept="3F0ifn" id="62GV8nQnGOI" role="3EZMnx">
+        <property role="3F0ifm" value="badge instance" />
+      </node>
+      <node concept="3F0A7n" id="62GV8nQnGOJ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="62GV8nQnGOK" role="3EZMnx">
+        <property role="3F0ifm" value="badge type" />
+      </node>
+      <node concept="1iCGBv" id="62GV8nQnGOL" role="3EZMnx">
+        <ref role="1NtTu8" to="k2kp:62GV8nQn8JJ" resolve="badgeType" />
+        <node concept="1sVBvm" id="62GV8nQnGOO" role="1sWHZn">
+          <node concept="3F0A7n" id="62GV8nQnGOQ" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="62GV8nQnGOR" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="62GV8nQnGOS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="62GV8nQLFxp">
+    <ref role="1XX52x" to="k2kp:6xXDyh7wIVR" resolve="ChallengeVariable" />
+    <node concept="3EZMnI" id="62GV8nQLFR5" role="2wV5jI">
+      <node concept="l2Vlx" id="62GV8nQLFR6" role="2iSdaV" />
+      <node concept="3F0ifn" id="62GV8nQLFR7" role="3EZMnx">
+        <property role="3F0ifm" value="challengeVariable" />
+      </node>
+      <node concept="3F0A7n" id="62GV8nQLFR8" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="62GV8nQLFRg" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="62GV8nQLFRh" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

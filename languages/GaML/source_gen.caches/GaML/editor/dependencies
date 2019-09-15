@@ -75,7 +75,7 @@
     <classNode dependClassName="GaML.editor.Classroom_Editor" />
     <classNode dependClassName="GaML.editor.ComplexTeam_Editor" />
     <classNode dependClassName="GaML.editor.KGGBadgeCollection_Editor" />
-    <classNode dependClassName="GaML.editor.badgeType_Editor" />
+    <classNode dependClassName="GaML.editor.KGGBadge_Editor" />
     <classNode dependClassName="GaML.editor.skillPoint_Editor" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
@@ -135,14 +135,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="GaML.editor.badgeType_Editor">
-    <classNode dependClassName="GaML.editor.badgeType_EditorBuilder_a" />
+  <dependency className="GaML.editor.KGGBadge_Editor">
+    <classNode dependClassName="GaML.editor.KGGBadge_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="GaML.editor.badgeType_EditorBuilder_a">
+  <dependency className="GaML.editor.KGGBadge_EditorBuilder_a">
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Objects" />

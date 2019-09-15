@@ -25,7 +25,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
-    deps.aggregatedLanguage(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, "GiML");
   }
 
   @Override
@@ -73,7 +72,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:81a15a54-0e5b-47b0-85ef-23fcbab23d25(GadML.structure)/1401228033544926446");
     b.version(2);
-    b.aggregate("challengeInstance", 0x13722978f4c3b57fL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L).optional(false).ordered(true).multiple(false).origin("1401228033544926591").done();
+    b.associate("challengeInstance", 0x60acec85f73b8613L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L).optional(false).origin("6966202783757993491").done();
     b.alias("newChallenge");
     return b.create();
   }

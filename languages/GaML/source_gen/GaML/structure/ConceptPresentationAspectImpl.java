@@ -13,16 +13,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ComplexTeam;
   private ConceptPresentation props_Dashboard;
   private ConceptPresentation props_Domain;
-  private ConceptPresentation props_ExperienceLevelDefinition;
+  private ConceptPresentation props_ExperienceLevel;
   private ConceptPresentation props_GameDefinition;
   private ConceptPresentation props_Institute;
+  private ConceptPresentation props_KGGBadge;
   private ConceptPresentation props_KGGBadgeCollection;
   private ConceptPresentation props_School;
   private ConceptPresentation props_SinglePlayerChallenge;
-  private ConceptPresentation props_SkillLevelDefinition;
   private ConceptPresentation props_Student;
   private ConceptPresentation props_Volontario;
-  private ConceptPresentation props_badgeType;
   private ConceptPresentation props_dataDrivenAction;
   private ConceptPresentation props_eventDrivenAction;
   private ConceptPresentation props_experiencePoint;
@@ -61,13 +60,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Domain = cpb.create();
         }
         return props_Domain;
-      case LanguageConceptSwitch.ExperienceLevelDefinition:
-        if (props_ExperienceLevelDefinition == null) {
+      case LanguageConceptSwitch.ExperienceLevel:
+        if (props_ExperienceLevel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_ExperienceLevelDefinition = cpb.create();
+          props_ExperienceLevel = cpb.create();
         }
-        return props_ExperienceLevelDefinition;
+        return props_ExperienceLevel;
       case LanguageConceptSwitch.GameDefinition:
         if (props_GameDefinition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -82,6 +81,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Institute = cpb.create();
         }
         return props_Institute;
+      case LanguageConceptSwitch.KGGBadge:
+        if (props_KGGBadge == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_KGGBadge = cpb.create();
+        }
+        return props_KGGBadge;
       case LanguageConceptSwitch.KGGBadgeCollection:
         if (props_KGGBadgeCollection == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -103,13 +109,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SinglePlayerChallenge = cpb.create();
         }
         return props_SinglePlayerChallenge;
-      case LanguageConceptSwitch.SkillLevelDefinition:
-        if (props_SkillLevelDefinition == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_SkillLevelDefinition = cpb.create();
-        }
-        return props_SkillLevelDefinition;
       case LanguageConceptSwitch.Student:
         if (props_Student == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -124,13 +123,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Volontario = cpb.create();
         }
         return props_Volontario;
-      case LanguageConceptSwitch.badgeType:
-        if (props_badgeType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_badgeType = cpb.create();
-        }
-        return props_badgeType;
       case LanguageConceptSwitch.dataDrivenAction:
         if (props_dataDrivenAction == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -17,7 +17,7 @@ public class GameInstance_8 {
   private static String apiChallengeUrl = "https://dev.smartcommunitylab.it/gamification/model/game/";
   private static String apiIstituteUrl = "https://climbdev.smartcommunitylab.it/v2/api/institute/";
   private static String apiSchoolUrl = "https://climbdev.smartcommunitylab.it/v2/api/school/";
-  private static String Token = "4f513a2b-9669-4c6b-b9c4-60c227920fb0";
+  private static String Token = "954ec938-17b7-4477-ae70-64c43b27712f";
 
 
   private static String credentials = Credentials.basic("long-rovereto", "long_RoVg@me");
@@ -44,9 +44,9 @@ public class GameInstance_8 {
     // create School 
     JsonObject objSchool = new JsonObject();
     // 1. Creation of the body call - json object 
-    objSchool.addProperty("address", "Via Sommarive, 18 (TN)");
-    objSchool.addProperty("name", "FBK ICT");
-    objSchool.addProperty("objectId", "842b4677-f285-4440-accf-20cdda76fd6c");
+    objSchool.addProperty("address", "Mercato Coperto");
+    objSchool.addProperty("name", "Climathon Ferrara");
+    objSchool.addProperty("objectId", "c2dd529c-18a9-4162-9b9c-3ba1e5ddc1a6");
     objSchool.addProperty("ownerId", "TEST");
     String jsonStringSchool = objSchool.toString();
     RequestBody bodySchool = RequestBody.create(JSON, jsonStringSchool);
@@ -55,38 +55,17 @@ public class GameInstance_8 {
 
     // execute POST call to save the gamification Instance 
     JsonObject obj = new JsonObject();
-    String gameID = "idModels2019";
+    String gameID = "5bd1beb7e4b017b723f0976d";
     // 1. Creation of the body call - json object 
-    obj.addProperty("id", "idModels2019");
-    obj.addProperty("name", "Demo-Models2019");
+    obj.addProperty("id", "5bd1beb7e4b017b723f0976d");
+    obj.addProperty("name", "Climathon Ferrara");
     obj.addProperty("domain", "TEST");
 
 
     // add game points 
     JsonArray points = new JsonArray();
     // Experience Points 
-    {
-      JsonObject point = new JsonObject();
-      point.addProperty("id", "sss");
-      point.addProperty("name", "sss");
-      point.addProperty("score", 0);
-      points.add(point);
-    }
-    {
-      JsonObject point = new JsonObject();
-      point.addProperty("id", "gdasds");
-      point.addProperty("name", "ertre");
-      point.addProperty("score", 0);
-      points.add(point);
-    }
     // Skill Points 
-    {
-      JsonObject point = new JsonObject();
-      point.addProperty("id", "skp1");
-      point.addProperty("name", "test");
-      point.addProperty("score", 0);
-      points.add(point);
-    }
 
     // add Skill and Experience Points 
     obj.add("pointConcept", points);
@@ -96,11 +75,7 @@ public class GameInstance_8 {
     // add game actions 
     JsonArray actions = new JsonArray();
     // data driven actions 
-    actions.add("wewe");
     // event driven actions 
-    actions.add("qewqe");
-    actions.add("qwewqe");
-    actions.add("werwrewr");
 
     obj.add("actions", actions);
     System.out.println("3. ACTIONS ADDED");
@@ -109,20 +84,6 @@ public class GameInstance_8 {
     //  add badge Collections 
     JsonArray badgeCollections = new JsonArray();
 
-    {
-      JsonObject badgeCollection = new JsonObject();
-      badgeCollection.addProperty("id", "werew");
-      badgeCollection.addProperty("name", "dfsdfds");
-      JsonArray badgesEarned = new JsonArray();
-      badgesEarned.add("werewqeew");
-      badgeCollection.add("badgeEarned", badgesEarned);
-      badgesEarned.add("wereqwew");
-      badgeCollection.add("badgeEarned", badgesEarned);
-
-      badgesEarned.add("badgeName");
-      badgeCollection.add("badgeEarned", badgesEarned);
-      badgeCollections.add(badgeCollection);
-    }
 
 
     obj.add("badgeCollectionConcept", badgeCollections);
@@ -130,25 +91,8 @@ public class GameInstance_8 {
     System.out.println("4. BADGE COLLECTIONS ADDED");
 
     //  single Player Challenges 
-    {
-      JsonObject challenge = new JsonObject();
-      challenge.addProperty("gameId", gameID);
-      challenge.addProperty("id", "qwewq");
-      challenge.addProperty("name", "eqwewqe");
-      JsonArray variables = new JsonArray();
-      variables.add("qweqwe");
-      challenge.add("variables", variables);
-      String challengeJson = challenge.toString();
-      RequestBody body = RequestBody.create(JSON, challengeJson);
-      doPostChallenge(body, gameID);
-
-    }
 
     System.out.println("5. CHALLENGES ADDED");
-
-    //  skill Level 
-    JsonArray skillLevels = new JsonArray();
-
 
 
     //  experience Level 
@@ -156,10 +100,9 @@ public class GameInstance_8 {
 
 
     JsonArray result = new JsonArray();
-    result.addAll(skillLevels);
     result.addAll(experienceLevels);
     obj.add("levels", result);
-    System.out.println("6. SKILL and EXPERIENCE LEVELS ADDED");
+    System.out.println("6. EXPERIENCE LEVELS ADDED");
 
 
     String jsonString = obj.toString();

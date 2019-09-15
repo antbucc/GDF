@@ -103,7 +103,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:23080719-0c76-4e9e-8c0c-a8d86a3fa0ac(GML.structure)/4534219290235610857");
     b.version(2);
-    b.aggregate("badgesEarned", 0x3eecc86bd037a6edL).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a6e2L).optional(true).ordered(true).multiple(true).origin("4534219290235610861").done();
     b.alias("badgeCollection");
     return b.create();
   }

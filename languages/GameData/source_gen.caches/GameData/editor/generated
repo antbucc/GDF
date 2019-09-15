@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="9c6ydu5cpmti47igehl8dq2jmn0nhp4">
-  <files names="EditorAspectDescriptorImpl.java:GameDataType_Editor.java:GameDataType_EditorBuilder_a.java" />
+<product version="3" modelHash="-hjcxq6v97bqgebrz1086sa4x2j3if8">
+  <files names="BonusPointType_Editor.java:BonusPointType_EditorBuilder_a.java:ChallengeData_Editor.java:ChallengeData_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:GameDataType_Editor.java:GameDataType_EditorBuilder_a.java:bonusScore_Editor.java:bonusScore_EditorBuilder_a.java:legNameType_Editor.java:legNameType_EditorBuilder_a.java" />
 </product>
 

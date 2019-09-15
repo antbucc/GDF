@@ -35,7 +35,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BonusPointType:
         if (props_BonusPointType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("BonusPointType");
+          cpb.rawPresentation("bonusPointType");
           props_BonusPointType = cpb.create();
         }
         return props_BonusPointType;
@@ -112,7 +112,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.legNameType:
         if (props_legNameType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("legNameType");
+          cpb.rawPresentation("legName");
           props_legNameType = cpb.create();
         }
         return props_legNameType;

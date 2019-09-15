@@ -20,6 +20,7 @@
         <dependency reexport="false">0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da(GamificationRuntime)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">6e6a1b54-471b-4b64-a6e7-2b3ccf9cdeb4(RetrieveInstances)</dependency>
+        <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -50,6 +51,7 @@
         <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
         <module reference="601ea67c-6c1a-48f6-aba0-130276016d55(GML.sandbox)" version="0" />
         <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
+        <module reference="dc26d825-2883-4e88-933c-f0e9f65c69c4(GameData)" version="0" />
         <module reference="0a77d5f4-8d7b-4d48-a6e2-5effeab0e6da(GamificationRuntime)" version="0" />
         <module reference="119e117f-1260-4f12-b46e-efd3d0e4c44f(GiML)" version="0" />
         <module reference="fb20cb40-4d51-4806-a3a0-b796e96fc370(GiML#01)" version="0" />
@@ -60,7 +62,9 @@
         <module reference="26b3d6d5-b99a-4ed6-83be-d2ea6f3627a1(jetbrains.mps.calculator)" version="0" />
         <module reference="08449a34-9b3a-444f-ab50-306e3fd12e6d(jetbrains.mps.calculator#1241363159626)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
+        <module reference="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="a4829704-6b1b-4b3f-8122-a4a2e6ac90ff(org.mar9000.mps.ecmascript)" version="0" />
       </dependencyVersions>
       <mapping-priorities />

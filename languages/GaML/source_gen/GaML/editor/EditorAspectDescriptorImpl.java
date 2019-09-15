@@ -22,9 +22,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 1:
         return Collections.<ConceptEditor>singletonList(new ComplexTeam_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new KGGBadgeCollection_Editor());
+        return Collections.<ConceptEditor>singletonList(new KGGBadge_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new badgeType_Editor());
+        return Collections.<ConceptEditor>singletonList(new KGGBadgeCollection_Editor());
       case 4:
         return Collections.<ConceptEditor>singletonList(new skillPoint_Editor());
       default:
@@ -34,5 +34,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f62e900aL), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f6307751L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da6244723bd23L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe319L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f6307751L), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f62e900aL), MetaIdFactory.conceptId(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x687da6244723bd23L)).seal();
 }

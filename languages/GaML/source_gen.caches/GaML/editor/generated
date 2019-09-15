@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3g1cnt32mi0b7rxy2fkw9gzlqsxxhu0">
-  <files names="Classroom_Editor.java:Classroom_EditorBuilder_a.java:ComplexTeam_Editor.java:ComplexTeam_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:KGGBadgeCollection_Editor.java:KGGBadgeCollection_EditorBuilder_a.java:badgeType_Editor.java:badgeType_EditorBuilder_a.java:skillPoint_Editor.java:skillPoint_EditorBuilder_a.java" />
+<product version="3" modelHash="-4jvuq3sul27j9m3mr0exqqnmpdpw0yu">
+  <files names="Classroom_Editor.java:Classroom_EditorBuilder_a.java:ComplexTeam_Editor.java:ComplexTeam_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:KGGBadgeCollection_Editor.java:KGGBadgeCollection_EditorBuilder_a.java:KGGBadge_Editor.java:KGGBadge_EditorBuilder_a.java:skillPoint_Editor.java:skillPoint_EditorBuilder_a.java" />
 </product>
 

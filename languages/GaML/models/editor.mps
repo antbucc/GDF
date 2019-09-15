@@ -15,11 +15,11 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
-        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -88,58 +88,64 @@
   </node>
   <node concept="24kQdi" id="62GV8nQc25Y">
     <ref role="1XX52x" to="2qee:62GV8nQbD0a" resolve="KGGBadgeCollection" />
-    <node concept="3EZMnI" id="62GV8nQc2nO" role="2wV5jI">
-      <node concept="l2Vlx" id="62GV8nQc2nP" role="2iSdaV" />
-      <node concept="3F0ifn" id="62GV8nQc2nQ" role="3EZMnx">
+    <node concept="3EZMnI" id="62GV8nQqGH6" role="2wV5jI">
+      <node concept="l2Vlx" id="62GV8nQqGH7" role="2iSdaV" />
+      <node concept="3F0ifn" id="62GV8nQqGH8" role="3EZMnx">
         <property role="3F0ifm" value="KGG badge collection" />
       </node>
-      <node concept="3F0A7n" id="62GV8nQc2nR" role="3EZMnx">
+      <node concept="3F0A7n" id="62GV8nQqGH9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="62GV8nQc2nS" role="3EZMnx">
+      <node concept="3F0ifn" id="62GV8nQqGHa" role="3EZMnx">
         <property role="3F0ifm" value="{" />
-        <node concept="3mYdg7" id="62GV8nQc2nT" role="3F10Kt">
+        <node concept="3mYdg7" id="62GV8nQqGHb" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
-        <node concept="ljvvj" id="62GV8nQc2nU" role="3F10Kt">
+        <node concept="ljvvj" id="62GV8nQqGHc" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="62GV8nQc2nV" role="3EZMnx">
-        <node concept="l2Vlx" id="62GV8nQc2nW" role="2iSdaV" />
-        <node concept="lj46D" id="62GV8nQc2nX" role="3F10Kt">
+      <node concept="3EZMnI" id="62GV8nQqGHd" role="3EZMnx">
+        <node concept="l2Vlx" id="62GV8nQqGHe" role="2iSdaV" />
+        <node concept="lj46D" id="62GV8nQqGHf" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="3F0ifn" id="62GV8nQc2nY" role="3EZMnx">
-          <property role="3F0ifm" value="badges earned" />
+        <node concept="3F0ifn" id="62GV8nQqGHg" role="3EZMnx">
+          <property role="3F0ifm" value="badge types" />
         </node>
-        <node concept="3F0ifn" id="62GV8nQc2nZ" role="3EZMnx">
+        <node concept="3F0ifn" id="62GV8nQqGHh" role="3EZMnx">
           <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="62GV8nQc2o0" role="3F10Kt">
+          <node concept="11L4FC" id="62GV8nQqGHi" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="ljvvj" id="62GV8nQc2o1" role="3F10Kt">
+          <node concept="ljvvj" id="62GV8nQqGHj" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
-        <node concept="3F2HdR" id="62GV8nQcm3a" role="3EZMnx">
+        <node concept="3F2HdR" id="62GV8nQqGHk" role="3EZMnx">
           <ref role="1NtTu8" to="2qee:62GV8nQcim8" resolve="badgeTypes" />
-          <node concept="l2Vlx" id="62GV8nQcm3c" role="2czzBx" />
-          <node concept="3F0A7n" id="62GV8nQcmdh" role="2czzBI">
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="l2Vlx" id="62GV8nQqGHl" role="2czzBx" />
+          <node concept="pj6Ft" id="62GV8nQqGHm" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="62GV8nQqGHn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="62GV8nQqGHo" role="3F10Kt">
+            <property role="VOm3f" value="true" />
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="62GV8nQc2o7" role="3EZMnx">
+      <node concept="3F0ifn" id="62GV8nQqGHp" role="3EZMnx">
         <property role="3F0ifm" value="}" />
-        <node concept="3mYdg7" id="62GV8nQc2o8" role="3F10Kt">
+        <node concept="3mYdg7" id="62GV8nQqGHq" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="62GV8nQc899">
-    <ref role="1XX52x" to="2qee:62GV8nQc7th" resolve="badgeType" />
+    <ref role="1XX52x" to="2qee:62GV8nQc7th" resolve="KGGBadge" />
     <node concept="3EZMnI" id="62GV8nQc8ed" role="2wV5jI">
       <node concept="l2Vlx" id="62GV8nQc8ee" role="2iSdaV" />
       <node concept="3F0ifn" id="62GV8nQc8ef" role="3EZMnx">

@@ -86,6 +86,7 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="bc08d5ab-032d-46dc-9964-46504a89c9c8(GML)" version="0" />
     <module reference="1472546d-a964-48a0-a11e-4271b165a42c(GaML)" version="0" />
+    <module reference="dc26d825-2883-4e88-933c-f0e9f65c69c4(GameData)" version="0" />
     <module reference="119e117f-1260-4f12-b46e-efd3d0e4c44f(GiML)" version="0" />
     <module reference="e0fa7306-98c0-4625-a0e1-147e7b18cdbd(GsML)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />

@@ -1,3 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2" />
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:ddf110e4-b1ef-4018-8345-32048de16c4d(GadML.sandbox)/6966202783758049653">
+    <file name="newChallenge_0.java">
+      <node id="6966202783758049653" at="16,0,17,0" concept="6" trace="apiChallengeUrl" />
+      <node id="6966202783758049653" at="17,0,18,0" concept="6" trace="credentials" />
+      <node id="6966202783758049653" at="18,0,19,0" concept="6" trace="JSON" />
+      <node id="6966202783758049653" at="19,46,20,10" concept="1" />
+      <node id="6966202783758049653" at="24,40,25,54" concept="4" />
+      <node id="6966202783758049653" at="25,54,26,44" concept="3" />
+      <node id="6966202783758049653" at="26,44,27,52" concept="1" />
+      <node id="6966202783758049653" at="27,52,28,39" concept="1" />
+      <node id="6966202783758049653" at="28,39,29,48" concept="1" />
+      <node id="6966202783758049653" at="29,48,30,42" concept="3" />
+      <node id="6966202783758049653" at="30,42,31,32" concept="1" />
+      <node id="6966202783758049653" at="31,32,32,36" concept="1" />
+      <node id="6966202783758049653" at="32,36,33,34" concept="1" />
+      <node id="6966202783758049653" at="33,34,34,30" concept="1" />
+      <node id="6966202783758049653" at="34,30,35,29" concept="1" />
+      <node id="6966202783758049653" at="35,29,36,42" concept="1" />
+      <node id="6966202783758049653" at="36,42,37,48" concept="3" />
+      <node id="6966202783758049653" at="37,48,38,63" concept="3" />
+      <node id="6966202783758049653" at="38,63,39,59" concept="4" />
+      <node id="6966202783758049653" at="39,59,40,42" concept="1" />
+      <node id="6966202783758049653" at="40,42,41,43" concept="1" />
+      <node id="6966202783758049653" at="41,43,42,0" concept="5" />
+      <node id="6966202783758049653" at="45,83,46,45" concept="3" />
+      <node id="6966202783758049653" at="46,45,47,62" concept="3" />
+      <node id="6966202783758049653" at="47,62,48,114" concept="3" />
+      <node id="6966202783758049653" at="48,114,49,58" concept="3" />
+      <node id="6966202783758049653" at="49,58,50,67" concept="1" />
+      <node id="6966202783758049653" at="54,61,55,53" concept="1" />
+      <node id="6966202783758049653" at="55,53,56,25" concept="1" />
+      <node id="6966202783758049653" at="56,25,57,0" concept="5" />
+      <node id="6966202783758049653" at="19,0,22,0" concept="0" trace="newChallenge_0#()V" />
+      <node id="6966202783758049653" at="54,0,59,0" concept="7" trace="main#([Ljava/lang/String;)V" />
+      <node id="6966202783758049653" at="45,0,52,0" concept="2" trace="doPostChallenge#(Lcom/squareup/okhttp/RequestBody;Ljava/lang/String;)V" />
+      <node id="6966202783758049653" at="24,0,44,0" concept="2" trace="run#()V" />
+      <scope id="6966202783758049653" at="19,46,20,10" />
+      <scope id="6966202783758049653" at="19,0,22,0" />
+      <scope id="6966202783758049653" at="54,61,57,0" />
+      <scope id="6966202783758049653" at="45,83,50,67">
+        <var name="client" id="6966202783758049653" />
+        <var name="request" id="6966202783758049653" />
+        <var name="response" id="6966202783758049653" />
+        <var name="urlFinal" id="6966202783758049653" />
+      </scope>
+      <scope id="6966202783758049653" at="54,0,59,0">
+        <var name="args" id="6966202783758049653" />
+      </scope>
+      <scope id="6966202783758049653" at="45,0,52,0">
+        <var name="body" id="6966202783758049653" />
+        <var name="gameID" id="6966202783758049653" />
+      </scope>
+      <scope id="6966202783758049653" at="24,40,42,0">
+        <var name="body" id="6966202783758049653" />
+        <var name="challenge" id="6966202783758049653" />
+        <var name="challengeJson" id="6966202783758049653" />
+        <var name="variables" id="6966202783758049653" />
+      </scope>
+      <scope id="6966202783758049653" at="24,0,44,0" />
+      <unit id="6966202783758049653" at="15,0,60,0" name="GadML.sandbox.newChallenge_0" />
+    </file>
+  </root>
+</debug-info>
 

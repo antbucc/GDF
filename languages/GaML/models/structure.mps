@@ -242,17 +242,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7ujvJshfyVE">
-    <property role="EcuMT" value="8616370111701200618" />
-    <property role="TrG5h" value="SkillLevelDefinition" />
-    <ref role="1TJDcQ" to="mupf:3VGM6Jge1dg" resolve="Level" />
-    <node concept="PrWs8" id="7ujvJshfz0e" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7ujvJshfzkj">
     <property role="EcuMT" value="8616370111701202195" />
-    <property role="TrG5h" value="ExperienceLevelDefinition" />
+    <property role="TrG5h" value="ExperienceLevel" />
+    <property role="34LRSv" value="experienceLevel" />
     <ref role="1TJDcQ" to="mupf:3VGM6Jge1dg" resolve="Level" />
     <node concept="PrWs8" id="7ujvJshfznV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -261,7 +254,7 @@
   <node concept="1TIwiD" id="62GV8nQbD0a">
     <property role="EcuMT" value="6966202783740366858" />
     <property role="TrG5h" value="KGGBadgeCollection" />
-    <property role="34LRSv" value="specificBadgeCollection" />
+    <property role="34LRSv" value="KGGBadgeCollection" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUrD" resolve="BadgeCollection" />
     <node concept="PrWs8" id="62GV8nQbDFB" role="PzmwI">
@@ -271,15 +264,15 @@
       <property role="IQ2ns" value="6966202783740536200" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="badgeTypes" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="62GV8nQc7th" resolve="badgeType" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="62GV8nQc7th" resolve="KGGBadge" />
     </node>
   </node>
   <node concept="1TIwiD" id="62GV8nQc7th">
     <property role="EcuMT" value="6966202783740491601" />
-    <property role="TrG5h" value="badgeType" />
-    <property role="34LRSv" value="badgeType" />
+    <property role="TrG5h" value="KGGBadge" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="KGGBadgeType" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUry" resolve="Badge" />
     <node concept="PrWs8" id="62GV8nQc7R4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

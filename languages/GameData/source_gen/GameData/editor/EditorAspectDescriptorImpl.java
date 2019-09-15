@@ -18,7 +18,15 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
+        return Collections.<ConceptEditor>singletonList(new BonusPointType_Editor());
+      case 1:
+        return Collections.<ConceptEditor>singletonList(new ChallengeData_Editor());
+      case 2:
         return Collections.<ConceptEditor>singletonList(new GameDataType_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new bonusScore_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new legNameType_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -26,5 +34,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a5L), MetaIdFactory.conceptId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5a9L), MetaIdFactory.conceptId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x23eac9cba8f42c9dL), MetaIdFactory.conceptId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5b0L), MetaIdFactory.conceptId(0xdc26d82528834e88L, 0x933cf0e9f65c69c4L, 0x5d61ef6eeb9ac5eaL)).seal();
 }

@@ -96,13 +96,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6xXDyh7wGEx" resolve="SinglePlayerChallengeInstance" />
     </node>
-    <node concept="1TJgyj" id="7ujvJshfzRy" role="1TKVEi">
-      <property role="IQ2ns" value="8616370111701204450" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="skillLevels" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7ujvJshfz5_" resolve="SkillLevelInstance" />
-    </node>
     <node concept="1TJgyj" id="7ujvJshfzU1" role="1TKVEi">
       <property role="IQ2ns" value="8616370111701204609" />
       <property role="20lmBu" value="aggregation" />
@@ -332,12 +325,19 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="62GV8nQauVH" role="1TKVEi">
-      <property role="IQ2ns" value="6966202783740063469" />
+    <node concept="1TJgyj" id="62GV8nQkh1f" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783742627919" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mupf:3VGM6JgdUrD" resolve="BadgeCollection" />
+      <ref role="20lvS9" to="2qee:62GV8nQbD0a" resolve="KGGBadgeCollection" />
+    </node>
+    <node concept="1TJgyj" id="62GV8nQscr_" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783744706277" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="badgesEarned" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="62GV8nQn7Zy" resolve="BadgeInstance" />
     </node>
   </node>
   <node concept="1TIwiD" id="6xXDyh7wGEx">
@@ -354,7 +354,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variables" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6xXDyh7wIVR" resolve="challengeVariable" />
+      <ref role="20lvS9" to="2kc8:5PxVQVFAGmD" resolve="ChallengeData" />
     </node>
     <node concept="1TJgyi" id="7ujvJsh3Qxa" role="1TKVEl">
       <property role="IQ2nx" value="8616370111698135114" />
@@ -371,7 +371,7 @@
   </node>
   <node concept="1TIwiD" id="6xXDyh7wIVR">
     <property role="EcuMT" value="7529356826782134007" />
-    <property role="TrG5h" value="challengeVariable" />
+    <property role="TrG5h" value="ChallengeVariable" />
     <property role="34LRSv" value="challengeVariable" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -379,34 +379,11 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7ujvJshfz5_">
-    <property role="EcuMT" value="8616370111701201253" />
-    <property role="TrG5h" value="SkillLevelInstance" />
-    <property role="34LRSv" value="levelInstance" />
-    <ref role="1TJDcQ" to="2qee:7ujvJshfyVE" resolve="SkillLevelDefinition" />
-    <node concept="PrWs8" id="7ujvJshfz8J" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="7ujvJshglHw" role="1TKVEi">
-      <property role="IQ2ns" value="8616370111701408608" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="relatedPointInstance" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6xXDyh7hOVj" resolve="skillPointInstance" />
-    </node>
-    <node concept="1TJgyj" id="7ujvJshn5bg" role="1TKVEi">
-      <property role="IQ2ns" value="8616370111703175888" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tresholds" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="7ujvJshn5ev" resolve="LevelTresholds" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7ujvJshfzAS">
     <property role="EcuMT" value="8616370111701203384" />
     <property role="TrG5h" value="ExperienceLevelInstance" />
-    <property role="34LRSv" value="experienceLevel" />
-    <ref role="1TJDcQ" to="2qee:7ujvJshfzkj" resolve="ExperienceLevelDefinition" />
+    <property role="34LRSv" value="experienceLevelInstance" />
+    <ref role="1TJDcQ" to="2qee:7ujvJshfzkj" resolve="ExperienceLevel" />
     <node concept="PrWs8" id="7ujvJshfzHm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -420,7 +397,7 @@
     <node concept="1TJgyj" id="7ujvJshn5rz" role="1TKVEi">
       <property role="IQ2ns" value="8616370111703176931" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="trasholds" />
+      <property role="20kJfa" value="thresholds" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7ujvJshn5ev" resolve="LevelTresholds" />
     </node>
@@ -428,6 +405,7 @@
   <node concept="1TIwiD" id="7ujvJshn5ev">
     <property role="EcuMT" value="8616370111703176095" />
     <property role="TrG5h" value="LevelTresholds" />
+    <property role="34LRSv" value="treshold" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7ujvJshn5gK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -436,6 +414,22 @@
       <property role="IQ2nx" value="8616370111703176299" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nQn7Zy">
+    <property role="EcuMT" value="6966202783743377378" />
+    <property role="TrG5h" value="BadgeInstance" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="2qee:62GV8nQc7th" resolve="KGGBadge" />
+    <node concept="PrWs8" id="62GV8nQn8GF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="62GV8nQn8JJ" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783743380463" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="badgeType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="2qee:62GV8nQc7th" resolve="KGGBadge" />
     </node>
   </node>
 </model>
