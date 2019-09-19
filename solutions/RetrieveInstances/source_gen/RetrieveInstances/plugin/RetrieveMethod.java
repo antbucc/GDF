@@ -33,7 +33,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class RetrieveMethod implements Runnable {
   private static final Logger LOG = LogManager.getLogger(RetrieveMethod.class);
-  private static String Token = "954ec938-17b7-4477-ae70-64c43b27712f";
+  private static String Token = "9f0dca02-0bf7-4419-b008-03d52d8fdeb2";
   private static String apiIstituteUrl = "https://climb.smartcommunitylab.it/v2/api/institute/TEST";
   private static String apiSchoolUrl = "https://climb.smartcommunitylab.it/v2/api/school/TEST";
   private static String apiGameUrl = "https://climb.smartcommunitylab.it/v2/api/game/TEST";
@@ -59,18 +59,16 @@ public class RetrieveMethod implements Runnable {
 
 
   public void run() {
-    // add main domain of KGG 
 
     int count = 0;
     LoggingRuntime.logMsgView(Level.INFO, "------INSTANCES RETRIEVING STARTED-----", RetrieveMethod.class, null, null);
-    SNode domain = createDomainInstance_7rmalq_a0e0w();
+    SNode domain = createDomainInstance_7rmalq_a0d0w();
     SModelOperations.addRootNode(this.myModel, domain);
 
     try {
       GameModel gameModel = this.doGetGameModel(apiGameModel);
 
       GameContent gameInstances = this.doGetGameContent(apiPlayersState);
-
 
       for (PlayerState state : gameInstances.getContent()) {
         SNode playerState = this.addPlayerStateNode(state, gameModel);
@@ -475,7 +473,7 @@ public class RetrieveMethod implements Runnable {
 
 
 
-  private static SNode createDomainInstance_7rmalq_a0e0w() {
+  private static SNode createDomainInstance_7rmalq_a0d0w() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode n1 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L, "GiML.structure.DomainInstance"), null, null, false);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "TEST");
@@ -560,8 +558,8 @@ public class RetrieveMethod implements Runnable {
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), p1 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, 0x182d3787495b7c2bL, "ownerId"), p2 + "");
     n1.setProperty(MetaAdapterFactory.getProperty(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa757c14L, 0x182d3787495d6c41L, "id"), p3 + "");
-    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L, 0x29c2332daaaaee9aL, "domain"), node0);
     n1.setProperty(MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x115eca8579fL, "virtualPackage"), p4 + "");
+    n1.setReferenceTarget(MetaAdapterFactory.getReferenceLink(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L, 0x29c2332daaaaee9aL, "domain"), node0);
     return n1;
   }
   private static SNode createSchoolInstance_7rmalq_a0a0zb(SNode node0, Object p0, Object p1, Object p2, Object p3) {

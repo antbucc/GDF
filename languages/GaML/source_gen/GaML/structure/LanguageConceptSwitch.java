@@ -32,8 +32,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x113e1e4cb66fe319L, Classroom);
     builder.put(0x59f01faab33d1304L, ComplexTeam);
     builder.put(0x3b9018d1b0e7cb00L, Dashboard);
-    builder.put(0x113e1e4cb66fe2d9L, Domain);
-    builder.put(0x77937ef7113e3513L, ExperienceLevel);
+    builder.put(0x60acec85f77c2583L, Domain);
+    builder.put(0x60acec85f7e0f612L, ExperienceLevel);
     builder.put(0x23eac9cba952c550L, GameDefinition);
     builder.put(0x113e1e4cb66fe312L, Institute);
     builder.put(0x60acec85f6307751L, KGGBadge);

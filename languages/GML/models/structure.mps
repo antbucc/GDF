@@ -122,15 +122,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3VGM6Jge1dg">
-    <property role="EcuMT" value="4534219290235638608" />
-    <property role="TrG5h" value="Level" />
-    <property role="34LRSv" value="level" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3VGM6Jge1dh" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3VGM6Jge66$">
     <property role="EcuMT" value="4534219290235658660" />
     <property role="TrG5h" value="Game" />
@@ -148,6 +139,15 @@
       <property role="IQ2nx" value="4534219290235674494" />
       <property role="TrG5h" value="owner" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nRSfj3">
+    <property role="EcuMT" value="6966202783768835267" />
+    <property role="TrG5h" value="Level" />
+    <property role="34LRSv" value="level" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="62GV8nRSflf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

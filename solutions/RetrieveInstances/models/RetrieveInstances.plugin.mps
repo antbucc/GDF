@@ -738,7 +738,7 @@
       <node concept="3Tm6S6" id="1wHdSt9cWQR" role="1B3o_S" />
       <node concept="17QB3L" id="1wHdSt9cXb1" role="1tU5fm" />
       <node concept="Xl_RD" id="1wHdSt9cXqm" role="33vP2m">
-        <property role="Xl_RC" value="954ec938-17b7-4477-ae70-64c43b27712f" />
+        <property role="Xl_RC" value="9f0dca02-0bf7-4419-b008-03d52d8fdeb2" />
       </node>
     </node>
     <node concept="Wx3nA" id="1wHdSt9dpYE" role="jymVt">
@@ -890,41 +890,7 @@
     <node concept="3clFb_" id="4Y3P5Ei7BU4" role="jymVt">
       <property role="TrG5h" value="run" />
       <node concept="3clFbS" id="4Y3P5Ei7BU5" role="3clF47">
-        <node concept="3SKdUt" id="1wHdSt9mQ8C" role="3cqZAp">
-          <node concept="3SKdUq" id="1wHdSt9mQ8E" role="3SKWNk">
-            <property role="3SKdUp" value="add main domain of KGG" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="4lKDqTvD_PS" role="3cqZAp" />
-        <node concept="1X3_iC" id="1vRkFORJ5D2" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="SfApY" id="4lKDqTvE2qQ" role="8Wnug">
-            <node concept="3clFbS" id="4lKDqTvE2qR" role="SfCbr">
-              <node concept="1X3_iC" id="1vRkFORIQGF" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="4lKDqTvDZvs" role="8Wnug">
-                  <node concept="2OqwBi" id="4lKDqTvE00P" role="3clFbG">
-                    <node concept="Xjq3P" id="4lKDqTvDZvq" role="2Oq$k0" />
-                    <node concept="liA8E" id="4lKDqTvKVyE" role="2OqNvi">
-                      <ref role="37wK5l" node="4lKDqTvKw3E" resolve="doPostNewGame" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="TDmWw" id="4lKDqTvE2qM" role="TEbGg">
-              <node concept="3clFbS" id="4lKDqTvE2qN" role="TDEfX" />
-              <node concept="3cpWsn" id="4lKDqTvE2qO" role="TDEfY">
-                <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="4lKDqTvE2qP" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="62GV8nRovia" role="3cqZAp" />
         <node concept="3cpWs8" id="62GV8nRhckz" role="3cqZAp">
           <node concept="3cpWsn" id="62GV8nRhckA" role="3cpWs9">
             <property role="TrG5h" value="count" />
@@ -1000,26 +966,6 @@
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="7G8vwhwGDYz" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="2xdQw9" id="7G8vwhwevfR" role="8Wnug">
-                <property role="2xdLsb" value="info" />
-                <node concept="3cpWs3" id="7G8vwhweBZ8" role="9lYJi">
-                  <node concept="2OqwBi" id="7G8vwhweDBG" role="3uHU7w">
-                    <node concept="37vLTw" id="7G8vwhweDiI" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7G8vwhwblSY" resolve="gameModel" />
-                    </node>
-                    <node concept="2OwXpG" id="7G8vwhweF19" role="2OqNvi">
-                      <ref role="2Oxat5" node="7G8vwhwba6w" resolve="owner" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="7G8vwhwevfT" role="3uHU7B">
-                    <property role="Xl_RC" value="gameOwner: " />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="7G8vwhwb49t" role="3cqZAp" />
             <node concept="3cpWs8" id="3i8R4mWDBmL" role="3cqZAp">
               <node concept="3cpWsn" id="3i8R4mWDBmM" role="3cpWs9">
@@ -1035,34 +981,6 @@
                 </node>
                 <node concept="3uibUv" id="3i8R4mWM1Wn" role="1tU5fm">
                   <ref role="3uigEE" node="3i8R4mWKWvo" resolve="GameContent" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3i8R4mWFnLN" role="3cqZAp" />
-            <node concept="1X3_iC" id="3i8R4mWFpIQ" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="1qDekGNHnSM" role="8Wnug">
-                <node concept="3cpWsn" id="1qDekGNHnSN" role="3cpWs9">
-                  <property role="TrG5h" value="playerState" />
-                  <node concept="3uibUv" id="1qDekGNHnSO" role="1tU5fm">
-                    <ref role="3uigEE" node="1qDekGLL23L" resolve="PlayerState" />
-                  </node>
-                  <node concept="2OqwBi" id="1qDekGNBl8p" role="33vP2m">
-                    <node concept="Xjq3P" id="1qDekGNBkjq" role="2Oq$k0" />
-                    <node concept="liA8E" id="1qDekGNBnIt" role="2OqNvi">
-                      <ref role="37wK5l" node="1qDekGNssTH" resolve="doGetPlayerState" />
-                      <node concept="37vLTw" id="1qDekGNHutH" role="37wK5m">
-                        <ref role="3cqZAo" node="1qDekGNgDeu" resolve="apiGameData" />
-                      </node>
-                      <node concept="Xl_RD" id="1qDekGNBt7t" role="37wK5m">
-                        <property role="Xl_RC" value="5c1a471be4b017b723f09a50" />
-                      </node>
-                      <node concept="Xl_RD" id="1qDekGNBuQa" role="37wK5m">
-                        <property role="Xl_RC" value="Scuola di Sopramonte" />
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>
@@ -3048,14 +2966,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2pIpSj" id="5i3hV1iNnm9" role="2pJxcM">
-                  <ref role="2pIpSl" to="2qee:2B2cMQEEIUq" resolve="domain" />
-                  <node concept="36biLy" id="5i3hV1iNnma" role="2pJxcZ">
-                    <node concept="37vLTw" id="5i3hV1iNIF5" role="36biLW">
-                      <ref role="3cqZAo" node="5i3hV1iNy_$" resolve="domain" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="2pJxcG" id="5i3hV1iNnmc" role="2pJxcM">
                   <ref role="2pJxcJ" to="tpck:hnGE5uv" resolve="virtualPackage" />
                   <node concept="3cpWs3" id="1vRkFORKkaz" role="2pJxcZ">
@@ -3079,6 +2989,14 @@
                       <node concept="Xl_RD" id="1vRkFORKjxv" role="3uHU7w">
                         <property role="Xl_RC" value="." />
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pIpSj" id="62GV8nRNpG1" role="2pJxcM">
+                  <ref role="2pIpSl" to="2qee:2B2cMQEEIUq" resolve="domain" />
+                  <node concept="36biLy" id="62GV8nRNBd5" role="2pJxcZ">
+                    <node concept="37vLTw" id="62GV8nRNBS8" role="36biLW">
+                      <ref role="3cqZAo" node="5i3hV1iNy_$" resolve="domain" />
                     </node>
                   </node>
                 </node>

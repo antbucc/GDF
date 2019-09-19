@@ -27,7 +27,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x3eecc86bd037a6e9L, BadgeCollection);
     builder.put(0x3eecc86bd037b7b3L, Challenge);
     builder.put(0x3eecc86bd03861a4L, Game);
-    builder.put(0x3eecc86bd0381350L, Level);
+    builder.put(0x60acec85f7e0f4c3L, Level);
     builder.put(0x3eecc86bd037a6bcL, Period);
     builder.put(0x3eecc86bd037a739L, Player);
     builder.put(0x3eecc86bd037a6b1L, Point);

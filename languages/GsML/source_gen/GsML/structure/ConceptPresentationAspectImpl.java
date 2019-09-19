@@ -27,7 +27,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SingleGameExecution:
         if (props_SingleGameExecution == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("singleGameExecution");
+          cpb.presentationByName();
           props_SingleGameExecution = cpb.create();
         }
         return props_SingleGameExecution;

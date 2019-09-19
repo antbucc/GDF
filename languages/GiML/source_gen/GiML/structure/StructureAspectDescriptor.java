@@ -149,7 +149,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForDomainInstance() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "DomainInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daa2bdd31L);
     b.class_(false, false, true);
-    b.super_("GaML.structure.Domain", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L);
+    b.super_("GaML.structure.Domain", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f77c2583L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/3009023772258458929");
     b.version(2);
@@ -157,14 +157,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExperienceLevelInstance() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "ExperienceLevelInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7113e39b8L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GiML", "ExperienceLevelInstance", 0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x60acec85f7e0f8beL);
     b.class_(false, false, false);
-    b.super_("GaML.structure.ExperienceLevel", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x77937ef7113e3513L);
+    b.super_("GaML.structure.ExperienceLevel", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f7e0f612L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/8616370111701203384");
+    b.origin("r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/6966202783768836286");
     b.version(2);
-    b.associate("relatedPointInstance", 0x77937ef711415c39L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L).optional(false).origin("8616370111701408825").done();
-    b.aggregate("thresholds", 0x77937ef7115c56e3L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7115c539fL).optional(false).ordered(true).multiple(true).origin("8616370111703176931").done();
+    b.associate("relatedPointInstance", 0x60acec85f7e0fd82L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244723bd21L).optional(false).origin("6966202783768837506").done();
+    b.aggregate("thresholds", 0x60acec85f7e0fc6aL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7115c539fL).optional(false).ordered(true).multiple(true).origin("6966202783768837226").done();
     b.alias("experienceLevelInstance");
     return b.create();
   }
@@ -186,7 +186,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("eventDrivenActions", 0x687da624474fd7b5L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624474faca3L).optional(true).ordered(true).multiple(true).origin("7529356826778785717").done();
     b.aggregate("badgeCollections", 0x687da624477f388bL).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da624477a6c9aL).optional(true).ordered(true).multiple(true).origin("7529356826781890699").done();
     b.aggregate("singlePlayerChallenges", 0x687da6244782cab0L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x687da6244782caa1L).optional(true).ordered(true).multiple(true).origin("7529356826782124720").done();
-    b.aggregate("experiencelevels", 0x77937ef7113e3e81L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x77937ef7113e39b8L).optional(true).ordered(true).multiple(true).origin("8616370111701204609").done();
+    b.aggregate("experiencelevels", 0x77937ef7113e3e81L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x60acec85f7e0f8beL).optional(true).ordered(true).multiple(true).origin("8616370111701204609").done();
     b.alias("gameInstance");
     return b.create();
   }

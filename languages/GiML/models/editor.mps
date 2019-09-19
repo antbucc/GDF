@@ -84,18 +84,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="24kQdi" id="2B2cMQEbkk4">
-    <ref role="1XX52x" to="k2kp:2B2cMQEaXOL" resolve="DomainInstance" />
-    <node concept="3EZMnI" id="2B2cMQErpEV" role="2wV5jI">
-      <node concept="l2Vlx" id="2B2cMQErpEY" role="2iSdaV" />
-      <node concept="3F0ifn" id="2B2cMQErpFl" role="3EZMnx">
-        <property role="3F0ifm" value="Domain Name " />
-      </node>
-      <node concept="3F0A7n" id="2B2cMQErxtj" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-      </node>
-    </node>
-  </node>
   <node concept="V5hpn" id="2B2cMQEeYlU">
     <property role="TrG5h" value="StileGioco" />
     <node concept="14StLt" id="2B2cMQEeYlY" role="V601i">
@@ -166,31 +154,6 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="2B2cMQEGzlB" role="3EZMnx">
-        <property role="3F0ifm" value="Domain" />
-      </node>
-      <node concept="1iCGBv" id="2B2cMQEUzVh" role="3EZMnx">
-        <ref role="1NtTu8" to="2qee:2B2cMQEUzSZ" resolve="school" />
-        <node concept="1sVBvm" id="2B2cMQEUzVj" role="1sWHZn">
-          <node concept="1iCGBv" id="2B2cMQEUzVL" role="2wV5jI">
-            <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="institute" />
-            <node concept="1sVBvm" id="2B2cMQEUzVN" role="1sWHZn">
-              <node concept="1iCGBv" id="2B2cMQEUzVU" role="2wV5jI">
-                <ref role="1NtTu8" to="2qee:2B2cMQEEIUq" resolve="domain" />
-                <node concept="1sVBvm" id="2B2cMQEUzVW" role="1sWHZn">
-                  <node concept="3F0A7n" id="2B2cMQEUzWP" role="2wV5jI">
-                    <property role="1Intyy" value="true" />
-                    <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="ljvvj" id="633VN0idL6$" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0ifn" id="6xXDyh73scP" role="3EZMnx">
         <property role="3F0ifm" value="From" />
       </node>
@@ -203,26 +166,6 @@
       </node>
       <node concept="3F0A7n" id="6xXDyh73slQ" role="3EZMnx">
         <ref role="1NtTu8" to="k2kp:6xXDyh733Zv" resolve="to" />
-      </node>
-      <node concept="3F0ifn" id="2B2cMQEGzmo" role="3EZMnx">
-        <property role="3F0ifm" value="Istitute" />
-        <node concept="pVoyu" id="2B2cMQEGzmT" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="2B2cMQEUzY5" role="3EZMnx">
-        <ref role="1NtTu8" to="2qee:2B2cMQEUzSZ" resolve="school" />
-        <node concept="1sVBvm" id="2B2cMQEUzY7" role="1sWHZn">
-          <node concept="1iCGBv" id="2B2cMQEUzYD" role="2wV5jI">
-            <ref role="1NtTu8" to="2qee:2B2cMQEEIUn" resolve="institute" />
-            <node concept="1sVBvm" id="2B2cMQEUzYF" role="1sWHZn">
-              <node concept="3F0A7n" id="2B2cMQEUzZB" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="3F0ifn" id="DexcA7h4mF" role="3EZMnx">
         <property role="3F0ifm" value="School" />
@@ -1257,6 +1200,18 @@
         <node concept="11L4FC" id="62GV8nQLFRh" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2B2cMQEbkk4">
+    <ref role="1XX52x" to="k2kp:2B2cMQEaXOL" resolve="DomainInstance" />
+    <node concept="3EZMnI" id="2B2cMQErpEV" role="2wV5jI">
+      <node concept="l2Vlx" id="2B2cMQErpEY" role="2iSdaV" />
+      <node concept="3F0ifn" id="2B2cMQErpFl" role="3EZMnx">
+        <property role="3F0ifm" value="Domain Name " />
+      </node>
+      <node concept="3F0A7n" id="2B2cMQErxtj" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
     </node>
   </node>

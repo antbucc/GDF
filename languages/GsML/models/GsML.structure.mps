@@ -96,6 +96,9 @@
       <property role="20kJfa" value="eventActionInstance" />
       <ref role="20lvS9" to="k2kp:6xXDyh7jUMz" resolve="eventDrivenActionInstance" />
     </node>
+    <node concept="PrWs8" id="62GV8nRZbZF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

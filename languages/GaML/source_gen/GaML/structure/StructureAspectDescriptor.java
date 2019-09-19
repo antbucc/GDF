@@ -120,7 +120,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6480714681798169348");
     b.version(2);
     b.aggregate("teams", 0x59f01faab33d1312L).target(0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd037a735L).optional(true).ordered(true).multiple(true).origin("6480714681798169362").done();
-    b.alias("complexTram");
+    b.alias("complexTeam");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDashboard() {
@@ -133,20 +133,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDomain() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Domain", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L);
-    b.class_(false, false, false);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Domain", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f77c2583L);
+    b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969241");
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6966202783762228611");
     b.version(2);
     b.alias("domain");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExperienceLevel() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ExperienceLevel", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x77937ef7113e3513L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "ExperienceLevel", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f7e0f612L);
     b.class_(false, false, false);
-    b.super_("GML.structure.Level", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x3eecc86bd0381350L);
+    b.super_("GML.structure.Level", 0xbc08d5ab032d46dcL, 0x996446504a89c9c8L, 0x60acec85f7e0f4c3L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/8616370111701202195");
+    b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6966202783768835602");
     b.version(2);
     b.alias("experienceLevel");
     return b.create();
@@ -164,12 +164,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForInstitute() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "Institute", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe312L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/1242463862027969298");
     b.version(2);
-    b.associate("domain", 0x29c2332daaaaee9aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x113e1e4cb66fe2d9L).optional(false).origin("3009023772266786458").done();
+    b.associate("domain", 0x29c2332daaaaee9aL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f77c2583L).optional(false).origin("3009023772266786458").done();
     b.aggregate("schools", 0x29c2332daabd2eecL).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L).optional(true).ordered(true).multiple(true).origin("3009023772267982572").done();
     b.alias("institute");
     return b.create();
@@ -191,13 +191,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/6966202783740366858");
     b.version(2);
-    b.aggregate("badgeTypes", 0x60acec85f6312588L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f6307751L).optional(false).ordered(true).multiple(true).origin("6966202783740536200").done();
+    b.associate("badgeTypes", 0x60acec85f78d8641L).target(0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x60acec85f6307751L).optional(false).origin("6966202783763367489").done();
     b.alias("KGGBadgeCollection");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSchool() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GaML", "School", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x29c2332daa804ab6L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.super_("GaML.structure.ComplexTeam", 0x1472546da96448a0L, 0xa11e4271b165a42cL, 0x59f01faab33d1304L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:7b2e49c1-57f5-42cc-8477-7c9fe4bb9db4(GaML.structure)/3009023772263991990");

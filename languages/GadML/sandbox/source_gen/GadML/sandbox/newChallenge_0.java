@@ -19,14 +19,12 @@ public class newChallenge_0 {
   public newChallenge_0() throws IOException {
     run();
   }
-
-
   public void run() throws IOException {
     // here we execute a post call to the Game Engine 
     JsonObject challenge = new JsonObject();
-    challenge.addProperty("gameId", "idModels2019");
+    challenge.addProperty("gameId", "id1");
     challenge.addProperty("id", "id1");
-    challenge.addProperty("name", "DailyTrips");
+    challenge.addProperty("name", "DailyTrips1");
     JsonArray variables = new JsonArray();
     variables.add("bonusScore");
     variables.add("bonusPointType");
@@ -37,11 +35,9 @@ public class newChallenge_0 {
     String challengeJson = challenge.toString();
     RequestBody body = RequestBody.create(JSON, challengeJson);
     // execute POST call to save the gamification Instance 
-    doPostChallenge(body, "idModels2019");
+    doPostChallenge(body, "id1");
     System.out.println("CHALLENGES ADDED");
-
   }
-
   public void doPostChallenge(RequestBody body, String gameID) throws IOException {
     OkHttpClient client = new OkHttpClient();
     String urlFinal = apiChallengeUrl + gameID + "/challenge";
@@ -49,11 +45,8 @@ public class newChallenge_0 {
     Response response = client.newCall(request).execute();
     System.out.println("POST RESULT: " + response.body().string());
   }
-
-
   public static void main(String[] args) throws IOException {
     System.out.println("1. GAME ADAPTATION STARTED");
     new newChallenge_0();
-
   }
 }

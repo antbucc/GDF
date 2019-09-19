@@ -27,9 +27,9 @@
     </language>
   </registry>
   <node concept="3BGpQm" id="62GV8nRf65P">
-    <property role="TrG5h" value="DailyTrips" />
+    <property role="TrG5h" value="DailyTrips1" />
     <ref role="2n_QEm" to="tfej:62GV8nReKGB" resolve="dailyTrips" />
-    <ref role="3BHwLL" to="tfej:62GV8nPSCo3" resolve="Demo-Models2019" />
+    <ref role="3BHwLL" to="tfej:62GV8nPSCo3" resolve="BasicExample" />
   </node>
 </model>
 

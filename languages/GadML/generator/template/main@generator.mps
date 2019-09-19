@@ -18,7 +18,6 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -215,8 +214,6 @@
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1dManzOQxNy" role="jymVt" />
-    <node concept="2tJIrI" id="1dManzOLSRE" role="jymVt" />
     <node concept="3clFb_" id="1dManzOMwFI" role="jymVt">
       <property role="TrG5h" value="run" />
       <node concept="3clFbS" id="1dManzOMwFK" role="3clF47">
@@ -522,7 +519,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1dManzOMCQ6" role="3cqZAp" />
       </node>
       <node concept="3cqZAl" id="1dManzOMwHw" role="3clF45" />
       <node concept="3Tm1VV" id="1dManzOMwHv" role="1B3o_S" />
@@ -530,7 +526,6 @@
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1dManzOLIjR" role="jymVt" />
     <node concept="3clFb_" id="7ujvJsh9N34" role="jymVt">
       <property role="TrG5h" value="doPostChallenge" />
       <node concept="3clFbS" id="7ujvJsh9N37" role="3clF47">
@@ -681,12 +676,10 @@
         <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1dManzOLzr9" role="jymVt" />
     <node concept="3Tm1VV" id="1dManzOKVuQ" role="1B3o_S" />
     <node concept="n94m4" id="1dManzOKVuR" role="lGtFl">
       <ref role="n9lRv" to="f2v1:1dManzOKVjI" resolve="newChallenge" />
     </node>
-    <node concept="2tJIrI" id="1dManzOPFiX" role="jymVt" />
     <node concept="2YIFZL" id="1dManzOQyQT" role="jymVt">
       <property role="TrG5h" value="main" />
       <node concept="3cqZAl" id="1dManzOQyQU" role="3clF45" />
@@ -713,7 +706,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1dManzOQA5k" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="1dManzOQyQX" role="3clF46">
         <property role="TrG5h" value="args" />

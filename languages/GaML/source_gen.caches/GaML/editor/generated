@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-4jvuq3sul27j9m3mr0exqqnmpdpw0yu">
-  <files names="Classroom_Editor.java:Classroom_EditorBuilder_a.java:ComplexTeam_Editor.java:ComplexTeam_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:KGGBadgeCollection_Editor.java:KGGBadgeCollection_EditorBuilder_a.java:KGGBadge_Editor.java:KGGBadge_EditorBuilder_a.java:skillPoint_Editor.java:skillPoint_EditorBuilder_a.java" />
+<product version="3" modelHash="-7f5c4241paxm4tp92kr7qnxdalu0dd3">
+  <files names="Classroom_Editor.java:Classroom_EditorBuilder_a.java:ComplexTeam_Editor.java:ComplexTeam_EditorBuilder_a.java:Domain_Editor.java:Domain_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:GameDefinition_Editor.java:GameDefinition_EditorBuilder_a.java:Institute_Editor.java:Institute_EditorBuilder_a.java:KGGBadgeCollection_Editor.java:KGGBadgeCollection_EditorBuilder_a.java:KGGBadge_Editor.java:KGGBadge_EditorBuilder_a.java:School_Editor.java:School_EditorBuilder_a.java:Student_Editor.java:Student_EditorBuilder_a.java:Volontario_Editor.java:Volontario_EditorBuilder_a.java:skillPoint_Editor.java:skillPoint_EditorBuilder_a.java" />
 </product>
 

@@ -65,7 +65,7 @@
   <node concept="1TIwiD" id="5BK7UENfhc4">
     <property role="EcuMT" value="6480714681798169348" />
     <property role="TrG5h" value="ComplexTeam" />
-    <property role="34LRSv" value="complexTram" />
+    <property role="34LRSv" value="complexTeam" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUsP" resolve="Team" />
     <node concept="PrWs8" id="5BK7UENfhc5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -78,19 +78,11 @@
       <ref role="20lvS9" to="mupf:3VGM6JgdUsP" resolve="Team" />
     </node>
   </node>
-  <node concept="1TIwiD" id="14Y7$MQrYbp">
-    <property role="EcuMT" value="1242463862027969241" />
-    <property role="TrG5h" value="Domain" />
-    <property role="34LRSv" value="domain" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="14Y7$MQrYcc" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="14Y7$MQrYci">
     <property role="EcuMT" value="1242463862027969298" />
     <property role="TrG5h" value="Institute" />
     <property role="34LRSv" value="institute" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="5BK7UENfhc4" resolve="ComplexTeam" />
     <node concept="PrWs8" id="14Y7$MQrYcj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -100,7 +92,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="domain" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="14Y7$MQrYbp" resolve="Domain" />
+      <ref role="20lvS9" node="62GV8nRv2m3" resolve="Domain" />
     </node>
     <node concept="1TJgyj" id="2B2cMQEJiVG" role="1TKVEi">
       <property role="IQ2ns" value="3009023772267982572" />
@@ -140,6 +132,7 @@
     <property role="EcuMT" value="3009023772263991990" />
     <property role="TrG5h" value="School" />
     <property role="34LRSv" value="school" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="5BK7UENfhc4" resolve="ComplexTeam" />
     <node concept="PrWs8" id="2B2cMQEw4FD" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -242,15 +235,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7ujvJshfzkj">
-    <property role="EcuMT" value="8616370111701202195" />
-    <property role="TrG5h" value="ExperienceLevel" />
-    <property role="34LRSv" value="experienceLevel" />
-    <ref role="1TJDcQ" to="mupf:3VGM6Jge1dg" resolve="Level" />
-    <node concept="PrWs8" id="7ujvJshfznV" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="62GV8nQbD0a">
     <property role="EcuMT" value="6966202783740366858" />
     <property role="TrG5h" value="KGGBadgeCollection" />
@@ -260,11 +244,11 @@
     <node concept="PrWs8" id="62GV8nQbDFB" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="62GV8nQcim8" role="1TKVEi">
-      <property role="IQ2ns" value="6966202783740536200" />
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="62GV8nRzop1" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783763367489" />
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="badgeTypes" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="62GV8nQc7th" resolve="KGGBadge" />
     </node>
   </node>
@@ -275,6 +259,25 @@
     <property role="34LRSv" value="KGGBadgeType" />
     <ref role="1TJDcQ" to="mupf:3VGM6JgdUry" resolve="Badge" />
     <node concept="PrWs8" id="62GV8nQc7R4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nRv2m3">
+    <property role="EcuMT" value="6966202783762228611" />
+    <property role="TrG5h" value="Domain" />
+    <property role="34LRSv" value="domain" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="62GV8nRv2n0" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nRSfoi">
+    <property role="EcuMT" value="6966202783768835602" />
+    <property role="TrG5h" value="ExperienceLevel" />
+    <property role="34LRSv" value="experienceLevel" />
+    <ref role="1TJDcQ" to="mupf:62GV8nRSfj3" resolve="Level" />
+    <node concept="PrWs8" id="62GV8nRSfsU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>

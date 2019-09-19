@@ -324,6 +324,44 @@
       <scope id="6966202783743377378" at="119,0,129,0" />
     </file>
   </root>
+  <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/6966202783768836286">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6966202783768836286" at="17,0,18,0" concept="1" trace="props_ExperienceLevelInstance" />
+      <node id="6966202783768836286" at="71,52,72,76" concept="3" />
+      <node id="6966202783768836286" at="72,76,73,35" concept="0" />
+      <node id="6966202783768836286" at="73,35,74,55" concept="0" />
+      <node id="6966202783768836286" at="75,9,76,45" concept="4" />
+      <node id="6966202783768836286" at="70,57,75,9" concept="2" />
+      <scope id="6966202783768836286" at="71,52,74,55">
+        <var name="cpb" id="6966202783768836286" />
+      </scope>
+      <scope id="6966202783768836286" at="70,57,76,45" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6966202783768836286" at="17,0,18,0" concept="5" trace="ExperienceLevelInstance" />
+      <node id="6966202783768836286" at="36,53,37,62" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6966202783768836286" at="22,0,23,0" concept="1" trace="myConceptExperienceLevelInstance" />
+      <node id="6966202783768836286" at="68,57,69,48" concept="4" />
+      <node id="6966202783768836286" at="159,81,160,162" concept="3" />
+      <node id="6966202783768836286" at="160,162,161,34" concept="0" />
+      <node id="6966202783768836286" at="161,34,162,110" concept="0" />
+      <node id="6966202783768836286" at="162,110,163,71" concept="0" />
+      <node id="6966202783768836286" at="163,71,164,91" concept="0" />
+      <node id="6966202783768836286" at="164,91,165,17" concept="0" />
+      <node id="6966202783768837506" at="165,17,166,184" concept="0" />
+      <node id="6966202783768837226" at="166,184,167,203" concept="0" />
+      <node id="6966202783768836286" at="167,203,168,39" concept="0" />
+      <node id="6966202783768836286" at="168,39,169,22" concept="4" />
+      <node id="6966202783768836286" at="159,0,171,0" concept="6" trace="createDescriptorForExperienceLevelInstance#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6966202783768836286" at="68,57,69,48" />
+      <scope id="6966202783768836286" at="159,81,169,22">
+        <var name="b" id="6966202783768836286" />
+      </scope>
+      <scope id="6966202783768836286" at="159,0,171,0" />
+    </file>
+  </root>
   <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/7529356826775895329">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="7529356826775895329" at="26,0,27,0" concept="1" trace="props_experiencePointInstance" />
@@ -585,44 +623,6 @@
         <var name="b" id="7529356826782134007" />
       </scope>
       <scope id="7529356826782134007" at="129,0,138,0" />
-    </file>
-  </root>
-  <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/8616370111701203384">
-    <file name="ConceptPresentationAspectImpl.java">
-      <node id="8616370111701203384" at="17,0,18,0" concept="1" trace="props_ExperienceLevelInstance" />
-      <node id="8616370111701203384" at="71,52,72,76" concept="3" />
-      <node id="8616370111701203384" at="72,76,73,35" concept="0" />
-      <node id="8616370111701203384" at="73,35,74,55" concept="0" />
-      <node id="8616370111701203384" at="75,9,76,45" concept="4" />
-      <node id="8616370111701203384" at="70,57,75,9" concept="2" />
-      <scope id="8616370111701203384" at="71,52,74,55">
-        <var name="cpb" id="8616370111701203384" />
-      </scope>
-      <scope id="8616370111701203384" at="70,57,76,45" />
-    </file>
-    <file name="LanguageConceptSwitch.java">
-      <node id="8616370111701203384" at="17,0,18,0" concept="5" trace="ExperienceLevelInstance" />
-      <node id="8616370111701203384" at="36,53,37,62" concept="0" />
-    </file>
-    <file name="StructureAspectDescriptor.java">
-      <node id="8616370111701203384" at="22,0,23,0" concept="1" trace="myConceptExperienceLevelInstance" />
-      <node id="8616370111701203384" at="68,57,69,48" concept="4" />
-      <node id="8616370111701203384" at="159,81,160,162" concept="3" />
-      <node id="8616370111701203384" at="160,162,161,34" concept="0" />
-      <node id="8616370111701203384" at="161,34,162,110" concept="0" />
-      <node id="8616370111701203384" at="162,110,163,71" concept="0" />
-      <node id="8616370111701203384" at="163,71,164,91" concept="0" />
-      <node id="8616370111701203384" at="164,91,165,17" concept="0" />
-      <node id="8616370111701408825" at="165,17,166,184" concept="0" />
-      <node id="8616370111703176931" at="166,184,167,203" concept="0" />
-      <node id="8616370111701203384" at="167,203,168,39" concept="0" />
-      <node id="8616370111701203384" at="168,39,169,22" concept="4" />
-      <node id="8616370111701203384" at="159,0,171,0" concept="6" trace="createDescriptorForExperienceLevelInstance#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="8616370111701203384" at="68,57,69,48" />
-      <scope id="8616370111701203384" at="159,81,169,22">
-        <var name="b" id="8616370111701203384" />
-      </scope>
-      <scope id="8616370111701203384" at="159,0,171,0" />
     </file>
   </root>
   <root nodeRef="r:e455dcac-8b71-4321-af74-92e2e91d6b66(GiML.structure)/8616370111703176095">

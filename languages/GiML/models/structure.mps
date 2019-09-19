@@ -101,7 +101,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="experiencelevels" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="7ujvJshfzAS" resolve="ExperienceLevelInstance" />
+      <ref role="20lvS9" node="62GV8nRSfyY" resolve="ExperienceLevelInstance" />
     </node>
     <node concept="1TJgyi" id="6xXDyh733Zt" role="1TKVEl">
       <property role="IQ2nx" value="7529356826774355933" />
@@ -129,16 +129,6 @@
       <property role="20kJfa" value="schoolInstance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2B2cMQEweqd" resolve="SchoolInstance" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2B2cMQEaXOL">
-    <property role="EcuMT" value="3009023772258458929" />
-    <property role="TrG5h" value="DomainInstance" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="domainInstance" />
-    <ref role="1TJDcQ" to="2qee:14Y7$MQrYbp" resolve="Domain" />
-    <node concept="PrWs8" id="2B2cMQEpEEm" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2B2cMQEtnKk">
@@ -379,29 +369,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7ujvJshfzAS">
-    <property role="EcuMT" value="8616370111701203384" />
-    <property role="TrG5h" value="ExperienceLevelInstance" />
-    <property role="34LRSv" value="experienceLevelInstance" />
-    <ref role="1TJDcQ" to="2qee:7ujvJshfzkj" resolve="ExperienceLevel" />
-    <node concept="PrWs8" id="7ujvJshfzHm" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="7ujvJshglKT" role="1TKVEi">
-      <property role="IQ2ns" value="8616370111701408825" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="relatedPointInstance" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6xXDyh78VOx" resolve="experiencePointInstance" />
-    </node>
-    <node concept="1TJgyj" id="7ujvJshn5rz" role="1TKVEi">
-      <property role="IQ2ns" value="8616370111703176931" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="thresholds" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="7ujvJshn5ev" resolve="LevelTresholds" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7ujvJshn5ev">
     <property role="EcuMT" value="8616370111703176095" />
     <property role="TrG5h" value="LevelTresholds" />
@@ -430,6 +397,39 @@
       <property role="20kJfa" value="badgeType" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="2qee:62GV8nQc7th" resolve="KGGBadge" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2B2cMQEaXOL">
+    <property role="EcuMT" value="3009023772258458929" />
+    <property role="TrG5h" value="DomainInstance" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="domainInstance" />
+    <ref role="1TJDcQ" to="2qee:62GV8nRv2m3" resolve="Domain" />
+    <node concept="PrWs8" id="2B2cMQEpEEm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="62GV8nRSfyY">
+    <property role="EcuMT" value="6966202783768836286" />
+    <property role="TrG5h" value="ExperienceLevelInstance" />
+    <property role="34LRSv" value="experienceLevelInstance" />
+    <ref role="1TJDcQ" to="2qee:62GV8nRSfoi" resolve="ExperienceLevel" />
+    <node concept="PrWs8" id="62GV8nRSfCQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="62GV8nRSfLE" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783768837226" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="thresholds" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7ujvJshn5ev" resolve="LevelTresholds" />
+    </node>
+    <node concept="1TJgyj" id="62GV8nRSfQ2" role="1TKVEi">
+      <property role="IQ2ns" value="6966202783768837506" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="relatedPointInstance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6xXDyh78VOx" resolve="experiencePointInstance" />
     </node>
   </node>
 </model>

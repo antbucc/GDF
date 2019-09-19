@@ -34,7 +34,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x687da6244782eef7L, ChallengeVariable);
     builder.put(0x29c2332daad26af7L, ClassroomInstance);
     builder.put(0x29c2332daa2bdd31L, DomainInstance);
-    builder.put(0x77937ef7113e39b8L, ExperienceLevelInstance);
+    builder.put(0x60acec85f7e0f8beL, ExperienceLevelInstance);
     builder.put(0x19b939282ee57042L, GameInstance);
     builder.put(0x29c2332daa757c14L, InstituteInstance);
     builder.put(0x77937ef7115c539fL, LevelTresholds);

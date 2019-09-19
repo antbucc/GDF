@@ -69,6 +69,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForSingleGameExecution() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("GsML", "SingleGameExecution", 0xe0fa730698c04625L, 0xa0e1147e7b18cdbdL, 0x60c3ef30124ec3b0L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:a9609886-b83f-420c-94d6-601f7eba29df(GsML.structure)/6972679637844280240");
     b.version(2);
     b.associate("classroom", 0x60c3ef30124ec582L).target(0x119e117f12604f12L, 0xb46eefd3d0e4c44fL, 0x29c2332daad26af7L).optional(false).origin("6972679637844280706").done();
